@@ -11,104 +11,11 @@ public_host: docs.pivotal.io
 elastic_search: true
 
 products:
-  - id: pcf
-    subnav_root: pivotalcf/installing/pcf-docs.html
   - id: pcf-dev
     subnav_root: pcf-dev/index.html
 
-pcf_header: &local_pcf
-  use_local_header: true
-  latest_stable_version: 1.7
-  changelog_href: http://docs.pivotal.io/pivotalcf/pcf-release-notes/
-  local_header_img: /images/cloud_rings.png
-  local_header_title: Pivotal Cloud Foundry
-  local_header_links:
-    - <a href="https://network.pivotal.io/">Download</a>
-    - <a href="https://support.pivotal.io/hc/en-us/requests/new">Ask for Help</a>
-    - <a href="https://support.pivotal.io/hc/en-us">Knowledge Base</a>
-    - <a href="/archives/pcf-docs-1.7.pdf">PDF</a>
-  local_header_version_list:
-    - <a href="http://docs.pivotal.io/pivotalcf/1.6/">v1.6</a>
-    - <a href="/archives/pcf-docs-1.5.pdf">v1.5</a>
-    - <a href="/archives/pcf-docs-1.4.pdf">v1.4</a>
-    - <a href="/archives/pcf-docs-1.3.pdf">v1.3</a>
-    - <a href="/archives/pcf-docs-1.2.pdf">v1.2</a>
-
 sections:
-# pivotalcf repos: alphabetical within org cloudfoundry
-- repository:
-    name: cloudfoundry/docs-buildpacks
-  directory: pivotalcf/buildpacks
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: cloudfoundry/docs-cf-admin
-  directory: pivotalcf/adminguide
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: cloudfoundry/docs-cf-cli
-  directory: pivotalcf/cf-cli
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: cloudfoundry/docs-cloudfoundry-concepts
-  directory: pivotalcf/concepts
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: cloudfoundry/docs-dev-guide
-  directory: pivotalcf/devguide
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: cloudfoundry/docs-loggregator
-  directory: pivotalcf/loggregator
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: cloudfoundry/docs-services
-  directory: pivotalcf/services
-  product_id: pcf
-  product_info: *local_pcf
-
-# pivotalcf repos: alphabetical within org pivotal-cf
-- repository:
-    name: pivotal-cf/docs-ops-guide
-  directory: pivotalcf/opsguide
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: pivotal-cf/docs-pcf-gsg
-  directory: pivotalcf/installing
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: pivotal-cf/docs-pcf-install
-  directory: pivotalcf/customizing
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: pivotal-cf/docs-pivotalcf-console
-  directory: pivotalcf/console
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: pivotal-cf/pcf-release-notes
-  directory: pivotalcf/pcf-release-notes
-  product_id: pcf
-  product_info: *local_pcf
-- repository:
-    name: pivotal-cf/product-compatibility-matrix
-  directory: resources
-  product_id: pcf
-
-# pdf archives
-- repository:
-    name: pivotal-cf/docs-pdfs
-  directory: archives
-
-# other repos in org pivotal-cf: alphabetical
+# repos in org pivotal-cf: alphabetical
 - repository:
     name: pivotal-cf/docs-addon-ipsec
   directory: addon-ipsec
@@ -236,7 +143,7 @@ sections:
     name: pivotal-cf/docs-spring-xd
   directory: spring-xd
 
-# other repos in other orgs: alphabetical by org
+# repos in other orgs: alphabetical by org
 - repository:
     name: cfmobile/docs-app-distribution
   directory: app-dist
@@ -262,4 +169,3 @@ sections:
 - repository:
     name: pivotaltracker/docs-tracker-pcf
   directory: tracker-pcf
-
