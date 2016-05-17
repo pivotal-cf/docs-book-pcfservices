@@ -1,0 +1,265 @@
+---
+book_repo: pivotal-cf/docs-book-pivotalcf
+cred_repo: pivotal-cf/docs-pcf-site-credentials
+layout_repo: pivotal-cf/docs-layout-repo
+
+broken_link_exclusions: iefix|arrowhead
+repo_link_enabled: true
+
+public_host: docs.pivotal.io
+
+elastic_search: true
+
+products:
+  - id: pcf
+    subnav_root: pivotalcf/installing/pcf-docs.html
+  - id: pcf-dev
+    subnav_root: pcf-dev/index.html
+
+pcf_header: &local_pcf
+  use_local_header: true
+  latest_stable_version: 1.7
+  changelog_href: http://docs.pivotal.io/pivotalcf/pcf-release-notes/
+  local_header_img: /images/cloud_rings.png
+  local_header_title: Pivotal Cloud Foundry
+  local_header_links:
+    - <a href="https://network.pivotal.io/">Download</a>
+    - <a href="https://support.pivotal.io/hc/en-us/requests/new">Ask for Help</a>
+    - <a href="https://support.pivotal.io/hc/en-us">Knowledge Base</a>
+    - <a href="/archives/pcf-docs-1.7.pdf">PDF</a>
+  local_header_version_list:
+    - <a href="http://docs.pivotal.io/pivotalcf/1.6/">v1.6</a>
+    - <a href="/archives/pcf-docs-1.5.pdf">v1.5</a>
+    - <a href="/archives/pcf-docs-1.4.pdf">v1.4</a>
+    - <a href="/archives/pcf-docs-1.3.pdf">v1.3</a>
+    - <a href="/archives/pcf-docs-1.2.pdf">v1.2</a>
+
+sections:
+# pivotalcf repos: alphabetical within org cloudfoundry
+- repository:
+    name: cloudfoundry/docs-buildpacks
+  directory: pivotalcf/buildpacks
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: cloudfoundry/docs-cf-admin
+  directory: pivotalcf/adminguide
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: cloudfoundry/docs-cf-cli
+  directory: pivotalcf/cf-cli
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: cloudfoundry/docs-cloudfoundry-concepts
+  directory: pivotalcf/concepts
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: cloudfoundry/docs-dev-guide
+  directory: pivotalcf/devguide
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: cloudfoundry/docs-loggregator
+  directory: pivotalcf/loggregator
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: cloudfoundry/docs-services
+  directory: pivotalcf/services
+  product_id: pcf
+  product_info: *local_pcf
+
+# pivotalcf repos: alphabetical within org pivotal-cf
+- repository:
+    name: pivotal-cf/docs-ops-guide
+  directory: pivotalcf/opsguide
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: pivotal-cf/docs-pcf-gsg
+  directory: pivotalcf/installing
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: pivotal-cf/docs-pcf-install
+  directory: pivotalcf/customizing
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: pivotal-cf/docs-pivotalcf-console
+  directory: pivotalcf/console
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: pivotal-cf/pcf-release-notes
+  directory: pivotalcf/pcf-release-notes
+  product_id: pcf
+  product_info: *local_pcf
+- repository:
+    name: pivotal-cf/product-compatibility-matrix
+  directory: resources
+  product_id: pcf
+
+# pdf archives
+- repository:
+    name: pivotal-cf/docs-pdfs
+  directory: archives
+
+# other repos in org pivotal-cf: alphabetical
+- repository:
+    name: pivotal-cf/docs-addon-ipsec
+  directory: addon-ipsec
+  subnav_template: addon_ipsec.erb
+- repository:
+    name: pivotal-cf/docs-apigee
+  directory: apigee
+  subnav_template: apigee_subnav.erb
+- repository:
+    name: pivotal-cf/docs-appdynamics
+  directory: appdynamics
+  subnav_template: _appdynamics_subnav.erb
+- repository:
+    name: pivotal-cf/docs-aws-services
+  directory: aws-services
+  subnav_template: aws_services_subnav.erb
+- repository:
+    name: pivotal-cf/docs-bosh-addons
+  directory: addons
+  subnav_template: addons_subnav.erb
+- repository:
+    name: pivotal-cf/docs-cassandra
+  directory: cassandra
+  subnav_template: pivotal_cassandra_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-cloudbees
+  directory: cloudbees
+  subnav_template: pivotal_cloudbees_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-cloudbees-cjoc
+  directory: cjoc
+  subnav_template: cjoc_subnav.erb
+- repository:
+    name: pivotal-cf/docs-dynatrace
+  directory: dynatrace
+  subnav_template: pivotal_dynatrace_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-elk-stayupio
+  directory: elk
+  subnav_template: pivotal_elk_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-gitlab
+  directory: gitlab
+  subnav_template: pivotal_gitlab_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-identity
+  directory: p-identity
+  subnav_template: pivotal_sso_subnav.erb
+- repository:
+    name: pivotal-cf/docs-jfrog
+  directory: jfrog
+  subnav_template: pivotal_jfrog_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-klacloud
+  directory: knowtify
+  subnav_template: pivotal_knowtify_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-metrics
+  directory: pcf-metrics
+  subnav_template: pcf_metrics_subnav.erb
+- repository:
+    name: pivotal-cf/docs-mongodb
+  directory: mongodb
+  subnav_template: pivotal_mongodb_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-mysql
+  directory: p-mysql
+  subnav_template: pivotal_mysql_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-mysql
+    ref: 1.8.0
+  directory: edge/p-mysql
+  subnav_template: pivotal_edge_mysql_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-neo4j
+  directory: neo4j
+  subnav_template: pivotal_neo4j_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-new-relic
+  directory: newrelic
+- repository:
+    name: pivotal-cf/docs-on-demand-service-broker
+  directory: on-demand-service-broker
+  subnav_template: pivotal_on_demand_broker_subnav.erb
+- repository:
+    name: pivotal-cf/docs-partners
+  directory: partners
+  subnav_template: partners_subnav.erb
+- repository:
+    name: pivotal-cf/docs-pcf-dev
+  directory: pcf-dev
+  subnav_template: pivotal_pcfdev_subnav.erb
+- repository:
+    name: pivotal-cf/docs-phd-ds
+  directory: pivotalhd-ds
+  subnav_template: pivotal_ds_subnav.erb
+- repository:
+    name: pivotal-cf/docs-rabbitmq-staging
+  directory: rabbitmq-cf
+  subnav_template: pivotal_rabbitmq_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-redis
+  directory: redis
+  subnav_template: pivotal_redis_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-riakcs
+  directory: p-riakcs
+- repository:
+    name: pivotal-cf/docs-service-backup
+  directory: service-backup
+  subnav_template: pivotal_service_backups_subnav.erb
+- repository:
+    name: pivotal-cf/docs-spring-cloud-data-flow
+  directory: spring-cloud-data-flow
+  subnav_template: spring_cloud_data_flow_subnav.erb
+- repository:
+    name: pivotal-cf/docs-spring-cloud-services
+  directory: spring-cloud-services
+  subnav_template: spring_cloud_subnav.erb
+- repository:
+    name: pivotal-cf/docs-spring-flo
+  directory: spring-flo
+  subnav_template: spring_flo_subnav.erb
+- repository:
+    name: pivotal-cf/docs-spring-xd
+  directory: spring-xd
+
+# other repos in other orgs: alphabetical by org
+- repository:
+    name: cfmobile/docs-app-distribution
+  directory: app-dist
+  subnav_template: app_dist_subnav.erb
+- repository:
+    name: cfmobile/docs-pcf-mobileservices
+  directory: mobile
+  subnav_template: mobile_subnav.erb
+- repository:
+    name: cfmobile/docs-push-notifications
+  directory: push
+  subnav_template: push_subnav.erb
+
+- repository:
+    name: gemfire/docs-gemfire-cf
+  directory: gemfire-cf
+  subnav_template: gemfire_pcf_subnav.erb
+- repository:
+    name: gemfire/docs-ssc-gemfire-cf
+  directory: ssc-gemfire
+  subnav_template: gemfire_cf_subnav.erb
+
+- repository:
+    name: pivotaltracker/docs-tracker-pcf
+  directory: tracker-pcf
+
