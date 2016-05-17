@@ -169,3 +169,8 @@ sections:
 - repository:
     name: pivotaltracker/docs-tracker-pcf
   directory: tracker-pcf
+
+# pdf archives
+- repository:
+    name: pivotal-cf/docs-pdfs
+  directory: archives
