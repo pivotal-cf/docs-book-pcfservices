@@ -43,7 +43,7 @@ template_variables:
   product_short: Elastic Runtime
   product_abbr: 
   known_issues: <a href="http://docs.pivotal.io/pivotalcf/pcf-release-notes/index.html">Known Issues</a>
-  dev_console_note: For more information about specific Admin commands you can perform with the Apps Manager, depending on your user role, refer to the <a href="http://docs.pivotal.io/pivotalcf/console/dev-console-permissions.html">Understanding Apps Manager Permissions</a> topic.
+  dev_console_note: For more information about specific Admin commands you can perform with the Apps Manager, depending on your user role, refer to the <a href="http://docs.pivotal.io/pivotalcf/console/dev-console.html">Getting Started with the Apps Manager</a> topic.
   dev_console_1: You can use either the CLI or the <a href="http://docs.pivotal.io/pivotalcf/console/index.html">Apps Manager</a> to perform this task.
   dev_console_2: CLI or the <a href="http://docs.run.pivotal.io/console/index.html">Apps Manager</a>
   dev_console_3: For more information about using the Apps Manager, refer to the <a href="http://docs.pivotal.io/pivotalcf/console/index.html">Using the Apps Manager</a> topics.
@@ -53,6 +53,11 @@ template_variables:
   cli_download: the Tools page of your Apps Manager instance
   cli_v6: <a href="http://docs.pivotal.io/pivotalcf/cf-cli/getting-started.html">Getting Started with cf CLI v6</a>
   console_ev: user role and the values that the Admin specifies for the <a href="http://docs.pivotal.io/pivotalcf/customizing/console-env-variables.html">Apps Manager environment variables</a>
+  create_orgs: <sup>&dagger;</sup>
+  create_orgs_footnote: <sup>&dagger;</sup>Defaults to no. Yes if `ENABLE_NON_ADMIN_ORG_CREATION` is `true`.
+  manage_roles_pws_yes: <sup>&Dagger;</sup>
+  manage_roles_pws_no: <sup>&Dagger;</sup>
+  manage_roles_footnote: <sup>&Dagger;</sup>Defaults to no. Yes if `ENABLE_NON_ADMIN_ROLE_MANAGEMENT` is `true`.
   pools_link: <a href="http://docs.pivotal.io/pivotalcf/customizing/vsphere-config.html">resource pools</a>
   pcf_pools: For [Amazon Web Services](http://aws.amazon.com/ec2/faqs/#How_many_instances_can_I_run_in_Amazon_EC2), review the documentation regarding scaling instances. If you are using OpenStack, see the topic regarding [managing projects and users](http://docs.openstack.org/openstack-ops/content/projects_users.html). For vSphere, review the [Configuring Ops Manager Director for VMware vSphere](http://docs.pivotal.io/pivotalcf/customizing/vsphere-config.html#resource-config) topic.
   om_resurrector_header: <h4>Ops Manager Resurrector</h4>
@@ -60,7 +65,7 @@ template_variables:
   max_in_flight: one DEA
   az: <a href="http://docs.pivotal.io/pivotalcf/customizing/understand-az.html">availability zones</a>
   pcf_rec: Pivotal
-  console_links: For more information, see <a href="http://docs.pivotal.io/pivotalcf/console/dev-console-permissions.html">Understanding Apps Manager Permissions</a> and <a href="http://docs.pivotal.io/pivotalcf/console/manage-accounts.html">Managing User Spaces in Accounts using the Apps Manager</a>.
+  console_links: For more information, see <a href="http://docs.pivotal.io/pivotalcf/console/dev-console.html">Getting Started with the Apps Manager</a> and <a href="http://docs.pivotal.io/pivotalcf/console/console-roles.html">Managing User Accounts and Permissions Using the Apps Manager</a>.
   app_sec_groups: <a href="http://docs.pivotal.io/pivotalcf/adminguide/app-sec-groups.html">Application Security Groups</a>
   manifest_vs_cli_asg:
   dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
@@ -114,3 +119,5 @@ template_variables:
   api_version: 235
   config_ert_checkboxes: <p class="note"><strong>Note</strong>&#58; If you do not see the <strong>Invite New Members</strong> button, ensure that, in the <strong>Apps Manager</strong> section of Elastic Runtime, you have selected the <strong>Enable Internal User Store</strong> and <strong>Enable Non Admin Role Management</strong> checkboxes and that Apply Changes has been run. For more information about these checkboxes, see the Configuring Elastic Runtime topic for your IaaS&#58; <a href="../customizing/cloudform-er-config.html#customize-apps-man">AWS</a>, <a href="../customizing/openstack-er-config.html#customize-apps-man">OpenStack</a>, <a href="../customizing/config-er-vmware.html#customize-apps-man">vSphere/vCloud</a>.</p>
   first_product_name: Pivotal Cloud Foundry&reg; (PCF)
+  create_org: 
+
