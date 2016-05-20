@@ -1,6 +1,6 @@
 ---
-book_repo: pivotal-cf/docs-book-pivotalcf
-cred_repo: pivotal-cf/docs-pcf-site-credentials
+book_repo: pivotal-cf/docs-book-pcfservices
+cred_repo: pivotal-cf/docs-pcfservices-site-credentials
 layout_repo: pivotal-cf/docs-layout-repo
 
 broken_link_exclusions: iefix|arrowhead
