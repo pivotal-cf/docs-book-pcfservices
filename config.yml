@@ -81,11 +81,11 @@ sections:
   directory: mongodb
   subnav_template: pivotal_mongodb_service_subnav.erb
 - repository:
-    name: pivotal-cf/docs-mysql
+    name: animatedmax/docs-mysql
   directory: p-mysql
   subnav_template: pivotal_mysql_service_subnav.erb
 - repository:
-    name: pivotal-cf/docs-mysql
+    name: animatedmax/docs-mysql
     ref: 1.8.0
   directory: edge/p-mysql
   subnav_template: pivotal_edge_mysql_service_subnav.erb
