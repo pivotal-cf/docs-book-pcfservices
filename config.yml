@@ -14,6 +14,7 @@ products:
   - id: pcf-dev
     subnav_root: pcf-dev/index.html
 
+sections:
 # cross-product resources
 - repository:
     name: pivotal-cf/docs-pdfs
@@ -23,7 +24,6 @@ products:
   directory: resources
   product_id: pcf
 
-sections:
 # repos in org pivotal-cf: alphabetical
 - repository:
     name: pivotal-cf/docs-addon-ipsec
