@@ -14,6 +14,15 @@ products:
   - id: pcf-dev
     subnav_root: pcf-dev/index.html
 
+# cross-product resources
+- repository:
+    name: pivotal-cf/docs-pdfs
+  directory: archives
+- repository:
+    name: pivotal-cf/product-compatibility-matrix
+  directory: resources
+  product_id: pcf
+
 sections:
 # repos in org pivotal-cf: alphabetical
 - repository:
@@ -170,8 +179,3 @@ sections:
 - repository:
     name: animatedmax/docs-tracker-pcf
   directory: tracker-pcf
-
-# pdf archives
-- repository:
-    name: pivotal-cf/docs-pdfs
-  directory: archives
