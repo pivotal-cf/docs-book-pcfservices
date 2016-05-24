@@ -22,7 +22,6 @@ sections:
 - repository:
     name: pivotal-cf/product-compatibility-matrix
   directory: resources
-  product_id: pcf
 
 # repos in org pivotal-cf: alphabetical
 - repository:
