@@ -96,6 +96,7 @@ sections:
 - repository:
     name: pivotal-cf/docs-new-relic
   directory: newrelic
+  subnav_template: pivotal_new_relic_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
   directory: on-demand-service-broker
