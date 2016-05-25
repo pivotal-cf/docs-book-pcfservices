@@ -180,3 +180,4 @@ sections:
 - repository:
     name: animatedmax/docs-tracker-pcf
   directory: tracker-pcf
+  subnav_template: pivotal_tracker_subnav.erb
