@@ -2,6 +2,9 @@ r301 %r{.*}, 'http://docs.pivotal.io$&', :if => Proc.new {|rack_env|
   rack_env['SERVER_NAME'] == 'docs.gopivotal.com' ||
     rack_env['SERVER_NAME'] == 'cf-p1-docs-prod.cfapps.io'
 }
+r301 r%{.*}, 'http://docs-pcf-staging.cfapps.io$&', :if Proc.new {|rack_env|
+  rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
+}
 
 r302 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-7/$1"
 
