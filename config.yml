@@ -132,6 +132,7 @@ sections:
 - repository:
     name: pivotal-cf/docs-riakcs
   directory: p-riakcs
+  subnav_template: pivotal_riakcs_service.erb
 - repository:
     name: pivotal-cf/docs-service-backup
   directory: service-backup
@@ -151,6 +152,7 @@ sections:
 - repository:
     name: pivotal-cf/docs-spring-xd
   directory: spring-xd
+  subnav_template: spring_xd_service_subnav.erb
 
 # repos in other orgs: alphabetical by org
 - repository:
