@@ -81,6 +81,10 @@ sections:
   directory: knowtify
   subnav_template: pivotal_knowtify_service_subnav.erb
 - repository:
+    name: pivotal-cf/docs-logsearch
+  directory: logsearch
+  subnav_template: pivotal_logsearch_subnav.erb 
+- repository:
     name: pivotal-cf/docs-metrics
   directory: pcf-metrics
   subnav_template: pcf_metrics_subnav.erb
