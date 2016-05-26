@@ -60,3 +60,5 @@ r302 '/spring-cloud-services/circuit-breaker/using-a-circuit-breaker.html', '/sp
 r302 '/spring-cloud-services/config-server/writing-a-spring-client.html', '/spring-cloud-services/config-server/writing-client-applications.html'
 r302 '/spring-cloud-services/service-registry/consuming-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
 r302 '/spring-cloud-services/service-registry/registering-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
+
+r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
