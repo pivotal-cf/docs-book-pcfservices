@@ -61,10 +61,6 @@ sections:
   directory: dynatrace
   subnav_template: pivotal_dynatrace_service_subnav.erb
 - repository:
-    name: pivotal-cf/docs-elk-stayupio
-  directory: elk
-  subnav_template: pivotal_elk_service_subnav.erb
-- repository:
     name: pivotal-cf/docs-gitlab
   directory: gitlab
   subnav_template: pivotal_gitlab_service_subnav.erb
