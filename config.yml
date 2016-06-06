@@ -1,6 +1,5 @@
 ---
 book_repo: pivotal-cf/docs-book-pcfservices
-cred_repo: pivotal-cf/docs-pcfservices-site-credentials
 layout_repo: pivotal-cf/docs-layout-repo
 
 broken_link_exclusions: iefix|arrowhead
@@ -79,7 +78,7 @@ sections:
 - repository:
     name: pivotal-cf/docs-logsearch
   directory: logsearch
-  subnav_template: pivotal_logsearch_subnav.erb 
+  subnav_template: pivotal_logsearch_subnav.erb
 - repository:
     name: pivotal-cf/docs-metrics
   directory: pcf-metrics
