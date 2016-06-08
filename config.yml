@@ -9,10 +9,6 @@ public_host: docs.pivotal.io
 
 elastic_search: true
 
-products:
-  - id: pcf-dev
-    subnav_root: pcf-dev/index.html
-
 sections:
 # cross-product resources
 - repository:
