@@ -68,6 +68,10 @@ sections:
   directory: jfrog
   subnav_template: pivotal_jfrog_service_subnav.erb
 - repository:
+    name: pivotal-cf/docs-jmx-bridge
+  directory: jmx-bridge
+  subnav_template: pivotal_jmx_bridge_subnav.erb 
+- repository:
     name: pivotal-cf/docs-klacloud
   directory: knowtify
   subnav_template: pivotal_knowtify_service_subnav.erb
