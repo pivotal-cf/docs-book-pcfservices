@@ -7,7 +7,7 @@ repo_link_enabled: true
 
 public_host: docs.pivotal.io
 
-elastic_search: true
+elastic_search: false
 
 sections:
 # cross-product resources
