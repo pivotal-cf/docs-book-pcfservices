@@ -32,6 +32,10 @@ sections:
   directory: appdynamics
   subnav_template: _appdynamics_subnav.erb
 - repository:
+    name: pivotal-cf/docs-appmon
+  directory: appmon
+  subnav_template: pivotal_dynatrace_service_subnav.erb
+- repository:
     name: pivotal-cf/docs-aws-services
   directory: aws-services
   subnav_template: aws_services_subnav.erb
@@ -51,10 +55,6 @@ sections:
     name: pivotal-cf/docs-cloudbees-cjoc
   directory: cjoc
   subnav_template: cjoc_subnav.erb
-- repository:
-    name: pivotal-cf/docs-dynatrace
-  directory: dynatrace
-  subnav_template: pivotal_dynatrace_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-gitlab
   directory: gitlab
