@@ -133,6 +133,10 @@ sections:
   directory: p-riakcs
   subnav_template: pivotal_riakcs_service.erb
 - repository:
+    name: pivotal-cf/docs-ruxit
+  directory: ruxit
+  subnav_template: pivotal_ruxit.erb
+- repository:
     name: pivotal-cf/docs-service-backup
   directory: service-backup
   subnav_template: pivotal_service_backups_subnav.erb
