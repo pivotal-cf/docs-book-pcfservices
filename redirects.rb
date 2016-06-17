@@ -62,3 +62,5 @@ r301 '/spring-cloud-services/service-registry/consuming-a-service.html', '/sprin
 r301 '/spring-cloud-services/service-registry/registering-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
 
 r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
+
+r301 %r{/dynatrace/(.*)}, '/appmon/$1'
