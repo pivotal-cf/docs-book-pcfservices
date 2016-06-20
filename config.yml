@@ -105,6 +105,10 @@ sections:
   directory: on-demand-service-broker
   subnav_template: pivotal_on_demand_broker_subnav.erb
 - repository:
+    name: pivotal-cf/docs-service-metrics
+  directory: service-metrics
+  subnav_template: pivotal_service_metrics_subnav.erb
+- repository:
     name: pivotal-cf/docs-partners
   directory: partners
   subnav_template: partners_subnav.erb
