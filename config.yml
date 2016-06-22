@@ -84,6 +84,11 @@ sections:
   directory: pcf-metrics
   subnav_template: pcf_metrics_subnav.erb
 - repository:
+    name: pivotal-cf/docs-metrics
+    ref: edge
+  directory: edge/pcf-metrics
+  subnav_template: pcf_metrics_edge_subnav.erb
+- repository:
     name: pivotal-cf/docs-mongodb
   directory: mongodb
   subnav_template: pivotal_mongodb_service_subnav.erb
