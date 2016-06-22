@@ -9,10 +9,6 @@ public_host: docs.pivotal.io
 
 elastic_search: true
 
-products:
-  - id: pcf-dev
-    subnav_root: pcf-dev/index.html
-
 sections:
 # cross-product resources
 - repository:
@@ -36,6 +32,10 @@ sections:
   directory: appdynamics
   subnav_template: _appdynamics_subnav.erb
 - repository:
+    name: pivotal-cf/docs-appmon
+  directory: appmon
+  subnav_template: pivotal_dynatrace_service_subnav.erb
+- repository:
     name: pivotal-cf/docs-aws-services
   directory: aws-services
   subnav_template: aws_services_subnav.erb
@@ -56,10 +56,6 @@ sections:
   directory: cjoc
   subnav_template: cjoc_subnav.erb
 - repository:
-    name: pivotal-cf/docs-dynatrace
-  directory: dynatrace
-  subnav_template: pivotal_dynatrace_service_subnav.erb
-- repository:
     name: pivotal-cf/docs-gitlab
   directory: gitlab
   subnav_template: pivotal_gitlab_service_subnav.erb
@@ -72,6 +68,10 @@ sections:
   directory: jfrog
   subnav_template: pivotal_jfrog_service_subnav.erb
 - repository:
+    name: pivotal-cf/docs-jmx-bridge
+  directory: jmx-bridge
+  subnav_template: pivotal_jmx_bridge_subnav.erb 
+- repository:
     name: pivotal-cf/docs-klacloud
   directory: knowtify
   subnav_template: pivotal_knowtify_service_subnav.erb
@@ -83,6 +83,11 @@ sections:
     name: pivotal-cf/docs-metrics
   directory: pcf-metrics
   subnav_template: pcf_metrics_subnav.erb
+- repository:
+    name: pivotal-cf/docs-metrics
+    ref: edge
+  directory: pcf-metrics-edge
+  subnav_template: pcf_metrics_edge_subnav.erb
 - repository:
     name: pivotal-cf/docs-mongodb
   directory: mongodb
@@ -133,6 +138,10 @@ sections:
   directory: p-riakcs
   subnav_template: pivotal_riakcs_service.erb
 - repository:
+    name: pivotal-cf/docs-ruxit
+  directory: ruxit
+  subnav_template: pivotal_ruxit.erb
+- repository:
     name: pivotal-cf/docs-service-backup
   directory: service-backup
   subnav_template: pivotal_service_backups_subnav.erb
@@ -177,6 +186,7 @@ sections:
   subnav_template: gemfire_cf_subnav.erb
 
 - repository:
-    name: animatedmax/docs-tracker-pcf
+    name: pivotaltracker/docs-tracker-pcf
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
+  
