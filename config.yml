@@ -86,7 +86,7 @@ sections:
 - repository:
     name: pivotal-cf/docs-metrics
     ref: edge
-  directory: edge/pcf-metrics
+  directory: pcf-metrics-edge
   subnav_template: pcf_metrics_edge_subnav.erb
 - repository:
     name: pivotal-cf/docs-mongodb
