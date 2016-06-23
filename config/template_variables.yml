@@ -45,7 +45,7 @@ template_variables:
   book_title_short: Pivotal Docs
   product_name: PCF
   api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Elastic Runtime Instance topic](http://docs.pivotal.io/pivotalcf/opsguide/api-endpoint.html).
-  incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='../customizing/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry&reg; Deployment</a>.</p>
+  incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='../opsguide/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry&reg; Deployment</a>.</p>
   GSG_intro_sentence:
   product_full: Elastic Runtime
   product_short: Elastic Runtime
