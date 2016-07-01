@@ -184,7 +184,7 @@ sections:
     name: dingotiles/dingo-docs
     at_path: docs-dingo-postgresql
   directory: dingo-postgresql
-  subnav_template: dingo_postgresql_subnav.erb
+  subnav_template: _dingo_postgresql_subnav.erb
 
 - repository:
     name: gemfire/docs-gemfire-cf
