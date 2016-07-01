@@ -20,10 +20,6 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    name: dingotiles/dingo-docs/tree/master/docs-dingo-postgresql 
-  directory: dingo-postgresql
-  subnav_template: dingo_postgresql_subnav.erb
-- repository:
     name: pivotal-cf/docs-addon-ipsec
   directory: addon-ipsec
   subnav_template: addon_ipsec.erb
@@ -183,6 +179,12 @@ sections:
     name: cfmobile/docs-push-notifications
   directory: push
   subnav_template: push_subnav.erb
+
+- repository:
+    name: dingotiles/dingo-docs
+    at_path: docs-dingo-postgresql
+  directory: dingo-postgresql
+  subnav_template: dingo_postgresql_subnav.erb
 
 - repository:
     name: gemfire/docs-gemfire-cf
