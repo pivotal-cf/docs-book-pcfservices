@@ -20,7 +20,7 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    name: dingotiles/dingo-docs/docs-dingo-postgresql 
+    name: dingotiles/dingo-docs/tree/master/docs-dingo-postgresql 
   directory: dingo-postgresql
   subnav_template: dingo_postgresql_subnav.erb
 - repository:
