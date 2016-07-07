@@ -150,6 +150,10 @@ sections:
   directory: service-backup
   subnav_template: pivotal_service_backups_subnav.erb
 - repository:
+    name: pivotal-cf/docs-service-metrics
+  directory: service-metrics
+  subnav_template: pivotal_service_metrics_subnav.erb
+- repository:
     name: pivotal-cf/docs-spring-cloud-data-flow
   directory: spring-cloud-data-flow
   subnav_template: spring_cloud_data_flow_subnav.erb
