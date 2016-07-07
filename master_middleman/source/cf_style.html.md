@@ -96,7 +96,7 @@ Something that makes complete sense in one context (e.g. "target api.run.pivotal
   <td>Placeholder text</td><td>Placeholder text, indicating that users should supply their own values, should be in all caps. For example:</br>
 	<code>cf create-user USERNAME PASSWORD</code></br></br>
       If the placeholder text contains multiple words, separate the words with hyphens. For example:</br>
-        <code>https://console.YOUR-SYSTEM-DOMAIN</code>
+        <code>https://console.YOUR-SYSTEM-DOMAIN.example.com</code>
   </td>
 </tr>
 <tr>
