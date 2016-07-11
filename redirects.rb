@@ -66,5 +66,5 @@ r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
 r301 %r{/dynatrace/(.*)}, '/appmon/$1'
 
-r301 %r{/pre-release/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/1-8/opsguide/index.html'
+r301 %r{/pre-release/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/1-8/installing/pcf-docs.html'
 
