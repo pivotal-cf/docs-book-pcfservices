@@ -56,6 +56,10 @@ sections:
   directory: cjoc
   subnav_template: cjoc_subnav.erb
 - repository:
+    name: pivotal-cf/docs-edb-postgres
+  directory: edb-postgres
+  subnav_template: pivotal_edb_postgres.erb
+- repository:
     name: pivotal-cf/docs-gitlab
   directory: gitlab
   subnav_template: pivotal_gitlab_service_subnav.erb
