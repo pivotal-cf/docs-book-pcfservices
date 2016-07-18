@@ -40,10 +40,6 @@ sections:
   directory: aws-services
   subnav_template: aws_services_subnav.erb
 - repository:
-    name: pivotal-cf/docs-bosh-addons
-  directory: addons
-  subnav_template: addons_subnav.erb
-- repository:
     name: pivotal-cf/docs-cassandra
   directory: cassandra
   subnav_template: pivotal_cassandra_service_subnav.erb
