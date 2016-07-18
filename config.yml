@@ -93,6 +93,10 @@ sections:
   directory: mongodb
   subnav_template: pivotal_mongodb_service_subnav.erb
 - repository:
+    name: pivotal-cf/docs-mongodb-managed
+  directory: mongodb-managed
+  subnav_template: pivotal_mongodb_managed_subnav.erb
+- repository:
     name: pivotal-cf/docs-mysql
   directory: p-mysql
   subnav_template: pivotal_mysql_service_subnav.erb
