@@ -92,6 +92,7 @@ template_variables:
   cookies_shared_domain_1:
   cookies_shared_domain_2: For an application using a shared domain such as <code>example.com</code>, a cookie set to use the highest domain has a <code>Domain</code> attribute of <code>.example.com</code> in its HTTP response header.
   notifications_api_1:
+  asg_notifications_prereq:
   cse_id: 012029519579280034868:3hzywhss5ik
   custom_load_balancer: See <a href="../opsguide/custom-load-balancer.html">Using Your Own Load Balancer</a>.
   ga_account_id: UA-39702075-1
