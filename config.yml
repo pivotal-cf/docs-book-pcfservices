@@ -181,10 +181,6 @@ sections:
   directory: app-dist
   subnav_template: app_dist_subnav.erb
 - repository:
-    name: cfmobile/docs-pcf-mobileservices
-  directory: mobile
-  subnav_template: mobile_subnav.erb
-- repository:
     name: cfmobile/docs-push-notifications
   directory: push
   subnav_template: push_subnav.erb
