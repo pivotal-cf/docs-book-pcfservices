@@ -68,3 +68,9 @@ r301 %r{/dynatrace/(.*)}, '/appmon/$1'
 
 r301 %r{/pre-release/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/1-8/installing/pcf-docs.html'
 
+r301 %r{/mobile/app_analytics(.*)}, 'https://network.pivotal.io/products/api-gateway'
+r301 %r{/mobile/apigateway(.*)}, 'https://network.pivotal.io/products/api-gateway'
+r301 '/mobile/index.html', 'https://network.pivotal.io/products/api-gateway'
+r301 %r{/mobile/data/(.*)}, 'https://network.pivotal.io/products/p-data-sync'
+
+
