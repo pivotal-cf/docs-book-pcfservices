@@ -99,7 +99,6 @@ template_variables:
   domain_name: pivotal.io
   diego_deploy: 
   scaling_ert: For more information regarding zero downtime deployment, see the [Scaling Instances in Elastic Runtime](./../opsguide/scaling-ert-components.html) topic.
-  scaling_ert_db: 
   ssh_marketplace_step: List the marketplace services installed as product tiles on your Pivotal Cloud Foundry (PCF) Ops Manager. See the <a href="../../customizing/add-delete.html">Adding and Deleting Products</a> topic if you need to add the service as a tile. In this example, we create a p-mysql service instance.
   ssh_marketplace_output: p-mysql  100mb MySQL databases on demand
   ssh_service: p-mysql
@@ -127,6 +126,7 @@ template_variables:
   metrics_login: In a browser, navigate to `metrics.YOUR-SYSTEM-DOMAIN` and log in with your User Account and Authentication (UAA) credentials.
   metrics_viewapps: PCF Metrics uses UAA to retrieve a list of apps that correspond to your user's org roles, space roles, and permissions. To view metrics information for an app, enter the name of the app in the search box and select it from the dropdown menu.
   api_version: 235
+  config_ert_checkboxes: <p class="note"><strong>Note</strong>&#58; If you do not see the <strong>Invite New Members</strong> button, ensure that, in the <strong>Apps Manager</strong> section of Elastic Runtime, you have selected the <strong>Enable Internal User Store</strong> and <strong>Enable Non Admin Role Management</strong> checkboxes and that Apply Changes has been run. For more information about these checkboxes, see the Configuring Elastic Runtime topic for your IaaS&#58; <a href="../customizing/cloudform-er-config.html#customize-apps-man">AWS</a>, <a href="../customizing/openstack-er-config.html#customize-apps-man">OpenStack</a>, <a href="../customizing/config-er-vmware.html#customize-apps-man">vSphere/vCloud</a>.</p>
   first_product_name: Pivotal Cloud Foundry&reg; (PCF)
   create_org: 
 
