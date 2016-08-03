@@ -60,7 +60,7 @@ template_variables:
   gen_GSG:
   cli_download: the Tools page of your Apps Manager instance
   cli_v6: <a href="http://docs.pivotal.io/pivotalcf/cf-cli/getting-started.html">Getting Started with cf CLI v6</a>
-  console_ev: user role and the values that the Admin specifies for the <a href="http://docs.pivotal.io/pivotalcf/customizing/console-env-variables.html">Apps Manager environment variables</a>
+  console_ev: 
   create_orgs: <sup>&dagger;</sup>
   create_orgs_footnote: <sup>&dagger;</sup>Defaults to no. Yes if `ENABLE_NON_ADMIN_ORG_CREATION` is `true`.
   manage_roles_pws_yes: <sup>&Dagger;</sup>
