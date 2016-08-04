@@ -65,7 +65,6 @@ sections:
   subnav_template: pivotal_gitlab_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-identity
-    ref: 1.8
   directory: p-identity
   subnav_template: pivotal_sso_subnav.erb
 - repository:
@@ -86,7 +85,6 @@ sections:
   subnav_template: pivotal_logsearch_subnav.erb
 - repository:
     name: pivotal-cf/docs-metrics
-    ref: 1.8
   directory: pcf-metrics
   subnav_template: pcf_metrics_subnav.erb
 - repository:
