@@ -86,7 +86,7 @@ sections:
   subnav_template: pivotal_logsearch_subnav.erb
 - repository:
     name: pivotal-cf/docs-metrics
-    ref: 1.8
+    ref: "test"
   directory: pcf-metrics
   subnav_template: pcf_metrics_subnav.erb
 - repository:
