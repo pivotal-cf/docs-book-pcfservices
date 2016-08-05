@@ -20,6 +20,10 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
+    name: pivotal-cf/docs-addon-antivirus
+  directory: addon-antivirus
+  subnav_template: addon_antivirus.erb
+- repository:
     name: pivotal-cf/docs-addon-ipsec
   directory: addon-ipsec
   subnav_template: addon_ipsec.erb
