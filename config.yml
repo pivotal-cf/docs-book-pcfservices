@@ -64,6 +64,10 @@ sections:
   directory: gitlab
   subnav_template: pivotal_gitlab_service_subnav.erb
 - repository:
+    name: pivotal-cf/docs-guardtime
+  directory: guardtime
+  subnav_template: pivotal_guardtime.erb
+- repository:
     name: pivotal-cf/docs-identity
   directory: p-identity
   subnav_template: pivotal_sso_subnav.erb
