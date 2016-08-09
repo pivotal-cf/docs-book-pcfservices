@@ -280,7 +280,7 @@ sections:
   subnav_template: gemfire_cf_subnav.erb
 
 - repository:
-    name: pivotaltracker/docs-tracker-pcf
+    name: animatedmax/docs-tracker-pcf
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
   
