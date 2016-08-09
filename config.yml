@@ -108,13 +108,43 @@ sections:
   subnav_template: pivotal_mongodb_managed_subnav.erb
 - repository:
     name: pivotal-cf/docs-mysql
-  directory: p-mysql
+  directory: p-mysql/1-7
   subnav_template: pivotal_mysql_service_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: MySQL for PCF
+    search_placeholder: Search MySQL for PCF 1.7
+    url_prefix: p-mysql/1-7
+    local_product_version: 1.7
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.ioi/p-mysql/1-8
+        display_name: v1.8
+      - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.4.pdf">v1.4</a>
 - repository:
     name: pivotal-cf/docs-mysql
     ref: 1.8.0
-  directory: edge/p-mysql
+  directory: p-mysql/1-8
   subnav_template: pivotal_edge_mysql_service_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: MySQL for PCF
+    search_placeholder: Search MySQL for PCF 1.8
+    url_prefix: p-mysql/1-8
+    local_product_version: 1.8
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.ioi/p-mysql/1-7
+        display_name: v1.7
+      - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.4.pdf">v1.4</a>
 - repository:
     name: pivotal-cf/docs-neo4j
   directory: neo4j
@@ -151,8 +181,38 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-redis
-  directory: redis
+    ref: master
+  directory: redis/1-5
   subnav_template: pivotal_redis_service_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.5
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Pivotal Redis
+    search_placeholder: Search Redis 1.5
+    url_prefix: redis/1-5
+    local_product_version: 1.5
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-4
+        display_name: v1.4
+- repository:
+    name: pivotal-cf/docs-redis
+    ref: v1.4
+  directory: redis/1-4
+  subnav_template: pivotal_redis_service_subnav-1-4.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.5
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Pivotal Redis
+    search_placeholder: Search Redis 1.4
+    url_prefix: redis/1-4
+    local_product_version: 1.4
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.ioi/redis/1-5
+        display_name: v1.5
 - repository:
     name: pivotal-cf/docs-riakcs
   directory: p-riakcs
