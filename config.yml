@@ -182,7 +182,6 @@ sections:
 
 - repository:
     name: pivotal-cf/docs-redis
-    ref: redis-1.7
   directory: redis/1-7
   subnav_template: pivotal_redis_service_subnav-1-7.erb
   product_info:
@@ -203,7 +202,6 @@ sections:
         display_name: v1.4
 - repository:
     name: pivotal-cf/docs-redis
-    ref: redis-1.6-AZ-info
   directory: redis/1-6
   subnav_template: pivotal_redis_service_subnav-1-6.erb
   product_info:
@@ -237,6 +235,10 @@ sections:
     local_product_version: 1.5
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-7
+        display_name: v1.7
+      - url_prefix: http://docs.pivotal.io/redis/1-6
+        display_name: v1.6
       - url_prefix: http://docs.pivotal.io/redis/1-4
         display_name: v1.4
 - repository:
@@ -254,6 +256,10 @@ sections:
     local_product_version: 1.4
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-7
+        display_name: v1.7
+      - url_prefix: http://docs.pivotal.io/redis/1-6
+        display_name: v1.6
       - url_prefix: http://docs.pivotal.ioi/redis/1-5
         display_name: v1.5
 - repository:
