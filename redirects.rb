@@ -6,7 +6,10 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
   rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
 }
 
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-7/$1"
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-8/$1"
+r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-7/$1"
+r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
+r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7/$1"
 
 r301 %r{/pivotalhd/1010/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1010/$1'
 r301 %r{/pivotalhd/1030/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1030/$1'
