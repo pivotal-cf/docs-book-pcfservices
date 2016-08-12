@@ -9,6 +9,10 @@ public_host: docs.pivotal.io
 
 elastic_search: true
 
+products:
+  - id: sso
+    subnav_root: p-identity/index.html
+
 sections:
 # cross-product resources
 - repository:
@@ -74,7 +78,7 @@ sections:
 - repository:
     name: pivotal-cf/docs-identity
   directory: p-identity
-  subnav_template: pivotal_sso_subnav.erb
+  product_id: sso
 - repository:
     name: pivotal-cf/docs-jfrog
   directory: jfrog
