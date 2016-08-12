@@ -175,6 +175,7 @@ sections:
   subnav_template: pivotal_on_demand_broker_subnav_v0-5-0.erb
 - repository:
     name: pivotal-cf/docs-partners
+    ref: "1.8"
   directory: partners
   subnav_template: partners_subnav.erb
 - repository:
