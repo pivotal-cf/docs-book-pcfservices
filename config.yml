@@ -168,8 +168,13 @@ sections:
   subnav_template: pivotal_new_relic_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
-    ref: v0.6.0
+    ref: v0.7.0
   directory: on-demand-service-broker
+  subnav_template: pivotal_on_demand_broker_subnav_v0-7-0.erb
+- repository:
+    name: pivotal-cf/docs-on-demand-service-broker
+    ref: v0.6.0
+  directory: on-demand-service-broker-v0-6-0
   subnav_template: pivotal_on_demand_broker_subnav_v0-6-0.erb
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
