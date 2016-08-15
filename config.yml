@@ -132,7 +132,7 @@ sections:
     local_product_version: 1.7
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.ioi/p-mysql/1-8
+      - url_prefix: http://docs.pivotal.io/p-mysql/1-8
         display_name: v1.8
       - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
       - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
@@ -152,7 +152,7 @@ sections:
     local_product_version: 1.8
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.ioi/p-mysql/1-7
+      - url_prefix: http://docs.pivotal.io/p-mysql/1-7
         display_name: v1.7
       - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
       - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
@@ -242,7 +242,7 @@ sections:
     local_product_version: 1.4
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.ioi/redis/1-5
+      - url_prefix: http://docs.pivotal.io/redis/1-5
         display_name: v1.5
 
 - repository:
