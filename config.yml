@@ -60,6 +60,10 @@ sections:
   directory: cloudsoft
   subnav_template: cloudsoft_subnav.erb
 - repository:
+    name: pivotal-cf/docs-dynatrace
+  directory: dynatrace
+  subnav_template: pivotal_dynatrace_service_subnav.erb
+- repository:
     name: pivotal-cf/docs-edb-postgres
   directory: edb-postgres
   subnav_template: pivotal_edb_postgres.erb
