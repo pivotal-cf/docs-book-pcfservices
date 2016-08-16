@@ -40,10 +40,6 @@ sections:
   directory: appdynamics
   subnav_template: _appdynamics_subnav.erb
 - repository:
-    name: pivotal-cf/docs-appmon
-  directory: appmon
-  subnav_template: pivotal_dynatrace_service_subnav.erb
-- repository:
     name: pivotal-cf/docs-aws-services
   directory: aws-services
   subnav_template: aws_services_subnav.erb
@@ -253,10 +249,6 @@ sections:
     name: pivotal-cf/docs-rlec
   directory: rlec
   subnav_template: pivotal_rlec.erb
-- repository:
-    name: pivotal-cf/docs-ruxit
-  directory: ruxit
-  subnav_template: pivotal_ruxit.erb
 - repository:
     name: pivotal-cf/docs-service-backup
   directory: service-backup
