@@ -32,6 +32,10 @@ sections:
   directory: addon-ipsec
   subnav_template: addon_ipsec.erb
 - repository:
+    name: pivotal-cf-experimental/docs-appdog
+  directory: appdog
+  subnav_template: appdog.erb
+- repository:
     name: pivotal-cf/docs-apigee
   directory: apigee
   subnav_template: apigee_subnav.erb
