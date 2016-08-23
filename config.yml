@@ -33,7 +33,7 @@ sections:
   subnav_template: addon_ipsec.erb
 - repository:
     name: pivotal-cf-experimental/docs-appdog
-  directory: appdog
+  directory: pcf-appdog
   subnav_template: appdog.erb
 - repository:
     name: pivotal-cf/docs-apigee
