@@ -95,20 +95,64 @@ sections:
     name: pivotal-cf/docs-logsearch
   directory: logsearch
   subnav_template: pivotal_logsearch_subnav.erb
-- repository:
-    name: pivotal-cf/docs-metrics
-  directory: pcf-metrics
-  subnav_template: pcf_metrics_subnav.erb
+
 - repository:
     name: pivotal-cf/docs-metrics
     ref: edge
-  directory: pcf-metrics-edge
+  directory: pcf-metrics/edge
   subnav_template: pcf_metrics_edge_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.1
+    local_header_img: /images/cloud_rings.png
+    local_header_title: PCF Metrics
+    search_placeholder: Search PCF Metrics edge
+    url_prefix: pcf-metrics/edge
+    local_product_version: edge
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
+        display_name: v1.1
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/1-0
+        display_name: v1.0
 - repository:
     name: pivotal-cf/docs-metrics
-    ref: "1.0"
-  directory: pcf-metrics-1-0
+  directory: pcf-metrics/1-1
+  subnav_template: pcf_metrics_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.1
+    local_header_img: /images/cloud_rings.png
+    local_header_title: PCF Metrics
+    search_placeholder: Search PCF Metrics 1.1
+    url_prefix: pcf-metrics/edge
+    local_product_version: 1.1
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/edge
+        display_name: edge
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/1-0
+        display_name: v1.0
+- repository:
+    name: pivotal-cf/docs-metrics
+    ref: '1.0'
+  directory: pcf-metrics/1-0
   subnav_template: pcf_metrics_1_0_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.1
+    local_header_img: /images/cloud_rings.png
+    local_header_title: PCF Metrics
+    search_placeholder: Search PCF Metrics 1.0
+    url_prefix: pcf-metrics/1-0
+    local_product_version: 1.0
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/edge
+        display_name: edge
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
+        display_name: v1.1
+
 - repository:
     name: pivotal-cf/docs-mongodb
   directory: mongodb
