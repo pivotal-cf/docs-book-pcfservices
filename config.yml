@@ -218,7 +218,7 @@ sections:
   subnav_template: pivotal_new_relic_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
-    ref: v0.8.0
+    ref: master
   directory: on-demand-service-broker/0.8.0
   product_id: odb-v0-8-0
   product_info:
