@@ -12,6 +12,9 @@ elastic_search: true
 products:
   - id: sso
     subnav_root: p-identity/index.html
+  - id: concourse
+    subnav_root: p-concourse/index.html
+
 
 sections:
 # cross-product resources
@@ -67,6 +70,10 @@ sections:
     name: pivotal-cf/docs-cloudsoft
   directory: cloudsoft
   subnav_template: cloudsoft_subnav.erb
+- repository:
+    name: pivotal-cf/docs-concourse
+  directory: p-concourse
+  product_id: concourse
 - repository:
     name: pivotal-cf/docs-edb-postgres
   directory: edb-postgres
