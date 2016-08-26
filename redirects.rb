@@ -78,5 +78,5 @@ r301 %r{/mobile/data/(.*)}, 'https://network.pivotal.io/products/p-data-sync'
 r301 '/mobile/index.html', 'https://network.pivotal.io/products/api-gateway'
 r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
 
-
+r301 %r{/pcf-metrics/(.*)}, '/pcf-metrics/1-1/$1'
 
