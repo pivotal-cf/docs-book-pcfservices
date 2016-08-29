@@ -190,9 +190,9 @@ sections:
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/p-mysql/1-8
         display_name: v1.8
-      - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
-      - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
-      - <a href="/archives/p-mysql/mysql-docs-1.4.pdf">v1.4</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.6.pdf">v1.6</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.5.pdf">v1.5</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
 - repository:
     name: pivotal-cf/docs-mysql
     ref: 1.8.0
@@ -210,9 +210,9 @@ sections:
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/p-mysql/1-7
         display_name: v1.7
-      - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
-      - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
-      - <a href="/archives/p-mysql/mysql-docs-1.4.pdf">v1.4</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.6.pdf">v1.6</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.5.pdf">v1.5</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
 
 - repository:
     name: pivotal-cf/docs-neo4j
