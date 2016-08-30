@@ -99,11 +99,6 @@ sections:
   subnav_template: pcf_metrics_subnav.erb
 - repository:
     name: pivotal-cf/docs-metrics
-    ref: edge
-  directory: pcf-metrics-edge
-  subnav_template: pcf_metrics_edge_subnav.erb
-- repository:
-    name: pivotal-cf/docs-metrics
     ref: "1.0"
   directory: pcf-metrics-1-0
   subnav_template: pcf_metrics_1_0_subnav.erb
