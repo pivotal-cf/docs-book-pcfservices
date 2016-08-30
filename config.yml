@@ -14,8 +14,6 @@ products:
     subnav_root: p-identity/index.html
   - id: odb-v0-8-0
     subnav_root: on-demand-service-broker/0.8.0/index.html
-  - id: concourse
-    subnav_root: p-concourse/index.html
 
 sections:
 # cross-product resources
@@ -74,7 +72,7 @@ sections:
 - repository:
     name: pivotal-cf/docs-concourse
   directory: p-concourse
-  product_id: concourse
+  subnav_template: concourse_subnav.erb
 - repository:
     name: pivotal-cf/docs-edb-postgres
   directory: edb-postgres
