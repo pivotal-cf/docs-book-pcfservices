@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'bookbindery'
-gem 'pdfer', git: 'git@github.com:pivotal-cf/pdfer.git'
 
 group :development do
   gem 'hologram', github: 'substantial/hologram'
