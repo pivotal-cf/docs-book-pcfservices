@@ -34,6 +34,10 @@ sections:
   directory: addon-ipsec
   subnav_template: addon_ipsec.erb
 - repository:
+    name: pivotal-cf/docs-aerospike
+  directory: aerospike
+  subnav_template: aerospike_subnav.erb
+- repository:
     name: pivotal-cf-experimental/docs-appdog
   directory: pcf-appdog
   subnav_template: appdog.erb
