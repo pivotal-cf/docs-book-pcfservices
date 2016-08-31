@@ -35,6 +35,7 @@ sections:
   subnav_template: addon_ipsec.erb
 - repository:
     name: pivotal-cf/docs-aerospike
+    at_path: docs-content
   directory: aerospike
   subnav_template: aerospike_subnav.erb
 - repository:
