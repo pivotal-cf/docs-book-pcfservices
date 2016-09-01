@@ -78,6 +78,7 @@ r301 %r{/mobile/apigateway(.*)}, 'https://network.pivotal.io/products/api-gatewa
 r301 %r{/mobile/data/(.*)}, 'https://network.pivotal.io/products/p-data-sync'
 r301 '/mobile/index.html', 'https://network.pivotal.io/products/api-gateway'
 r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
+r301 '/jmx-bridge/index.html', '/jmx-bridge/1-8/index.html'
 
 r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 

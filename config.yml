@@ -82,8 +82,37 @@ sections:
   subnav_template: pivotal_jfrog_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-jmx-bridge
-  directory: jmx-bridge
-  subnav_template: pivotal_jmx_bridge_subnav.erb 
+  directory: jmx-bridge/1-8
+  subnav_template: pivotal_jmx_bridge_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: JMX Bridge
+    search_placeholder: Search JMX Bridge 1.8
+    url_prefix: jmx-bridge/1-8
+    local_product_version: 1.8
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-7
+        display_name: v1.7
+- repository:
+    name: pivotal-cf/docs-jmx-bridge
+    ref: '1.7'
+  directory: jmx-bridge/1-7
+  subnav_template: pivotal_jmx_bridge_1_7_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: JMX Bridge
+    search_placeholder: Search PCF JMX Bridge 1.7
+    url_prefix: jmx-bridge/1-7
+    local_product_version: 1.7
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-8
+        display_name: v1.8
 - repository:
     name: pivotal-cf/docs-klacloud
   directory: knowtify
@@ -94,14 +123,37 @@ sections:
   subnav_template: pivotal_logsearch_subnav.erb
 - repository:
     name: pivotal-cf/docs-metrics
-    ref: "1.8"
-  directory: pcf-metrics
+  directory: pcf-metrics/1-1
   subnav_template: pcf_metrics_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.1
+    local_header_img: /images/cloud_rings.png
+    local_header_title: PCF Metrics
+    search_placeholder: Search PCF Metrics 1.1
+    url_prefix: pcf-metrics/1-1
+    local_product_version: 1.1
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/1-0
+        display_name: v1.0
 - repository:
     name: pivotal-cf/docs-metrics
-    ref: "1.0"
-  directory: pcf-metrics-1-0
+    ref: '1.0'
+  directory: pcf-metrics/1-0
   subnav_template: pcf_metrics_1_0_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.1
+    local_header_img: /images/cloud_rings.png
+    local_header_title: PCF Metrics
+    search_placeholder: Search PCF Metrics 1.0
+    url_prefix: pcf-metrics/1-0
+    local_product_version: 1.0
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
+        display_name: v1.1
 - repository:
     name: pivotal-cf/docs-mongodb
   directory: mongodb
