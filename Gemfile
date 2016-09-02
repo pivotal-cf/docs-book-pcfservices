@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'bookbindery'
+gem 'bookbindery', "9.11.1"
 
 group :development do
   gem 'hologram', github: 'substantial/hologram'

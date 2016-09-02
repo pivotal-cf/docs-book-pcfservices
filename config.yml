@@ -75,10 +75,6 @@ sections:
   directory: cloudsoft
   subnav_template: cloudsoft_subnav.erb
 - repository:
-    name: pivotal-cf/docs-concourse
-  directory: p-concourse
-  subnav_template: concourse_subnav.erb
-- repository:
     name: pivotal-cf/docs-edb-postgres
   directory: edb-postgres
   subnav_template: pivotal_edb_postgres.erb
