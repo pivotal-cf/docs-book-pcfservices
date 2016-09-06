@@ -304,7 +304,7 @@ On first reference in a topic, link the product name to the relevant product pag
 
 ###cf Command Line Interface Tool###
 
-Refers to the downloadable command line tool. On first reference in a topic, use the full name, _cf Command Line Interface tool_. On subsequent references, use _cf CLI_.
+Refers to the downloadable command line tool. On first reference in a topic, use the full name, Cloud Foundry Command Line Interface tool. On subsequent references, use _cf CLI_.
 
 ###Developer Console (OBSOLETE)###
 
