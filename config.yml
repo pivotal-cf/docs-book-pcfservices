@@ -12,8 +12,6 @@ elastic_search: true
 products:
   - id: sso
     subnav_root: p-identity/sso-subnav-root.html
-  - id: odb-v0-8-0
-    subnav_root: on-demand-service-broker/0.8.0/index.html
 
 sections:
 # cross-product resources
