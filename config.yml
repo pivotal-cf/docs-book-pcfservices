@@ -461,6 +461,10 @@ sections:
     name: pivotal-cf/docs-spring-xd
   directory: spring-xd
   subnav_template: spring_xd_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-tibco-businessworks
+  directory: tibco-businessworks
+  subnav_template: tibco_businessworks_subnav.erb
 
 # repos in other orgs: alphabetical by org
 - repository:
