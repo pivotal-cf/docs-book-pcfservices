@@ -142,15 +142,6 @@ sections:
         display_name: v1.1
 
 - repository:
-    name: pivotal-cf/docs-mongodb
-  directory: mongodb
-  subnav_template: pivotal_mongodb_service_subnav.erb
-- repository:
-    name: pivotal-cf/docs-mongodb-managed
-  directory: mongodb-managed
-  subnav_template: pivotal_mongodb_managed_subnav.erb
-
-- repository:
     name: pivotal-cf/docs-mysql
   directory: p-mysql/1-7
   subnav_template: pivotal_mysql_service_subnav.erb
