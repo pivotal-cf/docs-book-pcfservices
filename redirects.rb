@@ -10,7 +10,7 @@ r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-7/$1"
 r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-5/$1"
 r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-7/$1"
 r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
-r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-6-5/$1"
+r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-6-6/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0.9.0/$1"
 
 r301 %r{/pivotalhd/1010/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1010/$1'
