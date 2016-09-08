@@ -336,6 +336,8 @@ sections:
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-6
         display_name: v1.6.6
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-4
+        display_name: v1.6.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-3
         display_name: v1.6.3
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-1
@@ -349,7 +351,7 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-4.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6.5
+    latest_stable_version: 1.6.6
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.4
@@ -357,6 +359,8 @@ sections:
     local_product_version: 1.6.4.1
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-6
+        display_name: v1.6.6
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-5
         display_name: v1.6.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-3
@@ -372,7 +376,7 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-3.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6.5
+    latest_stable_version: 1.6.6
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.3
@@ -380,6 +384,8 @@ sections:
     local_product_version: 1.6.3
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-6
+        display_name: v1.6.6
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-5
         display_name: v1.6.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-4
@@ -395,7 +401,7 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-1.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6.5
+    latest_stable_version: 1.6.6
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.1
@@ -403,6 +409,8 @@ sections:
     local_product_version: 1.6.1
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-6
+        display_name: v1.6.6
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-5
         display_name: v1.6.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-4
@@ -418,7 +426,7 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-0.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6.4.1
+    latest_stable_version: 1.6.6
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.0
@@ -426,6 +434,8 @@ sections:
     local_product_version: 1.6.0
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-6
+        display_name: v1.6.6
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-5
         display_name: v1.6.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-4
