@@ -209,8 +209,6 @@ sections:
   subnav_template: pivotal_new_relic_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
-<<<<<<< HEAD
-=======
     ref: v0.9.x
   directory: on-demand-service-broker/0.9.0
   product_id: odb-v0-9-0
@@ -247,12 +245,9 @@ sections:
       - <a href="/on-demand-service-broker/0.5.0">v0.5.0</a>
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
->>>>>>> 7ecf30d... Merge pull request #27 from pivotal-cf/odb-v0.9.0
     ref: v0.7.0
   directory: on-demand-service-broker       
   subnav_template: pivotal_on_demand_broker_subnav_v0-7-0.erb
-<<<<<<< HEAD
-=======
   product_info:
     use_local_header: true
     latest_stable_version: 0.9.0
@@ -266,14 +261,11 @@ sections:
       - <a href="/on-demand-service-broker/0.8.0">v0.8.0</a>
       - <a href="/on-demand-service-broker/0.6.0">v0.6.0</a>
       - <a href="/on-demand-service-broker/0.5.0">v0.5.0</a>
->>>>>>> 7ecf30d... Merge pull request #27 from pivotal-cf/odb-v0.9.0
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.6.0
   directory: on-demand-service-broker-v0-6-0
   subnav_template: pivotal_on_demand_broker_subnav_v0-6-0.erb
-<<<<<<< HEAD
-=======
   product_info:
     use_local_header: true
     latest_stable_version: 0.9.0
@@ -287,14 +279,11 @@ sections:
       - <a href="/on-demand-service-broker/0.8.0">v0.8.0</a>
       - <a href="/on-demand-service-broker/0.7.0">v0.7.0</a>
       - <a href="/on-demand-service-broker/0.5.0">v0.5.0</a>
->>>>>>> 7ecf30d... Merge pull request #27 from pivotal-cf/odb-v0.9.0
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.5.x
   directory: on-demand-service-broker-v0-5-0
   subnav_template: pivotal_on_demand_broker_subnav_v0-5-0.erb
-<<<<<<< HEAD
-=======
   product_info:
     use_local_header: true
     latest_stable_version: 0.9.0
@@ -308,7 +297,6 @@ sections:
       - <a href="/on-demand-service-broker/0.8.0">v0.8.0</a>
       - <a href="/on-demand-service-broker/0.7.0">v0.7.0</a>
       - <a href="/on-demand-service-broker/0.6.0">v0.6.0</a>
->>>>>>> 7ecf30d... Merge pull request #27 from pivotal-cf/odb-v0.9.0
 - repository:
     name: pivotal-cf/docs-partners
     ref: "1.8"
