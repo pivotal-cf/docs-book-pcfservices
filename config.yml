@@ -200,7 +200,7 @@ sections:
     use_local_header: true
     latest_stable_version: 0.9.0
     local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
+    local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.9.0
     local_header_links: []
@@ -218,7 +218,7 @@ sections:
     use_local_header: true
     latest_stable_version: 0.9.0
     local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
+    local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.8.0
     local_header_links: []
@@ -236,7 +236,7 @@ sections:
     use_local_header: true
     latest_stable_version: 0.9.0
     local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
+    local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.7.0
     local_header_links: []
@@ -254,7 +254,7 @@ sections:
     use_local_header: true
     latest_stable_version: 0.9.0
     local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
+    local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.6.0
     local_header_links: []
@@ -272,7 +272,7 @@ sections:
     use_local_header: true
     latest_stable_version: 0.9.0
     local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
+    local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.5.0
     local_header_links: []
