@@ -509,10 +509,42 @@ sections:
     name: pivotal-cf/docs-spring-cloud-data-flow
   directory: spring-cloud-data-flow
   subnav_template: spring_cloud_data_flow_subnav.erb
+
 - repository:
     name: pivotal-cf/docs-spring-cloud-services
-  directory: spring-cloud-services
+    ref: master
+  directory: spring-cloud-services/1-7
   subnav_template: spring_cloud_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.7
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Pivotal Spring Cloud Services
+    search_placeholder: Search Spring Cloud Services 1.7
+    url_prefix: spring-cloud-services/1-7
+    local_product_version: 1.7
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-6
+        display_name: v1.6
+- repository:
+    name: pivotal-cf/docs-spring-cloud-services
+    ref: 'PCF-1.6'
+  directory: spring-cloud-services/1-6
+  subnav_template: spring_cloud_previous.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.7
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Pivotal Spring Cloud Services
+    search_placeholder: Search Spring Cloud Services 1.6
+    url_prefix: spring-cloud-services/1-6
+    local_product_version: 1.6
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-7
+        display_name: v1.7
+
 - repository:
     name: pivotal-cf/docs-spring-flo
   directory: spring-flo
