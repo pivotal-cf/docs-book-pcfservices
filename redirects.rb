@@ -11,6 +11,7 @@ r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-7/$1"
 r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
 r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0.9.0/$1"
+r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 r301 %r{/pivotalhd/1010/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1010/$1'
 r301 %r{/pivotalhd/1030/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1030/$1'
