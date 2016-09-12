@@ -13,20 +13,6 @@ r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-6-6/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-9-0/$1"
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
-r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-7/buildpacks/$1'
-r301 %r{/deploying/(.*)}, '/pivotalcf/1-7/deploying/$1'
-r301 %r{/concepts/(.*)}, '/pivotalcf/1-7/concepts/$1'
-r301 %r{/adminguide/(.*)}, '/pivotalcf/1-7/adminguide/$1'
-r301 %r{/cf-cli/(.*)}, '/pivotalcf/1-7/cf-cli/$1'
-r301 %r{/devguide/(.*)}, '/pivotalcf/1-7/devguide/$1'
-r301 %r{/loggregator/(.*)}, '/pivotalcf/1-7/loggregator/$1'
-r301 %r{/services/(.*)}, '/pivotalcf/1-7/services/$1'
-r301 %r{/opsguide/(.*)}, '/pivotalcf/1-7/opsguide/$1'
-r301 %r{/installing/(.*)}, '/pivotalcf/1-7/installing/$1'
-r301 %r{/customizing/(.*)}, '/pivotalcf/1-7/customizing/$1'
-r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-7/appsman-services/$1'
-r301 %r{/console/(.*)}, '/pivotalcf/1-7/console/$1'
-r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-7/pcf-release-notes/$1'
 
 r301 %r{/pivotalhd/1010/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1010/$1'
 r301 %r{/pivotalhd/1030/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1030/$1'
