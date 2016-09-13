@@ -150,6 +150,7 @@ sections:
   product_info:
     use_local_header: true
     latest_stable_version: 1.8
+    changelog_href: http://docs.pivotal.io/p-mysql/1-7/release-notes.html
     local_header_img: /images/cloud_rings.png
     local_header_title: MySQL for PCF
     search_placeholder: Search MySQL for PCF 1.7
@@ -170,6 +171,7 @@ sections:
   product_info:
     use_local_header: true
     latest_stable_version: 1.8
+    changelog_href: http://docs.pivotal.io/p-mysql/1-8/release-notes.html
     local_header_img: /images/cloud_rings.png
     local_header_title: MySQL for PCF
     search_placeholder: Search MySQL for PCF 1.8
