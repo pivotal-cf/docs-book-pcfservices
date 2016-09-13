@@ -77,9 +77,39 @@ sections:
   subnav_template: pivotal_gitlab_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-identity
-    ref: "1.8"
-  directory: p-identity
+  directory: p-identity/1-8
   product_id: sso
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Single Sign-On
+    search_placeholder: Search Single Sign-On 1.8
+    url_prefix: p-identity/1-8
+    local_product_version: 1.8
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/p-identity/1-7
+        display_name: v1.7
+      - <a href="/archives/p-identity/p-identity-1.6.pdf">v1.6</a>
+- repository:
+    name: pivotal-cf/docs-identity
+    ref: "1.7"
+  directory: p-identity/1-7
+  product_id: sso
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Single Sign-On
+    search_placeholder: Search Single Sign-On 1.7
+    url_prefix: p-identity/1-7
+    local_product_version: 1.7
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/p-identity/1-8
+        display_name: v1.8
+      - <a href="/archives/p-identity/p-identity-1.6.pdf">v1.6</a>
 - repository:
     name: pivotal-cf/docs-jfrog
   directory: jfrog

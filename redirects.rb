@@ -9,6 +9,7 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-8/$1"
 r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-7/$1"
 r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
+r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-8/$1"
 r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0.9.0/$1"
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
