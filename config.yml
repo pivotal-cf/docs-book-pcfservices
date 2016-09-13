@@ -111,7 +111,7 @@ sections:
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/p-identity/1-8
         display_name: v1.8
-      - <a href="/archives/p-identity-1.6.pdf">v1.6</a>
+      - <a href="http://docs.pivotal.io/archives/p-identity-1.6.pdf">v1.6</a>
 - repository:
     name: pivotal-cf/docs-jfrog
   directory: jfrog
