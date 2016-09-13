@@ -92,6 +92,17 @@ sections:
     name: pivotal-cf/docs-identity
   directory: p-identity
   product_id: sso
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.7
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Single Sign-On
+    search_placeholder: Search Single Sign-On
+    url_prefix: p-identity
+    local_product_version: 1.7
+    local_header_links: []
+    local_header_version_list:
+      - <a href="/archives/p-identity/p-identity-1.6.pdf">v1.6</a>
 - repository:
     name: pivotal-cf/docs-jfrog
   directory: jfrog
