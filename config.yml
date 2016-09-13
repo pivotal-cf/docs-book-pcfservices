@@ -531,6 +531,7 @@ sections:
   product_info:
     use_local_header: true
     latest_stable_version: 1.1
+    changelog_href: http://docs.pivotal.io/spring-cloud-services/1-1/release-notes.html
     local_header_img: /images/cloud_rings.png
     local_header_title: Spring Cloud Services
     search_placeholder: Search SCS 1.1
@@ -548,6 +549,7 @@ sections:
   product_info:
     use_local_header: true
     latest_stable_version: 1.1
+    changelog_href: http://docs.pivotal.io/spring-cloud-services/1-0/release-notes.html
     local_header_img: /images/cloud_rings.png
     local_header_title: Spring Cloud Services
     search_placeholder: Search SCS 1.0
