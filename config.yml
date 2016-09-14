@@ -79,6 +79,7 @@ sections:
   subnav_template: pivotal_gitlab_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-identity
+    ref: "1.8"
   directory: p-identity/1-8
   product_id: sso-1-8
   product_info:
