@@ -6,28 +6,30 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
   rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
 }
 
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-7/$1"
-r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-5/$1"
 r301 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-1/$1"
-r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-7/$1"
+r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
 r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
-r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-6-6/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-9-0/$1"
+r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-8/buildpacks/$1'
+r301 %r{/deploying/(.*)}, '/pivotalcf/1-8/deploying/$1'
+r301 %r{/concepts/(.*)}, '/pivotalcf/1-8/concepts/$1'
+r301 %r{/adminguide/(.*)}, '/pivotalcf/1-8/adminguide/$1'
+r301 %r{/cf-cli/(.*)}, '/pivotalcf/1-8/cf-cli/$1'
+r301 %r{/devguide/(.*)}, '/pivotalcf/1-8/devguide/$1'
+r301 %r{/loggregator/(.*)}, '/pivotalcf/1-8/loggregator/$1'
+r301 %r{/services/(.*)}, '/pivotalcf/1-8/services/$1'
+r301 %r{/opsguide/(.*)}, '/pivotalcf/1-8/opsguide/$1'
+r301 %r{/installing/(.*)}, '/pivotalcf/1-8/installing/$1'
+r301 %r{/customizing/(.*)}, '/pivotalcf/1-8/customizing/$1'
+r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-8/appsman-services/$1'
+r301 %r{/console/(.*)}, '/pivotalcf/1-8/console/$1'
+r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-8/pcf-release-notes/$1'
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-8/$1"
+r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-7/$1"
+r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-8/$1"
+r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7/$1"
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
-r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-7/buildpacks/$1'
-r301 %r{/deploying/(.*)}, '/pivotalcf/1-7/deploying/$1'
-r301 %r{/concepts/(.*)}, '/pivotalcf/1-7/concepts/$1'
-r301 %r{/adminguide/(.*)}, '/pivotalcf/1-7/adminguide/$1'
-r301 %r{/cf-cli/(.*)}, '/pivotalcf/1-7/cf-cli/$1'
-r301 %r{/devguide/(.*)}, '/pivotalcf/1-7/devguide/$1'
-r301 %r{/loggregator/(.*)}, '/pivotalcf/1-7/loggregator/$1'
-r301 %r{/services/(.*)}, '/pivotalcf/1-7/services/$1'
-r301 %r{/opsguide/(.*)}, '/pivotalcf/1-7/opsguide/$1'
-r301 %r{/installing/(.*)}, '/pivotalcf/1-7/installing/$1'
-r301 %r{/customizing/(.*)}, '/pivotalcf/1-7/customizing/$1'
-r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-7/appsman-services/$1'
-r301 %r{/console/(.*)}, '/pivotalcf/1-7/console/$1'
-r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-7/pcf-release-notes/$1'
+
 
 r301 %r{/pivotalhd/1010/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1010/$1'
 r301 %r{/pivotalhd/1030/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1030/$1'
@@ -95,6 +97,9 @@ r301 %r{/mobile/apigateway(.*)}, 'https://network.pivotal.io/products/api-gatewa
 r301 %r{/mobile/data/(.*)}, 'https://network.pivotal.io/products/p-data-sync'
 r301 '/mobile/index.html', 'https://network.pivotal.io/products/api-gateway'
 r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
+r301 '/jmx-bridge/index.html', '/jmx-bridge/1-8/index.html'
 
-r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-7/$1"
+r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
+r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
+
 r301 '/partners/decrypt-encrypt-install-file.html', 'http://docs.pivotal.io/pivotalcf/1-7/customizing/modify-ops-man.html'

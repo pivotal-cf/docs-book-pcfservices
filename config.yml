@@ -10,8 +10,10 @@ public_host: docs.pivotal.io
 elastic_search: true
 
 products:
-  - id: sso
-    subnav_root: p-identity/sso-subnav-root.html
+  - id: sso-1-7
+    subnav_root: p-identity/1-7/sso-subnav-root.html
+  - id: sso-1-8
+    subnav_root: p-identity/1-8/sso-subnav-root.html
   - id: odb-v0-9-0
     subnav_root: on-demand-service-broker/0-9-0/subnav-root.html
   - id: odb-v0-8-0
@@ -53,10 +55,6 @@ sections:
   directory: appdynamics
   subnav_template: _appdynamics_subnav.erb
 - repository:
-    name: pivotal-cf/docs-appmon
-  directory: appmon
-  subnav_template: pivotal_dynatrace_service_subnav.erb
-- repository:
     name: pivotal-cf/docs-aws-services
   directory: aws-services
   subnav_template: aws_services_subnav.erb
@@ -90,18 +88,39 @@ sections:
   subnav_template: pivotal_guardtime.erb
 - repository:
     name: pivotal-cf/docs-identity
-  directory: p-identity
-  product_id: sso
+    ref: "1.8"
+  directory: p-identity/1-8
+  product_id: sso-1-8
   product_info:
     use_local_header: true
-    latest_stable_version: 1.7
+    latest_stable_version: 1.8
     local_header_img: /images/cloud_rings.png
     local_header_title: Single Sign-On
-    search_placeholder: Search Single Sign-On
-    url_prefix: p-identity
+    search_placeholder: Search Single Sign-On 1.8
+    url_prefix: p-identity/1-8
+    local_product_version: 1.8
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/p-identity/1-7
+        display_name: v1.7
+      - <a href="http://docs.pivotal.io/archives/p-identity-1.6.pdf">v1.6</a>
+- repository:
+    name: pivotal-cf/docs-identity
+    ref: "1.7"
+  directory: p-identity/1-7
+  product_id: sso-1-7
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Single Sign-On
+    search_placeholder: Search Single Sign-On 1.7
+    url_prefix: p-identity/1-7
     local_product_version: 1.7
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/p-identity/1-8
+        display_name: v1.8
       - <a href="http://docs.pivotal.io/archives/p-identity-1.6.pdf">v1.6</a>
 - repository:
     name: pivotal-cf/docs-jfrog
@@ -109,8 +128,37 @@ sections:
   subnav_template: pivotal_jfrog_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-jmx-bridge
-  directory: jmx-bridge
-  subnav_template: pivotal_jmx_bridge_subnav.erb 
+  directory: jmx-bridge/1-8
+  subnav_template: pivotal_jmx_bridge_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: JMX Bridge
+    search_placeholder: Search JMX Bridge 1.8
+    url_prefix: jmx-bridge/1-8
+    local_product_version: 1.8
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-7
+        display_name: v1.7
+- repository:
+    name: pivotal-cf/docs-jmx-bridge
+    ref: '1.7'
+  directory: jmx-bridge/1-7
+  subnav_template: pivotal_jmx_bridge_1_7_subnav.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8
+    local_header_img: /images/cloud_rings.png
+    local_header_title: JMX Bridge
+    search_placeholder: Search PCF JMX Bridge 1.7
+    url_prefix: jmx-bridge/1-7
+    local_product_version: 1.7
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-8
+        display_name: v1.8
 - repository:
     name: pivotal-cf/docs-klacloud
   directory: knowtify
@@ -169,11 +217,11 @@ sections:
     local_product_version: 1.7
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/p-mysql/1-8
+      - url_prefix: http://docs.pivotal.ioi/p-mysql/1-8
         display_name: v1.8
-      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.6.pdf">v1.6</a>
-      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.5.pdf">v1.5</a>
-      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.4.pdf">v1.4</a>
 - repository:
     name: pivotal-cf/docs-mysql
     ref: 1.8.0
@@ -190,11 +238,11 @@ sections:
     local_product_version: 1.8
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/p-mysql/1-7
+      - url_prefix: http://docs.pivotal.ioi/p-mysql/1-7
         display_name: v1.7
-      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.6.pdf">v1.6</a>
-      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.5.pdf">v1.5</a>
-      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
+      - <a href="/archives/p-mysql/mysql-docs-1.4.pdf">v1.4</a>
 
 - repository:
     name: pivotal-cf/docs-neo4j
@@ -279,6 +327,78 @@ sections:
       - <a href="/on-demand-service-broker/0-5-0">v0.5.0</a>
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
+    ref: v0.9.x
+  directory: on-demand-service-broker/0.9.0
+  product_id: odb-v0-9-0
+  product_info:
+    use_local_header: true
+    latest_stable_version: 0.9.0
+    local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
+    local_header_title: On-Demand Service Broker SDK
+    search_placeholder: Search
+    local_product_version: 0.9.0
+    local_header_links: []
+    local_header_version_list:
+      - <a href="/on-demand-service-broker/0.8.0">v0.8.0</a>
+      - <a href="/on-demand-service-broker/0.7.0">v0.7.0</a>
+      - <a href="/on-demand-service-broker/0.6.0">v0.6.0</a>
+      - <a href="/on-demand-service-broker/0.5.0">v0.5.0</a>
+- repository:
+    name: pivotal-cf/docs-on-demand-service-broker
+    ref: v0.8.x
+  directory: on-demand-service-broker/0.8.0
+  product_id: odb-v0-8-0
+  product_info:
+    use_local_header: true
+    latest_stable_version: 0.9.0
+    local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
+    local_header_title: On-Demand Service Broker SDK
+    search_placeholder: Search
+    local_product_version: 0.8.0
+    local_header_links: []
+    local_header_version_list:
+      - <a href="/on-demand-service-broker/0.9.0">v0.9.0</a>
+      - <a href="/on-demand-service-broker/0.7.0">v0.7.0</a>
+      - <a href="/on-demand-service-broker/0.6.0">v0.6.0</a>
+      - <a href="/on-demand-service-broker/0.5.0">v0.5.0</a>
+- repository:
+    name: pivotal-cf/docs-on-demand-service-broker
+    ref: v0.7.0
+  directory: on-demand-service-broker/0.7.0
+  subnav_template: pivotal_on_demand_broker_subnav_v0-7-0.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 0.9.0
+    local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
+    local_header_title: On-Demand Service Broker SDK
+    search_placeholder: Search
+    local_product_version: 0.7.0
+    local_header_links: []
+    local_header_version_list:
+      - <a href="/on-demand-service-broker/0.9.0">v0.9.0</a>
+      - <a href="/on-demand-service-broker/0.8.0">v0.8.0</a>
+      - <a href="/on-demand-service-broker/0.6.0">v0.6.0</a>
+      - <a href="/on-demand-service-broker/0.5.0">v0.5.0</a>
+- repository:
+    name: pivotal-cf/docs-on-demand-service-broker
+    ref: v0.6.0
+  directory: on-demand-service-broker/0.6.0
+  subnav_template: pivotal_on_demand_broker_subnav_v0-6-0.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 0.9.0
+    local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
+    local_header_title: On-Demand Service Broker SDK
+    search_placeholder: Search
+    local_product_version: 0.6.0
+    local_header_links: []
+    local_header_version_list:
+      - <a href="/on-demand-service-broker/0.9.0">v0.9.0</a>
+      - <a href="/on-demand-service-broker/0.8.0">v0.8.0</a>
+      - <a href="/on-demand-service-broker/0.7.0">v0.7.0</a>
+      - <a href="/on-demand-service-broker/0.5.0">v0.5.0</a>
+- repository:
+    name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.5.x
   directory: on-demand-service-broker/0-5-0
   subnav_template: pivotal_on_demand_broker_subnav_v0-5-0.erb
@@ -297,6 +417,7 @@ sections:
       - <a href="/on-demand-service-broker/0-6-0">v0.6.0</a>
 - repository:
     name: pivotal-cf/docs-partners
+    ref: "1.8"
   directory: partners
   subnav_template: partners_subnav.erb
 - repository:
@@ -307,7 +428,6 @@ sections:
     name: pivotal-cf/docs-phd-ds
   directory: pivotalhd-ds
   subnav_template: pivotal_ds_subnav.erb
-
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
     ref: 'master'
@@ -365,7 +485,7 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-4.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6.6
+    latest_stable_version: 1.6.4.1
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.4
@@ -390,7 +510,7 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-3.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6.6
+    latest_stable_version: 1.6.4.1
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.3
@@ -415,7 +535,7 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-1.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6.6
+    latest_stable_version: 1.6.4.1
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.1
@@ -440,7 +560,7 @@ sections:
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-0.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6.6
+    latest_stable_version: 1.6.4.1
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.0
@@ -458,12 +578,53 @@ sections:
         display_name: v1.6.3
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-1
         display_name: v1.6.1
-
 - repository:
     name: pivotal-cf/docs-redis
-    ref: master
+    ref: '1.7'
+  directory: redis/1-7
+  subnav_template: pivotal_redis_service_subnav-1-7.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.5
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Pivotal Redis
+    search_placeholder: Search Redis 1.7
+    url_prefix: redis/1-7
+    local_product_version: 1.7
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-6
+        display_name: v1.6
+      - url_prefix: http://docs.pivotal.io/redis/1-5
+        display_name: v1.5
+      - url_prefix: http://docs.pivotal.io/redis/1-4
+        display_name: v1.4
+- repository:
+    name: pivotal-cf/docs-redis
+    ref: '1.6'
+  directory: redis/1-6
+  subnav_template: pivotal_redis_service_subnav-1-6.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.5
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Pivotal Redis
+    search_placeholder: Search Redis 1.6
+    url_prefix: redis/1-6
+    local_product_version: 1.6
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-7
+        display_name: v1.7
+      - url_prefix: http://docs.pivotal.io/redis/1-5
+        display_name: v1.5
+      - url_prefix: http://docs.pivotal.io/redis/1-4
+        display_name: v1.4
+- repository:
+    name: pivotal-cf/docs-redis
+    ref: '1.5'
   directory: redis/1-5
-  subnav_template: pivotal_redis_service_subnav.erb
+  subnav_template: pivotal_redis_service_subnav-1-5.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.5
@@ -474,6 +635,10 @@ sections:
     local_product_version: 1.5
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-7
+        display_name: v1.7
+      - url_prefix: http://docs.pivotal.io/redis/1-6
+        display_name: v1.6
       - url_prefix: http://docs.pivotal.io/redis/1-4
         display_name: v1.4
 - repository:
@@ -491,6 +656,10 @@ sections:
     local_product_version: 1.4
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-7
+        display_name: v1.7
+      - url_prefix: http://docs.pivotal.io/redis/1-6
+        display_name: v1.6
       - url_prefix: http://docs.pivotal.io/redis/1-5
         display_name: v1.5
 
@@ -502,10 +671,6 @@ sections:
     name: pivotal-cf/docs-rlec
   directory: rlec
   subnav_template: pivotal_rlec.erb
-- repository:
-    name: pivotal-cf/docs-ruxit
-  directory: ruxit
-  subnav_template: pivotal_ruxit.erb
 - repository:
     name: pivotal-cf/docs-service-backup
   directory: service-backup
@@ -599,7 +764,7 @@ sections:
   subnav_template: gemfire_cf_subnav.erb
 
 - repository:
-    name: pivotaltracker/docs-tracker-pcf
+    name: animatedmax/docs-tracker-pcf
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
   
