@@ -450,18 +450,12 @@ sections:
     local_product_version: 1.7.0
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-6
-        display_name: v1.6.6
-      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-5
-        display_name: v1.6.5
-      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-4
-        display_name: v1.6.4
-      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-3
-        display_name: v1.6.3
-      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-1
-        display_name: v1.6.1
-      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-0
-        display_name: v1.6.0
+      - <a href="http://docs.pivotal.io/rabbitmq-cf/1-6-6">v1.6.6</a>
+      - <a href="http://docs.pivotal.io/rabbitmq-cf/1-6-5">v1.6.5</a>
+      - <a href="http://docs.pivotal.io/rabbitmq-cf/1-6-4">v1.6.4</a>
+      - <a href="http://docs.pivotal.io/rabbitmq-cf/1-6-3">v1.6.3</a>
+      - <a href="http://docs.pivotal.io/rabbitmq-cf/1-6-1">v1.6.1</a>
+      - <a href="http://docs.pivotal.io/rabbitmq-cf/1-6-0">v1.6.0</a>
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
     ref: 'master'
