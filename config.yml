@@ -96,7 +96,6 @@ sections:
   subnav_template: pivotal_guardtime.erb
 - repository:
     name: pivotal-cf/docs-identity
-    ref: "1.8"
   directory: p-identity/1-8
   product_id: sso-1-8
   product_info:
