@@ -1,16 +1,28 @@
 ---
 template_variables:
-  platform_ssh_configuration: Pivotal Cloud Foundry deployments control SSH access to apps at the Elastic Runtime level. Additionally, Cloud Foundry supports load balancing of SSH sessions with your load balancer. The [Configuring SSH Access](../../customizing/config-ssh.html) topic describes how to set SSH access for your deployment.
+  book_title: Pivotal Documentation
+  book_title_short: Pivotal Docs
+  product_name: PCF
+  product_full: Elastic Runtime
+  product_short: Elastic Runtime
+  product_abbr: 
+  product_url: https://network.pivotal.io/products/pivotal-cf
+  product_link: <div class="header-item"><a href="https://network.pivotal.io/products/pivotal-cf">Back to Product Page</a></div>
+  api_version: 235
+  dea_diego_version: Diego architecture for version 1.5
+  title_image: images/icon-p-green.jpg
+  title: <span class="title-deemph">Pivotal</span> Documentation
+  use_global_header: true
   support_url: http://support.pivotal.io
   support_link: <a href="http://support.pivotal.io" target="_blank">Support</a>
   support_call_to_action: <a href="http://support.pivotal.io" target="_blank">Need Support?</a>
-  product_url: https://network.pivotal.io/products/pivotal-cf
-  product_link: <div class="header-item"><a href="https://network.pivotal.io/products/pivotal-cf">Back to Product Page</a></div>
-  title_image: images/icon-p-green.jpg
-  title: <span class="title-deemph">Pivotal</span> Documentation
   hero_text: "Detailed documentation to help you install, understand, and succeed with Pivotal's enterprise-grade software."
   app_domain: shared-domain.example.com
   private_app_domain: private-domain.example.com
+  first_product_name: Pivotal Cloud Foundry&reg; (PCF)
+  platform_ssh_configuration: Pivotal Cloud Foundry deployments control SSH access to apps at the Elastic Runtime level. Additionally, Cloud Foundry supports load balancing of SSH sessions with your load balancer. The [Configuring SSH Access](../../customizing/config-ssh.html) topic describes how to set SSH access for your deployment.
+  app_domain: shared-domain.com
+  private_app_domain: private-domain.com
   quota_resource: quota space
   external_ips: external IP addresses
   example_domain_no_www: .example.com
@@ -41,15 +53,9 @@ template_variables:
   logg_forwarding: <a href="../opsguide/logging-config-opsman.html#syslog-forward">Configuring System Logging in Elastic Runtime</a>
   diego_ssh_link: <a href="../../concepts/diego/ssh-conceptual.html">Diego SSH package</a>
   services_link: <a href="http://docs.pivotal.io/pivotalcf/services/overview.html">services</a>
-  book_title: Pivotal Documentation
-  book_title_short: Pivotal Docs
-  product_name: PCF
-  api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Elastic Runtime Instance topic](http://docs.pivotal.io/pivotalcf/opsguide/api-endpoint.html).
-  incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='../opsguide/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry Deployment</a>.</p>
+  api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Elastic Runtime Instance topic](http://docs.pivotal.io/pivotalcf/customizing/api-endpoint.html).
+  incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='../customizing/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry&reg; Deployment</a>.</p>
   GSG_intro_sentence:
-  product_full: Elastic Runtime
-  product_short: Elastic Runtime
-  product_abbr: 
   known_issues: <a href="http://docs.pivotal.io/pivotalcf/pcf-release-notes/index.html">Known Issues</a>
   dev_console_note: For more information about specific Admin commands you can perform with the Apps Manager, depending on your user role, refer to the <a href="http://docs.pivotal.io/pivotalcf/console/dev-console.html">Getting Started with the Apps Manager</a> topic.
   dev_console_1: You can use either the CLI or the <a href="http://docs.pivotal.io/pivotalcf/console/index.html">Apps Manager</a> to perform this task.
@@ -113,10 +119,8 @@ template_variables:
   cloud_controller_dea_agent: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry (PCF) versions 1.6 and above no longer use Droplet Execution Agents (DEAs). <a href="../diego/diego-components.html#cell-components">Diego Cells</a> replace their function. This topic is published here to help people who are running older versions of PCF.</p>
   warden_garden: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry versions 1.6 and above no longer use Warden. The platform-independent Garden subsystem replaces its function. This topic is published here to help people who are running older versions of PCF.</p>
   dea_diego_table_row: <tr><td>1.5 and below</td><td>1.6 and above</td><td>CF version numbers</td><td></td></tr>
-  dea_diego_version: Diego architecture for version 1.5
-
-  use_global_header: true
   custom_stack:
+  stacks_cf: <%= partial 'stacks_cf' %> 
   global_header_product_href: https://network.pivotal.io/
   global_header_product_link_text: Downloads
   product_url: https://network.pivotal.io/products/pivotal-cf
@@ -126,7 +130,6 @@ template_variables:
   pws_metrics: 
   metrics_login: In a browser, navigate to `metrics.YOUR-SYSTEM-DOMAIN` and log in with your User Account and Authentication (UAA) credentials.
   metrics_viewapps: PCF Metrics uses UAA to retrieve a list of apps that correspond to your user's org roles, space roles, and permissions. To view metrics information for an app, enter the name of the app in the search box and select it from the dropdown menu.
-  api_version: 235
   appdog_notifications: <p class='note'><strong>Note</strong>&#58; If the Cloud Foundry Notifications service is not installed in your PCF deployment, notifications are disabled.</p>
   first_product_name: Pivotal Cloud Foundry&reg; (PCF)
   create_org: 
