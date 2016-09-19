@@ -458,7 +458,7 @@ sections:
       - <a href="http://docs.pivotal.io/rabbitmq-cf/1-6-0">v1.6.0</a>
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
-    ref: 'master'
+    ref: '1.6.6'
   directory: rabbitmq-cf/1-6-6
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-6.erb
   product_info:
