@@ -53,6 +53,11 @@ sections:
   directory: aerospike
   subnav_template: aerospike_subnav.erb
 - repository:
+    name: pivotal-cf/docs-aerospike-ee
+    at_path: docs-content
+  directory: aerospike-ee
+  subnav_template: aerospike_ee_subnav.erb
+- repository:
     name: pivotal-cf-experimental/docs-appdog
   directory: pcf-appdog
   subnav_template: appdog.erb
