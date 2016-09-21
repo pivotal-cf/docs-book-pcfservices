@@ -2,6 +2,17 @@
 
 This project can create and publish the documentation for PCF Services, PCF Partner Services, and PCF Add-ons as a web application.
 
+In this topic:
+
+* [What's in this Repo](#whats-in-this-repo)
+* [The Docs Toolchain](#the-docs-toolchain)
+* [Contributing to the Documentation](#contributing-to-the-documentation)
+* [Submitting a Pull Request](#submitting-a-pull-request)
+* [Continuous Integration Technical Details](#continuous-integration-technical-details)
+* [Deployment Details](#deployment-details)
+* [Notes on the config.yml](#notes-on-the-configyml)
+* [Determine Content Repos and Branches of a Book](#determine-content-repos-and-branches-of-a-book)
+
 **Breaking Change**: This book now uses a centralized layout repository, [docs-layout-repo](https://github.com/pivotal-cf/docs-layout-repo).  
 You must clone this repository to run `bookbinder bind local`.
 
@@ -82,3 +93,32 @@ The "sections" section of the `config.yml` file is organized as follows:
 - Next "sections" section contains the repo where we store product PDFs
 - Next "sections" section contains all repos for non-PCF docs in the pivotal-cf org, in alphabetical order.
 - Next "sections" section contains all repos for non-PCF docs in the other orgs, in alphabetical order.
+
+## Determine Content Repos and Branches of a Book
+
+The `config.yml` defines the content repos for each book.
+The `config.yml` file of each book contains the list of content repos and branches that appear in the doc set.
+In the `config.yml` file, each content repo is specified in the `repository` subsection.
+This subsection includes an optional `ref` key-value pair which defines the branch of the content repo the book uses.
+
+Make sure that you are adding your content to the correct branches of the content repos.
+
+To determine which branch of a content repo a book version uses:
+
+1. Confirm that you are on the correct book branch. For example, the currently published doc might be on the `master` branch
+or on the branch corresponding to its version number.
+
+2. Open the `config.yml` file.
+
+3. Search for the name of the content repo, for example, `docs-cloudfoundry-concepts`.
+
+4. Review the `repository` subsection for the content repo. If there is no `ref:` tag, then the repo uses the master branch. If there is a `ref` key-value pair, it specifies the branch name of the content repo. For example,
+
+  ```
+  - repository:
+    name: cloudfoundry/docs-cloudfoundry-concepts
+    ref: '225'
+  ```
+
+  `ref: '225'` refers to the 225 branch of the docs-cloudfoundry-concepts repo. Cloud Foundry v225 is associated with the PCF v1.6 release.
+
