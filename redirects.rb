@@ -11,6 +11,7 @@ r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
 r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-10-0/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-4-3/$1"
+r301 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/16-0-1/$1"
 r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-8/buildpacks/$1'
 r301 %r{/deploying/(.*)}, '/pivotalcf/1-8/deploying/$1'
 r301 %r{/concepts/(.*)}, '/pivotalcf/1-8/concepts/$1'
