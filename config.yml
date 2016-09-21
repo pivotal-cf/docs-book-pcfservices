@@ -21,7 +21,7 @@ products:
   - id: odb-v0-8-0
     subnav_root: on-demand-service-broker/0-8-0/index.html
   - id: service-metrics-v1-4-3
-    subnav_root: service-metrics/1-4-3/index.html
+    subnav_root: service-metrics/1-4-3/subnav-root.html
   - id: service-backups-v16-0-1
     subnav_root: service-backup/16-0-1/subnav-root.html
 
