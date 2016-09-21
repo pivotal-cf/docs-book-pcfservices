@@ -20,6 +20,8 @@ products:
     subnav_root: on-demand-service-broker/0-9-0/subnav-root.html
   - id: odb-v0-8-0
     subnav_root: on-demand-service-broker/0-8-0/index.html
+  - id: service-backups-v16-0-1
+    subnav_root: service-backup/16-0-1/subnav-root.html
 
 sections:
 # cross-product resources
@@ -653,8 +655,18 @@ sections:
   subnav_template: pivotal_rlec.erb
 - repository:
     name: pivotal-cf/docs-service-backup
-  directory: service-backup
-  subnav_template: pivotal_service_backups_subnav.erb
+    ref: v16.0.x
+  directory: service-backup/16-0-1
+  product_id: service-backups-v16-0-1
+  product_info:
+    use_local_header: true
+    latest_stable_version: 16.0.1
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    local_header_title: Service Backups
+    search_placeholder: Search
+    local_product_version: 16.0.1
+    local_header_links: []
+    local_header_version_list: []
 - repository:
     name: pivotal-cf/docs-service-metrics
   directory: service-metrics
