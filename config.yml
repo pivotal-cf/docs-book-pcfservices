@@ -20,6 +20,8 @@ products:
     subnav_root: on-demand-service-broker/0-9-0/subnav-root.html
   - id: odb-v0-8-0
     subnav_root: on-demand-service-broker/0-8-0/index.html
+  - id: service-metrics-v1-4-3
+    subnav_root: service-metrics/1-4-3/index.html
 
 sections:
 # cross-product resources
@@ -657,8 +659,18 @@ sections:
   subnav_template: pivotal_service_backups_subnav.erb
 - repository:
     name: pivotal-cf/docs-service-metrics
-  directory: service-metrics
-  subnav_template: pivotal_service_metrics_subnav.erb
+    ref: v1.4.x
+  directory: service-metrics/1-4-3
+  product_id: service-metrics-v1-4-3
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.4.3
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    local_header_title: Service Metrics
+    search_placeholder: Search
+    local_product_version: 1.4.3
+    local_header_links: []
+    local_header_version_list: []
 - repository:
     name: pivotal-cf/docs-solace-messaging
   directory: solace-messaging
