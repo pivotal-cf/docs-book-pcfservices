@@ -100,7 +100,7 @@ r301 '/mobile/index.html', 'https://network.pivotal.io/products/api-gateway'
 r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
 r301 '/jmx-bridge/', '/jmx-bridge/1-8/index.html'
 
-r301 %r{/p-mysql/((?!archive)(?![\d-]+)(.*))}, "/p-mysql/1-8/$1"
+r301 %r{/p-mysql/((?!archives)(?![\d-]+)(.*))}, "/p-mysql/1-8/$1"
 r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 
 r301 '/partners/decrypt-encrypt-install-file.html', 'http://docs.pivotal.io/pivotalcf/1-7/customizing/modify-ops-man.html'
