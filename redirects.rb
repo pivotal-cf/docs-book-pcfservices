@@ -7,7 +7,6 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
 }
 
 r301 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-1/$1"
-r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
 r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-10-0/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-4-3/$1"
