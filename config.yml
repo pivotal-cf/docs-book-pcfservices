@@ -14,10 +14,16 @@ products:
     subnav_root: p-identity/1-7/sso-subnav-root.html
   - id: sso-1-8
     subnav_root: p-identity/1-8/sso-subnav-root.html
+  - id: odb-v0-10-0
+    subnav_root: on-demand-service-broker/0-10-0/subnav-root.html
   - id: odb-v0-9-0
     subnav_root: on-demand-service-broker/0-9-0/subnav-root.html
   - id: odb-v0-8-0
     subnav_root: on-demand-service-broker/0-8-0/index.html
+  - id: service-metrics-v1-4-3
+    subnav_root: service-metrics/1-4-3/subnav-root.html
+  - id: service-backups-v16-0-1
+    subnav_root: service-backup/16-0-1/subnav-root.html
 
 sections:
 # cross-product resources
@@ -51,6 +57,11 @@ sections:
   directory: aerospike
   subnav_template: aerospike_subnav.erb
 - repository:
+    name: pivotal-cf/docs-aerospike-ee
+    at_path: docs-content
+  directory: aerospike-ee
+  subnav_template: aerospike_ee_subnav.erb
+- repository:
     name: pivotal-cf-experimental/docs-appdog
   directory: pcf-appdog
   subnav_template: appdog.erb
@@ -66,6 +77,10 @@ sections:
     name: pivotal-cf/docs-aws-services
   directory: aws-services
   subnav_template: aws_services_subnav.erb
+- repository:
+    name: pivotal-cf/docs-azuqua
+  directory: azuqua
+  subnav_template: azuqua_subnav.erb
 - repository:
     name: pivotal-cf/docs-cassandra
   directory: cassandra
@@ -86,6 +101,11 @@ sections:
     name: pivotal-cf/docs-edb-postgres
   directory: edb-postgres
   subnav_template: pivotal_edb_postgres.erb
+- repository:
+    name: pivotal-cf/docs-firstdata
+    at_path: docs-content
+  directory: firstdata
+  subnav_template: firstdata_subnav.erb
 - repository:
     name: pivotal-cf/docs-gitlab
   directory: gitlab
@@ -226,9 +246,9 @@ sections:
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/p-mysql/1-8
         display_name: v1.8
-      - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
-      - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
-      - <a href="/archives/p-mysql/mysql-docs-1.4.pdf">v1.4</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.6.pdf">v1.6</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.5.pdf">v1.5</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
 - repository:
     name: pivotal-cf/docs-mysql
     ref: 1.8.0
@@ -247,9 +267,9 @@ sections:
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/p-mysql/1-7
         display_name: v1.7
-      - <a href="/archives/p-mysql/mysql-docs-1.6.pdf">v1.6</a>
-      - <a href="/archives/p-mysql/mysql-docs-1.5.pdf">v1.5</a>
-      - <a href="/archives/p-mysql/mysql-docs-1.4.pdf">v1.4</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.6.pdf">v1.6</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.5.pdf">v1.5</a>
+      - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
 
 - repository:
     name: pivotal-cf/docs-neo4j
@@ -259,7 +279,25 @@ sections:
     name: pivotal-cf/docs-new-relic
   directory: newrelic
   subnav_template: pivotal_new_relic_service_subnav.erb
-  
+- repository:
+    name: pivotal-cf/docs-on-demand-service-broker
+    ref: v0.10.x
+  directory: on-demand-service-broker/0-10-0
+  product_id: odb-v0-10-0
+  product_info:
+    use_local_header: true
+    latest_stable_version: 0.10.0
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    local_header_title: On-Demand Services SDK
+    search_placeholder: Search
+    local_product_version: 0.10.0
+    local_header_links: []
+    local_header_version_list:
+      - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
+      - <a href="/on-demand-service-broker/0-8-0">v0.8.0</a>
+      - <a href="/on-demand-service-broker/0-7-0">v0.7.0</a>
+      - <a href="/on-demand-service-broker/0-6-0">v0.6.0</a>
+      - <a href="/on-demand-service-broker/0-5-0">v0.5.0</a>
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.9.x
@@ -267,13 +305,14 @@ sections:
   product_id: odb-v0-9-0
   product_info:
     use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0-9-0/img/pcf-services-sdk.png
+    latest_stable_version: 0.10.0
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.9.0
     local_header_links: []
     local_header_version_list:
+      - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
       - <a href="/on-demand-service-broker/0-8-0">v0.8.0</a>
       - <a href="/on-demand-service-broker/0-7-0">v0.7.0</a>
       - <a href="/on-demand-service-broker/0-6-0">v0.6.0</a>
@@ -285,13 +324,14 @@ sections:
   product_id: odb-v0-8-0
   product_info:
     use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0-9-0/img/pcf-services-sdk.png
+    latest_stable_version: 0.10.0
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.8.0
     local_header_links: []
     local_header_version_list:
+      - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
       - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
       - <a href="/on-demand-service-broker/0-7-0">v0.7.0</a>
       - <a href="/on-demand-service-broker/0-6-0">v0.6.0</a>
@@ -303,13 +343,14 @@ sections:
   subnav_template: pivotal_on_demand_broker_subnav_v0-7-0.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0-9-0/img/pcf-services-sdk.png
+    latest_stable_version: 0.10.0
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.7.0
     local_header_links: []
     local_header_version_list:
+      - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
       - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
       - <a href="/on-demand-service-broker/0-8-0">v0.8.0</a>
       - <a href="/on-demand-service-broker/0-6-0">v0.6.0</a>
@@ -321,85 +362,14 @@ sections:
   subnav_template: pivotal_on_demand_broker_subnav_v0-6-0.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0-9-0/img/pcf-services-sdk.png
+    latest_stable_version: 0.10.0
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.6.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
-      - <a href="/on-demand-service-broker/0-8-0">v0.8.0</a>
-      - <a href="/on-demand-service-broker/0-7-0">v0.7.0</a>
-      - <a href="/on-demand-service-broker/0-5-0">v0.5.0</a>
-- repository:
-    name: pivotal-cf/docs-on-demand-service-broker
-    ref: v0.9.x
-  directory: on-demand-service-broker/0.9.0
-  product_id: odb-v0-9-0
-  product_info:
-    use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
-    search_placeholder: Search
-    local_product_version: 0.9.0
-    local_header_links: []
-    local_header_version_list:
-      - <a href="/on-demand-service-broker/0-8-0">v0.8.0</a>
-      - <a href="/on-demand-service-broker/0-7-0">v0.7.0</a>
-      - <a href="/on-demand-service-broker/0-6-0">v0.6.0</a>
-      - <a href="/on-demand-service-broker/0-5-0">v0.5.0</a>
-- repository:
-    name: pivotal-cf/docs-on-demand-service-broker
-    ref: v0.8.x
-  directory: on-demand-service-broker/0.8.0
-  product_id: odb-v0-8-0
-  product_info:
-    use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
-    search_placeholder: Search
-    local_product_version: 0.8.0
-    local_header_links: []
-    local_header_version_list:
-      - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
-      - <a href="/on-demand-service-broker/0-7-0">v0.7.0</a>
-      - <a href="/on-demand-service-broker/0-6-0">v0.6.0</a>
-      - <a href="/on-demand-service-broker/0-5-0">v0.5.0</a>
-- repository:
-    name: pivotal-cf/docs-on-demand-service-broker
-    ref: v0.7.0
-  directory: on-demand-service-broker/0.7.0
-  subnav_template: pivotal_on_demand_broker_subnav_v0-7-0.erb
-  product_info:
-    use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
-    search_placeholder: Search
-    local_product_version: 0.7.0
-    local_header_links: []
-    local_header_version_list:
-      - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
-      - <a href="/on-demand-service-broker/0-8-0">v0.8.0</a>
-      - <a href="/on-demand-service-broker/0-6-0">v0.6.0</a>
-      - <a href="/on-demand-service-broker/0-5-0">v0.5.0</a>
-- repository:
-    name: pivotal-cf/docs-on-demand-service-broker
-    ref: v0.6.0
-  directory: on-demand-service-broker/0.6.0
-  subnav_template: pivotal_on_demand_broker_subnav_v0-6-0.erb
-  product_info:
-    use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0.9.0/img/pcf-services-sdk.png
-    local_header_title: On-Demand Service Broker SDK
-    search_placeholder: Search
-    local_product_version: 0.6.0
-    local_header_links: []
-    local_header_version_list:
+      - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
       - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
       - <a href="/on-demand-service-broker/0-8-0">v0.8.0</a>
       - <a href="/on-demand-service-broker/0-7-0">v0.7.0</a>
@@ -411,13 +381,14 @@ sections:
   subnav_template: pivotal_on_demand_broker_subnav_v0-5-0.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 0.9.0
-    local_header_img: /on-demand-service-broker/0-9-0/img/pcf-services-sdk.png
+    latest_stable_version: 0.10.0
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.5.0
     local_header_links: []
     local_header_version_list:
+      - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
       - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
       - <a href="/on-demand-service-broker/0-8-0">v0.8.0</a>
       - <a href="/on-demand-service-broker/0-7-0">v0.7.0</a>
@@ -686,12 +657,32 @@ sections:
   subnav_template: pivotal_rlec.erb
 - repository:
     name: pivotal-cf/docs-service-backup
-  directory: service-backup
-  subnav_template: pivotal_service_backups_subnav.erb
+    ref: v16.0.x
+  directory: service-backup/16-0-1
+  product_id: service-backups-v16-0-1
+  product_info:
+    use_local_header: true
+    latest_stable_version: 16.0.1
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    local_header_title: Service Backups
+    search_placeholder: Search
+    local_product_version: 16.0.1
+    local_header_links: []
+    local_header_version_list: []
 - repository:
     name: pivotal-cf/docs-service-metrics
-  directory: service-metrics
-  subnav_template: pivotal_service_metrics_subnav.erb
+    ref: v1.4.x
+  directory: service-metrics/1-4-3
+  product_id: service-metrics-v1-4-3
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.4.3
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    local_header_title: Service Metrics
+    search_placeholder: Search
+    local_product_version: 1.4.3
+    local_header_links: []
+    local_header_version_list: []
 - repository:
     name: pivotal-cf/docs-solace-messaging
   directory: solace-messaging
@@ -703,7 +694,7 @@ sections:
 
 - repository:
     name: pivotal-cf/docs-spring-cloud-services
-    ref: master
+    ref: v1.1
   directory: spring-cloud-services/1-1
   subnav_template: spring_cloud_subnav.erb
   product_info:
@@ -777,7 +768,7 @@ sections:
   subnav_template: gemfire_cf_subnav.erb
 
 - repository:
-    name: animatedmax/docs-tracker-pcf
+    name: pivotaltracker/docs-tracker-pcf
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
   
