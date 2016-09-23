@@ -694,7 +694,7 @@ sections:
 
 - repository:
     name: pivotal-cf/docs-spring-cloud-services
-    ref: master
+    ref: v1.1
   directory: spring-cloud-services/1-1
   subnav_template: spring_cloud_subnav.erb
   product_info:
