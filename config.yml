@@ -44,10 +44,20 @@ sections:
   directory: ruxit
   subnav_template: pivotal_ruxit.erb
 - repository:
+    name: pivotal-cf/docs-a9s-bosh
+    at_path: docs-content
+  directory: a9s-bosh
+  subnav_template: a9s-bosh_subnav.erb
+- repository:
     name: pivotal-cf/docs-a9s-consul
     at_path: docs-content
   directory: a9s-consul-dns
   subnav_template: a9s-consul-dns_subnav.erb
+- repository:
+    name: pivotal-cf/docs-a9s-mongodb
+    at_path: docs-content
+  directory: a9s-mongodb
+  subnav_template: a9s-mongodb_subnav.erb
 - repository:
     name: pivotal-cf/docs-addon-antivirus
   directory: addon-antivirus
