@@ -44,6 +44,11 @@ sections:
   directory: ruxit
   subnav_template: pivotal_ruxit.erb
 - repository:
+    name: pivotal-cf/docs-a9s-consul
+    at_path: docs-content
+  directory: a9s-consul-dns
+  subnav_template: a9s-consul-dns_subnav.erb
+- repository:
     name: pivotal-cf/docs-addon-antivirus
   directory: addon-antivirus
   subnav_template: addon_antivirus.erb
