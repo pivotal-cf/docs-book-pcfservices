@@ -61,6 +61,10 @@ sections:
   directory: addon-antivirus
   subnav_template: addon_antivirus.erb
 - repository:
+    name: pivotal-cf/docs-addon-fim	
+  directory: addon-fim
+  subnav_template: addon_fim.erb
+- repository:
     name: pivotal-cf/docs-addon-ipsec
   directory: addon-ipsec
   subnav_template: addon_ipsec.erb
