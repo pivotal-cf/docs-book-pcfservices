@@ -562,7 +562,7 @@ sections:
         display_name: v1.4
 - repository:
     name: pivotal-cf/docs-redis
-    ref: v1.4
+    ref: '1.4'
   directory: redis/1-4
   subnav_template: pivotal_redis_service_subnav-1-4.erb
   product_info:
