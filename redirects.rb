@@ -28,7 +28,7 @@ r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-8/pcf-release-notes/$1'
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-8/$1"
 r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-6/$1"
 r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-8/$1"
-r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7-0/$1"
+r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7-2/$1"
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
 r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
