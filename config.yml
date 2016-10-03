@@ -22,6 +22,8 @@ products:
     subnav_root: on-demand-service-broker/0-9-0/subnav-root.html
   - id: service-metrics-v1-4-3
     subnav_root: service-metrics/1-4-3/subnav-root.html
+  - id: service-backups-v17-0-0
+    subnav_root: service-backup/17-0-0/subnav-root.html
   - id: service-backups-v16-0-1
     subnav_root: service-backup/16-0-1/subnav-root.html
 
@@ -608,6 +610,21 @@ sections:
   subnav_template: pivotal_rlec.erb
 - repository:
     name: pivotal-cf/docs-service-backup
+    ref: v17.0.x
+  directory: service-backup/17-0-0
+  product_id: service-backups-v17-0-0
+  product_info:
+    use_local_header: true
+    latest_stable_version: 17.0.0
+    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    local_header_title: Service Backups
+    search_placeholder: Search
+    local_product_version: 17.0.0
+    local_header_links: []
+    local_header_version_list:
+      - <a href="/service-backup/16-0-1">v16.0.1</a>
+- repository:
+    name: pivotal-cf/docs-service-backup
     ref: v16.0.x
   directory: service-backup/16-0-1
   product_id: service-backups-v16-0-1
@@ -619,7 +636,8 @@ sections:
     search_placeholder: Search
     local_product_version: 16.0.1
     local_header_links: []
-    local_header_version_list: []
+    local_header_version_list:
+      - <a href="/service-backup/17-0-0">v17.0.0</a>
 - repository:
     name: pivotal-cf/docs-service-metrics
     ref: v1.4.x
