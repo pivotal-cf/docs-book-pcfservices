@@ -128,6 +128,11 @@ sections:
   directory: gitlab
   subnav_template: pivotal_gitlab_service_subnav.erb
 - repository:
+    name: pivotal-cf/docs-google
+    at_path: docs-content
+  directory: gcp-sb
+  subnav_template: gcpsb_subnav.erb
+- repository:
     name: pivotal-cf/docs-guardtime
   directory: guardtime
   subnav_template: pivotal_guardtime.erb
