@@ -16,10 +16,6 @@ products:
     subnav_root: p-identity/1-8/sso-subnav-root.html
   - id: odb-v0-10-0
     subnav_root: on-demand-service-broker/0-10-0/subnav-root.html
-  - id: sso
-    subnav_root: p-identity/sso-subnav-root.html
-  - id: concourse
-    subnav_root: p-concourse/subnav_root.html
   - id: odb-v0-9-0
     subnav_root: on-demand-service-broker/0-9-0/subnav-root.html
   - id: service-metrics-v1-4-3
@@ -60,10 +56,6 @@ sections:
     at_path: docs-content
   directory: a9s-mongodb
   subnav_template: a9s-mongodb_subnav.erb
-  repository:
-    name: pivotal-cf/docs-concourse
-  directory: p-concourse
-  product_id: concourse
 - repository:
     name: pivotal-cf/docs-addon-antivirus
   directory: addon-antivirus
@@ -135,11 +127,6 @@ sections:
     name: pivotal-cf/docs-gitlab
   directory: gitlab
   subnav_template: pivotal_gitlab_service_subnav.erb
-- repository:
-    name: pivotal-cf/docs-google
-    at_path: docs-content
-  directory: gcp-sb
-  subnav_template: gcpsb_subnav.erb
 - repository:
     name: pivotal-cf/docs-guardtime
   directory: guardtime
