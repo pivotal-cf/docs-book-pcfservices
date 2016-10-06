@@ -36,6 +36,10 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
+    name: pivotal-cf/docs-concourse
+  directory: p-concourse
+  subnav_template: concourse_subnav.erb
+- repository:
     name: pivotal-cf/docs-appmon
   directory: appmon
   subnav_template: pivotal_dynatrace_service_subnav.erb
@@ -252,6 +256,12 @@ sections:
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
         display_name: v1.1
+
+- repository:
+    name: pivotal-cf/docs-mulesoft-anypoint
+    at_path: docs-content
+  directory: mulesoft
+  subnav_template: mulesoft_subnav.erb
 
 - repository:
     name: pivotal-cf/docs-mysql
