@@ -343,6 +343,11 @@ sections:
   directory: pcf-dev
   subnav_template: pivotal_pcfdev_subnav.erb
 - repository:
+    name: pivotal-cf/docs-pcf-windows
+    at_path: docs-content
+  directory: windows
+  subnav_template: windows_subnav.erb
+- repository:
     name: pivotal-cf/docs-phd-ds
   directory: pivotalhd-ds
   subnav_template: pivotal_ds_subnav.erb
@@ -640,9 +645,29 @@ sections:
 
 - repository:
     name: pivotal-cf/docs-spring-cloud-services
+    ref: v1.2
+  directory: spring-cloud-services/1-2
+  subnav_template: spring_cloud_1-2.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.2
+    changelog_href: http://docs.pivotal.io/spring-cloud-services/1-1/release-notes.html
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Spring Cloud Services
+    search_placeholder: Search SCS 1.2
+    url_prefix: spring-cloud-services/1-2
+    local_product_version: 1.2
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-1
+        display_name: v1.1
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-0
+        display_name: v1.0
+- repository:
+    name: pivotal-cf/docs-spring-cloud-services
     ref: v1.1
   directory: spring-cloud-services/1-1
-  subnav_template: spring_cloud_subnav.erb
+  subnav_template: spring_cloud_1-1.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.1
@@ -654,13 +679,15 @@ sections:
     local_product_version: 1.1
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-2
+        display_name: v1.2
       - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-0
         display_name: v1.0
 - repository:
     name: pivotal-cf/docs-spring-cloud-services
     ref: v1.0
   directory: spring-cloud-services/1-0
-  subnav_template: spring_cloud_previous.erb
+  subnav_template: spring_cloud_1-0.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.1
@@ -672,6 +699,8 @@ sections:
     local_product_version: 1.0
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-2
+        display_name: v1.2
       - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-1
         display_name: v1.1
 
