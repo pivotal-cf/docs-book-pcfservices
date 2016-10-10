@@ -614,6 +614,7 @@ sections:
   directory: service-backup/17-0-0
   product_id: service-backups-v17-0-0
   product_info:
+    changelog_href: http://docs.pivotal.io/service-backup/17-0-0/release-notes.html
     use_local_header: true
     latest_stable_version: 17.0.0
     local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
