@@ -34,6 +34,11 @@ r302 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
 r302 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
 r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 
+r302 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
+r302 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
+r302 %r{/130/(.*)}, "http://hdb.docs.pivotal.io/130/$1"
+r302 %r{/131/(.*)}, "http://hdb.docs.pivotal.io/131/$1"
+
 r302 %r{/pivotalhd/1010/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1010/$1'
 r302 %r{/pivotalhd/1030/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1030/$1'
 r302 %r{/pivotalhd/1100/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1100/$1'
@@ -53,8 +58,6 @@ r302 '/gemfirexd/index.html', 'http://gemfirexd.docs.pivotal.io/index.html'
 r302 '/gemfirexd/', 'http://gemfirexd.docs.pivotal.io/index.html'
 r302 '/rabbitmq/index.html', 'http://rabbitmq.docs.pivotal.io/index.html'
 r302 '/rabbitmq/', 'http://rabbitmq.docs.pivotal.io/index.html'
-r302 '/sqlfire/index.html', 'http://sqlfire.docs.pivotal.io/index.html'
-r302 '/sqlfire/', 'http://sqlfire.docs.pivotal.io/index.html'
 r302 '/dca/index.html', 'http://data.docs.pivotal.io/dca/index.html'
 r302 '/dca/', 'http://data.docs.pivotal.io/dca/index.html'
 r302 '/tcserver/index.html', 'http://tcserver.docs.pivotal.io/index.html'
