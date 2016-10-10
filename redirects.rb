@@ -94,8 +94,6 @@ r302 '/spring-cloud-services/service-registry/registering-a-service.html', '/spr
 
 r302 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
-r302 %r{/dynatrace/(.*)}, '/appmon/$1'
-
 r302 %r{/pre-release/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/1-8/installing/pcf-docs.html'
 
 r302 %r{/mobile/app_analytics(.*)}, 'https://network.pivotal.io/products/api-gateway'
