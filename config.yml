@@ -254,6 +254,12 @@ sections:
         display_name: v1.1
 
 - repository:
+    name: pivotal-cf/docs-mulesoft-anypoint
+    at_path: docs-content
+  directory: mulesoft
+  subnav_template: mulesoft_subnav.erb
+
+- repository:
     name: pivotal-cf/docs-mysql
   directory: p-mysql/1-7
   subnav_template: pivotal_mysql_service_subnav.erb
