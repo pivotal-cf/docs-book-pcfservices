@@ -103,3 +103,6 @@ r302 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
 r302 '/jmx-bridge/', '/jmx-bridge/1-8/index.html'
 
 r302 '/partners/decrypt-encrypt-install-file.html', 'http://docs.pivotal.io/pivotalcf/1-7/customizing/modify-ops-man.html'
+
+r302 %r{/appmon/(.*)}, '/dynatrace/index.html'
+r302 %r{/ruxit/(.*)}, '/dynatrace/index.html'

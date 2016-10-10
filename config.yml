@@ -36,14 +36,6 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    name: pivotal-cf/docs-appmon
-  directory: appmon
-  subnav_template: pivotal_dynatrace_service_subnav.erb
-- repository:
-    name: pivotal-cf/docs-ruxit
-  directory: ruxit
-  subnav_template: pivotal_ruxit.erb
-- repository:
     name: pivotal-cf/docs-a9s-bosh
     at_path: docs-content
   directory: a9s-bosh
@@ -116,6 +108,10 @@ sections:
     name: pivotal-cf/docs-cloudsoft
   directory: cloudsoft
   subnav_template: cloudsoft_subnav.erb
+- repository:
+    name: pivotal-cf/docs-dynatrace
+  directory: dynatrace
+  subnav_template: pivotal_dynatrace_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-edb-postgres
   directory: edb-postgres
