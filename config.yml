@@ -110,6 +110,7 @@ sections:
   subnav_template: cloudsoft_subnav.erb
 - repository:
     name: pivotal-cf/docs-dynatrace
+    at_path: docs-content
   directory: dynatrace
   subnav_template: pivotal_dynatrace_service_subnav.erb
 - repository:
