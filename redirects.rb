@@ -107,3 +107,5 @@ r302 '/partners/decrypt-encrypt-install-file.html', 'http://docs.pivotal.io/pivo
 
 r302 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r302 %r{/ruxit/(.*)}, '/dynatrace/index.html'
+
+r302 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-8/windows/index.html'
