@@ -556,11 +556,11 @@ sections:
     local_product_version: 1.7
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/redis/1-6
+      - url_prefix: /redis/1-6
         display_name: v1.6
-      - url_prefix: http://docs.pivotal.io/redis/1-5
+      - url_prefix: /redis/1-5
         display_name: v1.5
-      - url_prefix: http://docs.pivotal.io/redis/1-4
+      - url_prefix: /redis/1-4
         display_name: v1.4
 - repository:
     name: pivotal-cf/docs-redis
@@ -577,11 +577,11 @@ sections:
     local_product_version: 1.6
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/redis/1-7
+      - url_prefix: /redis/1-7
         display_name: v1.7
-      - url_prefix: http://docs.pivotal.io/redis/1-5
+      - url_prefix: /redis/1-5
         display_name: v1.5
-      - url_prefix: http://docs.pivotal.io/redis/1-4
+      - url_prefix: /redis/1-4
         display_name: v1.4
 - repository:
     name: pivotal-cf/docs-redis
@@ -598,11 +598,11 @@ sections:
     local_product_version: 1.5
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/redis/1-7
+      - url_prefix: /redis/1-7
         display_name: v1.7
-      - url_prefix: http://docs.pivotal.io/redis/1-6
+      - url_prefix: /redis/1-6
         display_name: v1.6
-      - url_prefix: http://docs.pivotal.io/redis/1-4
+      - url_prefix: /redis/1-4
         display_name: v1.4
 - repository:
     name: pivotal-cf/docs-redis
@@ -619,11 +619,11 @@ sections:
     local_product_version: 1.4
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/redis/1-7
+      - url_prefix: /redis/1-7
         display_name: v1.7
-      - url_prefix: http://docs.pivotal.io/redis/1-6
+      - url_prefix: /redis/1-6
         display_name: v1.6
-      - url_prefix: http://docs.pivotal.io/redis/1-5
+      - url_prefix: /redis/1-5
         display_name: v1.5
 
 - repository:
