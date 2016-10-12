@@ -16,6 +16,8 @@ products:
     subnav_root: p-identity/1-7/sso-subnav-root.html
   - id: sso-1-8
     subnav_root: p-identity/1-8/sso-subnav-root.html
+  - id: odb-v0-11-0
+    subnav_root: on-demand-service-broker/0-11-0/subnav-root.html
   - id: odb-v0-10-0
     subnav_root: on-demand-service-broker/0-10-0/subnav-root.html
   - id: odb-v0-9-0
@@ -310,18 +312,35 @@ sections:
   subnav_template: pivotal_new_relic_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
+    ref: v0.11.x
+  directory: on-demand-service-broker/0-11-0
+  product_id: odb-v0-11-0
+  product_info:
+    use_local_header: true
+    latest_stable_version: 0.11.0
+    local_header_img: /on-demand-service-broker/0-11-0/img/pcf-services-sdk.png
+    local_header_title: On-Demand Services SDK
+    search_placeholder: Search
+    local_product_version: 0.11.0
+    local_header_links: []
+    local_header_version_list:
+      - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
+      - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
+- repository:
+    name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.10.x
   directory: on-demand-service-broker/0-10-0
   product_id: odb-v0-10-0
   product_info:
     use_local_header: true
-    latest_stable_version: 0.10.0
+    latest_stable_version: 0.11.0
     local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.10.0
     local_header_links: []
     local_header_version_list:
+      - <a href="/on-demand-service-broker/0-11-0">v0.11.0</a>
       - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
@@ -330,13 +349,14 @@ sections:
   product_id: odb-v0-9-0
   product_info:
     use_local_header: true
-    latest_stable_version: 0.10.0
+    latest_stable_version: 0.11.0
     local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.9.0
     local_header_links: []
     local_header_version_list:
+      - <a href="/on-demand-service-broker/0-11-0">v0.11.0</a>
       - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
 - repository:
     name: pivotal-cf/docs-partners
