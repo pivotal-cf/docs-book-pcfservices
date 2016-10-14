@@ -377,6 +377,45 @@ sections:
   subnav_template: pivotal_ds_subnav.erb
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
+    ref: '1.7.5'
+  directory: rabbitmq-cf/1-7-5
+  subnav_template: pivotal_rabbitmq_service_subnav-1-7-5.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.7.5
+    local_header_img: /images/cloud_rings.png
+    local_header_title: RabbitMQ for PCF
+    search_placeholder: Search RabbitMQ 1.7.5
+    url_prefix: rabbitmq-cf/1-7-5
+    local_product_version: 1.7.5
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
+        display_name: v1.7.4
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
+        display_name: v1.7.3
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-2
+        display_name: v1.7.2
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-0
+        display_name: v1.7.0
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-9
+        display_name: v1.6.9
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-7
+        display_name: v1.6.7
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-5
+        display_name: v1.6.5
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-4
+        display_name: v1.6.4
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6-0
+        display_name: v1.6.0
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-5-17
+        display_name: v1.5.17
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-5-16
+        display_name: v1.5.16
+- repository:
+    name: pivotal-cf/docs-rabbitmq-staging
     ref: '1.7.4'
   directory: rabbitmq-cf/1-7-4
   subnav_template: pivotal_rabbitmq_service_subnav-1-7-4.erb
@@ -390,6 +429,8 @@ sections:
     local_product_version: 1.7.4
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -427,6 +468,8 @@ sections:
     local_product_version: 1.7.3
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -464,6 +507,8 @@ sections:
     local_product_version: 1.7.2
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -501,6 +546,8 @@ sections:
     local_product_version: 1.7.0
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -538,6 +585,8 @@ sections:
     local_product_version: 1.6.9
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -575,6 +624,8 @@ sections:
     local_product_version: 1.6.7
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -612,6 +663,8 @@ sections:
     local_product_version: 1.6.5
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -649,6 +702,8 @@ sections:
     local_product_version: 1.6.4.1
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -686,6 +741,8 @@ sections:
     local_product_version: 1.6.0
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
@@ -723,6 +780,8 @@ sections:
     local_product_version: 1.5.16
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-5
+        display_name: v1.7.5
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-4
         display_name: v1.7.4
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7-3
