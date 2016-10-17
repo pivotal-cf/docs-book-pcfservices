@@ -16,6 +16,7 @@ template_variables:
   support_url: http://support.pivotal.io
   support_link: <a href="http://support.pivotal.io" target="_blank">Support</a>
   support_call_to_action: <a href="http://support.pivotal.io" target="_blank">Need Support?</a>
+  kb_link: <a href="http://support.pivotal.io/kb" target="_blank">Knowledge Base</a>
   hero_text: "Detailed documentation to help you install, understand, and succeed with Pivotal's enterprise-grade software."
   app_domain: shared-domain.example.com
   private_app_domain: private-domain.example.com
