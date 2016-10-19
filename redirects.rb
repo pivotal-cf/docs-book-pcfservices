@@ -6,6 +6,8 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
   rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
 }
 
+r302 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-8/$1"
+
 r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-2/$1"
 r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-11-0/$1"
@@ -25,7 +27,6 @@ r302 %r{/customizing/(.*)}, '/pivotalcf/1-8/customizing/$1'
 r302 %r{/appsman-services/(.*)}, '/pivotalcf/1-8/appsman-services/$1'
 r302 %r{/console/(.*)}, '/pivotalcf/1-8/console/$1'
 r302 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-8/pcf-release-notes/$1'
-r302 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-8/$1"
 r302 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-6/$1"
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-8/$1"
 r302 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7-5/$1"
