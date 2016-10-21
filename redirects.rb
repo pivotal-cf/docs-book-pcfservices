@@ -7,7 +7,6 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
 }
 
 r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-2/$1"
-r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-11-0/$1"
 r302 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5-0/$1"
 r302 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/17-1-0/$1"
@@ -109,3 +108,12 @@ r302 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r302 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
 r302 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-8/windows/index.html'
+
+# Metrics redirects, change version at each release. Have to do it this way because
+# edge.
+r302 '/pcf-metrics/index.html', '/pcf-metrics/1-1/index.html'
+r302 '/pcf-metrics/installing.html', '/pcf-metrics/1-1/installing.html'
+r302 '/pcf-metrics/sizing.html', '/pcf-metrics/1-1/sizing.html'
+r302 '/pcf-metrics/using.html', '/pcf-metrics/1-1/using.html'
+r302 '/pcf-metrics/architecture.html', '/pcf-metrics/1-1/architecture.html'
+r302 '/pcf-metrics/rn-ki.html', '/pcf-metrics/1-1/rn-ki.html'
