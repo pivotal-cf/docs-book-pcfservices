@@ -31,7 +31,6 @@ r302 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7-5/$1"
 r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r302 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
 r302 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
-r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 
 r302 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
 r302 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
