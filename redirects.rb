@@ -29,7 +29,7 @@ r302 %r{/console/(.*)}, '/pivotalcf/1-8/console/$1'
 r302 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-8/pcf-release-notes/$1'
 r302 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-6/$1"
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-8/$1"
-r302 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7-5/$1"
+r302 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7-6/$1"
 r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r302 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
 r302 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
