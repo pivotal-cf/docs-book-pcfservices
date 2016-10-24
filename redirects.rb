@@ -6,7 +6,7 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
   rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
 }
 
-# r302 %r{/pivotalcf/(?![\d-]+|master)(.*)}, "/pivotalcf/1-8/$1"
+r302 %r{/pivotalcf/(?![\d-]+|master)(.*)}, "/pivotalcf/1-8/$1"
 
 r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-2/$1"
 r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
