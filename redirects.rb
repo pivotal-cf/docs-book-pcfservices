@@ -10,9 +10,9 @@ r302 %r{/pivotalcf/(?![\d-]+|master)(.*)}, "/pivotalcf/1-8/$1"
 
 r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-2/$1"
 r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
-r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-11-0/$1"
-r302 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5-0/$1"
-r302 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/17-1-0/$1"
+r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-11/$1"
+r302 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5/$1"
+r302 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/17-1/$1"
 r302 %r{/buildpacks/(.*)}, '/pivotalcf/1-8/buildpacks/$1'
 r302 %r{/deploying/(.*)}, '/pivotalcf/1-8/deploying/$1'
 r302 %r{/concepts/(.*)}, '/pivotalcf/1-8/concepts/$1'
@@ -110,3 +110,8 @@ r302 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r302 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
 r302 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-8/windows/index.html'
+
+# Link structure changed for ODB, service-backup and service-metrics
+r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/on-demand-service-broker/$1-$2/$3"
+r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/service-metrics/$1-$2/$3"
+r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/service-backup/$1-$2/$3"

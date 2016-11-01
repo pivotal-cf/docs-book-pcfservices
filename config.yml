@@ -16,22 +16,22 @@ products:
     subnav_root: p-identity/1-7/sso-subnav-root.html
   - id: sso-1-8
     subnav_root: p-identity/1-8/sso-subnav-root.html
-  - id: odb-v0-11-0
-    subnav_root: on-demand-service-broker/0-11-0/subnav-root.html
-  - id: odb-v0-10-0
-    subnav_root: on-demand-service-broker/0-10-0/subnav-root.html
-  - id: odb-v0-9-0
-    subnav_root: on-demand-service-broker/0-9-0/subnav-root.html
-  - id: service-metrics-v1-5-0
-    subnav_root: service-metrics/1-5-0/subnav-root.html
-  - id: service-metrics-v1-4-3
-    subnav_root: service-metrics/1-4-3/subnav-root.html
-  - id: service-backups-v17-1-0
-    subnav_root: service-backup/17-1-0/subnav-root.html
-  - id: service-backups-v17-0-0
-    subnav_root: service-backup/17-0-0/subnav-root.html
-  - id: service-backups-v16-0-1
-    subnav_root: service-backup/16-0-1/subnav-root.html
+  - id: odb-v0-11
+    subnav_root: on-demand-service-broker/0-11/subnav-root.html
+  - id: odb-v0-10
+    subnav_root: on-demand-service-broker/0-10/subnav-root.html
+  - id: odb-v0-9
+    subnav_root: on-demand-service-broker/0-9/subnav-root.html
+  - id: service-metrics-v1-5
+    subnav_root: service-metrics/1-5/subnav-root.html
+  - id: service-metrics-v1-4
+    subnav_root: service-metrics/1-4/subnav-root.html
+  - id: service-backups-v17-1
+    subnav_root: service-backup/17-1/subnav-root.html
+  - id: service-backups-v17-0
+    subnav_root: service-backup/17-0/subnav-root.html
+  - id: service-backups-v16-0
+    subnav_root: service-backup/16-0/subnav-root.html
 
 sections:
 # cross-product resources
@@ -317,51 +317,51 @@ sections:
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.11.x
-  directory: on-demand-service-broker/0-11-0
-  product_id: odb-v0-11-0
+  directory: on-demand-service-broker/0-11
+  product_id: odb-v0-11
   product_info:
     use_local_header: true
     latest_stable_version: 0.11.0
-    local_header_img: /on-demand-service-broker/0-11-0/img/pcf-services-sdk.png
+    local_header_img: /on-demand-service-broker/0-11/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.11.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
-      - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
+      - <a href="/on-demand-service-broker/0-10">v0.10.1</a>
+      - <a href="/on-demand-service-broker/0-9">v0.9.0</a>
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.10.x
-  directory: on-demand-service-broker/0-10-0
-  product_id: odb-v0-10-0
+  directory: on-demand-service-broker/0-10
+  product_id: odb-v0-10
   product_info:
     use_local_header: true
     latest_stable_version: 0.11.0
-    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
-    local_product_version: 0.10.0
+    local_product_version: 0.10.1
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-11-0">v0.11.0</a>
-      - <a href="/on-demand-service-broker/0-9-0">v0.9.0</a>
+      - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
+      - <a href="/on-demand-service-broker/0-9">v0.9.0</a>
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.9.x
-  directory: on-demand-service-broker/0-9-0
-  product_id: odb-v0-9-0
+  directory: on-demand-service-broker/0-9
+  product_id: odb-v0-9
   product_info:
     use_local_header: true
     latest_stable_version: 0.11.0
-    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.9.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-11-0">v0.11.0</a>
-      - <a href="/on-demand-service-broker/0-10-0">v0.10.0</a>
+      - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
+      - <a href="/on-demand-service-broker/0-10">v0.10.1</a>
 - repository:
     name: pivotal-cf/docs-partners
     ref: "1.8"
@@ -984,82 +984,82 @@ sections:
 - repository:
     name: pivotal-cf/docs-service-backup
     ref: v17.1.x
-  directory: service-backup/17-1-0
-  product_id: service-backups-v17-1-0
+  directory: service-backup/17-1
+  product_id: service-backups-v17-1
   product_info:
-    changelog_href: http://docs.pivotal.io/service-backup/17-1-0/release-notes.html
+    changelog_href: http://docs.pivotal.io/service-backup/17-1/release-notes.html
     use_local_header: true
-    latest_stable_version: 17.1.0
-    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    latest_stable_version: 17.1.2
+    local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Backups
     search_placeholder: Search
-    local_product_version: 17.1.0
+    local_product_version: 17.1.2
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-backup/17-0-0">v17.0.0</a>
-      - <a href="/service-backup/16-0-1">v16.0.1</a>
+      - <a href="/service-backup/17-0">v17.0.0</a>
+      - <a href="/service-backup/16-0">v16.0.1</a>
 - repository:
     name: pivotal-cf/docs-service-backup
     ref: v17.0.x
-  directory: service-backup/17-0-0
-  product_id: service-backups-v17-0-0
+  directory: service-backup/17-0
+  product_id: service-backups-v17-0
   product_info:
     use_local_header: true
-    latest_stable_version: 17.1.0
-    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    latest_stable_version: 17.1.2
+    local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Backups
     search_placeholder: Search
     local_product_version: 17.0.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-backup/17-1-0">v17.1.0</a>
-      - <a href="/service-backup/16-0-1">v16.0.1</a>
+      - <a href="/service-backup/17-1">v17.1.2</a>
+      - <a href="/service-backup/16-0">v16.0.1</a>
 - repository:
     name: pivotal-cf/docs-service-backup
     ref: v16.0.x
-  directory: service-backup/16-0-1
-  product_id: service-backups-v16-0-1
+  directory: service-backup/16-0
+  product_id: service-backups-v16-0
   product_info:
     use_local_header: true
-    latest_stable_version: 17.1.0
-    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    latest_stable_version: 17.1.2
+    local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Backups
     search_placeholder: Search
     local_product_version: 16.0.1
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-backup/17-1-0">v17.1.0</a>
-      - <a href="/service-backup/17-0-0">v17.0.0</a>
+      - <a href="/service-backup/17-1">v17.1.2</a>
+      - <a href="/service-backup/17-0">v17.0.0</a>
 - repository:
     name: pivotal-cf/docs-service-metrics
     ref: v1.5.x
-  directory: service-metrics/1-5-0
-  product_id: service-metrics-v1-5-0
+  directory: service-metrics/1-5
+  product_id: service-metrics-v1-5
   product_info:
     use_local_header: true
-    latest_stable_version: 1.5.0
-    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    latest_stable_version: 1.5.2
+    local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Metrics
     search_placeholder: Search
-    local_product_version: 1.5.0
+    local_product_version: 1.5.2
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-metrics/1-4-3">v1.4.3</a>
+      - <a href="/service-metrics/1-4">v1.4.3</a>
 - repository:
     name: pivotal-cf/docs-service-metrics
     ref: v1.4.x
-  directory: service-metrics/1-4-3
-  product_id: service-metrics-v1-4-3
+  directory: service-metrics/1-4
+  product_id: service-metrics-v1-4
   product_info:
     use_local_header: true
-    latest_stable_version: 1.5.0
-    local_header_img: /on-demand-service-broker/0-10-0/img/pcf-services-sdk.png
+    latest_stable_version: 1.5.2
+    local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Metrics
     search_placeholder: Search
     local_product_version: 1.4.3
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-metrics/1-5-0">v1.5.0</a>
+      - <a href="/service-metrics/1-5">v1.5.2</a>
 - repository:
     name: pivotal-cf/docs-solace-messaging
   directory: solace-messaging
