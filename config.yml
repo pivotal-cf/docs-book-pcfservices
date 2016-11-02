@@ -126,6 +126,11 @@ sections:
   directory: edb-postgres
   subnav_template: pivotal_edb_postgres.erb
 - repository:
+    name: pivotal-cf/docs-erlang-wombat
+    at_path: docs-content
+  directory: wombat
+  subnav_template: erlang_wombat_subnav.erb
+- repository:
     name: pivotal-cf/docs-firstdata
     at_path: docs-content
   directory: firstdata
