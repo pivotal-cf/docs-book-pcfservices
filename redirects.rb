@@ -10,7 +10,7 @@ r302 %r{/pivotalcf/(?![\d-]+|master)(.*)}, "/pivotalcf/1-8/$1"
 
 r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-2/$1"
 r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
-r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-11/$1"
+r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-12/$1"
 r302 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5/$1"
 r302 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/17-1/$1"
 r302 %r{/buildpacks/(.*)}, '/pivotalcf/1-8/buildpacks/$1'
