@@ -236,7 +236,7 @@ sections:
     local_header_title: PCF Metrics
     search_placeholder: Search PCF Metrics 1.2
     url_prefix: pcf-metrics/edge
-    local_product_version: edge
+    local_product_version: -edge
     local_header_links: []
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
@@ -258,7 +258,7 @@ sections:
     local_header_links: []
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/pcf-metrics/edge
-        display_name: edge
+        display_name: -edge
       - url_prefix: http://docs.pivotal.io/pcf-metrics/1-0
         display_name: v1.0
 - repository:
@@ -277,7 +277,7 @@ sections:
     local_header_links: []
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/pcf-metrics/edge
-        display_name: edge
+        display_name: -edge
       - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
         display_name: v1.1
 
