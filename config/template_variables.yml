@@ -16,6 +16,7 @@ template_variables:
   support_url: http://support.pivotal.io
   support_link: <a href="http://support.pivotal.io" target="_blank">Support</a>
   support_call_to_action: <a href="http://support.pivotal.io" target="_blank">Need Support?</a>
+  kb_link: <a href="http://support.pivotal.io/kb" target="_blank">Knowledge Base</a>
   hero_text: "Detailed documentation to help you install, understand, and succeed with Pivotal's enterprise-grade software."
   app_domain: shared-domain.example.com
   private_app_domain: private-domain.example.com
@@ -88,7 +89,7 @@ template_variables:
   domains_shared_domains: For more information about using custom domains shared across all orgs in your Cloud Foundry account, refer to the <a href="./domains.html">Domains and Shared Domains</a> topic.
   ssl:
   link_adminguid_buildpack: You can find more documentation at the <a href="http://docs.pivotal.io/pivotalcf/adminguide/buildpacks.html">buildpack admin guide</a>.
-  disable_custom_buildpacks: <span><h2><a id="disabling-custom-buildpacks"></a>Disabling Custom Buildpacks from Ops Manager</h2> You can disable custom buildpacks using your Ops Manager Elastic Runtime tile. From the <strong>Cloud Controller</strong> tab, check the <strong>Disable Custom Buildpacks</strong> checkbox, as shown in the image below.<img src="images/disable-custom-buildpacks.png"><br><br>By default, the cf CLI gives developers the option of using a custom buildpack when they deploy apps to Elastic Runtime. To do so, they use the <code>-b</code> option to provide a custom buildpack URL with the <code>cf push</code> command. The <strong>Disable Custom Buildpacks</strong> checkbox disables the <code>-b</code> option.<br><br>For more information about custom buildpacks, refer to the <a href="../buildpacks/">buildpacks</a> section of the PCF documentation.</span>
+  disable_custom_buildpacks: <span><h2><a id="disabling-custom-buildpacks"></a>Disabling Custom Buildpacks from Ops Manager</h2> You can disable custom buildpacks using your Ops Manager Elastic Runtime tile. From the <strong>Cloud Controller</strong> tab, check the <strong>Disable Custom Buildpacks</strong> checkbox, as shown in the image below.<img src="images/disable-custom-buildpacks.png"><br><br>By default, the cf CLI gives developers the option of using a custom buildpack when they deploy apps to Elastic Runtime. To do so, they use the <code>-b</code> option to provide a custom buildpack URL with the <code>cf push</code> command. The <strong>Disable Custom Buildpacks</strong> checkbox prevents the <code>-b</code> option from being used with external buildpack URLs.<br><br>For more information about custom buildpacks, refer to the <a href="../buildpacks/">buildpacks</a> section of the PCF documentation.</span>
   services: <a href="http://docs.pivotal.io/pivotalcf/services/">services</a>
   api_v1_format: <a href="http://docs.pivotal.io/pivotalcf/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.pivotal.io/pivotalcf/services/api.html">v2 format</a>
