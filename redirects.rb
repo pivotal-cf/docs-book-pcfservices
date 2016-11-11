@@ -8,7 +8,7 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
 
 r302 %r{/pivotalcf/(?![\d-]+|master)(.*)}, "/pivotalcf/1-8/$1"
 
-r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-2/$1"
+r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-3/$1"
 r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-12/$1"
 r302 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5/$1"
 r302 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/17-2/$1"
