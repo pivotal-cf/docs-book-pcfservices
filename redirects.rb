@@ -8,11 +8,10 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
 
 r302 %r{/pivotalcf/(?![\d-]+|master)(.*)}, "/pivotalcf/1-8/$1"
 
-r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-3/$1"
-r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
-r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-11-0/$1"
-r302 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5-0/$1"
-r302 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/17-1-0/$1"
+r302 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-2/$1"
+r302 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-12/$1"
+r302 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5/$1"
+r302 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/17-2/$1"
 r302 %r{/buildpacks/(.*)}, '/pivotalcf/1-8/buildpacks/$1'
 r302 %r{/deploying/(.*)}, '/pivotalcf/1-8/deploying/$1'
 r302 %r{/concepts/(.*)}, '/pivotalcf/1-8/concepts/$1'
@@ -29,11 +28,10 @@ r302 %r{/console/(.*)}, '/pivotalcf/1-8/console/$1'
 r302 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-8/pcf-release-notes/$1'
 r302 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-6/$1"
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-8/$1"
-r302 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7-6/$1"
+r302 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7/$1"
 r302 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r302 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
 r302 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
-r302 %r{/pcf-metrics/(?![\d-]+)(.*)}, "/pcf-metrics/1-1/$1"
 
 r302 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
 r302 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
@@ -110,4 +108,16 @@ r302 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r302 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
 r302 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-8/windows/index.html'
->>>>>>> master
+# Link structure changed for ODB, service-backup and service-metrics
+r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/on-demand-service-broker/$1-$2/$3"
+r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/service-metrics/$1-$2/$3"
+r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/service-backup/$1-$2/$3"
+
+# Metrics redirects, change version at each release. Have to do it this way because
+# edge.
+r302 '/pcf-metrics/index.html', '/pcf-metrics/1-1/index.html'
+r302 '/pcf-metrics/installing.html', '/pcf-metrics/1-1/installing.html'
+r302 '/pcf-metrics/sizing.html', '/pcf-metrics/1-1/sizing.html'
+r302 '/pcf-metrics/using.html', '/pcf-metrics/1-1/using.html'
+r302 '/pcf-metrics/architecture.html', '/pcf-metrics/1-1/architecture.html'
+r302 '/pcf-metrics/rn-ki.html', '/pcf-metrics/1-1/rn-ki.html'
