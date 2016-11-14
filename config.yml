@@ -140,6 +140,11 @@ sections:
   directory: firstdata
   subnav_template: firstdata_subnav.erb
 - repository:
+    name: pivotal-cf/docs-forgerock
+    at_path: docs-content
+  directory: forgerock
+  subnav_template: forgerock_subnav.erb
+- repository:
     name: pivotal-cf/docs-gitlab
   directory: gitlab
   subnav_template: pivotal_gitlab_service_subnav.erb
