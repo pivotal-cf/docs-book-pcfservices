@@ -471,25 +471,6 @@ sections:
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-5
         display_name: v1.5
 - repository:
-    name: pivotal-cf/docs-rabbitmq-staging
-    ref: '1.5.18'
-  directory: rabbitmq-cf/1-5
-  subnav_template: pivotal_rabbitmq_service_subnav-1-5-18.erb
-  product_info:
-    use_local_header: true
-    latest_stable_version: 1.7.6
-    local_header_img: /images/cloud_rings.png
-    local_header_title: RabbitMQ for PCF
-    search_placeholder: Search RabbitMQ 1.5.18
-    url_prefix: rabbitmq-cf/1-5
-    local_product_version: 1.5.18
-    local_header_links: []
-    local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7
-        display_name: v1.7
-      - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-6
-        display_name: v1.6
-- repository:
     name: pivotal-cf/docs-redis
     ref: '1.6'
   directory: redis/1-6
