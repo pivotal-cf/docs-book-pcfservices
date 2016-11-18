@@ -529,10 +529,6 @@ sections:
         display_name: v1.5
 
 - repository:
-    name: pivotal-cf/docs-riakcs
-  directory: p-riakcs
-  subnav_template: pivotal_riakcs_service.erb
-- repository:
     name: pivotal-cf/docs-rlec
   directory: rlec
   subnav_template: pivotal_rlec.erb
