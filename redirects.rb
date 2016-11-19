@@ -122,4 +122,4 @@ r302 '/pcf-metrics/using.html', '/pcf-metrics/1-1/using.html'
 r302 '/pcf-metrics/architecture.html', '/pcf-metrics/1-1/architecture.html'
 r302 '/pcf-metrics/rn-ki.html', '/pcf-metrics/1-1/rn-ki.html'
 
-r302 '%r{/p-riakcs/(.*)}', 'https://docs.pivotal.io'
+r302 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
