@@ -36,9 +36,7 @@ products:
     subnav_root: service-backup/17-0/subnav-root.html
   - id: service-backups-v16-0
     subnav_root: service-backup/16-0/subnav-root.html
-  - id: push
-    subnav_root: push/push-subnav-root.html
-    
+
 sections:
 # cross-product resources
 - repository:
@@ -753,7 +751,7 @@ sections:
 - repository:
     name: cfmobile/docs-push-notifications
   directory: push
-  product_id: push
+  subnav_template: push_subnav.erb
 
 - repository:
     name: dingotiles/dingo-docs
