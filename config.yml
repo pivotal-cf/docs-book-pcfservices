@@ -135,6 +135,11 @@ sections:
   directory: wombat
   subnav_template: erlang_wombat_subnav.erb
 - repository:
+    name: pivotal-cf/docs-blue-medora
+    at_path: docs-content
+  directory: blue-medora
+  subnav_template: myservice_subnav.erb
+- repository:
     name: pivotal-cf/docs-firstdata
     at_path: docs-content
   directory: firstdata
