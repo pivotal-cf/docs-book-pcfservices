@@ -440,7 +440,7 @@ sections:
   subnav_template: pivotal_ds_subnav.erb
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
-    ref: '1.7.7-1'
+    ref: '1.7.7-2'
   directory: rabbitmq-cf/1-7
   subnav_template: pivotal_rabbitmq_service_subnav-1-7-7.erb
   product_info:
@@ -461,7 +461,7 @@ sections:
         display_name: v1.5
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
-    ref: '1.6.12'
+    ref: '1.6.12-1'
   directory: rabbitmq-cf/1-6
   subnav_template: pivotal_rabbitmq_service_subnav-1-6-12.erb
   product_info:
