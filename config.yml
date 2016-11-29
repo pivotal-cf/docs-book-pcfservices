@@ -264,8 +264,9 @@ sections:
         display_name: v1.0
 - repository:
     name: pivotal-cf/docs-metrics
+    ref: '1.1'
   directory: pcf-metrics/1-1
-  subnav_template: pcf_metrics_subnav.erb
+  subnav_template: pcf_metrics_1_1_subnav.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.1
