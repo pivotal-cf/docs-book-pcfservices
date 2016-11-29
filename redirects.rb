@@ -119,14 +119,15 @@ r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/service-backup/$1-$2/$3"
 
 # Metrics redirects, change version at each release. Have to do it this way because
 # edge.
-r301 '/pcf-metrics/index.html', '/pcf-metrics/1-1/index.html'
-r301 '/pcf-metrics/installing.html', '/pcf-metrics/1-1/installing.html'
-r301 '/pcf-metrics/sizing.html', '/pcf-metrics/1-1/sizing.html'
-r301 '/pcf-metrics/using.html', '/pcf-metrics/1-1/using.html'
-r301 '/pcf-metrics/architecture.html', '/pcf-metrics/1-1/architecture.html'
-r301 '/pcf-metrics/rn-ki.html', '/pcf-metrics/1-1/rn-ki.html'
+r302 '/pcf-metrics/index.html', '/pcf-metrics/1-2/index.html'
+r302 '/pcf-metrics/installing.html', '/pcf-metrics/1-2/installing.html'
+r302 '/pcf-metrics/sizing.html', '/pcf-metrics/1-2/sizing.html'
+r302 '/pcf-metrics/using.html', '/pcf-metrics/1-2/using.html'
+r302 '/pcf-metrics/architecture.html', '/pcf-metrics/1-2/architecture.html'
+r302 '/pcf-metrics/rn-ki.html', '/pcf-metrics/1-2/rn-ki.html'
+r302 '/pcf-metrics/troubleshooting.html', '/pcf-metrics/1-2/troubleshooting.html'
 
-r301 '/pcf-metrics/1-2/installing.html#troubleshooting', '/pcf-metrics/edge/troubleshooting.html'
+r302 '/pcf-metrics/1-2/installing.html#troubleshooting', '/pcf-metrics/1-2/troubleshooting.html'
 
 
 

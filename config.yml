@@ -246,16 +246,16 @@ sections:
 - repository:
     name: pivotal-cf/docs-metrics
     ref: '1.2'
-  directory: pcf-metrics/edge
-  subnav_template: pcf_metrics_edge_subnav.erb
+  directory: pcf-metrics/1-2
+  subnav_template: pcf_metrics_1_2_subnav.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.1
+    latest_stable_version: 1.2
     local_header_img: /images/cloud_rings.png
     local_header_title: PCF Metrics
     search_placeholder: Search PCF Metrics 1.2
-    url_prefix: pcf-metrics/edge
-    local_product_version: -edge
+    url_prefix: pcf-metrics/1-2
+    local_product_version: 1.2
     local_header_links: []
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
@@ -269,7 +269,7 @@ sections:
   subnav_template: pcf_metrics_1_1_subnav.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.1
+    latest_stable_version: 1.2
     local_header_img: /images/cloud_rings.png
     local_header_title: PCF Metrics
     search_placeholder: Search PCF Metrics 1.1
@@ -277,8 +277,8 @@ sections:
     local_product_version: 1.1
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/pcf-metrics/edge
-        display_name: edge
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/1-2
+        display_name: v1.2
       - url_prefix: http://docs.pivotal.io/pcf-metrics/1-0
         display_name: v1.0
 - repository:
@@ -288,7 +288,7 @@ sections:
   subnav_template: pcf_metrics_1_0_subnav.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.1
+    latest_stable_version: 1.2
     local_header_img: /images/cloud_rings.png
     local_header_title: PCF Metrics
     search_placeholder: Search PCF Metrics 1.0
@@ -296,8 +296,8 @@ sections:
     local_product_version: 1.0
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/pcf-metrics/edge
-        display_name: edge
+      - url_prefix: http://docs.pivotal.io/pcf-metrics/1-2
+        display_name: v1.2
       - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
         display_name: v1.1
 
