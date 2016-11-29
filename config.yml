@@ -242,7 +242,7 @@ sections:
     name: pivotal-cf/docs-metrics
     ref: '1.2'
   directory: pcf-metrics/1-2
-  subnav_template: pcf_metrics_1-2_subnav.erb
+  subnav_template: pcf_metrics_1_2_subnav.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.2
@@ -261,7 +261,7 @@ sections:
     name: pivotal-cf/docs-metrics
     ref: '1.1'
   directory: pcf-metrics/1-1
-  subnav_template: pcf_metrics_1-1_subnav.erb
+  subnav_template: pcf_metrics_1_1_subnav.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.2
