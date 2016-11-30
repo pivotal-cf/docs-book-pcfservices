@@ -665,6 +665,7 @@ sections:
       - <a href="/service-metrics/1-5">v1.5.2</a>
 - repository:
     name: pivotal-cf/docs-solace-messaging
+    at_path: docs-content
   directory: solace-messaging
   subnav_template: pivotal_solace_messaging.erb
 - repository:
