@@ -105,6 +105,11 @@ sections:
   directory: azuqua
   subnav_template: azuqua_subnav.erb
 - repository:
+    name: pivotal-cf/docs-blue-medora
+    at_path: docs-content
+  directory: blue-medora
+  subnav_template: blue_medora_subnav.erb
+- repository:
     name: pivotal-cf/docs-cassandra
   directory: cassandra
   subnav_template: pivotal_cassandra_service_subnav.erb
@@ -672,6 +677,12 @@ sections:
     name: pivotal-cf/docs-spring-cloud-data-flow
   directory: spring-cloud-data-flow
   subnav_template: spring_cloud_data_flow_subnav.erb
+
+- repository:
+    name: pivotal-cf/docs-splunk
+    at_path: docs-content
+  directory: splunk
+  subnav_template: splunk_subnav.erb
 
 - repository:
     name: pivotal-cf/docs-spring-cloud-services
