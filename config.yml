@@ -366,7 +366,7 @@ sections:
   product_id: odb-v0-12
   product_info:
     use_local_header: true
-    latest_stable_version: 0.12.0
+    latest_stable_version: 0.12.4
     local_header_img: /on-demand-service-broker/0-12/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
@@ -383,14 +383,14 @@ sections:
   product_id: odb-v0-11
   product_info:
     use_local_header: true
-    latest_stable_version: 0.12.0
+    latest_stable_version: 0.12.4
     local_header_img: /on-demand-service-broker/0-11/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.11.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-12">v0.12.0</a>
+      - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
       - <a href="/on-demand-service-broker/0-10">v0.10.1</a>
       - <a href="/on-demand-service-broker/0-9">v0.9.0</a>
 - repository:
@@ -400,14 +400,14 @@ sections:
   product_id: odb-v0-10
   product_info:
     use_local_header: true
-    latest_stable_version: 0.12.0
+    latest_stable_version: 0.12.4
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.10.1
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-12">v0.12.0</a>
+      - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
       - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
       - <a href="/on-demand-service-broker/0-9">v0.9.0</a>
 - repository:
@@ -417,14 +417,14 @@ sections:
   product_id: odb-v0-9
   product_info:
     use_local_header: true
-    latest_stable_version: 0.12.0
+    latest_stable_version: 0.12.4
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.9.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-12">v0.12.0</a>
+      - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
       - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
       - <a href="/on-demand-service-broker/0-10">v0.10.1</a>
 - repository:
