@@ -11,7 +11,7 @@ r301 %r{/pivotalcf/(?![\d-]+|master)(.*)}, "/pivotalcf/1-8/$1"
 r301 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-3/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-12/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5/$1"
-r301 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/17-2/$1"
+r301 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/18-0/$1"
 r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-8/buildpacks/$1'
 r301 %r{/deploying/(.*)}, '/pivotalcf/1-8/deploying/$1'
 r301 %r{/concepts/(.*)}, '/pivotalcf/1-8/concepts/$1'
