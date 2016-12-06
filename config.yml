@@ -370,7 +370,7 @@ sections:
     local_header_img: /on-demand-service-broker/0-12/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
-    local_product_version: 0.12.0
+    local_product_version: 0.12.4
     local_header_links: []
     local_header_version_list:
       - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
