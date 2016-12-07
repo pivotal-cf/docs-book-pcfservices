@@ -296,6 +296,12 @@ sections:
         display_name: v1.1
 
 - repository:
+    name: pivotal-cf/docs-mongodb-managed
+    at_path: docs-content
+  directory: mongodb
+  subnav_template: pivotal_mongodb_service_subnav.erb
+
+- repository:
     name: pivotal-cf/docs-mulesoft-anypoint
     at_path: docs-content
   directory: mulesoft
