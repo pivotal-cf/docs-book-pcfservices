@@ -28,6 +28,7 @@ r301 %r{/console/(.*)}, '/pivotalcf/1-8/console/$1'
 r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-8/pcf-release-notes/$1'
 r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-6/$1"
 r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-8/$1"
+r301 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-8/$1"
 r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7/$1"
 r301 %r{/rabbitmq-cf/1-7-[\d]+/(.*)}, "/rabbitmq-cf/1-7/$1"
 r301 %r{/rabbitmq-cf/1-6-[\d]+/(.*)}, "/rabbitmq-cf/1-6/$1"
