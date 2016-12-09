@@ -38,6 +38,8 @@ products:
     subnav_root: service-backup/17-0/subnav-root.html
   - id: service-backups-v16-0
     subnav_root: service-backup/16-0/subnav-root.html
+  - id: concourse
+    subnav_root: p-concourse/subnav_root.html
 
 sections:
 # cross-product resources
@@ -124,6 +126,10 @@ sections:
     name: pivotal-cf/docs-cloudsoft
   directory: cloudsoft
   subnav_template: cloudsoft_subnav.erb
+- repository:
+    name: pivotal-cf/docs-concourse
+  directory: p-concourse
+  product_id: concourse
 - repository:
     name: pivotal-cf/docs-dynatrace
     at_path: docs-content
