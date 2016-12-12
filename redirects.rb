@@ -130,6 +130,4 @@ r302 '/pcf-metrics/troubleshooting.html', '/pcf-metrics/1-2/troubleshooting.html
 
 r302 '/pcf-metrics/1-2/installing.html#troubleshooting', '/pcf-metrics/1-2/troubleshooting.html'
 
-r301 %r{/cloudbees/(.*)}, 'https://docs.pivotal.io'
-r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
