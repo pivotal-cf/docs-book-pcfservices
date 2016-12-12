@@ -121,6 +121,13 @@ sections:
   directory: cassandra
   subnav_template: pivotal_cassandra_service_subnav.erb
 - repository:
+    name: pivotal-cf/docs-cloudbees
+  directory: cloudbees
+  subnav_template: pivotal_cloudbees_service_subnav.erb
+- repository:
+    name: pivotal-cf/docs-cloudbees-cjoc
+  directory: cjoc
+  subnav_template: cjoc_subnav.erb- repository:
     name: pivotal-cf/docs-cloudsoft
   directory: cloudsoft
   subnav_template: cloudsoft_subnav.erb
