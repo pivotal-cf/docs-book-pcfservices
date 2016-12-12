@@ -503,7 +503,7 @@ sections:
     latest_stable_version: 1.7.8
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
-    search_placeholder: Search RabbitMQ 1.5.21
+    search_placeholder: Search RabbitMQ 1.5.22
     url_prefix: rabbitmq-cf/1-5
     local_product_version: 1.5.22
     local_header_links: []
