@@ -489,7 +489,7 @@ sections:
     name: pivotal-cf/docs-rabbitmq-staging
     ref: '1.5.22'
   directory: rabbitmq-cf/1-5
-  subnav_template: pivotal_rabbitmq_service_subnav-1-5-21.erb
+  subnav_template: pivotal_rabbitmq_service_subnav-1-5-22.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.7.8
