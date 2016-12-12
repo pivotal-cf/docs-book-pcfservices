@@ -127,7 +127,8 @@ sections:
 - repository:
     name: pivotal-cf/docs-cloudbees-cjoc
   directory: cjoc
-  subnav_template: cjoc_subnav.erb- repository:
+  subnav_template: cjoc_subnav.erb
+- repository:
     name: pivotal-cf/docs-cloudsoft
   directory: cloudsoft
   subnav_template: cloudsoft_subnav.erb
