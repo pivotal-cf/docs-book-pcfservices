@@ -445,7 +445,7 @@ sections:
   subnav_template: pivotal_ds_subnav.erb
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
-    ref: '1.7.8'
+    ref: '1.7.8-1'
   directory: rabbitmq-cf/1-7
   subnav_template: pivotal_rabbitmq_service_subnav-1-7-8.erb
   product_info:
@@ -487,7 +487,7 @@ sections:
         display_name: v1.5
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
-    ref: '1.5.21'
+    ref: '1.5.22'
   directory: rabbitmq-cf/1-5
   subnav_template: pivotal_rabbitmq_service_subnav-1-5-21.erb
   product_info:
@@ -497,7 +497,7 @@ sections:
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.5.21
     url_prefix: rabbitmq-cf/1-5
-    local_product_version: 1.5.21
+    local_product_version: 1.5.22
     local_header_links: []
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7
