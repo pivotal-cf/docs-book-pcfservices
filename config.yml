@@ -437,6 +437,7 @@ sections:
       - <a href="/on-demand-service-broker/0-10">v0.10.1</a>
 - repository:
     name: pivotal-cf/docs-book-tiledev
+    at_path: docs-content
     ref: "master"
   directory: tiledev
   subnav_template: tiledev_subnav.erb
