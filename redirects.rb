@@ -25,8 +25,9 @@ r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-9/appsman-services/$1'
 r301 %r{/console/(.*)}, '/pivotalcf/1-9/console/$1'
 r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-9/pcf-release-notes/$1'
 r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-6/$1"
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
+r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
+r301 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
+
 r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7/$1"
 r301 %r{/rabbitmq-cf/1-7-[\d]+/(.*)}, "/rabbitmq-cf/1-7/$1"
 r301 %r{/rabbitmq-cf/1-6-[\d]+/(.*)}, "/rabbitmq-cf/1-6/$1"
@@ -111,6 +112,7 @@ r301 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
 r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-9/windows/index.html'
+
 
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/on-demand-service-broker/$1-$2/$3"
