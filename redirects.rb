@@ -83,6 +83,7 @@ r302 %r{/pivotalcf/partners/(.*)}, '/partners/$1'
 r302 '/p1-services/MongoDB.html', '/mongodb/index.html'
 r302 '/p1-services/Neo4j.html', '/neo4j/index.html'
 r302 '/p1-services/Cassandra.html', '/cassandra/index.html'
+r302 '/p1-services/Redis.html', '/redis/index.html'
 
 r302 '/compatibility-matrix.pdf', '/resources/product-compatibility-matrix.pdf'
 
