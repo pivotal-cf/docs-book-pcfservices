@@ -407,7 +407,8 @@
             "vhd": {
               "uri": "[concat('http://',parameters('storageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('opsManVMName'),'-osdisk.vhd')]"
             },
-            "caching": "ReadWrite"
+            "caching": "ReadWrite",
+            "diskSizeGB": "120"
           }
         },
         "networkProfile": {
