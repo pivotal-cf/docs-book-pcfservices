@@ -16,6 +16,8 @@ products:
     subnav_root: p-identity/1-7/sso-subnav-root.html
   - id: sso-1-8
     subnav_root: p-identity/1-8/sso-subnav-root.html
+  - id: sso-1-9
+    subnav_root: p-identity/1-9/sso-subnav-root.html
   - id: odb-v0-12
     subnav_root: on-demand-service-broker/0-12/subnav-root.html
   - id: odb-v0-11
@@ -38,6 +40,8 @@ products:
     subnav_root: service-backup/17-0/subnav-root.html
   - id: service-backups-v16-0
     subnav_root: service-backup/16-0/subnav-root.html
+  - id: concourse
+    subnav_root: p-concourse/subnav_root.html
 
 sections:
 # cross-product resources
@@ -129,6 +133,10 @@ sections:
   directory: cloudsoft
   subnav_template: cloudsoft_subnav.erb
 - repository:
+    name: pivotal-cf/docs-concourse
+  directory: p-concourse
+  product_id: concourse
+- repository:
     name: pivotal-cf/docs-dynatrace
     at_path: docs-content
   directory: dynatrace
@@ -167,12 +175,31 @@ sections:
   subnav_template: pivotal_guardtime.erb
 - repository:
     name: pivotal-cf/docs-identity
+    ref: '1.9'
+  directory: p-identity/1-9
+  product_id: sso-1-9
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.9
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Single Sign-On
+    search_placeholder: Search Single Sign-On 1.9
+    url_prefix: p-identity/1-9
+    local_product_version: 1.9
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/p-identity/1-8
+        display_name: v1.8
+      - url_prefix: http://docs.pivotal.io/p-identity/1-7
+        display_name: v1.7
+- repository:
+    name: pivotal-cf/docs-identity
     ref: '1.8'
   directory: p-identity/1-8
   product_id: sso-1-8
   product_info:
     use_local_header: true
-    latest_stable_version: 1.8
+    latest_stable_version: 1.9
     local_header_img: /images/cloud_rings.png
     local_header_title: Single Sign-On
     search_placeholder: Search Single Sign-On 1.8
@@ -180,9 +207,10 @@ sections:
     local_product_version: 1.8
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/p-identity/1-9
+        display_name: v1.9
       - url_prefix: http://docs.pivotal.io/p-identity/1-7
         display_name: v1.7
-      - <a href="http://docs.pivotal.io/archives/p-identity-1.6.pdf">v1.6</a>
 - repository:
     name: pivotal-cf/docs-identity
     ref: "1.7"
@@ -190,7 +218,7 @@ sections:
   product_id: sso-1-7
   product_info:
     use_local_header: true
-    latest_stable_version: 1.8
+    latest_stable_version: 1.9
     local_header_img: /images/cloud_rings.png
     local_header_title: Single Sign-On
     search_placeholder: Search Single Sign-On 1.7
@@ -198,9 +226,10 @@ sections:
     local_product_version: 1.7
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/p-identity/1-9
+        display_name: v1.9
       - url_prefix: http://docs.pivotal.io/p-identity/1-8
         display_name: v1.8
-      - <a href="http://docs.pivotal.io/archives/p-identity-1.6.pdf">v1.6</a>
 - repository:
     name: pivotal-cf/docs-jfrog
   directory: jfrog
