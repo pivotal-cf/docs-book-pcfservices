@@ -131,5 +131,5 @@ r302 '/pcf-metrics/1-2/installing.html#troubleshooting', '/pcf-metrics/1-2/troub
 r302 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r302 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
-r302 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-9/$1"
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-9/$1"
 
