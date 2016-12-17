@@ -104,6 +104,11 @@ sections:
   directory: apigee
   subnav_template: apigee_subnav.erb
 - repository:
+    name: pivotal-cf/docs-apigee-bosh
+    at_path: docs-content
+  directory: apigee-bosh
+  subnav_template: apigee_bosh_subnav.erb
+- repository:
     name: pivotal-cf/docs-appdynamics
   directory: appdynamics
   subnav_template: _appdynamics_subnav.erb
@@ -731,6 +736,11 @@ sections:
     local_header_links: []
     local_header_version_list:
       - <a href="/service-metrics/1-5">v1.5.2</a>
+- repository:
+    name: pivotal-cf/docs-signal-sciences
+    at_path: docs-content
+  directory: signalsciences
+  subnav_template: signalsciences_subnav.erb
 - repository:
     name: pivotal-cf/docs-solace-messaging
     at_path: docs-content
