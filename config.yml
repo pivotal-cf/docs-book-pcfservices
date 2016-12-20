@@ -142,6 +142,11 @@ sections:
   directory: p-concourse
   product_id: concourse
 - repository:
+    name: pivotal-cf/docs-crunchy-data
+    at_path: docs-content
+  directory: crunchy
+  subnav_template: crunchy_subnav.erb
+- repository:
     name: pivotal-cf/docs-dynatrace
     at_path: docs-content
   directory: dynatrace
