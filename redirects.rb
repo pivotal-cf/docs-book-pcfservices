@@ -149,6 +149,11 @@ r301 '/pcf-metrics/troubleshooting.html', '/pcf-metrics/1-2/troubleshooting.html
 
 r301 '/pcf-metrics/1-2/installing.html#troubleshooting', '/pcf-metrics/1-2/troubleshooting.html'
 
+# Upgrade landing page redirects
+r302 '/pivotalcf/1-8/upgrading/index.html', '/pivotalcf/1-9/upgrading/index.html'
+r302 '/pivotalcf/1-7/upgrading/index.html', '/pivotalcf/1-9/upgrading/index.html'
+r302 '/pivotalcf/1-6/upgrading/index.html', '/pivotalcf/1-9/upgrading/index.html'
+
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
