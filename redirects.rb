@@ -24,6 +24,7 @@ r301 %r{/customizing/(.*)}, '/pivotalcf/1-9/customizing/$1'
 r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-9/appsman-services/$1'
 r301 %r{/console/(.*)}, '/pivotalcf/1-9/console/$1'
 r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-9/pcf-release-notes/$1'
+
 r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-6/$1"
 r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
 r301 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
@@ -34,8 +35,9 @@ r301 %r{/rabbitmq-cf/1-6-[\d]+/(.*)}, "/rabbitmq-cf/1-6/$1"
 r301 %r{/rabbitmq-cf/1-5-[\d]+/(.*)}, "/rabbitmq-cf/1-5/$1"
 
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
-r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-9/$1"
-r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-9/$1"
+r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
+
+r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
 
 r301 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
 r301 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
@@ -120,21 +122,19 @@ r301 %r{/mobile/apigateway(.*)}, 'https://network.pivotal.io/products/api-gatewa
 r301 %r{/mobile/data/(.*)}, 'https://network.pivotal.io/products/p-data-sync'
 r301 '/mobile/index.html', 'https://network.pivotal.io/products/api-gateway'
 r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
-r301 '/jmx-bridge/', '/jmx-bridge/1-9/index.html'
 
 r301 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
 r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-9/windows/index.html'
 
-
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/on-demand-service-broker/$1-$2/$3"
 r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/service-metrics/$1-$2/$3"
 r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/service-backup/$1-$2/$3"
 
-# Metrics redirects, change version at each release. Have to do it this way because
-# edge.
+# Metrics redirects, change version at each release. Have to do it this way
+# because edge.
 r301 '/pcf-metrics/index.html', '/pcf-metrics/1-2/index.html'
 r301 '/pcf-metrics/installing.html', '/pcf-metrics/1-2/installing.html'
 r301 '/pcf-metrics/sizing.html', '/pcf-metrics/1-2/sizing.html'
