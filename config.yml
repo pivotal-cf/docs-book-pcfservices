@@ -123,6 +123,11 @@ sections:
   directory: azuqua
   subnav_template: azuqua_subnav.erb
 - repository:
+    name: pivotal-cf/docs-azure
+    at_path: docs-content
+  directory: azure-sb
+  subnav_template: azuresb_subnav.erb
+- repository:
     name: pivotal-cf/docs-blue-medora
     at_path: docs-content
   directory: blue-medora
