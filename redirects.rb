@@ -25,7 +25,7 @@ r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-9/appsman-services/$1'
 r301 %r{/console/(.*)}, '/pivotalcf/1-9/console/$1'
 r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-9/pcf-release-notes/$1'
 
-r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-6/$1"
+r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-7/$1"
 r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
 r301 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
 
