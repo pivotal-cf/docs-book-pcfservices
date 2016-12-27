@@ -585,6 +585,29 @@ sections:
         display_name: v1.6
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-5
         display_name: v1.5
+
+- repository:
+    name: pivotal-cf/docs-redis
+    ref: '1.7'
+  directory: redis/1-7
+  subnav_template: pivotal_redis_service_subnav-1-7.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.7
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Pivotal Redis
+    search_placeholder: Search Redis 1.7
+    url_prefix: redis/1-7
+    local_product_version: 1.7
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-6
+        display_name: v1.6
+      - url_prefix: http://docs.pivotal.io/redis/1-5
+        display_name: v1.5
+      - url_prefix: http://docs.pivotal.io/redis/1-4
+        display_name: v1.4
+        
 - repository:
     name: pivotal-cf/docs-redis
     ref: '1.6'
@@ -592,7 +615,7 @@ sections:
   subnav_template: pivotal_redis_service_subnav-1-6.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6
+    latest_stable_version: 1.7
     local_header_img: /images/cloud_rings.png
     local_header_title: Pivotal Redis
     search_placeholder: Search Redis 1.6
@@ -600,6 +623,8 @@ sections:
     local_product_version: 1.6
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-7
+        display_name: v1.7
       - url_prefix: http://docs.pivotal.io/redis/1-5
         display_name: v1.5
       - url_prefix: http://docs.pivotal.io/redis/1-4
@@ -611,7 +636,7 @@ sections:
   subnav_template: pivotal_redis_service_subnav-1-5.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6
+    latest_stable_version: 1.7
     local_header_img: /images/cloud_rings.png
     local_header_title: Pivotal Redis
     search_placeholder: Search Redis 1.5
@@ -619,6 +644,8 @@ sections:
     local_product_version: 1.5
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-7
+        display_name: v1.7
       - url_prefix: http://docs.pivotal.io/redis/1-6
         display_name: v1.6
       - url_prefix: http://docs.pivotal.io/redis/1-4
@@ -630,7 +657,7 @@ sections:
   subnav_template: pivotal_redis_service_subnav-1-4.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.6
+    latest_stable_version: 1.7
     local_header_img: /images/cloud_rings.png
     local_header_title: Pivotal Redis
     search_placeholder: Search Redis 1.4
@@ -638,6 +665,8 @@ sections:
     local_product_version: 1.4
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/redis/1-7
+        display_name: v1.7
       - url_prefix: http://docs.pivotal.io/redis/1-6
         display_name: v1.6
       - url_prefix: http://docs.pivotal.io/redis/1-5
