@@ -47,6 +47,8 @@ r301 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
 r301 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
 r301 %r{/130/(.*)}, "http://hdb.docs.pivotal.io/130/$1"
 r301 %r{/131/(.*)}, "http://hdb.docs.pivotal.io/131/$1"
+r301 %r{/210/(.*)}, "http://hdb.docs.pivotal.io/210/$1"
+r301 %r{/211/(.*)}, "http://hdb.docs.pivotal.io/211/$1"
 
 r301 %r{/pivotalhd/1010/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1010/$1'
 r301 %r{/pivotalhd/1030/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1030/$1'
