@@ -66,6 +66,11 @@ sections:
   directory: a9s-consul-dns
   subnav_template: a9s-consul-dns_subnav.erb
 - repository:
+    name: pivotal-cf/docs-a9s-elasticsearch
+    at_path: docs-content
+  directory: a9s-elasticsearch
+  subnav_template: a9s-elasticsearch_subnav.erb
+- repository:
     name: pivotal-cf/docs-a9s-mongodb
     at_path: docs-content
   directory: a9s-mongodb
