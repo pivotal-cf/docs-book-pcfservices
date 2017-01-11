@@ -196,6 +196,11 @@ sections:
   directory: guardtime
   subnav_template: pivotal_guardtime.erb
 - repository:
+    name: pivotal-cf/docs-hazelcast
+    at_path: docs-content
+  directory: hazelcast
+  subnav_template: hazelcast_subnav.erb
+- repository:
     name: pivotal-cf/docs-identity
     ref: '1.9'
   directory: p-identity/1-9
