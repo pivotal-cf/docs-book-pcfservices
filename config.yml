@@ -694,11 +694,11 @@ sections:
   product_info:
     changelog_href: http://docs.pivotal.io/service-backup/18-0/release-notes.html
     use_local_header: true
-    latest_stable_version: 18.0.2
+    latest_stable_version: 18.0.3
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Backups
     search_placeholder: Search
-    local_product_version: 18.0.2
+    local_product_version: 18.0.3
     local_header_links: []
     local_header_version_list:
       - <a href="/service-backup/17-2">v17.2.0</a>
@@ -713,14 +713,14 @@ sections:
   product_info:
     changelog_href: http://docs.pivotal.io/service-backup/17-2/release-notes.html
     use_local_header: true
-    latest_stable_version: 18.0.2
+    latest_stable_version: 18.0.3
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Backups
     search_placeholder: Search
     local_product_version: 17.2.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-backup/18-0">v18.0.2</a>
+      - <a href="/service-backup/18-0">v18.0.3</a>
       - <a href="/service-backup/17-1">v17.1.2</a>
       - <a href="/service-backup/17-0">v17.0.0</a>
       - <a href="/service-backup/16-0">v16.0.1</a>
@@ -732,14 +732,14 @@ sections:
   product_info:
     changelog_href: http://docs.pivotal.io/service-backup/17-1/release-notes.html
     use_local_header: true
-    latest_stable_version: 18.0.2
+    latest_stable_version: 18.0.3
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Backups
     search_placeholder: Search
     local_product_version: 17.1.2
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-backup/18-0">v18.0.2</a>
+      - <a href="/service-backup/18-0">v18.0.3</a>
       - <a href="/service-backup/17-2">v17.2.0</a>
       - <a href="/service-backup/17-0">v17.0.0</a>
       - <a href="/service-backup/16-0">v16.0.1</a>
@@ -750,14 +750,14 @@ sections:
   product_id: service-backups-v17-0
   product_info:
     use_local_header: true
-    latest_stable_version: 18.0.2
+    latest_stable_version: 18.0.3
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Backups
     search_placeholder: Search
     local_product_version: 17.0.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-backup/18-0">v18.0.2</a>
+      - <a href="/service-backup/18-0">v18.0.3</a>
       - <a href="/service-backup/17-2">v17.2.0</a>
       - <a href="/service-backup/17-1">v17.1.2</a>
       - <a href="/service-backup/16-0">v16.0.1</a>
@@ -768,14 +768,14 @@ sections:
   product_id: service-backups-v16-0
   product_info:
     use_local_header: true
-    latest_stable_version: 18.0.2
+    latest_stable_version: 18.0.3
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Backups
     search_placeholder: Search
     local_product_version: 16.0.1
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-backup/18-0">v18.0.2</a>
+      - <a href="/service-backup/18-0">v18.0.3</a>
       - <a href="/service-backup/17-2">v17.2.0</a>
       - <a href="/service-backup/17-1">v17.1.2</a>
       - <a href="/service-backup/17-0">v17.0.0</a>
