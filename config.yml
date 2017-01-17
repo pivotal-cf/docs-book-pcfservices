@@ -12,36 +12,36 @@ public_host: docs.pivotal.io
 elastic_search: true
 
 products:
-  - id: sso-1-7
-    subnav_root: p-identity/1-7/sso-subnav-root.html
-  - id: sso-1-8
-    subnav_root: p-identity/1-8/sso-subnav-root.html
-  - id: sso-1-9
-    subnav_root: p-identity/1-9/sso-subnav-root.html
-  - id: odb-v0-13
-    subnav_root: on-demand-service-broker/0-13/subnav-root.html
-  - id: odb-v0-12
-    subnav_root: on-demand-service-broker/0-12/subnav-root.html
-  - id: odb-v0-11
-    subnav_root: on-demand-service-broker/0-11/subnav-root.html
-  - id: odb-v0-10
-    subnav_root: on-demand-service-broker/0-10/subnav-root.html
-  - id: odb-v0-9
-    subnav_root: on-demand-service-broker/0-9/subnav-root.html
-  - id: service-metrics-v1-5
-    subnav_root: service-metrics/1-5/subnav-root.html
-  - id: service-metrics-v1-4
-    subnav_root: service-metrics/1-4/subnav-root.html
-  - id: service-backups-v18-0
-    subnav_root: service-backup/18-0/subnav-root.html
-  - id: service-backups-v17-2
-    subnav_root: service-backup/17-2/subnav-root.html
-  - id: service-backups-v17-1
-    subnav_root: service-backup/17-1/subnav-root.html
-  - id: service-backups-v17-0
-    subnav_root: service-backup/17-0/subnav-root.html
-  - id: service-backups-v16-0
-    subnav_root: service-backup/16-0/subnav-root.html
+  # - id: sso-1-7
+  #   subnav_root: p-identity/1-7/sso-subnav-root.html
+  # - id: sso-1-8
+  #   subnav_root: p-identity/1-8/sso-subnav-root.html
+  # - id: sso-1-9
+  #   subnav_root: p-identity/1-9/sso-subnav-root.html
+  # - id: odb-v0-13
+  #   subnav_root: on-demand-service-broker/0-13/subnav-root.html
+  # - id: odb-v0-12
+  #   subnav_root: on-demand-service-broker/0-12/subnav-root.html
+  # - id: odb-v0-11
+  #   subnav_root: on-demand-service-broker/0-11/subnav-root.html
+  # - id: odb-v0-10
+  #   subnav_root: on-demand-service-broker/0-10/subnav-root.html
+  # - id: odb-v0-9
+  #   subnav_root: on-demand-service-broker/0-9/subnav-root.html
+  # - id: service-metrics-v1-5
+  #   subnav_root: service-metrics/1-5/subnav-root.html
+  # - id: service-metrics-v1-4
+  #   subnav_root: service-metrics/1-4/subnav-root.html
+  # - id: service-backups-v18-0
+  #   subnav_root: service-backup/18-0/subnav-root.html
+  # - id: service-backups-v17-2
+  #   subnav_root: service-backup/17-2/subnav-root.html
+  # - id: service-backups-v17-1
+  #   subnav_root: service-backup/17-1/subnav-root.html
+  # - id: service-backups-v17-0
+  #   subnav_root: service-backup/17-0/subnav-root.html
+  # - id: service-backups-v16-0
+  #   subnav_root: service-backup/16-0/subnav-root.html
   - id: concourse
     subnav_root: p-concourse/subnav_root.html
 
@@ -149,10 +149,10 @@ sections:
 #     name: pivotal-cf/docs-cloudsoft
 #   directory: cloudsoft
 #   subnav_template: cloudsoft_subnav.erb
-# - repository:
-#     name: pivotal-cf/docs-concourse
-#   directory: p-concourse
-#   product_id: concourse
+- repository:
+    name: pivotal-cf/docs-concourse
+  directory: p-concourse
+  product_id: concourse
 # - repository:
 #     name: pivotal-cf/docs-crunchy-data
 #     at_path: docs-content
