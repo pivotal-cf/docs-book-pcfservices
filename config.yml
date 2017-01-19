@@ -58,31 +58,6 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    name: pivotal-cf/docs-a9s-bosh
-    at_path: docs-content
-  directory: a9s-bosh
-  subnav_template: a9s-bosh_subnav.erb
-- repository:
-    name: pivotal-cf/docs-a9s-consul
-    at_path: docs-content
-  directory: a9s-consul-dns
-  subnav_template: a9s-consul-dns_subnav.erb
-- repository:
-    name: pivotal-cf/docs-a9s-elasticsearch
-    at_path: docs-content
-  directory: a9s-elasticsearch
-  subnav_template: a9s-elasticsearch_subnav.erb
-- repository:
-    name: pivotal-cf/docs-a9s-mongodb
-    at_path: docs-content
-  directory: a9s-mongodb
-  subnav_template: a9s-mongodb_subnav.erb
-- repository:
-    name: pivotal-cf/docs-a9s-postgresql
-    at_path: docs-content
-  directory: a9s-postgresql
-  subnav_template: a9s-postgresql.erb
-- repository:
     name: pivotal-cf/docs-addon-antivirus
   directory: addon-antivirus
   subnav_template: addon_antivirus.erb
@@ -95,113 +70,17 @@ sections:
   directory: addon-ipsec
   subnav_template: addon_ipsec.erb
 - repository:
-    name: pivotal-cf/docs-aerospike
-    at_path: docs-content
-  directory: aerospike
-  subnav_template: aerospike_subnav.erb
-- repository:
-    name: pivotal-cf/docs-aerospike-ee
-    at_path: docs-content
-  directory: aerospike-ee
-  subnav_template: aerospike_ee_subnav.erb
-- repository:
     name: pivotal-cf-experimental/docs-appdog
   directory: pcf-appdog
   subnav_template: appdog.erb
-- repository:
-    name: pivotal-cf/docs-apigee
-  directory: apigee
-  subnav_template: apigee_subnav.erb
-- repository:
-    name: pivotal-cf/docs-apigee-bosh
-    at_path: docs-content
-  directory: apigee-bosh
-  subnav_template: apigee_bosh_subnav.erb
-- repository:
-    name: pivotal-cf/docs-appdynamics
-  directory: appdynamics
-  subnav_template: _appdynamics_subnav.erb
-- repository:
-    name: pivotal-cf/docs-aws-services
-  directory: aws-services
-  subnav_template: aws_services_subnav.erb
-- repository:
-    name: pivotal-cf/docs-azuqua
-  directory: azuqua
-  subnav_template: azuqua_subnav.erb
-- repository:
-    name: pivotal-cf/docs-azure
-    at_path: docs-content
-  directory: azure-sb
-  subnav_template: azuresb_subnav.erb
-- repository:
-    name: pivotal-cf/docs-blue-medora
-    at_path: docs-content
-  directory: blue-medora
-  subnav_template: blue_medora_subnav.erb
 - repository:
     name: pivotal-cf/docs-cassandra
   directory: cassandra
   subnav_template: pivotal_cassandra_service_subnav.erb
 - repository:
-    name: pivotal-cf/docs-cloudbees
-  directory: cloudbees
-  subnav_template: pivotal_cloudbees_service_subnav.erb
-- repository:
-    name: pivotal-cf/docs-cloudsoft
-  directory: cloudsoft
-  subnav_template: cloudsoft_subnav.erb
-- repository:
     name: pivotal-cf/docs-concourse
   directory: p-concourse
   product_id: concourse
-- repository:
-    name: pivotal-cf/docs-crunchy-data
-    at_path: docs-content
-  directory: crunchy
-  subnav_template: crunchy_subnav.erb
-- repository:
-    name: pivotal-cf/docs-dynatrace
-    at_path: docs-content
-  directory: dynatrace
-  subnav_template: pivotal_dynatrace_service_subnav.erb
-- repository:
-    name: pivotal-cf/docs-edb-postgres
-  directory: edb-postgres
-  subnav_template: pivotal_edb_postgres.erb
-- repository:
-    name: pivotal-cf/docs-erlang-wombat
-    at_path: docs-content
-  directory: wombat
-  subnav_template: erlang_wombat_subnav.erb
-- repository:
-    name: pivotal-cf/docs-firstdata
-    at_path: docs-content
-  directory: firstdata
-  subnav_template: firstdata_subnav.erb
-- repository:
-    name: pivotal-cf/docs-forgerock
-    at_path: docs-content
-  directory: forgerock
-  subnav_template: forgerock_subnav.erb
-- repository:
-    name: pivotal-cf/docs-gitlab
-  directory: gitlab
-  subnav_template: pivotal_gitlab_service_subnav.erb
-- repository:
-    name: pivotal-cf/docs-google
-    at_path: docs-content
-  directory: gcp-sb
-  subnav_template: gcpsb_subnav.erb
-- repository:
-    name: pivotal-cf/docs-guardtime
-  directory: guardtime
-  subnav_template: pivotal_guardtime.erb
-- repository:
-    name: pivotal-cf/docs-hazelcast
-    at_path: docs-content
-  directory: hazelcast
-  subnav_template: hazelcast_subnav.erb
 - repository:
     name: pivotal-cf/docs-identity
     ref: '1.9'
@@ -260,10 +139,6 @@ sections:
       - url_prefix: http://docs.pivotal.io/p-identity/1-8
         display_name: v1.8
 - repository:
-    name: pivotal-cf/docs-jfrog
-  directory: jfrog
-  subnav_template: pivotal_jfrog_service_subnav.erb
-- repository:
     name: pivotal-cf/docs-jmx-bridge
   directory: jmx-bridge/1-8
   subnav_template: pivotal_jmx_bridge_subnav.erb
@@ -296,10 +171,6 @@ sections:
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/jmx-bridge/1-8
         display_name: v1.8
-- repository:
-    name: pivotal-cf/docs-klacloud
-  directory: knowtify
-  subnav_template: pivotal_knowtify_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-logsearch
   directory: logsearch
@@ -363,17 +234,6 @@ sections:
       - url_prefix: http://docs.pivotal.io/pcf-metrics/1-1
         display_name: v1.1
 
-- repository:
-    name: pivotal-cf/docs-mongodb-managed
-    at_path: docs-content
-  directory: mongodb
-  subnav_template: pivotal_mongodb_service_subnav.erb
-
-- repository:
-    name: pivotal-cf/docs-mulesoft-anypoint
-    at_path: docs-content
-  directory: mulesoft
-  subnav_template: mulesoft_subnav.erb
 
 - repository:
     name: pivotal-cf/docs-mysql
@@ -417,14 +277,6 @@ sections:
       - <a href="http://docs.pivotal.io/archives/mysql-docs-1.5.pdf">v1.5</a>
       - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
 
-- repository:
-    name: pivotal-cf/docs-neo4j
-  directory: neo4j
-  subnav_template: pivotal_neo4j_service_subnav.erb
-- repository:
-    name: pivotal-cf/docs-new-relic
-  directory: newrelic
-  subnav_template: pivotal_new_relic_service_subnav.erb
 - repository:
     name: pivotal-cf/docs-on-demand-service-broker
     ref: v0.14.x
@@ -539,12 +391,6 @@ sections:
       - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
       - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
       - <a href="/on-demand-service-broker/0-10">v0.10.1</a>
-- repository:
-    name: pivotal-cf/docs-book-tiledev
-    at_path: docs-content
-    ref: "master"
-  directory: tiledev
-  subnav_template: tiledev_subnav.erb
 - repository:
     name: pivotal-cf/docs-partners
     ref: "1.8"
@@ -851,12 +697,6 @@ sections:
   subnav_template: spring_cloud_data_flow_subnav.erb
 
 - repository:
-    name: pivotal-cf/docs-splunk
-    at_path: docs-content
-  directory: splunk
-  subnav_template: splunk_subnav.erb
-
-- repository:
     name: pivotal-cf/docs-spring-cloud-services
     ref: v1.3
   directory: spring-cloud-services/1-3
@@ -953,10 +793,6 @@ sections:
     name: pivotal-cf/docs-spring-xd
   directory: spring-xd
   subnav_template: spring_xd_service_subnav.erb
-- repository:
-    name: pivotal-cf/docs-tibco-businessworks
-  directory: tibco-businessworks
-  subnav_template: tibco_businessworks_subnav.erb
 
 # repos in other orgs: alphabetical by org
 - repository:
@@ -967,12 +803,6 @@ sections:
     name: cfmobile/docs-push-notifications
   directory: push
   subnav_template: push_subnav.erb
-
-- repository:
-    name: dingotiles/dingo-docs
-    at_path: docs-dingo-postgresql
-  directory: dingo-postgresql
-  subnav_template: _dingo_postgresql_subnav.erb
 
 - repository:
     name: gemfire/docs-gemfire-cf
