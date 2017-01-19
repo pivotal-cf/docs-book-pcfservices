@@ -94,6 +94,7 @@ r301 '/spring-cloud-services/config-server/updating-instance-settings.html', '/s
 r301 '/spring-cloud-services/config-server/writing-a-spring-client.html', '/spring-cloud-services/config-server/writing-client-applications.html'
 r301 '/spring-cloud-services/service-registry/consuming-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
 r301 '/spring-cloud-services/service-registry/registering-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
+r301 '/spring-cloud-services/service-registry/background.html', '/spring-cloud-services/service-registry/oss.html'
 
 r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
@@ -112,7 +113,6 @@ r301 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
 r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-9/windows/index.html'
-
 
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/on-demand-service-broker/$1-$2/$3"
