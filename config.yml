@@ -555,10 +555,6 @@ sections:
         display_name: v1.5
 
 - repository:
-    name: pivotal-cf/docs-rlec
-  directory: rlec
-  subnav_template: pivotal_rlec.erb
-- repository:
     name: pivotal-cf/docs-service-backup
     ref: v18.0.x
   directory: service-backup/18-0
@@ -681,16 +677,6 @@ sections:
     local_header_links: []
     local_header_version_list:
       - <a href="/service-metrics/1-5">v1.5.4</a>
-- repository:
-    name: pivotal-cf/docs-signal-sciences
-    at_path: docs-content
-  directory: signalsciences
-  subnav_template: signalsciences_subnav.erb
-- repository:
-    name: pivotal-cf/docs-solace-messaging
-    at_path: docs-content
-  directory: solace-messaging
-  subnav_template: pivotal_solace_messaging.erb
 - repository:
     name: pivotal-cf/docs-spring-cloud-data-flow
   directory: spring-cloud-data-flow
