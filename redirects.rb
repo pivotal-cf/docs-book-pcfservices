@@ -119,6 +119,7 @@ r301 '/spring-cloud-services/config-server/updating-instance-settings.html', '/s
 r301 '/spring-cloud-services/config-server/writing-a-spring-client.html', '/spring-cloud-services/config-server/writing-client-applications.html'
 r301 '/spring-cloud-services/service-registry/consuming-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
 r301 '/spring-cloud-services/service-registry/registering-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
+r301 '/spring-cloud-services/service-registry/background.html', '/spring-cloud-services/service-registry/oss.html'
 
 r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
