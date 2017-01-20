@@ -803,3 +803,19 @@ sections:
     name: bentarnoff/docs-tracker-pcf
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
+
+- repository:
+    name: pivotal-cf/docs-aws-services
+  directory: aws-services
+  subnav_template: aws_services_subnav.erb
+
+- repository:
+    name: pivotal-cf/docs-aws-services
+  directory: aws-services
+  subnav_template: aws_services_subnav.erb
+
+- repository:
+    name: pivotal-cf/docs-book-tiledev
+  directory: tiledev
+  subnav_template: tiledev_subnav.erb
+
