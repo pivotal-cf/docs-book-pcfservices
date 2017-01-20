@@ -201,5 +201,3 @@ r301 %r{/signalsciences/(.*)}, "/partners/signalsciences/$1"
 r301 %r{/solace-messaging/(.*)}, "/partners/signalsciences/$1"
 r301 %r{/splunk/(.*)}, "/partners/splunk/$1"
 r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
-
-r301 "/partners/index.html", "https://docs.pivotal.io"
