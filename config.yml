@@ -682,29 +682,28 @@ sections:
   directory: spring-cloud-data-flow
   subnav_template: spring_cloud_data_flow_subnav.erb
 
-# commented out temporarily [jbh]
-# - repository:
-#     name: pivotal-cf/docs-spring-cloud-services
-#     ref: v1.3
-#   directory: spring-cloud-services/1-3
-#   subnav_template: spring_cloud_1-3.erb
-#   product_info:
-#     use_local_header: true
-#     latest_stable_version: 1.3
-#     changelog_href: http://docs.pivotal.io/spring-cloud-services/1-3/release-notes.html
-#     local_header_img: /images/cloud_rings.png
-#     local_header_title: Spring Cloud Services
-#     search_placeholder: Search SCS 1.3
-#     url_prefix: spring-cloud-services/1-3
-#     local_product_version: 1.3
-#     local_header_links: []
-#     local_header_version_list:
-#       - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-2
-#         display_name: v1.2
-#       - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-1
-#         display_name: v1.1
-#       - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-0
-#         display_name: v1.0
+- repository:
+    name: pivotal-cf/docs-spring-cloud-services
+    ref: v1.3
+  directory: spring-cloud-services/1-3
+  subnav_template: spring_cloud_1-3.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.3
+    changelog_href: http://docs.pivotal.io/spring-cloud-services/1-3/release-notes.html
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Spring Cloud Services
+    search_placeholder: Search SCS 1.3
+    url_prefix: spring-cloud-services/1-3
+    local_product_version: 1.3
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-2
+        display_name: v1.2
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-1
+        display_name: v1.1
+      - url_prefix: http://docs.pivotal.io/spring-cloud-services/1-0
+        display_name: v1.0
 - repository:
     name: pivotal-cf/docs-spring-cloud-services
     ref: v1.2
