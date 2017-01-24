@@ -6,7 +6,6 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
   rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
 }
 
-r301 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-3/$1"
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-13/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5/$1"
 r301 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/18-0/$1"
@@ -128,12 +127,14 @@ r301 '/compatibility-matrix.pdf', '/resources/product-compatibility-matrix.pdf'
 
 r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
 
+# Spring Cloud Services redirects
 r301 '/spring-cloud-services/circuit-breaker/using-a-circuit-breaker.html', '/spring-cloud-services/circuit-breaker/writing-client-applications.html'
 r301 '/spring-cloud-services/config-server/updating-instance-settings.html', '/spring-cloud-services/config-server/updating-an-instance.html'
 r301 '/spring-cloud-services/config-server/writing-a-spring-client.html', '/spring-cloud-services/config-server/writing-client-applications.html'
 r301 '/spring-cloud-services/service-registry/consuming-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
 r301 '/spring-cloud-services/service-registry/registering-a-service.html', '/spring-cloud-services/service-registry/writing-client-applications.html'
 r301 '/spring-cloud-services/service-registry/background.html', '/spring-cloud-services/service-registry/oss.html'
+r301 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-3/$1"
 
 r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
