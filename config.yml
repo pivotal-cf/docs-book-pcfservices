@@ -411,7 +411,7 @@ sections:
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
     ref: 'master'
-  directory: rabbitmq-cf/d34379b0-a290-47c7-bc6c-c45a9adfa8c7
+  directory: rabbitmq-cf-d34379b0-a290-47c7-bc6c-c45a9adfa8c7
   subnav_template: pivotal_rabbitmq_service_subnav-unreleased.erb
   product_info:
     use_local_header: true
@@ -419,7 +419,7 @@ sections:
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.8.0
-    url_prefix: rabbitmq-cf/d34379b0-a290-47c7-bc6c-c45a9adfa8c7
+    url_prefix: rabbitmq-cf-d34379b0-a290-47c7-bc6c-c45a9adfa8c7
     local_product_version: 1.8.0
     local_header_links: []
     local_header_version_list:
