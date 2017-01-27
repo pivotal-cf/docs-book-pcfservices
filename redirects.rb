@@ -6,7 +6,7 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
   rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
 }
 
-r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-13/$1"
+r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-14/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5/$1"
 r301 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/18-0/$1"
 r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-9/buildpacks/$1'

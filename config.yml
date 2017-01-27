@@ -285,7 +285,7 @@ sections:
   product_info:
     use_local_header: true
     latest_stable_version: 0.14.1
-    local_header_img: /on-demand-service-broker/0-13/img/pcf-services-sdk.png
+    local_header_img: /on-demand-service-broker/0-14/img/pcf-services-sdk.png
     local_header_title: On-Demand Services SDK
     search_placeholder: Search
     local_product_version: 0.14.1
