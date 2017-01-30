@@ -427,17 +427,17 @@ sections:
 
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
-    ref: '1.7.9'
+    ref: '1.7-live'
   directory: rabbitmq-cf/1-7
   subnav_template: pivotal_rabbitmq_service_subnav-1-7.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.7.9
+    latest_stable_version: 1.7.10
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
-    search_placeholder: Search RabbitMQ 1.7.9
+    search_placeholder: Search RabbitMQ 1.7.10
     url_prefix: rabbitmq-cf/1-7
-    local_product_version: 1.7.9
+    local_product_version: 1.7.10
     local_header_links: []
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7
@@ -448,12 +448,12 @@ sections:
         display_name: v1.5
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
-    ref: '1.6.14'
+    ref: '1.6-live'
   directory: rabbitmq-cf/1-6
   subnav_template: pivotal_rabbitmq_service_subnav-1-6.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.7.9
+    latest_stable_version: 1.7.10
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.14
@@ -469,12 +469,12 @@ sections:
         display_name: v1.5
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
-    ref: '1.5.23'
+    ref: '1.5-live'
   directory: rabbitmq-cf/1-5
   subnav_template: pivotal_rabbitmq_service_subnav-1-5.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.7.9
+    latest_stable_version: 1.7.10
     local_header_img: /images/cloud_rings.png
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.5.23
@@ -510,7 +510,7 @@ sections:
         display_name: v1.5
       - url_prefix: http://docs.pivotal.io/redis/1-4
         display_name: v1.4
-        
+
 - repository:
     name: pivotal-cf/docs-redis
     ref: '1.6'
@@ -832,7 +832,6 @@ sections:
 
 - repository:
     name: pivotal-cf/docs-book-tiledev
-    at_path: docs-content 
+    at_path: docs-content
   directory: tiledev
   subnav_template: tiledev_subnav.erb
-
