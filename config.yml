@@ -458,7 +458,7 @@ sections:
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.6.15
     url_prefix: rabbitmq-cf/1-6
-    local_product_version: 1.6.14
+    local_product_version: 1.6.15
     local_header_links: []
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7
@@ -479,7 +479,7 @@ sections:
     local_header_title: RabbitMQ for PCF
     search_placeholder: Search RabbitMQ 1.5.24
     url_prefix: rabbitmq-cf/1-5
-    local_product_version: 1.5.23
+    local_product_version: 1.5.24
     local_header_links: []
     local_header_version_list:
       - url_prefix: http://docs.pivotal.io/rabbitmq-cf/1-7
