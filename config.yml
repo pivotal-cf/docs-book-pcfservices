@@ -808,8 +808,19 @@ sections:
   subnav_template: app_dist_subnav.erb
 - repository:
     name: cfmobile/docs-push-notifications
-  directory: push
-  subnav_template: push_subnav.erb
+    ref: '1.7'
+  directory: push/1-7
+  subnav_template: push_subnav_1-7.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.7
+    changelog_href: http://docs.pivotal.io/push/1-7/release-notes.html
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Push Notification Services
+    search_placeholder: Search PCF Push 1.7
+    url_prefix: push/1-7
+    local_product_version: 1.7
+    local_header_links: []
 
 - repository:
     name: gemfire/docs-gemfire-cf
