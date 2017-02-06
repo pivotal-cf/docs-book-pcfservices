@@ -675,11 +675,11 @@ sections:
   product_id: service-metrics-v1-5
   product_info:
     use_local_header: true
-    latest_stable_version: 1.5.4
+    latest_stable_version: 1.5.5
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Metrics
     search_placeholder: Search
-    local_product_version: 1.5.4
+    local_product_version: 1.5.5
     local_header_links: []
     local_header_version_list:
       - <a href="/service-metrics/1-4">v1.4.3</a>
@@ -690,14 +690,14 @@ sections:
   product_id: service-metrics-v1-4
   product_info:
     use_local_header: true
-    latest_stable_version: 1.5.4
+    latest_stable_version: 1.5.5
     local_header_img: /on-demand-service-broker/0-10/img/pcf-services-sdk.png
     local_header_title: Service Metrics
     search_placeholder: Search
     local_product_version: 1.4.3
     local_header_links: []
     local_header_version_list:
-      - <a href="/service-metrics/1-5">v1.5.4</a>
+      - <a href="/service-metrics/1-5">v1.5.5</a>
 - repository:
     name: pivotal-cf/docs-spring-cloud-data-flow
   directory: spring-cloud-data-flow
