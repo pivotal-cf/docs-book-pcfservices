@@ -392,6 +392,10 @@ sections:
       - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
       - <a href="/on-demand-service-broker/0-10">v0.10.1</a>
 - repository:
+    name: pivotal-cf/docs-service-metrics
+  directory: service-metrics
+  subnav_template: pivotal_service_metrics_subnav.erb
+- repository:
     name: pivotal-cf/docs-partners
     ref: "1.8"
   directory: partners
