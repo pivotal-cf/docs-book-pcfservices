@@ -98,6 +98,7 @@ r301 %r{/mobile/notifications/(.*)}, '/push/'
 r301 %r{/mobile/app_distribution/(.*)}, '/app-dist/'
 r301 %r{/mobile/push/(.*)}, '/push/'
 r301 'v1_6_0/api/tags/index.html', '/v1_6_0/api/topics/index.html'
+r301 %r{/push/(?![\d-]+)(.*)}, "/push/1-7/$1"
 
 r301 %r{/pivotalcf/packaging/(.*)}, '/tiledev/$1'
 r301 %r{/pivotalcf/partners/(.*)}, '/tiledev/$1'
