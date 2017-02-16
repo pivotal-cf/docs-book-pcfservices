@@ -61,7 +61,7 @@ This is a Bookbinder project. See [its README](https://github.com/pivotal-cf/boo
 
 ## Continuous Integration Technical Details
 
-We deploy this documentation as an app using Concourse pipelines, at https://pubtools.ci.cf-app.com/pipelines/cf-current
+We deploy this documentation as an app using Concourse pipelines, at https://p-concourse.wings.cf-app.com/teams/system-team-docs-docs-1-88aa/pipelines/cf-current?groups=pcfservices
 
 Credential for our pipeline are stored in LastPass. 
 Tarballs of the builds are stored on Amazon S3. 
