@@ -39,9 +39,6 @@ r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
 r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
 r301 %r{/p-MySQL/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
 
-r301 %r{/p-mysql/1-9/(.*)}, "/p-mysql/1-8/$1"
-r301 %r{/p-MySQL/1-9/(.*)}, "/p-mysql/1-8/$1"
-
 r301 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
 r301 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
 r301 %r{/130/(.*)}, "http://hdb.docs.pivotal.io/130/$1"
