@@ -314,7 +314,6 @@ sections:
     local_product_version: 0.14.1
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-15">v0.15.0</a>
       - <a href="/on-demand-service-broker/0-13">v0.13.0</a>
       - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
       - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
@@ -334,7 +333,6 @@ sections:
     local_product_version: 0.13.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-15">v0.15.0</a>
       - <a href="/on-demand-service-broker/0-14">v0.14.1</a>
       - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
       - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
@@ -354,7 +352,6 @@ sections:
     local_product_version: 0.12.4
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-15">v0.15.0</a>
       - <a href="/on-demand-service-broker/0-14">v0.14.1</a>
       - <a href="/on-demand-service-broker/0-13">v0.13.0</a>
       - <a href="/on-demand-service-broker/0-11">v0.11.0</a>
@@ -374,7 +371,6 @@ sections:
     local_product_version: 0.11.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-15">v0.15.0</a>
       - <a href="/on-demand-service-broker/0-14">v0.14.1</a>
       - <a href="/on-demand-service-broker/0-13">v0.13.0</a>
       - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
@@ -394,7 +390,6 @@ sections:
     local_product_version: 0.10.1
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-15">v0.15.0</a>
       - <a href="/on-demand-service-broker/0-14">v0.14.1</a>
       - <a href="/on-demand-service-broker/0-13">v0.13.0</a>
       - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
@@ -414,7 +409,6 @@ sections:
     local_product_version: 0.9.0
     local_header_links: []
     local_header_version_list:
-      - <a href="/on-demand-service-broker/0-15">v0.15.0</a>
       - <a href="/on-demand-service-broker/0-14">v0.14.1</a>
       - <a href="/on-demand-service-broker/0-13">v0.13.0</a>
       - <a href="/on-demand-service-broker/0-12">v0.12.4</a>
