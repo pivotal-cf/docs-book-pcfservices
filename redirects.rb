@@ -156,6 +156,7 @@ r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/service-backup/$1-$2/$3"
 
 # Metrics redirects, change version at each release. Have to do it this way
 # because edge.
+r301 '/pcf-metrics/', '/pcf-metrics/1-3/index.html'
 r301 '/pcf-metrics/index.html', '/pcf-metrics/1-3/index.html'
 r301 '/pcf-metrics/installing.html', '/pcf-metrics/1-3/installing.html'
 r301 '/pcf-metrics/sizing.html', '/pcf-metrics/1-3/sizing.html'
