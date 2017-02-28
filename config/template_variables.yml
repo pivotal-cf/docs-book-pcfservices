@@ -143,26 +143,65 @@ template_variables:
   warden_garden: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry versions 1.6 and above no longer use Warden. The platform-independent Garden subsystem replaces its function. This topic is published here to help people who are running older versions of PCF.</p>
 
   scs_platform_name: Pivotal Cloud Foundry&reg;
-  scs_suffix: for [Pivotal Cloud Foundry](https://network.pivotal.io/products/pivotal-cf) (PCF)
+  scs_suffix: for <a href="https://network.pivotal.io/products/pivotal-cf">Pivotal Cloud Foundry</a> (PCF)
   scs_suffix_abbrev: for PCF
   scs_details: "_details"
   scs_sr_instance_specific_routing_intro: As of the 1.4.0 release, the Spring Cloud Services Connectors now include the Cloud Foundry application GUID and instance ID in Ribbon request headers when these values are available. This allows Ribbon to specify a particular instance of an application when making a request. In Pivotal Cloud Foundry 1.8 or later, the Gorouter will respect such instance-specific routing decisions as made by Ribbon.
+  scs_creating_instance_discrepancy: <p class='note'><strong>Note</strong><span>:</span> You may notice a discrepancy between the status given for a service instance by the cf CLI (e.g., by the <code>cf service</code> command) versus that shown on the <a href="/spring-cloud-services/operator-information.html#service-instances-dashboard">Service Instances dashboard</a>. The dashboard is updated frequently (close to real-time); the status retrieved by the cf CLI is not updated as frequently and may take time to match the dashboard.</p>
   scs_cbd_creating_instance_intro: You can create a Circuit Breaker Dashboard service instance using either the Cloud Foundry Command Line Interface tool (cf CLI) or [Pivotal Cloud Foundry](https://network.pivotal.io/products/pivotal-cf) (PCF) Apps Manager.
   scs_cbd_creating_instance_target: "_target"
   scs_cbd_creating_instance_marketplace: "_marketplace"
   scs_cbd_creating_instance_create: "_create"
   scs_cbd_creating_instance_service: "_service"
-  scs_cbd_creating_instance_discrepancy: <p class='note'><strong>Note</strong><span>:</span> You may notice a discrepancy between the status given for a service instance by the cf CLI (e.g., by the <code>cf service</code> command) versus that shown on the <a href="/spring-cloud-services/operator-information.html#service-instances-dashboard">Service Instances dashboard</a>. The dashboard is updated frequently (close to real-time); the status retrieved by the cf CLI is not updated as frequently and may take time to match the dashboard.</p>
   scs_cbd_creating_instance_img_marketplace: circuit-breaker/marketplace.png
   scs_cbd_creating_instance_img_select_plan: circuit-breaker/select_plan.png
   scs_cbd_creating_instance_img_instance_name: circuit-breaker/instance_name.png
   scs_cbd_creating_instance_img_service_successfully_added: circuit-breaker/service_successfully_added.png
   scs_cbd_creating_instance_img_manage_link: circuit-breaker/manage_link.png
+  scs_cbd_using_dashboard_img_manage_link: circuit-breaker/cbd_manage_link.png
+  scs_cbd_using_dashboard_img_dashboard_start: circuit-breaker/dashboard_start.png
+  scs_cbd_using_dashboard_img_dashboard_closed: circuit-breaker/dashboard_closed.png
+  scs_cbd_using_dashboard_img_dashboard_opening: circuit-breaker/dashboard_opening.png
+  scs_cbd_using_dashboard_img_dashboard_open: circuit-breaker/dashboard_open.png
   scs_cs_configuration_clients_img_bind_apps: config-server/bind-apps.png
   scs_cs_configuration_clients_img_save_binding: config-server/save-binding.png
   scs_cs_configuration_clients_bind_service: "_bind"
   scs_cs_configuration_clients_restage: "_restage"
   scs_cs_configuration_clients_env: "_env"
   scs_cs_configuration_clients_response: "_response"
-
-
+  scs_cs_creating_instance_target: "_target"
+  scs_cs_creating_instance_marketplace: "_marketplace"
+  scs_cs_creating_instance_create: "_create"
+  scs_cs_creating_instance_service: "_service"
+  scs_cs_creating_instance_encryption_create: "_encryption_create"
+  scs_cs_creating_instance_ssh_verification_create: "_encryption_create"
+  scs_cs_creating_instance_ssh_no_verification_create: "_encryption_create"
+  scs_cs_creating_instance_img_marketplace: config-server/marketplace.png
+  scs_cs_creating_instance_img_select_plan: config-server/select_plan.png
+  scs_cs_creating_instance_img_instance_name: config-server/instance_name.png
+  scs_cs_creating_instance_img_service_successfully_added: config-server/service_successfully_added.png
+  scs_cs_creating_instance_img_dashboard_new: config-server/dashboard-new.png
+  scs_cs_using_dashboard_manage_link: config-server/cs_manage_link.png
+  scs_cs_using_dashboard_updated_dashboard: config-server/updated-dashboard.png
+  scs_sr_creating_instance_target: "_target"
+  scs_sr_creating_instance_marketplace: "_marketplace"
+  scs_sr_creating_instance_create_one_node: "_create_one_node"
+  scs_sr_creating_instance_create_multiple_nodes: "_create_multiple_nodes"
+  scs_sr_creating_instance_service: "_service"
+  scs_sr_creating_instance_img_marketplace: service-registry/marketplace.png
+  scs_sr_creating_instance_img_select_plan: service-registry/select_plan.png
+  scs_sr_creating_instance_img_instance_name: service-registry/instance_name.png
+  scs_sr_creating_instance_img_service_successfully_added: service-registry/service_successfully_added.png
+  scs_sr_creating_instance_img_manage_link: service-registry/manage_link.png
+  scs_sr_creating_instance_img_dashboard_new: service-registry/dashboard_more.png
+  scs_sr_replication_img_copy_url: service-registry/pr-copy-url.png
+  scs_sr_replication_img_copy_peer_url: service-registry/pr-copy-peer-url.png
+  scs_sr_replication_img_peer_not_found: service-registry/dashboard-peer-not-found.png
+  scs_sr_replication_img_cert_not_verified: service-registry/dashboard-cert-not-verified.png
+  scs_sr_replication_img_different_node_counts: service-registry/dashboard-different-node-counts.png
+  scs_sr_replication_img_different_peer_list: service-registry/dashboard-different-peer-list.png
+  scs_sr_replication_img_version_difference: service-registry/dashboard-version-difference.png
+  scs_sr_using_dashboard_manage_link: service-registry/sr_manage_link.png
+  scs_sr_using_dashboard_empty_dashboard_top: service-registry/empty-dashboard-top.png
+  scs_sr_using_dashboard_empty_dashboard_middle: service-registry/empty-dashboard-middle.png
+  scs_sr_using_dashboard_registered_service: service-registry/registered_service.png
