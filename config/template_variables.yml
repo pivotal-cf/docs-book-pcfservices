@@ -191,20 +191,20 @@ template_variables:
   scs_sr_creating_instance_create_one_node: "_create_one_node"
   scs_sr_creating_instance_create_multiple_nodes: "_create_multiple_nodes"
   scs_sr_creating_instance_service: "_service"
-  scs_sr_creating_instance_img_marketplace: service-registry/marketplace.png
-  scs_sr_creating_instance_img_select_plan: service-registry/select_plan.png
-  scs_sr_creating_instance_img_instance_name: service-registry/instance_name.png
-  scs_sr_creating_instance_img_service_successfully_added: service-registry/service_successfully_added.png
-  scs_sr_creating_instance_img_manage_link: service-registry/manage_link.png
-  scs_sr_creating_instance_img_dashboard_new: service-registry/dashboard_more.png
-  scs_sr_replication_img_copy_url: service-registry/pr-copy-url.png
-  scs_sr_replication_img_copy_peer_url: service-registry/pr-copy-peer-url.png
-  scs_sr_replication_img_peer_not_found: service-registry/dashboard-peer-not-found.png
-  scs_sr_replication_img_cert_not_verified: service-registry/dashboard-cert-not-verified.png
-  scs_sr_replication_img_different_node_counts: service-registry/dashboard-different-node-counts.png
-  scs_sr_replication_img_different_peer_list: service-registry/dashboard-different-peer-list.png
-  scs_sr_replication_img_version_difference: service-registry/dashboard-version-difference.png
-  scs_sr_using_dashboard_manage_link: service-registry/sr_manage_link.png
-  scs_sr_using_dashboard_empty_dashboard_top: service-registry/empty-dashboard-top.png
-  scs_sr_using_dashboard_empty_dashboard_middle: service-registry/empty-dashboard-middle.png
-  scs_sr_using_dashboard_registered_service: service-registry/registered_service.png
+  scs_sr_creating_instance_img_marketplace: marketplace.png
+  scs_sr_creating_instance_img_select_plan: select_plan.png
+  scs_sr_creating_instance_img_instance_name: instance_name.png
+  scs_sr_creating_instance_img_service_successfully_added: service_successfully_added.png
+  scs_sr_creating_instance_img_manage_link: manage_link.png
+  scs_sr_creating_instance_img_dashboard_new: dashboard_more.png
+  scs_sr_replication_img_copy_url: pr-copy-url.png
+  scs_sr_replication_img_copy_peer_url: pr-copy-peer-url.png
+  scs_sr_replication_img_peer_not_found: dashboard-peer-not-found.png
+  scs_sr_replication_img_cert_not_verified: dashboard-cert-not-verified.png
+  scs_sr_replication_img_different_node_counts: dashboard-different-node-counts.png
+  scs_sr_replication_img_different_peer_list: dashboard-different-peer-list.png
+  scs_sr_replication_img_version_difference: dashboard-version-difference.png
+  scs_sr_using_dashboard_manage_link: sr_manage_link.png
+  scs_sr_using_dashboard_empty_dashboard_top: empty-dashboard-top.png
+  scs_sr_using_dashboard_empty_dashboard_middle: empty-dashboard-middle.png
+  scs_sr_using_dashboard_registered_service: registered_service.png
