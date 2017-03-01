@@ -163,6 +163,7 @@ template_variables:
   scs_cbd_using_dashboard_img_dashboard_closed: circuit-breaker/dashboard_closed.png
   scs_cbd_using_dashboard_img_dashboard_opening: circuit-breaker/dashboard_opening.png
   scs_cbd_using_dashboard_img_dashboard_open: circuit-breaker/dashboard_open.png
+  scs_cs_self_signed_cert: "_self_signed_cert"
   scs_cs_configuration_clients_img_bind_apps: config-server/bind-apps.png
   scs_cs_configuration_clients_img_save_binding: config-server/save-binding.png
   scs_cs_configuration_clients_bind_service: "_bind"
@@ -183,6 +184,8 @@ template_variables:
   scs_cs_creating_instance_img_dashboard_new: config-server/dashboard-new.png
   scs_cs_using_dashboard_manage_link: config-server/cs_manage_link.png
   scs_cs_using_dashboard_updated_dashboard: config-server/updated-dashboard.png
+  scs_cs_writing_client_applications_add_buildpack: <p class='tip'>If you cannot use version 3.7.1 or later, you can add the JCE Unlimited Strength policy files to an earlier version of the Cloud Foundry Java buildpack. Fork the <a href="https://github.com/cloudfoundry/java-buildpack">buildpack on GitHub</a>, then download the policy files from Oracle and place them in the buildpack's <code>resources/open_jdk_jre/lib/security</code> directory. Follow the instructions in the <a href="http://docs.pivotal.io/pivotalcf/adminguide/buildpacks.html">Managing Custom Buildpacks</a> topic to add this buildpack to Pivotal Cloud Foundry. Be sure that it has the lowest position of all enabled Java buildpacks.</p>
+  scs_sr_self_signed_cert: "_self_signed_cert"
   scs_sr_creating_instance_target: "_target"
   scs_sr_creating_instance_marketplace: "_marketplace"
   scs_sr_creating_instance_create_one_node: "_create_one_node"
