@@ -153,16 +153,16 @@ template_variables:
   scs_cbd_creating_instance_marketplace: "_marketplace"
   scs_cbd_creating_instance_create: "_create"
   scs_cbd_creating_instance_service: "_service"
-  scs_cbd_creating_instance_img_marketplace: circuit-breaker/marketplace.png
-  scs_cbd_creating_instance_img_select_plan: circuit-breaker/select_plan.png
-  scs_cbd_creating_instance_img_instance_name: circuit-breaker/instance_name.png
-  scs_cbd_creating_instance_img_service_successfully_added: circuit-breaker/service_successfully_added.png
-  scs_cbd_creating_instance_img_manage_link: circuit-breaker/manage_link.png
-  scs_cbd_using_dashboard_img_manage_link: circuit-breaker/cbd_manage_link.png
-  scs_cbd_using_dashboard_img_dashboard_start: circuit-breaker/dashboard_start.png
-  scs_cbd_using_dashboard_img_dashboard_closed: circuit-breaker/dashboard_closed.png
-  scs_cbd_using_dashboard_img_dashboard_opening: circuit-breaker/dashboard_opening.png
-  scs_cbd_using_dashboard_img_dashboard_open: circuit-breaker/dashboard_open.png
+  scs_cbd_creating_instance_img_marketplace: marketplace.png
+  scs_cbd_creating_instance_img_select_plan: select_plan.png
+  scs_cbd_creating_instance_img_instance_name: instance_name.png
+  scs_cbd_creating_instance_img_service_successfully_added: service_successfully_added.png
+  scs_cbd_creating_instance_img_manage_link: manage_link.png
+  scs_cbd_using_dashboard_img_manage_link: cbd_manage_link.png
+  scs_cbd_using_dashboard_img_dashboard_start: dashboard_start.png
+  scs_cbd_using_dashboard_img_dashboard_closed: dashboard_closed.png
+  scs_cbd_using_dashboard_img_dashboard_opening: dashboard_opening.png
+  scs_cbd_using_dashboard_img_dashboard_open: dashboard_open.png
   scs_cs_self_signed_cert: "_self_signed_cert"
   scs_cs_configuration_clients_img_bind_apps: config-server/bind-apps.png
   scs_cs_configuration_clients_img_save_binding: config-server/save-binding.png
