@@ -473,8 +473,22 @@ sections:
     local_product_version: 1.8.0
     local_header_links: []
     local_header_version_list:
-
-
+# Like above, dark launching the RabbitMQ ODB documentation
+- repository:
+    name: pivotal-cf/docs-rabbitmq-staging
+    ref: '1.8-odb'
+  directory: rabbitmq-cf-d34379b0-a290-47c7-bc6c-c45a9adfa8c8
+  subnav_template: pivotal_rabbitmq_service_subnav-1-8.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8.0
+    local_header_img: /images/cloud_rings.png
+    local_header_title: RabbitMQ for PCF
+    search_placeholder: Search RabbitMQ 1.8.0
+    url_prefix: rabbitmq-cf-d34379b0-a290-47c7-bc6c-c45a9adfa8c8
+    local_product_version: 1.8.0
+    local_header_links: []
+    local_header_version_list:
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
     ref: '1.7-live'
