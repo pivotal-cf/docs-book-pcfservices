@@ -137,14 +137,14 @@ r301 %r{/spring-cloud-services/1-3/circuit-breaker/(.*)}, "/spring-cloud-service
 r301 %r{/spring-cloud-services/1-3/config-server/(.*)}, "/spring-cloud-services/1-3/common/config-server/$1"
 r301 %r{/spring-cloud-services/1-3/service-registry/(.*)}, "/spring-cloud-services/1-3/common/service-registry/$1"
 
-r301 '/spring-cloud-services', '/spring-cloud-services/common/'
+r301 '/spring-cloud-services/1-3/', '/spring-cloud-services/1-3/common/'
 r301 '/spring-cloud-services/1-3/index.html', '/spring-cloud-services/1-3/common/index.html'
 r301 '/spring-cloud-services/1-3/security-overview.html', '/spring-cloud-services/1-3/common/security-overview.html'
 r301 '/spring-cloud-services/1-3/client-dependencies.html', '/spring-cloud-services/1-3/common/client-dependencies.html'
 r301 '/spring-cloud-services/1-3/client-troubleshooting.html', '/spring-cloud-services/1-3/common/client-troubleshooting.html'
 r301 '/spring-cloud-services/1-3/service-instance-upgrades.html', '/spring-cloud-services/1-3/common/service-instance-upgrades.html'
 
-r301 %r{/spring-cloud-services/shared/(?![\d-]+)(.*)}, "/spring-cloud-services/common/$1"
+r301 %r{/spring-cloud-services/1-3/shared/(?![\d-]+)(.*)}, "/spring-cloud-services/1-3/common/$1"
 
 r301 %r{/spring-cloud-services/(?![\d-]+)(.*+)}, "/spring-cloud-services/1-3/$1"
 
