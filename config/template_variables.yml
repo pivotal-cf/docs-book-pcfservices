@@ -164,6 +164,7 @@ template_variables:
   scs_cbd_using_dashboard_img_dashboard_opening: circuit-breaker/dashboard_opening.png
   scs_cbd_using_dashboard_img_dashboard_open: circuit-breaker/dashboard_open.png
   scs_cs_self_signed_cert: "_self_signed_cert"
+  scs_cs_oauth_token: "_oauth_token"
   scs_cs_configuration_clients_img_bind_apps: config-server/bind-apps.png
   scs_cs_configuration_clients_img_save_binding: config-server/save-binding.png
   scs_cs_configuration_clients_bind_service: "_bind"
