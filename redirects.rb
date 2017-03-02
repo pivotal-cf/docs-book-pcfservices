@@ -119,7 +119,7 @@ r301 '/partners/tiles.html', '/tiledev/property-reference.html'
 
 r301 '/p1-services/MongoDB.html', '/mongodb/index.html'
 r301 '/p1-services/Neo4j.html', '/neo4j/index.html'
-r301 '/p1-services/Cassandra.html', '/cassandra/index.html'
+r301 '/p1-services/Cassandra.html', 'https://github.com/pivotal-cf/docs-cassandra'
 
 r301 '/compatibility-matrix.pdf', '/resources/product-compatibility-matrix.pdf'
 
@@ -192,6 +192,9 @@ r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-9/$1"
 
 # Spring Cloud Services
+
+# DataStax Cassandra
+r301 %r{/cassandra/(.*)}, 'https://github.com/pivotal-cf/docs-cassandra'
 
 # Partners
 
