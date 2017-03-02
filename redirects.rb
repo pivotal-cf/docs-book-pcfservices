@@ -137,13 +137,16 @@ r301 %r{/spring-cloud-services/circuit-breaker/(.*)}, "/spring-cloud-services/ci
 r301 %r{/spring-cloud-services/config-server/(.*)}, "/spring-cloud-services/config-server/common/$1"
 r301 %r{/spring-cloud-services/service-registry/(.*)}, "/spring-cloud-services/service-registry/common/$1"
 
+r301 '/spring-cloud-services/', '/spring-cloud-services/common/'
 r301 '/spring-cloud-services/index.html', '/spring-cloud-services/common/index.html'
 r301 '/spring-cloud-services/security-overview.html', '/spring-cloud-services/common/security-overview.html'
 r301 '/spring-cloud-services/client-dependencies.html', '/spring-cloud-services/common/client-dependencies.html'
 r301 '/spring-cloud-services/client-troubleshooting.html', '/spring-cloud-services/common/client-troubleshooting.html'
 r301 '/spring-cloud-services/service-instance-upgrades.html', '/spring-cloud-services/common/service-instance-upgrades.html'
 
-r301 %r{/spring-cloud-services/(?![\d-]+)(.*)}, "/spring-cloud-services/1-3/$1"
+r301 %r{/spring-cloud-services/shared/(?![\d-]+)(.*)}, "/spring-cloud-services/common/$1"
+
+r301 %r{/spring-cloud-services/(?![\d-]+)(.+)}, "/spring-cloud-services/1-3/$1"
 
 r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
