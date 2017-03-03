@@ -270,7 +270,7 @@ sections:
   subnav_template: mysql_subnav_1_9.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.9
+    latest_stable_version: 1.8
     changelog_href: http://docs.pivotal.io/p-mysql/1-9/release-notes.html
     local_header_img: /images/cloud_rings.png
     local_header_title: MySQL for PCF
