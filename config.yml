@@ -311,7 +311,7 @@ sections:
       - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
 - repository:
     name: pivotal-cf/docs-mysql
-    ref: 1.7
+    ref: '1.7'
   directory: p-mysql/1-7
   subnav_template: mysql_subnav_1_7.erb
   product_info:
