@@ -76,10 +76,6 @@ sections:
   directory: pcf-appdog
   subnav_template: appdog.erb
 - repository:
-    name: pivotal-cf/docs-cassandra
-  directory: cassandra
-  subnav_template: pivotal_cassandra_service_subnav.erb
-- repository:
     name: pivotal-cf/docs-concourse
   directory: p-concourse
   product_id: concourse
