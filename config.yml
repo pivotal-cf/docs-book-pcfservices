@@ -76,6 +76,10 @@ sections:
   directory: pcf-appdog
   subnav_template: appdog.erb
 - repository:
+    name: pivotal-cf/docs-cassandra
+  directory: cassandra
+  subnav_template: pivotal_cassandra_service_subnav.erb
+- repository:
     name: pivotal-cf/docs-concourse
   directory: p-concourse
   product_id: concourse
@@ -477,6 +481,25 @@ sections:
   directory: pivotalhd-ds
   subnav_template: pivotal_ds_subnav.erb
 
+# Dark launching the RabbitMQ 1.8 documentation
+# Once 1.8 is released this will need to be reconfigured
+# with a prettier URL path
+- repository:
+    name: pivotal-cf/docs-rabbitmq-staging
+    ref: 'master'
+  directory: rabbitmq-cf-d34379b0-a290-47c7-bc6c-c45a9adfa8c7
+  subnav_template: pivotal_rabbitmq_service_subnav-unreleased.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: 1.8.0
+    local_header_img: /images/cloud_rings.png
+    local_header_title: RabbitMQ for PCF
+    search_placeholder: Search RabbitMQ 1.8.0
+    url_prefix: rabbitmq-cf-d34379b0-a290-47c7-bc6c-c45a9adfa8c7
+    local_product_version: 1.8.0
+    local_header_links: []
+    local_header_version_list:
+# Like above, dark launching the RabbitMQ ODB documentation
 - repository:
     name: pivotal-cf/docs-rabbitmq-staging
     ref: '1.8-odb'
