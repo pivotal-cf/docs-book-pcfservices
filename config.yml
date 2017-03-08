@@ -57,6 +57,11 @@ sections:
 - repository:
     name: pivotal-cf/product-compatibility-matrix
   directory: resources
+- repository:
+    name: pivotal-cf/docs-pcf-upgrade 
+  directory: upgrading
+  product_id: pcf
+  product_info: *local_pcf
 
 # repos in org pivotal-cf: alphabetical
 - repository:
