@@ -49,6 +49,32 @@ products:
   - id: concourse
     subnav_root: p-concourse/subnav_root.html
 
+pcf_header: &local_pcf
+  use_local_header: true
+  latest_stable_version: 1.9
+  changelog_href: http://docs.pivotal.io/pivotalcf/pcf-release-notes/
+  local_header_img: /images/cloud_rings.png
+  local_header_title: Pivotal Cloud Foundry
+  search_placeholder: Search PCF 1.9
+  local_product_version: 1.9
+  url_prefix: pivotalcf/1-9
+  local_header_links:
+    - <a href="https://network.pivotal.io/">Download</a>
+    - <a href="https://support.pivotal.io/hc/en-us/requests/new">Ask for Help</a>
+    - <a href="https://discuss.pivotal.io/hc/en-us/categories/200072648-Pivotal-CF-Knowledge-Base">PCF Knowledge Base</a>
+    - <a href="/archives/pcf-docs-1.9.pdf">PDF</a>
+  local_header_version_list:
+    - url_prefix: http://docs.pivotal.io/pivotalcf/1-8
+      display_name: v1.8
+    - url_prefix: http://docs.pivotal.io/pivotalcf/1-7
+      display_name: v1.7
+    - url_prefix: http://docs.pivotal.io/pivotalcf/1-6
+      display_name: v1.6
+    - <a href="/archives/pcf-docs-1.5.pdf">v1.5</a>
+    - <a href="/archives/pcf-docs-1.4.pdf">v1.4</a>
+    - <a href="/archives/pcf-docs-1.3.pdf">v1.3</a>
+    - <a href="/archives/pcf-docs-1.2.pdf">v1.2</a>
+
 sections:
 # cross-product resources
 - repository:
@@ -57,6 +83,10 @@ sections:
 - repository:
     name: pivotal-cf/product-compatibility-matrix
   directory: resources
+- repository:
+    name: pivotal-cf/docs-pcf-upgrade 
+  directory: upgrading
+  product_info: *local_pcf
 
 # repos in org pivotal-cf: alphabetical
 - repository:
