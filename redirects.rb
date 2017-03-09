@@ -6,9 +6,11 @@ r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
   rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
 }
 
-r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/on-demand-service-broker/0-14/$1"
-r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/service-metrics/1-5/$1"
-r301 %r{/service-backup/(?![\d-]+)(.*)}, "/service-backup/18-0/$1"
+# Redirects to docs-book-services-sdk
+r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
+r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
+r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
+
 r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-9/buildpacks/$1'
 r301 %r{/deploying/(.*)}, '/pivotalcf/1-9/deploying/$1'
 r301 %r{/concepts/(.*)}, '/pivotalcf/1-9/concepts/$1'
@@ -164,9 +166,9 @@ r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-9/windows/index.html'
 
 # Link structure changed for ODB, service-backup and service-metrics
-r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/on-demand-service-broker/$1-$2/$3"
-r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/service-metrics/$1-$2/$3"
-r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/service-backup/$1-$2/$3"
+r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
+r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/$3"
+r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-backup/$1-$2/$3"
 
 # Metrics redirects, change version at each release. Have to do it this way
 # because edge.
