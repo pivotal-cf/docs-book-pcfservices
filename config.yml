@@ -332,11 +332,6 @@ sections:
       - <a href="http://docs.pivotal.io/archives/mysql-docs-1.4.pdf">v1.4</a>
 
 - repository:
-    name: pivotal-cf/docs-partners
-    ref: "1.8"
-  directory: partners
-  subnav_template: partners_subnav.erb
-- repository:
     name: pivotal-cf/docs-pcf-dev
   directory: pcf-dev
   subnav_template: pivotal_pcfdev_subnav.erb
