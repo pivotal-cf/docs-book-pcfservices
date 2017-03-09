@@ -30,11 +30,6 @@ r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-7/$1"
 r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
 r301 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
 
-r301 %r{/rabbitmq-cf/(?![\d-]+)(.*)}, "/rabbitmq-cf/1-7/$1"
-r301 %r{/rabbitmq-cf/1-7-[\d]+/(.*)}, "/rabbitmq-cf/1-7/$1"
-r301 %r{/rabbitmq-cf/1-6-[\d]+/(.*)}, "/rabbitmq-cf/1-6/$1"
-r301 %r{/rabbitmq-cf/1-5-[\d]+/(.*)}, "/rabbitmq-cf/1-5/$1"
-
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
 
