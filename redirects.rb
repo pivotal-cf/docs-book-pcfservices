@@ -11,20 +11,20 @@ r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
 r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
 
-r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-9/buildpacks/$1'
-r301 %r{/deploying/(.*)}, '/pivotalcf/1-9/deploying/$1'
-r301 %r{/concepts/(.*)}, '/pivotalcf/1-9/concepts/$1'
-r301 %r{/adminguide/(.*)}, '/pivotalcf/1-9/adminguide/$1'
-r301 %r{/cf-cli/(.*)}, '/pivotalcf/1-9/cf-cli/$1'
-r301 %r{/devguide/(.*)}, '/pivotalcf/1-9/devguide/$1'
-r301 %r{/loggregator/(.*)}, '/pivotalcf/1-9/loggregator/$1'
-r301 %r{/services/(.*)}, '/pivotalcf/1-9/services/$1'
-r301 %r{/opsguide/(.*)}, '/pivotalcf/1-9/opsguide/$1'
-r301 %r{/installing/(.*)}, '/pivotalcf/1-9/installing/$1'
-r301 %r{/customizing/(.*)}, '/pivotalcf/1-9/customizing/$1'
-r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-9/appsman-services/$1'
-r301 %r{/console/(.*)}, '/pivotalcf/1-9/console/$1'
-r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-9/pcf-release-notes/$1'
+r301 %r{/buildpacks/(.*)}, '/pivotalcf/1-10/buildpacks/$1'
+r301 %r{/deploying/(.*)}, '/pivotalcf/1-10/deploying/$1'
+r301 %r{/concepts/(.*)}, '/pivotalcf/1-10/concepts/$1'
+r301 %r{/adminguide/(.*)}, '/pivotalcf/1-10/adminguide/$1'
+r301 %r{/cf-cli/(.*)}, '/pivotalcf/1-10/cf-cli/$1'
+r301 %r{/devguide/(.*)}, '/pivotalcf/1-10/devguide/$1'
+r301 %r{/loggregator/(.*)}, '/pivotalcf/1-10/loggregator/$1'
+r301 %r{/services/(.*)}, '/pivotalcf/1-10/services/$1'
+r301 %r{/opsguide/(.*)}, '/pivotalcf/1-10/opsguide/$1'
+r301 %r{/installing/(.*)}, '/pivotalcf/1-10/installing/$1'
+r301 %r{/customizing/(.*)}, '/pivotalcf/1-10/customizing/$1'
+r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-10/appsman-services/$1'
+r301 %r{/console/(.*)}, '/pivotalcf/1-10/console/$1'
+r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-10/pcf-release-notes/$1'
 
 r301 %r{/redis/(?![\d-]+)(.*)}, "/redis/1-7/$1"
 r301 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
@@ -124,7 +124,7 @@ r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-
 
 r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
-r301 %r{/pre-release/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/1-9/installing/pcf-docs.html'
+r301 %r{/pre-release/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/1-10/installing/pcf-docs.html'
 
 r301 %r{/mobile/app_analytics(.*)}, 'https://network.pivotal.io/products/api-gateway'
 r301 %r{/mobile/apigateway(.*)}, 'https://network.pivotal.io/products/api-gateway'
@@ -135,7 +135,7 @@ r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
 r301 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
-r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-9/windows/index.html'
+r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/1-10/windows/index.html'
 
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
@@ -156,14 +156,14 @@ r301 '/pcf-metrics/troubleshooting.html', '/pcf-metrics/1-3/troubleshooting.html
 r301 '/pcf-metrics/1-2/installing.html#troubleshooting', '/pcf-metrics/1-2/troubleshooting.html'
 
 # Upgrade landing page redirects
-r302 '/pivotalcf/1-8/upgrading/index.html', '/pivotalcf/1-9/upgrading/index.html'
-r302 '/pivotalcf/1-7/upgrading/index.html', '/pivotalcf/1-9/upgrading/index.html'
-r302 '/pivotalcf/1-6/upgrading/index.html', '/pivotalcf/1-9/upgrading/index.html'
+r302 '/pivotalcf/1-8/upgrading/index.html', '/pivotalcf/1-10/upgrading/index.html'
+r302 '/pivotalcf/1-7/upgrading/index.html', '/pivotalcf/1-10/upgrading/index.html'
+r302 '/pivotalcf/1-6/upgrading/index.html', '/pivotalcf/1-10/upgrading/index.html'
 
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-9/$1"
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-10/$1"
 
 # Spring Cloud Services
 
