@@ -142,19 +142,6 @@ r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
 r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/$3"
 r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-backup/$1-$2/$3"
 
-# Metrics redirects, change version at each release. Have to do it this way
-# because edge.
-r301 '/pcf-metrics/', '/pcf-metrics/1-3/index.html'
-r301 '/pcf-metrics/index.html', '/pcf-metrics/1-3/index.html'
-r301 '/pcf-metrics/installing.html', '/pcf-metrics/1-3/installing.html'
-r301 '/pcf-metrics/sizing.html', '/pcf-metrics/1-3/sizing.html'
-r301 '/pcf-metrics/using.html', '/pcf-metrics/1-3/using.html'
-r301 '/pcf-metrics/architecture.html', '/pcf-metrics/1-2/architecture.html'
-r301 '/pcf-metrics/rn-ki.html', '/pcf-metrics/1-3/rn-ki.html'
-r301 '/pcf-metrics/troubleshooting.html', '/pcf-metrics/1-3/troubleshooting.html'
-
-r301 '/pcf-metrics/1-2/installing.html#troubleshooting', '/pcf-metrics/1-2/troubleshooting.html'
-
 # Upgrade landing page redirects
 r302 '/pivotalcf/1-8/upgrading/index.html', '/pivotalcf/1-10/upgrading/index.html'
 r302 '/pivotalcf/1-7/upgrading/index.html', '/pivotalcf/1-10/upgrading/index.html'
