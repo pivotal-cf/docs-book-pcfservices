@@ -32,9 +32,6 @@ r301 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-9/$1"
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
 
-r301 %r{/p-mysql/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
-r301 %r{/p-MySQL/(?![\d-]+)(.*)}, "/p-mysql/1-8/$1"
-
 r301 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
 r301 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
 r301 %r{/130/(.*)}, "http://hdb.docs.pivotal.io/130/$1"
