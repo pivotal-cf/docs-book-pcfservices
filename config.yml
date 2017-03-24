@@ -11,6 +11,7 @@ public_host: docs.pivotal.io
 
 elastic_search: true
 
+sections:
 - repository:
     ref: '1.9'
     name: pivotal-cf/docs-jmx-bridge
