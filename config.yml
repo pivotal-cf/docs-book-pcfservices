@@ -72,6 +72,12 @@ sections:
   directory: pcf-appdog
   subnav_template: appdog.erb
 - repository:
+    name: pivotal-cf/docs-cloud-cache
+    ref: 'v1.0'
+    at_path: content
+  directory: p-cloud-cache
+  subnav_template: cloudcache_subnav.erb
+- repository:
     name: pivotal-cf/docs-concourse
   directory: p-concourse
   product_id: concourse
