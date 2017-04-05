@@ -1,11 +1,3 @@
-r301 %r{.*}, 'http://docs.pivotal.io$&', :if => Proc.new {|rack_env|
-  rack_env['SERVER_NAME'] == 'docs.gopivotal.com' ||
-    rack_env['SERVER_NAME'] == 'cf-p1-docs-prod.cfapps.io'
-}
-r301 %r{.*}, 'http://docs-pcf-staging.cfapps.io$&', if: Proc.new {|rack_env|
-  rack_env['SERVER_NAME'] == 'cf-p1-docs-staging.cfapps.io'
-}
-
 # Redirects to docs-book-services-sdk
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
