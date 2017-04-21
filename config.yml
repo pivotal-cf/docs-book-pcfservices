@@ -226,3 +226,9 @@ sections:
     at_path: docs-content
   directory: tiledev
   subnav_template: tiledev_subnav.erb
+
+- repository:
+    name: pivotal-cf/docs-scheduler
+    at_path: docs-content
+  directory: pcf-scheduler
+  subnav_template: pcf-scheduler-subnav.erb
