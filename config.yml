@@ -64,10 +64,6 @@ sections:
   directory: addon-fim
   subnav_template: addon_fim.erb
 - repository:
-    name: pivotal-cf/docs-addon-ipsec
-  directory: addon-ipsec
-  subnav_template: addon_ipsec.erb
-- repository:
     name: pivotal-cf-experimental/docs-appdog
   directory: pcf-appdog
   subnav_template: appdog.erb
