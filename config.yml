@@ -119,11 +119,6 @@ sections:
   subnav_template: pivotal_ds_subnav.erb
 
 - repository:
-    name: pivotal-cf/docs-spring-cloud-data-flow
-  directory: spring-cloud-data-flow
-  subnav_template: spring_cloud_data_flow_subnav.erb
-
-- repository:
     name: pivotal-cf/docs-spring-flo
   directory: spring-flo
   subnav_template: spring_flo_subnav.erb
