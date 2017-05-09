@@ -132,13 +132,13 @@ r302 '/pivotalcf/1-8/upgrading/index.html', '/pivotalcf/1-10/upgrading/index.htm
 r302 '/pivotalcf/1-7/upgrading/index.html', '/pivotalcf/1-10/upgrading/index.html'
 r302 '/pivotalcf/1-6/upgrading/index.html', '/pivotalcf/1-10/upgrading/index.html'
 
-# Stemcell landing page
-rewrite '/releasenotes/stemcell-index.html', '/pivotalcf/1-11/pcf-release-notes/stemcell-index.html'
-
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-10/$1"
+
+# Stemcell landing page
+rewrite '/releasenotes/stemcell-index.html', '/pivotalcf/1-11/pcf-release-notes/stemcell-index.html'
 
 # Spring Cloud Services
 
