@@ -138,7 +138,9 @@ r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/1-10/$1"
 
 # Stemcell landing page
-rewrite '/releasenotes/stemcell-index.html', 'http://docs-pcf-staging.cfapps.io/pivotalcf/1-11/pcf-release-notes/stemcell-index.html'
+# rewrite '/releasenotes/stemcell-index.html', 'http://docs-pcf-staging.cfapps.io/pivotalcf/1-11/pcf-release-notes/stemcell-index.html'
+
+rewrite %r{/releasenotes/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/1-11/pcf-release-notes/stemcell-index.html'
 
 # Spring Cloud Services
 
