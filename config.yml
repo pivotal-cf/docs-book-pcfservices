@@ -53,6 +53,10 @@ sections:
     name: pivotal-cf/docs-pcf-upgrade 
   directory: upgrading
   product_info: *local_pcf
+- repository:
+    name: pivotal-cf/pcf-release-notes
+  directory: releasenotes
+  product_info: *local_pcf
 
 # repos in org pivotal-cf: alphabetical
 - repository:
