@@ -50,7 +50,6 @@ template_variables:
   custom_stack:
   dea_diego_table_row: <tr><td>1.5 and below</td><td>1.6 and above</td><td>CF version numbers</td><td></td></tr>
   dea_diego_version: Diego architecture for version 1.5
-  dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
   dev_console_1: You can use either the CLI or the <a href="http://docs.pivotal.io/pivotalcf/console/index.html">Apps Manager</a> to perform this task.
   dev_console_2: CLI or the <a href="http://docs.run.pivotal.io/console/index.html">Apps Manager</a>
   dev_console_3: For more information about using the Apps Manager, refer to the <a href="http://docs.pivotal.io/pivotalcf/console/index.html">Using the Apps Manager</a> topics.
