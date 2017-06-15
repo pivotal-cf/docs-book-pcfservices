@@ -19,7 +19,7 @@ r301 %r{/console/(.*)}, '/pivotalcf/1-10/console/$1'
 r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-10/pcf-release-notes/$1'
 
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
-r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-8/$1"
+r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-9/$1"
 
 r301 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
 r301 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
