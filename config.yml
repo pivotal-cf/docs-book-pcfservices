@@ -72,7 +72,7 @@ sections:
   subnav_template: pivotal_jmx_bridge_subnav.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.8
+    latest_stable_version: 1.9
     local_header_img: /images/cloud_rings.png
     local_header_title: JMX Bridge
     search_placeholder: Search JMX Bridge 1.8
@@ -91,7 +91,7 @@ sections:
   subnav_template: pivotal_jmx_bridge_1_7_subnav.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.8
+    latest_stable_version: 1.9
     local_header_img: /images/cloud_rings.png
     local_header_title: JMX Bridge
     search_placeholder: Search PCF JMX Bridge 1.7
