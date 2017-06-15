@@ -51,7 +51,7 @@ sections:
     ref: '1.9'
     name: pivotal-cf/docs-jmx-bridge
   directory: jmx-bridge/1-9
-  subnav_template: pivotal_jmx_bridge_subnav.erb
+  subnav_template: pivotal_jmx_bridge_1_9_subnav.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.9
