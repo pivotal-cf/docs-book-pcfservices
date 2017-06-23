@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /
+Disallow: /pivotalcf/1-10/
+Disallow: /pivotalcf/1-9/
+Disallow: /pivotalcf/1-8/
+Disallow: /pivotalcf/1-7/
+Disallow: /pivotalcf/1-6/
