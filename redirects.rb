@@ -17,6 +17,9 @@ r301 %r{/customizing/(.*)}, '/pivotalcf/1-11/customizing/$1'
 r301 %r{/appsman-services/(.*)}, '/pivotalcf/1-11/appsman-services/$1'
 r301 %r{/console/(.*)}, '/pivotalcf/1-11/console/$1'
 r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/1-11/pcf-release-notes/$1'
+r301 %r{/pivotalcf/1-11/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/1-11/pcf-release-notes/opsmanager-rn.html#knownissues'
+
+/pivotalcf/1-11/pcf-release-notes/opsmanager-ki.html
 
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-9/$1"
