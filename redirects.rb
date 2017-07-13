@@ -189,3 +189,7 @@ r301 %r{/signalsciences/(.*)}, "/partners/signalsciences/$1"
 r301 %r{/solace-messaging/(.*)}, "/partners/solace-messaging/$1"
 r301 %r{/splunk/(.*)}, "/partners/splunk/$1"
 r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
+
+# Concourse for PCF is EOL
+r301 %r{/p-concourse/(.*)}, "https://concourse.ci/introduction.html"
+
