@@ -1,4 +1,4 @@
----
+  ---
 book_repo: pivotal-cf/docs-book-pcfservices
 layout_repo: pivotal-cf/docs-layout-repo
 
@@ -39,6 +39,10 @@ sections:
     name: pivotal-cf-experimental/docs-appdog
   directory: pcf-appdog
   subnav_template: appdog.erb
+- repository:
+    name: pivotal-cf/docs-concourse-olm
+  directory: docs-concourse-olm
+  subnav_template: concourse_olm_subnav.erb
 - repository:
     ref: '1.9'
     name: pivotal-cf/docs-jmx-bridge
