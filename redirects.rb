@@ -193,3 +193,4 @@ r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
 # Concourse for PCF is EOL
 r301 %r{/p-concourse/(.*)}, "https://concourse.ci/introduction.html"
 
+r301 %r{/redis/syslog.html}, '/redis/1-9/installing.html#syslog'
