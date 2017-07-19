@@ -41,7 +41,7 @@ sections:
   subnav_template: appdog.erb
 - repository:
     name: pivotal-cf/docs-concourse-olm
-  directory: docs-concourse-olm
+  directory: concourse-olm
   subnav_template: concourse_olm_subnav.erb
 - repository:
     ref: '1.9'
