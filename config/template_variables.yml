@@ -28,6 +28,8 @@ template_variables:
   appdog_notifications: <p class='note'><strong>Note</strong>&#58; If the Cloud Foundry Notifications service is not installed in your PCF deployment, notifications are disabled.</p>
   asg_notifications_prereq:
   az: <a href="http://docs.pivotal.io/pivotalcf/customizing/understand-az.html">availability zones</a>
+  bbr_pcf: To use BBR to back up and restore Pivotal Cloud Foundry (PCF) v1.11 and later, see the [Backing Up Pivotal Cloud Foundry with BBR](http://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html) and [Restoring Pivotal Cloud Foundry from Backup with BBR](http://docs.pivotal.io/pivotalcf/customizing/backup-restore/restore-pcf-bbr.html) topics.
+  bbr_pcf2: For more information about how PCF tile authors can implement the BBR contract, see the [PCF Tile Developers Guide](../tiledev).
   cli_download: the Tools page of your Apps Manager instance
   cli_v6: <a href="http://docs.pivotal.io/pivotalcf/cf-cli/getting-started.html">Getting Started with cf CLI v6</a>
   cloud_controller_dea_agent: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry (PCF) versions 1.6 and above no longer use Droplet Execution Agents (DEAs). <a href="../diego/diego-components.html#cell-components">Diego Cells</a> replace their function. This topic is published here to help people who are running older versions of PCF.</p>
