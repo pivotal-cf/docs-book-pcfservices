@@ -46,10 +46,6 @@ sections:
   directory: pcf-appdog
   subnav_template: appdog.erb
 - repository:
-    name: pivotal-cf/docs-concourse-olm
-  directory: concourse-olm
-  subnav_template: concourse_olm_subnav.erb
-- repository:
     ref: '1.9'
     name: pivotal-cf/docs-jmx-bridge
   directory: jmx-bridge/1-9
