@@ -33,7 +33,7 @@ template_variables:
   bbr_ert: <li>Elastic Runtime (Pivotal Cloud Foundry 1.11+)<span>:</span> To use BBR with PCF v1.11+, see the <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html">Backing Up Pivotal Cloud Foundry with BBR</a> and <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/restore-pcf-bbr.html">Restoring Pivotal Cloud Foundry from Backup with BBR</a> topics.</li>
   bbr_space: If you are backing up Pivotal Cloud Foundry (PCF), your jumpbox must be between 2 CPUs, 7GB RAM, 50GB disk and 4 CPUs, 16GB RAM, 150GB disk.
   bbr_rn_intro: This topic includes release notes for the versions of BOSH Backup and Restore (BBR) used with Pivotal Cloud Foundry (PCF) versions 1.11.x.<br><br>For more information about using BBR with PCF, see the [Backing Up Pivotal Cloud Foundry with BBR](../customizing/backup-restore/backup-pcf-bbr.html) and [Restoring Pivotal Cloud Foundry from Backup with BBR](../customizing/backup-restore/restore-pcf-bbr.html) topics.
-  bbr_rn_compatibility: <h4>Compatibility</h4><ul><li>Compatible with PCF v1.11</li></ul>
+  bbr_rn_compatibility: <h4>Compatibility</h4><br><ul><li>Compatible with PCF v1.11</li></ul>
   cli_download: the Tools page of your Apps Manager instance
   cli_v6: <a href="http://docs.pivotal.io/pivotalcf/cf-cli/getting-started.html">Getting Started with cf CLI v6</a>
   cloud_controller_dea_agent: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry (PCF) versions 1.6 and above no longer use Droplet Execution Agents (DEAs). <a href="../diego/diego-components.html#cell-components">Diego Cells</a> replace their function. This topic is published here to help people who are running older versions of PCF.</p>
