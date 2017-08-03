@@ -191,6 +191,5 @@ r301 %r{/splunk/(.*)}, "/partners/splunk/$1"
 r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
 
 r301 %r{/redis/syslog.html}, '/redis/1-9/installing.html#syslog'
-r301 %r{/edge/p-mysql/(.*)}, "/p-mysql/1-9/$1"
 
 r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
