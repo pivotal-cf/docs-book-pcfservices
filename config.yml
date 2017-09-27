@@ -34,11 +34,6 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    name: pivotal-cf/docs-addon-antivirus
-    ref: 'v1.2'
-  directory: addon-antivirus
-  subnav_template: addon_antivirus.erb
-- repository:
     name: pivotal-cf/docs-addon-fim
   directory: addon-fim
   subnav_template: addon_fim.erb
