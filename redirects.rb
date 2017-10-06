@@ -50,6 +50,26 @@ r301 %r{/pivotalhd/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/2100/$1'
 r301 %r{/gpdb/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
 r301 %r{/gptext/(.*)}, 'http://gpdb.docs.pivotal.io/gptext/$1'
 
+# For GPDB
+r301 %r{/4320/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/4330/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/4340/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/4350/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/4360/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/4370/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/4380/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/4390/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/43100/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/43110/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/43120/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/43130/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/43140/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/43150/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/43160/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/43170/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/500/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+r301 %r{/510/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
+
 # For GPCC
 r301 %r{/300/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/300/gp-wlm/$1"
 r301 %r{/250/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/250/gp-wlm/$1"
