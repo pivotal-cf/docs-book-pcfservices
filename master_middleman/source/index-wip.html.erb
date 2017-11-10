@@ -1,11 +1,21 @@
 <div class="main-container">
   <link href="https://styleguide.pivotal.io/app.css" type="text/css" rel="stylesheet"/>
   <style>
-  .external-link:after {
-    content: none;
+  body {
+    overflow-y: inherit;
+  }
+  div.viewport {
+    background-color: #f8f8f8;
+  }
+  a, .link {
+    border-bottom: none;
   }
   .container {
     background-color: #f8f8f8;
+    max-width: none;
+  }
+  .external-link:after {
+    content: none;
   }
   .docs-home-panel  {
     background-color: white;
@@ -15,21 +25,18 @@
     box-shadow: none;
     margin: 0;
   }
-  body {
-    overflow-y: inherit;
-  }
   .content a[href^="http"]:after {
     display: none;
   }
-  .content a:hover, .content a:focus {
+/*  .content a:hover, .content a:focus {
     border-bottom: none;
     background-color: inherit;
-  }
-  a, .link {
-    border-bottom: none;
-  }
+  }*/
   .docs-link-panel {
     height: 64px;
+  }
+  .docs-link-panel > div {
+    margin: 0 auto;
   }
   </style>
   <div class="main">
@@ -66,9 +73,9 @@
 
     <div class="grid">
 
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/icon_gemfire@2x.png" height="64"></div>
+          <div class="col col-4"><img src="images/icon_gemfire@2x.png" height="64"></div>
           <div class="col">
             <h4>Gemfire/Cloud Cache</h4>
             <h6 class="type-dark-4">In-Memory Data Grid</h6>
@@ -80,9 +87,9 @@
         </div>
       </div>
          
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/icon_spring_cloud_services_cf@2x.png" height="64"></div>
+          <div class="col col-4"><img src="images/icon_spring_cloud_services_cf@2x.png" height="64"></div>
           <div class="col">
             <h4>Spring</h4>
             <h6 class="type-dark-4">Cloud-Native Java Development</h6>
@@ -93,9 +100,9 @@
         </div>
       </div>
  
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/icon_redis_cf@2x.png" height="64"></div>
+          <div class="col col-4"><img src="images/icon_redis_cf@2x.png" height="64"></div>
           <div class="col">
             <h4>Redis</h4>
             <h6 class="type-dark-4">In-Memory Data Structure Store</h6>
@@ -110,9 +117,9 @@
 
     <div class="grid">
 
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/icon_rabbitmq_cf@2x.png" height="64"></div>
+          <div class="col col-4"><img src="images/icon_rabbitmq_cf@2x.png" height="64"></div>
           <div class="col">
             <h4>RabbitMQ</h4>
             <h6 class="type-dark-4">Cloud Message Broker</h6>
@@ -123,9 +130,9 @@
         </div>
       </div>
          
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/icon_pivotalHDB.png" height="64"></div>
+          <div class="col col-4"><img src="images/icon_pivotalHDB.png" height="64"></div>
           <div class="col">
             <h4>Pivotal HDB</h4>
             <h6 class="type-dark-4">Hadoop Native SQL Database</h6>
@@ -134,9 +141,9 @@
         </div>
       </div>
  
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/icon_gpdb.png" height="64"></div>
+          <div class="col col-4"><img src="images/icon_gpdb.png" height="64"></div>
           <div class="col">
             <h4>Pivotal Greenplum</h4>
             <h6 class="type-dark-4">Massively Parallel Data Warehouse</h6>
@@ -149,9 +156,9 @@
 
     <div class="grid">
 
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/PCF-Services-Icons_PivotalTracker.png" height="64"></div>
+          <div class="col col-4"><img src="images/PCF-Services-Icons_PivotalTracker.png" height="64"></div>
           <div class="col">
             <h4>Pivotal Tracker</h4>
             <h6 class="type-dark-4">Agile Project Management</h6>
@@ -160,9 +167,9 @@
         </div>
       </div>
  
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/PVIC_PCF_Service-Concourse.png" height="64"></div>
+          <div class="col col-4"><img src="images/PVIC_PCF_Service-Concourse.png" height="64"></div>
           <div class="col">
             <h4>Concourse</h4>
             <h6 class="type-dark-4">Continuous Integration</h6>
@@ -172,9 +179,9 @@
         </div>
       </div>
 
-      <div class="docs-home-panel box-shadow-1 border-rounded col mbxl mhl">
+      <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
         <div class="grid">
-          <div class="col col-4 ptl"><img src="images/icon_tcserver@2x.png" height="64"></div>
+          <div class="col col-4"><img src="images/icon_tcserver@2x.png" height="64"></div>
           <div class="col">
             <h4>Pivotal tc Server</h4>
             <h6 class="type-dark-4">Tomcat Java Server</h6>
@@ -196,84 +203,72 @@
       <div class="col">
         <div class="grid">
           <div class="col col-12">
-            <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
-              <a class="configure" href="https://docs-pcf-staging.cfapps.io/pivotalcf/2-0/customizing/pas.html">
-                <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
-                  <div class="col col-middle h6 em-high type-neutral-1">
-                    PAS (Pivotal Application Service)
-                  </div>
-                  <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
-                  </div>
+            <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://docs-pcf-staging.cfapps.io/pivotalcf/2-0/customizing/pas.html">
+              <div class="grid docs-link-panel">
+                <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                <div class="col col-middle h6 em-high type-neutral-1">
+                  PAS (Pivotal Application Service)
                 </div>
-              </a>
-            </div>
-            <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
-              <a class="configure" href="http://docs-pcf-staging.cfapps.io/pivotalcf/2-0/windows/index.html">
-                <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
-                  <div class="col col-middle h6 em-high type-neutral-1">
-                    PAS for Windows
-                  </div>
-                  <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
-                  </div>
+                <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+            <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="http://docs-pcf-staging.cfapps.io/pivotalcf/2-0/windows/index.html">
+              <div class="grid docs-link-panel">
+                <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                <div class="col col-middle h6 em-high type-neutral-1">
+                  PAS for Windows
+                </div>
+                <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="col col-12">
-            <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
-              <a class="configure" href="http://docs-pks.cfapps.io">
-                <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/PVLG-PivotalContainerService-Symbol.png" height="64"></div>
-                  <div class="col col-middle h6 em-high type-neutral-1">
-                    PKS (Pivotal Container Service)
-                  </div>
-                  <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
-                  </div>
+            <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="http://docs-pks.cfapps.io">
+              <div class="grid docs-link-panel">
+                <div class="col col-4 col-middle"><img src="images/PVLG-PivotalContainerService-Symbol.png" height="64"></div>
+                <div class="col col-middle h6 em-high type-neutral-1">
+                  PKS (Pivotal Container Service)
                 </div>
-              </a>
-            </div>
-            <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
-              <a class="configure" href="https://docs-pcf-staging.cfapps.io/pivotalcf/2-0/customizing/installing-pcf-is.html">
-                <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon-isolation_segment@2x.png" height="64"></div>
-                  <div class="col col-middle h6 em-high type-neutral-1">
-                    PCF Isolation Segment
-                  </div>
-                  <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
-                  </div>
+                <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+            <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://docs-pcf-staging.cfapps.io/pivotalcf/2-0/customizing/installing-pcf-is.html">
+              <div class="grid docs-link-panel">
+                <div class="col col-4 col-middle"><img src="images/icon-isolation_segment@2x.png" height="64"></div>
+                <div class="col col-middle h6 em-high type-neutral-1">
+                  PCF Isolation Segment
+                </div>
+                <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="col col-12">
-            <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
-              <a class="configure" href="https://docs-pcf-staging.cfapps.io/pivotalcf/2-0/customizing/small-footprint.html">
-                <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
-                  <div class="col col-middle h6 em-high type-neutral-1">
-                    Small Footprint PAS
-                  </div>
-                  <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
-                  </div>
+            <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://docs-pcf-staging.cfapps.io/pivotalcf/2-0/customizing/small-footprint.html">
+              <div class="grid docs-link-panel">
+                <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                <div class="col col-middle h6 em-high type-neutral-1">
+                  Small Footprint PAS
                 </div>
-              </a>
-            </div>
+                <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="col col-12">
-            <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
-              <a class="configure" href="http://docs-pcf-staging.cfapps.io/pivotalcf/2-0/windows2012r2/index.html">
-                <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
-                  <div class="col col-middle h6 em-high type-neutral-1">
-                    PAS for Windows 2012R2
-                  </div>
-                  <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
-                  </div>
+            <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="http://docs-pcf-staging.cfapps.io/pivotalcf/2-0/windows2012r2/index.html">
+              <div class="grid docs-link-panel">
+                <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                <div class="col col-middle h6 em-high type-neutral-1">
+                  PAS for Windows 2012R2
                 </div>
-              </a>
-            </div>
+                <div class="col col-fixed col-bottom"><div class="type-brand-8 txt-b h6">PIVOTAL</div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -290,7 +285,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/a9s-mongodb/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_a9s_mongodb@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_a9s_mongodb@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     a9s MongoDB for PCF
                   </div>
@@ -302,7 +297,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/a9s-postgresql/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_a9s_postgresql@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_a9s_postgresql@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     a9s PostgreSQL <br>for PCF
                   </div>
@@ -316,7 +311,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/a9s-redis/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_a9s_redis@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_a9s_redis@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     a9s Redis <br>for PCF
                   </div>
@@ -328,7 +323,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/aerospike/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_aerospike@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_aerospike@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Aerospike <br>Service Broker for PCF
                   </div>
@@ -342,7 +337,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/aerospike-ondemand/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_aerospike@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_aerospike@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Aerospike EE OnDemand Service for PCF
                   </div>
@@ -354,7 +349,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/aerospike-ee-managed-service/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_aerospike@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_aerospike@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Aerospike EE Managed Service for PCF
                   </div>
@@ -368,7 +363,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/altoros-aws-s3/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_altoros_s3@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_altoros_s3@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Altoros AWS S3<br>for PCF (Beta)
                   </div>
@@ -380,7 +375,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/altoros-cassandra/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_altoros_cassandra@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_altoros_cassandra@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Altoros Cassandra<br>for PCF (Beta)
                   </div>
@@ -394,7 +389,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/cloudsoft/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_cloudsoft@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_cloudsoft@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Cloudsoft Service Broker<br>for PCF (Beta)
                   </div>
@@ -406,7 +401,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/crunchy/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_crunchy@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_crunchy@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Crunchy PostgreSQL <br>for PCF
                   </div>
@@ -420,7 +415,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/edb-postgres/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_edbpostgres@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_edbpostgres@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     EDB Postgres <br>Service Broker for PCF
                   </div>
@@ -432,7 +427,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/hazelcast-jet/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_hazelcast_jet@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_hazelcast_jet@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Hazelcast Jet<br>for PCF (Beta)
                   </div>
@@ -446,7 +441,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/p-mysql/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_mysql_cf@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_mysql_cf@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     MySQL<br>for PCF
                   </div>
@@ -458,7 +453,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/p-cloud-cache/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal-cloud-cache@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pivotal-cloud-cache@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Pivotal Cloud Cache <br/>for PCF
                   </div>
@@ -472,7 +467,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/redis/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/PCF-Services-Icons_Redis.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/PCF-Services-Icons_Redis.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Redis for PCF
                   </div>
@@ -484,7 +479,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/rle-service-broker/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_redislabs_v2@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_redislabs_v2@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     <p>Redis<sup>e</sup> Pack Service Broker for PCF</p>
                   </div>
@@ -498,7 +493,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/ssc-gemfire/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/PCF-Services-Icons_SessionState Caching.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/PCF-Services-Icons_SessionState Caching.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Session State Caching Powered by GemFire for PCF
                   </div>
@@ -523,7 +518,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/a9s-elasticsearch/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_a9s_elasticsearch@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_a9s_elasticsearch@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     a9s Elasticsearch <br>for PCF
                   </div>
@@ -535,7 +530,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/altoros-elasticsearch/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_altoros_elasticsearch@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_altoros_elasticsearch@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Altoros Elasticsearch<br>for PCF (Beta)
                   </div>
@@ -560,7 +555,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/a9s-rabbitmq/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_a9s_rabbitmq@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_a9s_rabbitmq@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     a9s RabbitMQ for PCF (Beta)
                   </div>
@@ -572,7 +567,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/azuqua/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/azuqua.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/azuqua.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Azuqua Platform Connector for PCF
                   </div>
@@ -586,7 +581,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/firstdata/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_firstdata@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_firstdata@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     First Data Payments Service Broker for PCF (Beta)
                   </div>
@@ -598,7 +593,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/rabbitmq-cf/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_rabbitmq_cf@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_rabbitmq_cf@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     RabbitMQ for PCF
                   </div>
@@ -612,7 +607,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/solace-messaging/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_solace_v2@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_solace_v2@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Solace Messaging <br>for PCF
                   </div>
@@ -637,7 +632,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/altoros-logsearch/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_altoros_logsearch@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_altoros_logsearch@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Altoros Log Search<br>for PCF
                   </div>
@@ -649,7 +644,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/appdynamics/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/Icon_appdynamics_cf.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/Icon_appdynamics_cf.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     AppDynamics <br>Service Broker for PCF
                   </div>
@@ -663,7 +658,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/blue-medora/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_blue_medora_nozzle@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_blue_medora_nozzle@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Blue Medora Nozzle <br>for PCF
                   </div>
@@ -675,7 +670,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/dynatrace-fullstack-addon/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon-dynatrace.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon-dynatrace.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Dynatrace Full-Stack Add-on for PCF (Beta)
                   </div>
@@ -689,7 +684,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/dynatrace/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon-dynatrace.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon-dynatrace.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Dynatrace <br>Service Broker for PCF
                   </div>
@@ -701,7 +696,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/knowtify/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_knowtify_cf@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_knowtify_cf@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     ISS Knowtify Log Analytics for PCF
                   </div>
@@ -715,7 +710,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/newrelic/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_newrelic_cf@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_newrelic_cf@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     New Relic <br>Service Broker for PCF
                   </div>
@@ -727,7 +722,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/jmx-bridge/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Pivotal Cloud Foundry <br>JMX Bridge
                   </div>
@@ -741,7 +736,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/logsearch/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pcfLogSearch@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pcfLogSearch@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Pivotal Cloud Foundry <br>Log Search
                   </div>
@@ -753,7 +748,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/pcf-metrics/1-4/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Pivotal Cloud Foundry <br>Metrics
                   </div>
@@ -767,7 +762,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/signalfx/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icons_signalfx@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icons_signalfx@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     SignalFx Monitoring and Alerting for PCF (Beta)
                   </div>
@@ -779,7 +774,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/stardog-service-broker/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_stardog@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_stardog@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Stardog Service Broker<br>for PCF (Beta)
                   </div>
@@ -793,7 +788,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/sumologic-nozzle/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_sumologic_v2@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_sumologic_v2@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Sumo Logic Nozzle<br>for PCF (Beta)
                   </div>
@@ -805,7 +800,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/wombat/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_wombatoam@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_wombatoam@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     WombatOAM Erlang Monitoring for PCF (Beta)
                   </div>
@@ -830,7 +825,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/addon-antivirus/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     ClamAV Add-on <br>for PCF
                   </div>
@@ -842,7 +837,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/cloudflare-service-broker/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/cloudflare.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/cloudflare.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Cloudflare Service Broker<br>for PCF (Beta)
                   </div>
@@ -856,7 +851,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/contrast-service-broker/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_contrast_security@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_contrast_security@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Contrast Security Service Broker for PCF (Beta)
                   </div>
@@ -868,7 +863,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.cloudfoundry.org/credhub/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     CredHub
                   </div>
@@ -882,7 +877,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/addon-fim/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     File Integrity Monitoring <br>Add-on for PCF
                   </div>
@@ -894,7 +889,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/forgerock/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_forgerock@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_forgerock@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     ForgeRock <br>Service Broker for PCF
                   </div>
@@ -908,7 +903,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/addon-ipsec/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_ipsec_add_on@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_ipsec_add_on@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     IPsec Add-on <br>for PCF
                   </div>
@@ -920,7 +915,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/signalsciences/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_signal-sciences@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_signal-sciences@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Signal Sciences Service Broker for PCF (Beta)
                   </div>
@@ -934,7 +929,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/p-identity/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_single_signon_cf@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_single_signon_cf@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Single Sign-On (SSO)<br>for PCF
                   </div>
@@ -959,7 +954,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="http://docs.pivotal.io/tracker-pcf/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/PCF-Services-Icons_PivotalTracker.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/PCF-Services-Icons_PivotalTracker.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Pivotal Tracker for PCF
                   </div>
@@ -971,7 +966,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/tibco-businessworks/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_tibco@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_tibco@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     TIBCO BusinessWorks Container Edition Buildpack for PCF
                   </div>
@@ -996,7 +991,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/a9s-consul-dns/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_a9s_consul_dns@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_a9s_consul_dns@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     a9s Consul DNS <br>for PCF
                   </div>
@@ -1008,7 +1003,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/apigee/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon-apigee.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon-apigee.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Apigee Edge <br>Service Broker for PCF
                   </div>
@@ -1022,7 +1017,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/mulesoft/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_mulesoft@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_mulesoft@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     MuleSoft Anypoint Platform Service Brokers for PCF
                   </div>
@@ -1047,7 +1042,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/altoros-jenkins/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_altoros-jenkins.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_altoros-jenkins.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Altoros Jenkins <br>for PCF (Beta)
                   </div>
@@ -1059,7 +1054,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/p-concourse/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/PVIC_PCF_Service-Concourse.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/PVIC_PCF_Service-Concourse.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Concourse<br/>for PCF
                   </div>
@@ -1073,7 +1068,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/honeycomb-nozzle/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_honeycomb@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_honeycomb@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Honeycomb Nozzle<br>for PCF (Beta)
                   </div>
@@ -1085,7 +1080,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/pagerduty/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pagerduty@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pagerduty@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     PagerDuty Service Broker <br>for PCF (Beta)
                   </div>
@@ -1099,7 +1094,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/pcf-scheduler/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_scheduler@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_scheduler@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Scheduler for PCF
                   </div>
@@ -1124,7 +1119,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/gluon-cloudlink/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_gluon@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_gluon@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Gluon CloudLink Service Broker for PCF (Beta)
                   </div>
@@ -1136,7 +1131,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/push/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pushnotification_cf@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pushnotification_cf@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Push Notifications <br>for PCF
                   </div>
@@ -1161,7 +1156,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/spring-cloud-services/common/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/PCF-Services-Icons_SpringCloudServices.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/PCF-Services-Icons_SpringCloudServices.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Spring Cloud Services <br>for PCF
                   </div>
@@ -1186,7 +1181,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/a9s-bosh/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_a9s_bosh@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_a9s_bosh@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     a9s BOSH <br>for PCF
                   </div>
@@ -1198,7 +1193,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/addon-antivirus/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     ClamAV Add-on <br>for PCF
                   </div>
@@ -1212,7 +1207,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/addon-fim/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_pivotal_generic@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     File Integrity Monitoring <br>Add-on for PCF
                   </div>
@@ -1224,7 +1219,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/gcp-sb/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_gcp@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_gcp@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     GCP <br>Service Broker for PCF
                   </div>
@@ -1238,7 +1233,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/addon-ipsec/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_ipsec_add_on@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_ipsec_add_on@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     IPsec Add-on <br>for PCF
                   </div>
@@ -1250,7 +1245,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="https://docs.pivotal.io/partners/azure-sb/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_azure@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_azure@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Microsoft Azure <br>Service Broker for PCF
                   </div>
@@ -1264,7 +1259,7 @@
             <div class="docs-home-panel box-shadow-1 border-rounded col mbxl">
               <a class="configure" href="http://docs.pivotal.io/aws-services/index.html">
                 <div class="grid docs-link-panel">
-                  <div class="col col-4 ptl"><img src="images/icon_awsbroker@2x.png" height="64"></div>
+                  <div class="col col-4 col-middle"><img src="images/icon_awsbroker@2x.png" height="64"></div>
                   <div class="col col-middle h6 em-high type-neutral-1">
                     Pivotal Cloud Foundry <br>Service Broker for AWS
                   </div>
