@@ -235,9 +235,8 @@ sections:
 
 - repository:
     name: pivotal-cf/docs-book-tiledev
-    ref: '1-12'
     at_path: docs-content
-  directory: tiledev/1-12
+  directory: tiledev
   subnav_template: tiledev_subnav.erb
 
 - repository:
