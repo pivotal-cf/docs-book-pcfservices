@@ -234,12 +234,6 @@ sections:
   subnav_template: aws_services_subnav.erb
 
 - repository:
-    name: pivotal-cf/docs-book-tiledev
-    at_path: docs-content
-  directory: tiledev
-  subnav_template: tiledev_subnav.erb
-
-- repository:
     ref: '1.1'
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
