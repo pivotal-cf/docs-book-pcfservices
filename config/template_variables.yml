@@ -32,6 +32,24 @@ template_variables:
   bbr_pcf2: For more information about how PCF tile authors can implement the BBR contract, see the [PCF Tile Developers Guide](https://docs.pivotal.io/tiledev/bbr-devguide.html).
   bbr_ert: <li>Elastic Runtime (Pivotal Cloud Foundry 1.11+)<span>:</span> To use BBR with PCF v1.11+, see the <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html">Backing Up Pivotal Cloud Foundry with BBR</a> and <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/restore-pcf-bbr.html">Restoring Pivotal Cloud Foundry from Backup with BBR</a> topics.</li>
   bbr_space: If you are backing up Pivotal Cloud Foundry (PCF), your jumpbox must be between 2 CPUs, 7GB RAM, 50GB disk and 4 CPUs, 16GB RAM, 150GB disk.
+  #BOSH Version-Difference Variables
+  bosh_cloud_check: cloud-check #v1: cloudcheck
+  bosh_create_release: create-release #v1: create release
+  bosh_delete: bosh delete-env #v1: bosh-init delete
+  bosh_delete_deployment: delete-deployment #v1: delete deployment
+  bosh_delete_stemcell: delete-stemcell #v1: delete stemcell
+  bosh_deploy: bosh create-env #v1: bosh-init deploy
+  bosh_init_release: init-release --dir #v1: init release
+  bosh_generate_package: generate-package #v1: generate package
+  bosh_generate_job: generate-job #v1: generate job
+  bosh_login: log-in #v1: login
+  bosh_run_errand: run-errand #v1: run errand
+  bosh_update_cloud_config: update-cloud-config #v1: update cloud-config
+  bosh_update_runtime_config: update-runtime-config #v1: update runtime-config
+  bosh_upload_blobs: upload-blobs #v1: upload blobs
+  bosh_upload_release: upload-release #v1: upload release
+  bosh_upload_stemcell: upload-stemcell #v1: upload stemcell
+  # ---end-bosh-version-difference-variables---
   cli_download: the Tools page of your Apps Manager instance
   cli_v6: <a href="http://docs.pivotal.io/pivotalcf/cf-cli/getting-started.html">Getting Started with cf CLI v6</a>
   cloud_controller_dea_agent: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry (PCF) versions 1.6 and above no longer use Droplet Execution Agents (DEAs). <a href="../diego/diego-components.html#cell-components">Diego Cells</a> replace their function. This topic is published here to help people who are running older versions of PCF.</p>
