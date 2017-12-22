@@ -214,3 +214,5 @@ r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
 r301 %r{/redis/syslog.html}, '/redis/1-9/installing.html#syslog'
 
 r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
+
+r301 '/pivotalcf/2-0/getstarted/pcf-docs.html', '/pivotalcf/2-0/'
