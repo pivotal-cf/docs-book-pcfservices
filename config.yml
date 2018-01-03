@@ -56,10 +56,8 @@ sections:
     local_product_version: 1.9
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-8
-        display_name: v1.8
-      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-7
-        display_name: v1.7
+      - <a href="http://docs.pivotal.io/jmx-bridge/1-8/index.html">v1.8</a>
+      - <a href="http://docs.pivotal.io/jmx-bridge/1-7/index.html">v1.7</a>
 - repository:
     name: pivotal-cf/docs-jmx-bridge
   directory: jmx-bridge/1-8
@@ -74,10 +72,8 @@ sections:
     local_product_version: 1.8
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-9
-        display_name: v1.9
-      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-7
-        display_name: v1.7
+      - <a href="http://docs.pivotal.io/jmx-bridge/1-9/index.html">v1.9</a>
+      - <a href="http://docs.pivotal.io/jmx-bridge/1-7/index.html">v1.7</a>
 - repository:
     name: pivotal-cf/docs-jmx-bridge
     ref: '1.7'
@@ -93,10 +89,8 @@ sections:
     local_product_version: 1.7
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-9
-        display_name: v1.9
-      - url_prefix: http://docs.pivotal.io/jmx-bridge/1-8
-        display_name: v1.8
+      - <a href="http://docs.pivotal.io/jmx-bridge/1-9/index.html">v1.9</a>
+      - <a href="http://docs.pivotal.io/jmx-bridge/1-8/index.html">v1.8</a>
 - repository:
     name: pivotal-cf/docs-logsearch
   directory: logsearch
