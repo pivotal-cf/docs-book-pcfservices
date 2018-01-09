@@ -22,8 +22,6 @@
 
     box-shadow: none;
     margin: 0;
-    border-bottom-color: transparent;
-    border-bottom-style: solid;
   }
   .docs-home-panel .logo-icon img {
     max-height: 4.8em;
@@ -31,10 +29,18 @@
   .content a[href^="http"]:after {
     display: none;
   }
-/*  .content a:hover, .content a:focus {
-    border-bottom: none;
-    background-color: inherit;
-  }*/
+  .content a:focus,
+  .content a:active,
+  .content a:hover {
+    border-bottom-style: none;
+  }
+  .content a:focus,
+  .content a:active {
+    background-color: transparent;
+  }
+  .content a:focus {
+    text-decoration: none;
+  }
   .container img {
     max-width: 6.4em;
     width: 100%;
@@ -43,7 +49,7 @@
     height: 64px;
   }
   .docs-link-panel:hover  {
-    border-bottom-color: #1f8acc;
+    border-bottom: none;
   }
   .docs-link-panel > div {
     margin: 0 auto;
