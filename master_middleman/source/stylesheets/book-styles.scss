@@ -6,16 +6,16 @@
 //   color: mediumvioletred;
 // }
 
-
 // Bordify images
 main.content {
 	img {
 	    outline: 1px solid black;
 	    outline-offset: -1px;
-	    main.content .title-container img {
-	    	outline: 0px;
-	    	outline-offset: 0px;
-	    }
+
+	}
+	.title-container img {
+	    outline: 0px;
+	   	outline-offset: 0px;
 	}
 	.no-border {
 		outline: none;
