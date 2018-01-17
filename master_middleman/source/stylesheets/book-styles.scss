@@ -24,6 +24,11 @@ main.content {
 	}
 }
 
+body.__index img {
+	outline: 0px;
+	outline-offset: 0px;
+}
+
 .note.warning {
   background-color: #fdd;
   border-color: #fbb
