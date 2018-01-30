@@ -157,10 +157,14 @@ r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
 r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/$3"
 r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-backup/$1-$2/$3"
 
-# Upgrade landing page redirects
-r302 '/pivotalcf/1-8/upgrading/index.html', '/pivotalcf/2-0/upgrading/index.html'
-r302 '/pivotalcf/1-7/upgrading/index.html', '/pivotalcf/2-0/upgrading/index.html'
-r302 '/pivotalcf/1-6/upgrading/index.html', '/pivotalcf/2-0/upgrading/index.html'
+# Redirect older versions to PDFs
+r301 %r{/pivotalcf/1-2/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.2.pdf'
+r301 %r{/pivotalcf/1-3/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.3.pdf'
+r301 %r{/pivotalcf/1-4/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.4.pdf'
+r301 %r{/pivotalcf/1-5/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.5.pdf'
+r301 %r{/pivotalcf/1-6/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.6.pdf'
+r301 %r{/pivotalcf/1-7/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.7.pdf'
+r301 %r{/pivotalcf/1-8/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.8.pdf'
 
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
