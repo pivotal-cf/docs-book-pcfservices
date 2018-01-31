@@ -37,3 +37,69 @@ body.__index img {
 .note.warning:before {
   color: #f99;
 }
+
+//Toggle Tabs
+.tabcontent {
+  padding: .8em;
+  border: 1px solid #dfe5e8;
+  margin-bottomn: 1em;
+  animation: fade-in 1s;
+}
+.btn-group,
+.tab {
+  white-space: nowrap;
+  margin-top: 1em;
+  .btn:first-child,
+  .tablinks:first-child {
+	    border-bottom-left-radius: 2px;
+	    border-top-left-radius: 2px;
+	    border-bottom-right-radius: 0;
+	    border-top-right-radius: 0;
+	}
+	.btn:not(:first-child):not(:last-child):not(.dropdown-toggle),
+	.tablinks:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+		border-radius: 0;
+	}
+}
+.btn.btn-default,
+.tab .tablinks {
+    background-color: transparent;
+    color: #607580;
+    border-color: #607580;
+    &.active,
+    &:hover {
+	    background-color: #607580;
+	    color: #fff;
+	    border-color: #607580;
+    }
+}
+.btn,
+.tablinks {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    height: 32px;
+    padding: 0 16px;
+    vertical-align: middle;
+    color: #607580;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .2s ease-out;
+    transition-property: background-color,color,opacity,border;
+}
+@keyframes fade-in {
+  from {opacity: 0; }
+  to {opacity: 1; }
+}
