@@ -39,6 +39,9 @@ sections:
   directory: addon-fim
   subnav_template: addon_fim.erb
 - repository:
+    name: pivotal-cf/docs-runtimes
+  directory: runtimes
+- repository:
     name: pivotal-cf-experimental/docs-appdog
   directory: pcf-appdog
   subnav_template: appdog.erb
