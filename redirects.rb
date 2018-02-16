@@ -3,6 +3,7 @@ r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
 r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
 
+r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-0/buildpacks/$1'
 r301 %r{/deploying/(.*)}, '/pivotalcf/2-0/deploying/$1'
 r301 %r{/concepts/(.*)}, '/pivotalcf/2-0/concepts/$1'
