@@ -31,12 +31,15 @@ r301 %r{/pivotalcf/1-9/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-9/pcf-re
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, "/jmx-bridge/1-9/$1"
 
-r301 %r{/200/(.*)}, "http://hdb.docs.pivotal.io/200/$1"
-r301 %r{/201/(.*)}, "http://hdb.docs.pivotal.io/201/$1"
-r301 %r{/130/(.*)}, "http://hdb.docs.pivotal.io/130/$1"
-r301 %r{/131/(.*)}, "http://hdb.docs.pivotal.io/131/$1"
-r301 %r{/210/(.*)}, "http://hdb.docs.pivotal.io/210/$1"
-r301 %r{/211/(.*)}, "http://hdb.docs.pivotal.io/211/$1"
+r301 %r{/200/hawq/(.*)}, "http://hdb.docs.pivotal.io/200/hawq/$1"
+r301 %r{/201/hawq/(.*)}, "http://hdb.docs.pivotal.io/201/hawq/$1"
+r301 %r{/130/hawq/(.*)}, "http://hdb.docs.pivotal.io/130/hawq/$1"
+r301 %r{/131/hawq/(.*)}, "http://hdb.docs.pivotal.io/131/hawq/$1"
+r301 %r{/210/hawq/(.*)}, "http://hdb.docs.pivotal.io/210/hawq/$1"
+r301 %r{/211/hawq/(.*)}, "http://hdb.docs.pivotal.io/211/hawq/$1"
+r301 %r{/212/hawq/(.*)}, "http://hdb.docs.pivotal.io/212/hawq/$1"
+r301 %r{/220/hawq/(.*)}, "http://hdb.docs.pivotal.io/220/hawq/$1"
+r301 %r{/230/hawq/(.*)}, "http://hdb.docs.pivotal.io/230/hawq/$1"
 
 r301 %r{/pivotalhd/1010/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1010/$1'
 r301 %r{/pivotalhd/1030/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/1030/$1'
@@ -50,6 +53,18 @@ r301 %r{/pivotalhd/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/2100/$1'
 
 r301 %r{/gpdb/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
 r301 %r{/gptext/(.*)}, 'http://gpdb.docs.pivotal.io/gptext/$1'
+
+# For Spark Connector
+
+r301 %r{/120/(.*)}, 'https://greenplum-spark.docs.pivotal.io/120/$1'
+r301 %r{/110/(.*)}, 'https://greenplum-spark.docs.pivotal.io/110/$1'
+r301 %r{/100/(.*)}, 'https://greenplum-spark.docs.pivotal.io/100/$1'
+
+# For GPText
+
+r301 %r{/220/topics/(.*)}, "https://gptext.docs.pivotal.io/220/topics/$1"
+r301 %r{/210/topics/(.*)}, "https://gptext.docs.pivotal.io/210/topics/$1"
+r301 %r{/200/topics/(.*)}, "https://gptext.docs.pivotal.io/200/topics/$1"
 
 # For GPDB
 r301 %r{/4320/(.*)}, 'http://gpdb.docs.pivotal.io/4320/$1'
@@ -68,16 +83,33 @@ r301 %r{/43140/(.*)}, 'http://gpdb.docs.pivotal.io/43140/$1'
 r301 %r{/43150/(.*)}, 'http://gpdb.docs.pivotal.io/43150/$1'
 r301 %r{/43160/(.*)}, 'http://gpdb.docs.pivotal.io/43160/$1'
 r301 %r{/43170/(.*)}, 'http://gpdb.docs.pivotal.io/43170/$1'
+r301 %r{/43180/(.*)}, 'http://gpdb.docs.pivotal.io/43180/$1'
+r301 %r{/43190/(.*)}, 'http://gpdb.docs.pivotal.io/43190/$1'
+r301 %r{/43200/(.*)}, 'http://gpdb.docs.pivotal.io/43200/$1'
+r301 %r{/43210/(.*)}, 'http://gpdb.docs.pivotal.io/43210/$1'
+r301 %r{/43220/(.*)}, 'http://gpdb.docs.pivotal.io/43220/$1'
+r301 %r{/43230/(.*)}, 'http://gpdb.docs.pivotal.io/43230/$1'
 r301 %r{/500/(.*)}, 'http://gpdb.docs.pivotal.io/500/$1'
 r301 %r{/510/(.*)}, 'http://gpdb.docs.pivotal.io/510/$1'
+r301 %r{/520/(.*)}, 'http://gpdb.docs.pivotal.io/520/$1'
+r301 %r{/530/(.*)}, 'http://gpdb.docs.pivotal.io/530/$1'
+r301 %r{/540/(.*)}, 'http://gpdb.docs.pivotal.io/540/$1'
+r301 %r{/550/(.*)}, 'http://gpdb.docs.pivotal.io/550/$1'
+r301 %r{/560/(.*)}, 'http://gpdb.docs.pivotal.io/560/$1'
 
 # For GPCC
+r301 %r{/330/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/330/gp-wlm/$1"
+r301 %r{/320/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/320/gp-wlm/$1"
+r301 %r{/310/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/310/gp-wlm/$1"
 r301 %r{/300/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/300/gp-wlm/$1"
 r301 %r{/250/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/250/gp-wlm/$1"
 r301 %r{/240/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/240/gp-wlm/$1"
 r301 %r{/230/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/230/gp-wlm/$1"
 r301 %r{/220/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/220/gp-wlm/$1"
 r301 %r{/210/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/210/gp-wlm/$1"
+r301 %r{/330/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/330/gpcc/$1"
+r301 %r{/320/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/320/gpcc/$1"
+r301 %r{/310/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/310/gpcc/$1"
 r301 %r{/300/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/300/gpcc/$1"
 r301 %r{/250/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/250/gpcc/$1"
 r301 %r{/240/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/240/gpcc/$1"
