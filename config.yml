@@ -60,23 +60,7 @@ sections:
     local_product_version: 1.9
     local_header_links: []
     local_header_version_list:
-      - <a href="http://docs.pivotal.io/jmx-bridge/1-8/index.html">v1.8</a>
-      - <a href="http://docs.pivotal.io/archives/jmx-bridge-1.7.pdf">v1.7</a>
-- repository:
-    name: pivotal-cf/docs-jmx-bridge
-  directory: jmx-bridge/1-8
-  subnav_template: pivotal_jmx_bridge_subnav.erb
-  product_info:
-    use_local_header: true
-    latest_stable_version: 1.9
-    local_header_img: /images/cloud_rings.png
-    local_header_title: JMX Bridge
-    search_placeholder: Search JMX Bridge 1.8
-    url_prefix: jmx-bridge/1-8
-    local_product_version: 1.8
-    local_header_links: []
-    local_header_version_list:
-      - <a href="http://docs.pivotal.io/jmx-bridge/1-9/index.html">v1.9</a>
+      - <a href="http://docs.pivotal.io/archives/jmx-bridge-1.8.pdf">v1.8</a>
       - <a href="http://docs.pivotal.io/archives/jmx-bridge-1.7.pdf">v1.7</a>
 - repository:
     name: pivotal-cf/docs-logsearch
