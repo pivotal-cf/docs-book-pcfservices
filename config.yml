@@ -27,6 +27,12 @@ sections:
     name: pivotal-cf/pcf-release-notes
   directory: releasenotes
 
+# repos in org cloudfoundry
+- repository:
+    name: cloudfoundry/docs-bbr
+  directory: bbr
+  subnav_template: bbr-subnav.erb
+
 # repos in org pivotal-cf: alphabetical
 - repository:
     name: pivotal-cf/docs-addon-fim
