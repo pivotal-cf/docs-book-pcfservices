@@ -104,3 +104,17 @@ body.__index img {
   from {opacity: 0; }
   to {opacity: 1; }
 }
+
+// Stemcells PivNet checkbox
+
+span.pivnet {
+  &:before {
+    content: "\F058";
+    font-family: FontAwesome;
+    color: green;
+    font-size: 1.2em;
+    position: relative;
+    display: inline;
+    padding-right: .3em;
+  }
+}
