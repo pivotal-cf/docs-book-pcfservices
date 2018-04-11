@@ -66,6 +66,7 @@ r301 %r{/100/(.*)}, 'https://greenplum-spark.docs.pivotal.io/100/$1'
 
 # For GPText
 
+r301 %r{/230/topics/(.*)}, "https://gptext.docs.pivotal.io/230/topics/$1"
 r301 %r{/220/topics/(.*)}, "https://gptext.docs.pivotal.io/220/topics/$1"
 r301 %r{/210/topics/(.*)}, "https://gptext.docs.pivotal.io/210/topics/$1"
 r301 %r{/200/topics/(.*)}, "https://gptext.docs.pivotal.io/200/topics/$1"
@@ -93,6 +94,7 @@ r301 %r{/43200/(.*)}, 'http://gpdb.docs.pivotal.io/43200/$1'
 r301 %r{/43210/(.*)}, 'http://gpdb.docs.pivotal.io/43210/$1'
 r301 %r{/43220/(.*)}, 'http://gpdb.docs.pivotal.io/43220/$1'
 r301 %r{/43230/(.*)}, 'http://gpdb.docs.pivotal.io/43230/$1'
+r301 %r{/43240/(.*)}, 'http://gpdb.docs.pivotal.io/43240/$1'
 r301 %r{/500/(.*)}, 'http://gpdb.docs.pivotal.io/500/$1'
 r301 %r{/510/(.*)}, 'http://gpdb.docs.pivotal.io/510/$1'
 r301 %r{/520/(.*)}, 'http://gpdb.docs.pivotal.io/520/$1'
@@ -100,6 +102,7 @@ r301 %r{/530/(.*)}, 'http://gpdb.docs.pivotal.io/530/$1'
 r301 %r{/540/(.*)}, 'http://gpdb.docs.pivotal.io/540/$1'
 r301 %r{/550/(.*)}, 'http://gpdb.docs.pivotal.io/550/$1'
 r301 %r{/560/(.*)}, 'http://gpdb.docs.pivotal.io/560/$1'
+r301 %r{/570/(.*)}, 'http://gpdb.docs.pivotal.io/570/$1'
 
 # For GPCC
 r301 %r{/330/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/330/gp-wlm/$1"
@@ -111,6 +114,7 @@ r301 %r{/240/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/240/gp-wlm/$1"
 r301 %r{/230/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/230/gp-wlm/$1"
 r301 %r{/220/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/220/gp-wlm/$1"
 r301 %r{/210/gp-wlm/(.*)}, "http://gpcc.docs.pivotal.io/210/gp-wlm/$1"
+r301 %r{/400/(.*)}, "http://gpcc.docs.pivotal.io/400/$1"
 r301 %r{/330/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/330/gpcc/$1"
 r301 %r{/320/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/320/gpcc/$1"
 r301 %r{/310/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/310/gpcc/$1"
