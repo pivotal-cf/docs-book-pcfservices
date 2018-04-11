@@ -66,6 +66,7 @@ r301 %r{/100/(.*)}, 'https://greenplum-spark.docs.pivotal.io/100/$1'
 
 # For GPText
 
+r301 %r{/230/topics/(.*)}, "https://gptext.docs.pivotal.io/230/topics/$1"
 r301 %r{/220/topics/(.*)}, "https://gptext.docs.pivotal.io/220/topics/$1"
 r301 %r{/210/topics/(.*)}, "https://gptext.docs.pivotal.io/210/topics/$1"
 r301 %r{/200/topics/(.*)}, "https://gptext.docs.pivotal.io/200/topics/$1"
