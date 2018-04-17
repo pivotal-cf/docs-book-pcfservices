@@ -1,3 +1,8 @@
+# Redirect all production http traffic to https
+r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
+  rack_env['SERVER_NAME'] == 'docs.pivotal.io' && rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
+}
+
 # Redirects to docs-book-services-sdk
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
@@ -26,7 +31,6 @@ r301 %r{/pivotalcf/1-10/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-10/pcf-
 
 r301 %r{/pivotalcf/1-9/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/1-9/pcf-release-notes/opsmanager-rn.html#knownissues'
 r301 %r{/pivotalcf/1-9/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-9/pcf-release-notes/runtime-rn.html#knownissues'
-
 
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
@@ -206,6 +210,7 @@ r301 %r{/pivotalcf/1-5/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.5.pdf
 r301 %r{/pivotalcf/1-6/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.6.pdf'
 r301 %r{/pivotalcf/1-7/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.7.pdf'
 r301 %r{/pivotalcf/1-8/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.8.pdf'
+r301 %r{/pivotalcf/1-9/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.9.pdf'
 
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
