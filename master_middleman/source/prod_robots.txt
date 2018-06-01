@@ -1,9 +1,16 @@
 User-agent: *
+Noindex: /pivotalcf/1-10/
+Noindex: /pivotalcf/1-9/
+Noindex: /pivotalcf/1-8/
+Noindex: /pivotalcf/1-7/
+Noindex: /pivotalcf/1-6/
+Noindex: /redis/odb/
+Noindex: /archives/
+
 Disallow: /pivotalcf/1-10/
 Disallow: /pivotalcf/1-9/
 Disallow: /pivotalcf/1-8/
 Disallow: /pivotalcf/1-7/
 Disallow: /pivotalcf/1-6/
+Disallow: /archives/
 Disallow: /redis/odb/
-
-Noindex: /redis/odb/
