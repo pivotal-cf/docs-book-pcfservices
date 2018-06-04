@@ -271,3 +271,5 @@ r301 '/pivotalcf/2-1/getstarted/pcf-docs.html', '/pivotalcf/2-1/'
 r301 %r{/push/1-7/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.7.pdf'
 r301 %r{/push/1-6/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.6.pdf'
 
+r301 %r{/pcf/nist/(.*)}, '/nist/$1'
+
