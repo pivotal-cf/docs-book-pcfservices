@@ -17,6 +17,9 @@ template_variables:
 
   api_version: 235
 
+  ga_account_id: UA-39702075-1
+  gtm_account_id: GTM-MW4LZHR
+
   admin: your Cloud Foundry administrator
   api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Elastic Runtime Instance topic](http://docs.pivotal.io/pivotalcf/customizing/api-endpoint.html).
   api_endpoint: <a href="http://docs.pivotal.io/pivotalcf/opsguide/api-endpoint.html">the URL of the Cloud Controller in your Elastic Runtime instance</a>
@@ -94,7 +97,6 @@ template_variables:
   example_ip_3: 203.0.113.1
   external_ips: external IP addresses
   first_product_name: Pivotal Cloud Foundry&reg; (PCF)
-  ga_account_id: UA-39702075-1
   gen_GSG:
   global_header_product_href: https://network.pivotal.io/
   global_header_product_link_text: Downloads
