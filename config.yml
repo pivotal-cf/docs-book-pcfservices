@@ -96,6 +96,28 @@ sections:
   subnav_template: app_dist_subnav.erb
 - repository:
     name: cfmobile/docs-push-notifications
+    ref: '1.10'
+  directory: push/1-10
+  subnav_template: push_subnav_1-10.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: "1.10"
+    changelog_href: http://docs.pivotal.io/push/1-10/release-notes.html
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Push Notification Services
+    search_placeholder: Search PCF Push 1.10
+    url_prefix: push/1-10
+    local_product_version: "1.10"
+    local_header_links: []
+    local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/push/1-9
+        display_name: v1.9
+      - url_prefix: http://docs.pivotal.io/push/1-8
+        display_name: v1.8
+      - <a href="http://docs.pivotal.io/archives/push-notifications-1.7.pdf">v1.7</a>
+      - <a href="http://docs.pivotal.io/archives/push-notifications-1.6.pdf">v1.6</a>
+- repository:
+    name: cfmobile/docs-push-notifications
     ref: '1.9'
   directory: push/1-9
   subnav_template: push_subnav_1-9.erb
@@ -110,6 +132,8 @@ sections:
     local_product_version: 1.9
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/push/1-10
+        display_name: v1.10
       - url_prefix: http://docs.pivotal.io/push/1-8
         display_name: v1.8
       - <a href="http://docs.pivotal.io/archives/push-notifications-1.7.pdf">v1.7</a>
@@ -130,6 +154,8 @@ sections:
     local_product_version: 1.8
     local_header_links: []
     local_header_version_list:
+      - url_prefix: http://docs.pivotal.io/push/1-10
+        display_name: v1.10
       - url_prefix: http://docs.pivotal.io/push/1-9
         display_name: v1.9
       - <a href="http://docs.pivotal.io/archives/push-notifications-1.7.pdf">v1.7</a>
