@@ -16,6 +16,7 @@ template_variables:
   support_url: http://support.pivotal.io
 
   api_version: 235
+  gtm_account_id: GTM-MW4LZHR
 
   admin: your Cloud Foundry administrator
   api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Elastic Runtime Instance topic](http://docs.pivotal.io/pivotalcf/customizing/api-endpoint.html).
