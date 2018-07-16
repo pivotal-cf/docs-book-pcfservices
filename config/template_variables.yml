@@ -132,7 +132,7 @@ template_variables:
   org_members_multi: images/pcf/org-members-multi.png
   org_members: images/pcf/org-members.png
   org_roles: "Organization Manager and Organization Auditor"
-  pcf_pools: For [Amazon Web Services](http://aws.amazon.com/ec2/faqs/#How_many_instances_can_I_run_in_Amazon_EC2), review the documentation regarding scaling instances. If you are using OpenStack, see the topic regarding [managing projects and users](http://docs.openstack.org/openstack-ops/content/projects_users.html). For vSphere, review the [Configuring Ops Manager Director for VMware vSphere](http://docs.pivotal.io/pivotalcf/customizing/vsphere-config.html#resource-config) topic.
+  pcf_pools: For [Amazon Web Services](http://aws.amazon.com/ec2/faqs/#How_many_instances_can_I_run_in_Amazon_EC2), review the documentation regarding scaling instances. If you are using OpenStack, see the topic regarding [managing projects and users](http://docs.openstack.org/openstack-ops/content/projects_users.html). For vSphere, review the [Configuring BOSH Director on vSphere](http://docs.pivotal.io/pivotalcf/customizing/vsphere-config.html#resource-config) topic.
   pcf_rec: Pivotal
   platform_ssh_configuration: Pivotal Cloud Foundry deployments control SSH access to apps at the Elastic Runtime level. Additionally, Cloud Foundry supports load balancing of SSH sessions with your load balancer. The [Configuring SSH Access](../../customizing/config-ssh.html) topic describes how to set SSH access for your deployment.
   pools_link: <a href="http://docs.pivotal.io/pivotalcf/customizing/vsphere-config.html">resource pools</a>
