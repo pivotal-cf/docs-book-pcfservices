@@ -212,6 +212,7 @@ r301 %r{/pivotalcf/1-6/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.6.pdf
 r301 %r{/pivotalcf/1-7/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.7.pdf'
 r301 %r{/pivotalcf/1-8/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.8.pdf'
 r301 %r{/pivotalcf/1-9/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.9.pdf'
+r301 %r{/pivotalcf/1-10/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.10.pdf'
 
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
