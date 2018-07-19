@@ -89,7 +89,7 @@ sections:
   directory: spring-xd
   subnav_template: spring_xd_service_subnav.erb
 
-# repos in other orgs: alphabetical by org
+# repos in other orgs: alphabetical
 - repository:
     name: cfmobile/docs-app-distribution
   directory: app-dist
