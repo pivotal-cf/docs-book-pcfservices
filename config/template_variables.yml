@@ -143,6 +143,7 @@ template_variables:
   pw_policy: See the <a href="../opsguide/pw-policy.html">Configuring UAA Password Policy</a> topic to configure the password policy.
   pws_metrics:
   quota_resource: quota space
+  recommended_by: Pivotal
   route_services_config: <h2><a id='enabling-route-services'></a>Enabling Route Services in Pivotal Cloud Foundry</h2>You configure Route Services for your deployment in the Elastic Runtime tile, under **Settings**>**Networking**. Depending on your infrastructure, refer to the Elastic Runtime configuration topics for <a href="../customizing/cloudform-er-config.html#route-services">Amazon Web Services</a>, <a href="../customizing/openstack-er-config.html#route-services">OpenStack</a>, or <a href="../customizing/config-er-vmware.html#route-services">vSphere and vCloud</a>.
   scaling_ert_db:
   scaling_ert: For more information regarding zero downtime deployment, see the [Scaling Instances in Elastic Runtime](./../opsguide/scaling-ert-components.html) topic.
