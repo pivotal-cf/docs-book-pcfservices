@@ -22,6 +22,7 @@ sections:
   directory: resources
 - repository:
     name: pivotal-cf/docs-pcf-upgrade 
+    ref: 'upgrade-table'
   directory: upgrading
 - repository:
     name: pivotal-cf/pcf-release-notes
