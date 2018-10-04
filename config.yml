@@ -36,10 +36,6 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    name: pivotal-cf/docs-addon-fim
-  directory: addon-fim
-  subnav_template: addon_fim.erb
-- repository:
     name: pivotal-cf/docs-runtimes
   directory: runtimes
 - repository:
@@ -237,4 +233,3 @@ sections:
     name: bentarnoff/docs-tracker-pcf
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
-
