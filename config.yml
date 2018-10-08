@@ -187,27 +187,6 @@ sections:
       - <a href="http://docs.pivotal.io/archives/scheduler-1-0.pdf">v1.0</a> 
 
 - repository:
-    ref: 'edge'
-    name: pivotal-cf/docs-scheduler
-    at_path: docs-content
-  directory: pcf-scheduler/1-3
-  subnav_template: pcf-scheduler-subnav.erb
-  product_info:
-    use_local_header: true
-    latest_stable_version: 1.3
-    local_header_img: /images/cloud_rings.png
-    local_header_title: Scheduler for PCF
-    search_placeholder: Search Scheduler for PCF 1.3
-    url_prefix: pcf-scheduler/1-3
-    local_product_version: 1.0
-    local_header_links: []
-    local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/pcf-scheduler/1-2
-        display_name: v1.2
-      - <a href="http://docs.pivotal.io/archives/scheduler-1-1.pdf">v1.1</a> 
-      - <a href="http://docs.pivotal.io/archives/scheduler-1-0.pdf">v1.0</a> 
-      
-- repository:
     name: bentarnoff/docs-tracker-pcf
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
