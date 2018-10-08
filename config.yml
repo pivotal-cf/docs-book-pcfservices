@@ -168,7 +168,7 @@ sections:
   subnav_template: gemfire_cf_subnav.erb
 
 - repository:
-    ref: 'master'
+    ref: '1.2'
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
   directory: pcf-scheduler/1-2
