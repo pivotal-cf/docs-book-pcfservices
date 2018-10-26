@@ -1,7 +1,7 @@
 ---
 book_repo: pivotal-cf/docs-book-pcfservices
 layout_repo: pivotal-cf/docs-layout-repo
-layout_repo_ref: master
+layout_repo_ref: 'anchor-scrolling-js' 
 
 feedback_enabled: true
 
