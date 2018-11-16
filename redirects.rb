@@ -136,10 +136,21 @@ r301 %r{/230/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/230/gpcc/$1"
 r301 %r{/220/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/220/gpcc/$1"
 r301 %r{/210/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/210/gpcc/$1"
 
-r301 '/gemfire/index.html', 'http://gemfire.docs.pivotal.io/index.html'
-r301 '/gemfire/', 'http://gemfire.docs.pivotal.io/index.html'
-r301 '/gemfirexd/index.html', 'http://gemfirexd.docs.pivotal.io/index.html'
-r301 '/gemfirexd/', 'http://gemfirexd.docs.pivotal.io/index.html'
+# For GemFire
+r301 %r{http://docs.pivotal.io/gemfire/(.*)}, 'http://gemfire.docs.pivotal.io/$1'
+r301 %r{http://docs.pivotal.io/geode/(.*)}, 'http://gemfire.docs.pivotal.io/$1'
+r301 %r{http://docs.pivotal.io/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
+r301 '/gemfire/index.html', 'http://gemfire.docs.pivotal.io/96/gemfire/about_gemfire.html'
+r301 '/gemfire/', 'http://gemfire.docs.pivotal.io/96/gemfire/about_gemfire.html'
+r301 %r{/(.*)/gemfire/(.*)}, "http://gemfire.docs.pivotal.io/$1/gemfire/$2"
+r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
+r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
+r301 %r{/(.*)/gemfire-native-client/(.*)}, "http://gemfire-native-client.docs.pivotal.io/$1/gemfire/$2"
+r301 %r{/(.*)/geode-native-client/(.*)}, "http://gemfire-native-client.docs.pivotal.io/$1/geode/$2"
+r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "http://gemfire-native-client.docs.pivotal.io/$1/gemfire/$2"
+
+
+
 r301 '/rabbitmq/index.html', 'http://rabbitmq.docs.pivotal.io/index.html'
 r301 '/rabbitmq/', 'http://rabbitmq.docs.pivotal.io/index.html'
 r301 '/dca/index.html', 'http://data.docs.pivotal.io/dca/index.html'
