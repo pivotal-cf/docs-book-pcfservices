@@ -151,7 +151,7 @@ r301 %r{/(.*)/geode-native-client/(.*)}, "http://gemfire-native-client.docs.pivo
 r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "http://gemfire-native-client.docs.pivotal.io/$1/gemfire/$2"
 
 #For GemFire for PCF
-r301 %r{http://docs.pivotal.io/gemfire-cf/(.*)}, 'http://docs.pivotal.io/archives/gemfire-for-pcf-1.7.pdf'
+r301 %r{/gemfire-cf/(.*)}, 'http://docs.pivotal.io/archives/gemfire-for-pcf-1.7.pdf'
 
 
 
