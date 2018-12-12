@@ -153,6 +153,8 @@ r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "http://gemfire-native-client.doc
 #For GemFire for PCF
 r301 %r{/gemfire-cf/(.*)}, 'http://docs.pivotal.io/archives/gemfire-for-pcf-1.7.pdf'
 
+#For SSC for GemFire
+r301 %r{/ssc-gemfire/(.*)}, 'http://docs.pivotal.io/archives/ssc-gemfire-1.2.pdf'
 
 
 r301 '/rabbitmq/index.html', 'http://rabbitmq.docs.pivotal.io/index.html'
