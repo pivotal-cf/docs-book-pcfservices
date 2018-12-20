@@ -300,3 +300,7 @@ r301 %r{/push/1-7/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.7
 r301 %r{/push/1-6/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.6.pdf'
 
 r301 %r{/pcf/nist/(.*)}, '/nist/$1'
+
+r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
+r301 %r{/pks/1-2/concourse-helm.html}, '/pks/1-2/helm.html'
+r301 %r{/pks/1-3/concourse-helm.html}, '/pks/1-3/helm.html'
