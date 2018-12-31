@@ -141,8 +141,6 @@ r301 %r{/210/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/210/gpcc/$1"
 r301 %r{http://docs.pivotal.io/gemfire/(.*)}, 'http://gemfire.docs.pivotal.io/$1'
 r301 %r{http://docs.pivotal.io/geode/(.*)}, 'http://gemfire.docs.pivotal.io/$1'
 r301 %r{http://docs.pivotal.io/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
-r301 '/gemfire/index.html', 'http://gemfire.docs.pivotal.io/96/gemfire/about_gemfire.html'
-r301 '/gemfire/', 'http://gemfire.docs.pivotal.io/96/gemfire/about_gemfire.html'
 r301 %r{/(.*)/gemfire/(.*)}, "http://gemfire.docs.pivotal.io/$1/gemfire/$2"
 r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
