@@ -9,22 +9,22 @@ r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
 r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
-r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-3/buildpacks/$1'
-r301 %r{/deploying/(.*)}, '/pivotalcf/2-3/deploying/$1'
-r301 %r{/concepts/(.*)}, '/pivotalcf/2-3/concepts/$1'
-r301 %r{/adminguide/(.*)}, '/pivotalcf/2-3/adminguide/$1'
-r301 %r{/cf-cli/(.*)}, '/pivotalcf/2-3/cf-cli/$1'
-r301 %r{/devguide/(.*)}, '/pivotalcf/2-3/devguide/$1'
-r301 %r{/loggregator/(.*)}, '/pivotalcf/2-3/loggregator/$1'
-r301 %r{/services/(.*)}, '/pivotalcf/2-3/services/$1'
-r301 %r{/opsguide/(.*)}, '/pivotalcf/2-3/opsguide/$1'
-r301 %r{/installing/(.*)}, '/pivotalcf/2-3/installing/$1'
-r301 %r{/customizing/(.*)}, '/pivotalcf/2-3/customizing/$1'
-r301 %r{/appsman-services/(.*)}, '/pivotalcf/2-3/appsman-services/$1'
-r301 %r{/console/(.*)}, '/pivotalcf/2-3/console/$1'
-r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/2-3/pcf-release-notes/$1'
-r301 %r{/pivotalcf/2-3/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/2-3/pcf-release-notes/opsmanager-rn.html#knownissues'
-r301 %r{/pivotalcf/2-3/pcf-release-notes/runtime-ki.html}, 'pivotalcf/2-3/pcf-release-notes/runtime-rn.html#knownissues'
+r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-4/buildpacks/$1'
+r301 %r{/deploying/(.*)}, '/pivotalcf/2-4/deploying/$1'
+r301 %r{/concepts/(.*)}, '/pivotalcf/2-4/concepts/$1'
+r301 %r{/adminguide/(.*)}, '/pivotalcf/2-4/adminguide/$1'
+r301 %r{/cf-cli/(.*)}, '/pivotalcf/2-4/cf-cli/$1'
+r301 %r{/devguide/(.*)}, '/pivotalcf/2-4/devguide/$1'
+r301 %r{/loggregator/(.*)}, '/pivotalcf/2-4/loggregator/$1'
+r301 %r{/services/(.*)}, '/pivotalcf/2-4/services/$1'
+r301 %r{/opsguide/(.*)}, '/pivotalcf/2-4/opsguide/$1'
+r301 %r{/installing/(.*)}, '/pivotalcf/2-4/installing/$1'
+r301 %r{/customizing/(.*)}, '/pivotalcf/2-4/customizing/$1'
+r301 %r{/appsman-services/(.*)}, '/pivotalcf/2-4/appsman-services/$1'
+r301 %r{/console/(.*)}, '/pivotalcf/2-4/console/$1'
+r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/2-4/pcf-release-notes/$1'
+r301 %r{/pivotalcf/2-4/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/2-4/pcf-release-notes/opsmanager-rn.html#knownissues'
+r301 %r{/pivotalcf/2-4/pcf-release-notes/runtime-ki.html}, 'pivotalcf/2-4/pcf-release-notes/runtime-rn.html#knownissues'
 
 r301 %r{/pivotalcf/1-10/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/1-10/pcf-release-notes/opsmanager-rn.html#knownissues'
 r301 %r{/pivotalcf/1-10/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-10/pcf-release-notes/runtime-rn.html#knownissues'
@@ -141,8 +141,6 @@ r301 %r{/210/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/210/gpcc/$1"
 r301 %r{http://docs.pivotal.io/gemfire/(.*)}, 'http://gemfire.docs.pivotal.io/$1'
 r301 %r{http://docs.pivotal.io/geode/(.*)}, 'http://gemfire.docs.pivotal.io/$1'
 r301 %r{http://docs.pivotal.io/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
-r301 '/gemfire/index.html', 'http://gemfire.docs.pivotal.io/96/gemfire/about_gemfire.html'
-r301 '/gemfire/', 'http://gemfire.docs.pivotal.io/96/gemfire/about_gemfire.html'
 r301 %r{/(.*)/gemfire/(.*)}, "http://gemfire.docs.pivotal.io/$1/gemfire/$2"
 r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
@@ -150,6 +148,11 @@ r301 %r{/(.*)/gemfire-native-client/(.*)}, "http://gemfire-native-client.docs.pi
 r301 %r{/(.*)/geode-native-client/(.*)}, "http://gemfire-native-client.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "http://gemfire-native-client.docs.pivotal.io/$1/gemfire/$2"
 
+#For GemFire for PCF
+r301 %r{/gemfire-cf/(.*)}, 'http://docs.pivotal.io/archives/gemfire-for-pcf-1.7.pdf'
+
+#For SSC for GemFire
+r301 %r{/ssc-gemfire/(.*)}, 'http://docs.pivotal.io/archives/ssc-gemfire-1.2.pdf'
 
 
 r301 '/rabbitmq/index.html', 'http://rabbitmq.docs.pivotal.io/index.html'
@@ -203,7 +206,7 @@ r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-
 
 r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
-r301 %r{/pre-release/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/2-3/installing/pcf-docs.html'
+r301 %r{/pre-release/(.*)}, 'https://docs-pcf-staging.cfapps.io/pivotalcf/2-4/installing/pcf-docs.html'
 
 r301 %r{/mobile/app_analytics(.*)}, 'https://network.pivotal.io/products/api-gateway'
 r301 %r{/mobile/apigateway(.*)}, 'https://network.pivotal.io/products/api-gateway'
@@ -214,7 +217,7 @@ r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
 r301 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
-r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/2-3/windows/index.html'
+r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/2-4/windows/index.html'
 
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
@@ -232,6 +235,8 @@ r301 %r{/pivotalcf/1-8/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.8.pdf
 r301 %r{/pivotalcf/1-9/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.9.pdf'
 r301 %r{/pivotalcf/1-10/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.10.pdf'
 r301 %r{/pivotalcf/1-11/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.11.pdf'
+r301 %r{/pivotalcf/1-12/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.12.pdf'
+r301 %r{/pivotalcf/2-0/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-2.0.pdf'
 
 r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://docs.pivotal.io/archives/scheduler-1.0.pdf'
 r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://docs.pivotal.io/archives/scheduler-1.1.pdf'
@@ -239,7 +244,7 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://docs.pivotal.io/archives/scheduler-1.
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/2-3/$1"
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/2-4/$1"
 
 # Spring Cloud Services
 
@@ -289,9 +294,13 @@ r301 %r{/redis/syslog.html}, '/redis/1-9/installing.html#syslog'
 
 r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
-r301 '/pivotalcf/2-3/getstarted/pcf-docs.html', '/pivotalcf/2-3/'
+r301 '/pivotalcf/2-4/getstarted/pcf-docs.html', '/pivotalcf/2-4/'
 
 r301 %r{/push/1-7/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.7.pdf'
 r301 %r{/push/1-6/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.6.pdf'
 
 r301 %r{/pcf/nist/(.*)}, '/nist/$1'
+
+r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
+r301 %r{/pks/1-2/concourse-helm.html}, '/pks/1-2/helm.html'
+r301 %r{/pks/1-3/concourse-helm.html}, '/pks/1-3/helm.html'
