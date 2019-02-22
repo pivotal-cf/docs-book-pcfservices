@@ -6,6 +6,24 @@
 //   color: mediumvioletred;
 // }
 
+// Bordify images
+main.content {
+	img {
+	    outline: 1px solid black;
+	    outline-offset: -1px;
+
+	}
+	.title-container img {
+	    outline: 0px;
+	   	outline-offset: 0px;
+	}
+	.no-border {
+		outline: none;
+		outline-offset: 0;
+		border: none;
+	}
+}
+
 body.__index img {
 	outline: 0px;
 	outline-offset: 0px;
@@ -99,4 +117,42 @@ span.pivnet {
     display: inline;
     padding-right: .3em;
   }
+}
+
+// Technicolor tables
+.rotate {
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  width: 1.5em;
+  padding: 10px;
+}
+.rotate div {
+     -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+       -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+         margin-left: -10em;
+         margin-right: -10em;
+}
+
+.cell.header {
+  background-color: #1b786e;
+  color: white;
+}
+
+.cell.green {
+  background-color: #b6d7a8;
+  color: black;
+}
+
+.cell.pale-green {
+  background-color: #d9ead3;
+  color: black;
+}
+
+.cell.peach {
+  background-color: #fce5cd;
+  color: black;
 }
