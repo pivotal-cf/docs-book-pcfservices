@@ -176,6 +176,7 @@ r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
 r301 %r{/pcf-scheduler/(?![\d-]+)(.*)}, "/pcf-scheduler/1-2/$1"
 
 r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-4/$1"
+r301 'https://docs.pivotal.io/ksm/$1', 'https://docs.pivotal.io/'
 
 r301 %r{/pivotalcf/packaging/(.*)}, '/tiledev/$1'
 r301 %r{/pivotalcf/partners/(.*)}, '/tiledev/$1'
