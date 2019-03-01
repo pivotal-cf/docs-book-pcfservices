@@ -20,7 +20,7 @@ sections:
     name: pivotal-cf/product-compatibility-matrix
   directory: resources
 - repository:
-    name: pivotal-cf/docs-pcf-upgrade 
+    name: pivotal-cf/docs-pcf-upgrade
     ref: 'upgrade-table'
   directory: upgrading
 - repository:
@@ -44,7 +44,7 @@ sections:
     use_local_header: true
     latest_stable_version: 0.4
     local_header_img: /images/cloud_rings.png
-    local_header_title: Kubernetes Service Manager for PCF 
+    local_header_title: Kubernetes Service Manager for PCF
     search_placeholder: Search Kubernetes Service Manager for PCF 0.4
     url_prefix: ksm/0-4
     local_product_version: 0.4
@@ -103,54 +103,8 @@ sections:
     local_product_version: "1.10"
     local_header_links: []
     local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/push/1-9
-        display_name: v1.9
-      - url_prefix: http://docs.pivotal.io/push/1-8
-        display_name: v1.8
-      - <a href="http://docs.pivotal.io/archives/push-notifications-1.7.pdf">v1.7</a>
-      - <a href="http://docs.pivotal.io/archives/push-notifications-1.6.pdf">v1.6</a>
-- repository:
-    name: cfmobile/docs-push-notifications
-    ref: '1.9'
-  directory: push/1-9
-  subnav_template: push_subnav_1-9.erb
-  product_info:
-    use_local_header: true
-    latest_stable_version: 1.9
-    changelog_href: http://docs.pivotal.io/push/1-9/release-notes.html
-    local_header_img: /images/cloud_rings.png
-    local_header_title: Push Notification Services
-    search_placeholder: Search PCF Push 1.9
-    url_prefix: push/1-9
-    local_product_version: 1.9
-    local_header_links: []
-    local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/push/1-10
-        display_name: v1.10
-      - url_prefix: http://docs.pivotal.io/push/1-8
-        display_name: v1.8
-      - <a href="http://docs.pivotal.io/archives/push-notifications-1.7.pdf">v1.7</a>
-      - <a href="http://docs.pivotal.io/archives/push-notifications-1.6.pdf">v1.6</a>
-- repository:
-    name: cfmobile/docs-push-notifications
-    ref: '1.8'
-  directory: push/1-8
-  subnav_template: push_subnav_1-8.erb
-  product_info:
-    use_local_header: true
-    latest_stable_version: 1.9
-    changelog_href: http://docs.pivotal.io/push/1-8/release-notes.html
-    local_header_img: /images/cloud_rings.png
-    local_header_title: Push Notification Services
-    search_placeholder: Search PCF Push 1.8
-    url_prefix: push/1-8
-    local_product_version: 1.8
-    local_header_links: []
-    local_header_version_list:
-      - url_prefix: http://docs.pivotal.io/push/1-10
-        display_name: v1.10
-      - url_prefix: http://docs.pivotal.io/push/1-9
-        display_name: v1.9
+      - <a href="http://docs.pivotal.io/archives/push-notifications-1.9.pdf">v1.9</a>
+      - <a href="http://docs.pivotal.io/archives/push-notifications-1.8.pdf">v1.8</a>
       - <a href="http://docs.pivotal.io/archives/push-notifications-1.7.pdf">v1.7</a>
       - <a href="http://docs.pivotal.io/archives/push-notifications-1.6.pdf">v1.6</a>
 
@@ -179,8 +133,8 @@ sections:
     local_product_version: 1.2
     local_header_links: []
     local_header_version_list:
-      - <a href="http://docs.pivotal.io/archives/scheduler-1.1.pdf">v1.1</a> 
-      - <a href="http://docs.pivotal.io/archives/scheduler-1.0.pdf">v1.0</a> 
+      - <a href="http://docs.pivotal.io/archives/scheduler-1.1.pdf">v1.1</a>
+      - <a href="http://docs.pivotal.io/archives/scheduler-1.0.pdf">v1.0</a>
 
 - repository:
     name: bentarnoff/docs-tracker-pcf

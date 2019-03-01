@@ -297,8 +297,10 @@ r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
 r301 '/pivotalcf/2-4/getstarted/pcf-docs.html', '/pivotalcf/2-4/'
 
-r301 %r{/push/1-7/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.7.pdf'
 r301 %r{/push/1-6/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.6.pdf'
+r301 %r{/push/1-7/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.7.pdf'
+r301 %r{/push/1-8/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.8.pdf'
+r301 %r{/push/1-9/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.9.pdf'
 
 r301 %r{/pcf/nist/(.*)}, '/nist/$1'
 
