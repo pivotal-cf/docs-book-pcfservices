@@ -6,6 +6,19 @@
 //   color: mediumvioletred;
 // }
 
+// Make warning
+.warning,
+.note {
+  & > strong:first-child {
+    text-transform: lowercase;
+  }
+  &::first-letter,
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+
 // Bordify images
 main.content {
 	img {
@@ -156,3 +169,4 @@ span.pivnet {
   background-color: #fce5cd;
   color: black;
 }
+
