@@ -6,6 +6,36 @@
 //   color: mediumvioletred;
 // }
 
+// Make warning
+.warning {
+  & > strong:first-child {
+    text-transform: lowercase;
+  }
+  &::first-letter,
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+
+// Bordify images
+main.content {
+	img {
+	    outline: 1px solid black;
+	    outline-offset: -1px;
+
+	}
+	.title-container img {
+	    outline: 0px;
+	   	outline-offset: 0px;
+	}
+	.no-border {
+		outline: none;
+		outline-offset: 0;
+		border: none;
+	}
+}
+
 body.__index img {
 	outline: 0px;
 	outline-offset: 0px;
@@ -138,3 +168,4 @@ span.pivnet {
   background-color: #fce5cd;
   color: black;
 }
+
