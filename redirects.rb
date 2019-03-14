@@ -138,9 +138,8 @@ r301 %r{/220/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/220/gpcc/$1"
 r301 %r{/210/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/210/gpcc/$1"
 
 # For GemFire
-r301 %r{http://docs.pivotal.io/gemfire/(.*)}, 'http://gemfire.docs.pivotal.io/$1'
-r301 %r{http://docs.pivotal.io/geode/(.*)}, 'http://gemfire.docs.pivotal.io/$1'
-r301 %r{http://docs.pivotal.io/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
+r301 '/gemfire/', 'http://gemfire.docs.pivotal.io/'
+r301 %r{/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
 r301 %r{/(.*)/gemfire/(.*)}, "http://gemfire.docs.pivotal.io/$1/gemfire/$2"
 r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
@@ -175,6 +174,10 @@ r301 %r{/mobile/push/(.*)}, '/push/'
 r301 'v1_6_0/api/tags/index.html', '/v1_6_0/api/topics/index.html'
 r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
 r301 %r{/pcf-scheduler/(?![\d-]+)(.*)}, "/pcf-scheduler/1-2/$1"
+
+#For Kubernates Service Manager
+
+r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-4/$1"
 
 r301 %r{/pivotalcf/packaging/(.*)}, '/tiledev/$1'
 r301 %r{/pivotalcf/partners/(.*)}, '/tiledev/$1'
@@ -296,8 +299,10 @@ r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
 r301 '/pivotalcf/2-4/getstarted/pcf-docs.html', '/pivotalcf/2-4/'
 
-r301 %r{/push/1-7/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.7.pdf'
 r301 %r{/push/1-6/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.6.pdf'
+r301 %r{/push/1-7/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.7.pdf'
+r301 %r{/push/1-8/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.8.pdf'
+r301 %r{/push/1-9/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.9.pdf'
 
 r301 %r{/pcf/nist/(.*)}, '/nist/$1'
 
@@ -305,4 +310,9 @@ r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 r301 %r{/pks/1-2/concourse-helm.html}, '/pks/1-2/helm.html'
 r301 %r{/pks/1-3/concourse-helm.html}, '/pks/1-3/helm.html'
 
+
 r301 %r{/spring-flo/(.*)}, 'http://docs.pivotal.io/archives/spring-flo.pdf'
+
+# Redirect older PKS to PDF
+r301 %r{/runtimes/pks/1-0/(.*)}, 'https://docs.pivotal.io/archives/pks-1-0.pdf'
+r301 %r{/runtimes/pks/1-1/(.*)}, 'https://docs.pivotal.io/archives/pks-1-1.pdf'
