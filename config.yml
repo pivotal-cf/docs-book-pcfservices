@@ -21,7 +21,7 @@ sections:
     name: pivotal-cf/product-compatibility-matrix
   directory: resources
 - repository:
-    name: pivotal-cf/docs-pcf-upgrade 
+    name: pivotal-cf/docs-pcf-upgrade
     ref: 'upgrade-table'
   directory: upgrading
 - repository:
@@ -59,10 +59,6 @@ sections:
   directory: pivotalhd-ds
   subnav_template: pivotal_ds_subnav.erb
 
-- repository:
-    name: pivotal-cf/docs-spring-flo
-  directory: spring-flo
-  subnav_template: spring_flo_subnav.erb
 - repository:
     name: pivotal-cf/docs-spring-xd
   directory: spring-xd
@@ -165,8 +161,8 @@ sections:
     local_product_version: 1.2
     local_header_links: []
     local_header_version_list:
-      - <a href="http://docs.pivotal.io/archives/scheduler-1.1.pdf">v1.1</a> 
-      - <a href="http://docs.pivotal.io/archives/scheduler-1.0.pdf">v1.0</a> 
+      - <a href="http://docs.pivotal.io/archives/scheduler-1.1.pdf">v1.1</a>
+      - <a href="http://docs.pivotal.io/archives/scheduler-1.0.pdf">v1.0</a>
 
 - repository:
     name: bentarnoff/docs-tracker-pcf

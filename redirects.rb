@@ -304,3 +304,5 @@ r301 %r{/pcf/nist/(.*)}, '/nist/$1'
 r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 r301 %r{/pks/1-2/concourse-helm.html}, '/pks/1-2/helm.html'
 r301 %r{/pks/1-3/concourse-helm.html}, '/pks/1-3/helm.html'
+
+r301 %r{/spring-flo/(.*)}, 'http://docs.pivotal.io/archives/spring-flo.pdf'
