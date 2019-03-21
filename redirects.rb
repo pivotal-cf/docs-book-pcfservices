@@ -170,6 +170,7 @@ r301 %r{/mobile/datasync/(.*)}, '/mobile/data/'
 r301 '/mobile/notifications/mobile-home.html', '/mobile/index.html'
 r301 %r{/mobile/notifications/(.*)}, '/push/'
 r301 %r{/mobile/app_distribution/(.*)}, '/app-dist/'
+r301 %r{/app-dist/(.*)}, 'http://docs.pivotal.io/archives/app-dist.pdf'
 r301 %r{/mobile/push/(.*)}, '/push/'
 r301 'v1_6_0/api/tags/index.html', '/v1_6_0/api/topics/index.html'
 r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
