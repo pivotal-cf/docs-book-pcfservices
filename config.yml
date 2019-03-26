@@ -130,6 +130,6 @@ sections:
       - <a href="http://docs.pivotal.io/archives/scheduler-1.0.pdf">v1.0</a>
 
 - repository:
-    name: bentarnoff/docs-tracker-pcf
+    name: pivotal-cf/docs-tracker-pcf-new
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
