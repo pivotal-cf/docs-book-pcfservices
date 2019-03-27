@@ -529,10 +529,6 @@ sections:
 #   directory: pcf-dev
 #   subnav_template: pivotal_pcfdev_subnav.erb
 # - repository:
-#     name: pivotal-cf/docs-phd-ds
-#   directory: pivotalhd-ds
-#   subnav_template: pivotal_ds_subnav.erb
-# - repository:
 #     name: pivotal-cf/docs-rabbitmq-staging
 #     ref: '1.7.9'
 #   directory: rabbitmq-cf/1-7
