@@ -69,10 +69,6 @@ sections:
     name: pivotal-cf/docs-pcf-dev
   directory: pcf-dev
   subnav_template: pivotal_pcfdev_subnav.erb
-- repository:
-    name: pivotal-cf/docs-phd-ds
-  directory: pivotalhd-ds
-  subnav_template: pivotal_ds_subnav.erb
 
 - repository:
     name: pivotal-cf/docs-spring-xd
