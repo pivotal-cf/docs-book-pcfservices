@@ -137,6 +137,10 @@ r301 %r{/230/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/230/gpcc/$1"
 r301 %r{/220/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/220/gpcc/$1"
 r301 %r{/210/gpcc/(.*)}, "http://gpcc.docs.pivotal.io/210/gpcc/$1"
 
+# For Pivotal Postgres
+r301 %r{/11-1/(.*)}, "https://postgres.docs.pivotal.io/11-1/$1"
+r301 %r{/11-2/(.*)}, "https://postgres.docs.pivotal.io/11-2/$1"
+
 # For GemFire
 r301 '/gemfire/', 'http://gemfire.docs.pivotal.io/'
 r301 %r{/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
