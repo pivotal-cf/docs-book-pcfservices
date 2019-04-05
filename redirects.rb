@@ -322,3 +322,6 @@ r301 %r{/spring-flo/(.*)}, 'http://docs.pivotal.io/archives/spring-flo.pdf'
 # Redirect older PKS to PDF
 r301 %r{/runtimes/pks/1-0/(.*)}, 'https://docs.pivotal.io/archives/pks-1-0.pdf'
 r301 %r{/runtimes/pks/1-1/(.*)}, 'https://docs.pivotal.io/archives/pks-1-1.pdf'
+
+# Redirect to the most recent version of PKS
+r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/runtimes/pks/1-3/$1"
