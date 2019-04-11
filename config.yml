@@ -54,10 +54,6 @@ sections:
     name: pivotal-cf/docs-runtimes
   directory: runtimes
 - repository:
-    name: pivotal-cf-experimental/docs-appdog
-  directory: pcf-appdog
-  subnav_template: appdog.erb
-- repository:
     name: pivotal-cf/docs-credhub-service-broker
   directory: credhub-service-broker
   subnav_template: credhub_service_broker.erb
