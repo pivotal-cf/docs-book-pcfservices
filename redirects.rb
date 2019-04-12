@@ -8,21 +8,23 @@ r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
 r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
 
-r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
-r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-5/buildpacks/$1'
-r301 %r{/deploying/(.*)}, '/pivotalcf/2-5/deploying/$1'
-r301 %r{/concepts/(.*)}, '/pivotalcf/2-5/concepts/$1'
-r301 %r{/adminguide/(.*)}, '/pivotalcf/2-5/adminguide/$1'
-r301 %r{/cf-cli/(.*)}, '/pivotalcf/2-5/cf-cli/$1'
-r301 %r{/devguide/(.*)}, '/pivotalcf/2-5/devguide/$1'
-r301 %r{/loggregator/(.*)}, '/pivotalcf/2-5/loggregator/$1'
-r301 %r{/services/(.*)}, '/pivotalcf/2-5/services/$1'
-r301 %r{/opsguide/(.*)}, '/pivotalcf/2-5/opsguide/$1'
-r301 %r{/installing/(.*)}, '/pivotalcf/2-5/installing/$1'
-r301 %r{/customizing/(.*)}, '/pivotalcf/2-5/customizing/$1'
-r301 %r{/appsman-services/(.*)}, '/pivotalcf/2-5/appsman-services/$1'
-r301 %r{/console/(.*)}, '/pivotalcf/2-5/console/$1'
-r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/2-5/pcf-release-notes/$1'
+# r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
+# r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-5/buildpacks/$1'
+# r301 %r{/deploying/(.*)}, '/pivotalcf/2-5/deploying/$1'
+# r301 %r{/concepts/(.*)}, '/pivotalcf/2-5/concepts/$1'
+# r301 %r{/adminguide/(.*)}, '/pivotalcf/2-5/adminguide/$1'
+# r301 %r{/cf-cli/(.*)}, '/pivotalcf/2-5/cf-cli/$1'
+# r301 %r{/devguide/(.*)}, '/pivotalcf/2-5/devguide/$1'
+# r301 %r{/loggregator/(.*)}, '/pivotalcf/2-5/loggregator/$1'
+# r301 %r{/services/(.*)}, '/pivotalcf/2-5/services/$1'
+# r301 %r{/opsguide/(.*)}, '/pivotalcf/2-5/opsguide/$1'
+# r301 %r{/installing/(.*)}, '/pivotalcf/2-5/installing/$1'
+# r301 %r{/customizing/(.*)}, '/pivotalcf/2-5/customizing/$1'
+# r301 %r{/appsman-services/(.*)}, '/pivotalcf/2-5/appsman-services/$1'
+# r301 %r{/console/(.*)}, '/pivotalcf/2-5/console/$1'
+# r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/2-5/pcf-release-notes/$1'
+
+
 r301 %r{/pivotalcf/2-5/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/2-5/pcf-release-notes/opsmanager-rn.html#knownissues'
 r301 %r{/pivotalcf/2-5/pcf-release-notes/runtime-ki.html}, 'pivotalcf/2-5/pcf-release-notes/runtime-rn.html#knownissues'
 
