@@ -149,12 +149,14 @@ r301 %r{/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
 r301 %r{/(.*)/gemfire/(.*)}, "http://gemfire.docs.pivotal.io/$1/gemfire/$2"
 r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
-r301 %r{/(.*)/gemfire-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire/$2"
-r301 %r{/(.*)/geode-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/geode/$2"
+
+# For GemFire Native
+r301 %r{/(.*)/gemfire-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client/$2"
+r301 %r{/(.*)/geode-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/geode-native-client/$2"
 r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire/$2"
-r301 %r{/(.*)/gemfire-native/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire/$2"
-r301 %r{/(.*)/geode-native/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/geode/$2"
-r301 %r{/(.*)/gemfire-native-ssp/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire/$2"
+r301 %r{/(.*)/gemfire-native/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client/$2"
+r301 %r{/(.*)/geode-native/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/geode-native-client/$2"
+r301 %r{/(.*)/gemfire-native-ssp/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client-ssp/$2"
 
 #For GemFire for PCF
 r301 %r{/gemfire-cf/(.*)}, 'http://docs.pivotal.io/archives/gemfire-for-pcf-1.7.pdf'
