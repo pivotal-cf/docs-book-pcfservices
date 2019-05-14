@@ -37,8 +37,8 @@ r301 %r{/pivotalcf/1-9/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-9/pcf-re
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 # JMX Bridge
-r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, 'https://github.com/cloudfoundry-community/jmx-consumer-release'
-r301 %r{/jmx-bridge/1-9/(.*)}, 'https://github.com/cloudfoundry-community/jmx-consumer-release'
+r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, 'http://docs.pivotal.io/archives/jmx-bridge-1.9.pdf'
+r301 %r{/jmx-bridge/1-9/(.*)}, 'http://docs.pivotal.io/archives/jmx-bridge-1.9.pdf'
 r301 %r{/jmx-bridge/1-8/(.*)}, 'http://docs.pivotal.io/archives/jmx-bridge-1.8.pdf'
 r301 %r{/jmx-bridge/1-7/(.*)}, 'http://docs.pivotal.io/archives/jmx-bridge-1.7.pdf'
 
