@@ -30,21 +30,6 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    ref: '0.4'
-    name: pivotal-cf/docs-bazaar
-    at_path: docs-content
-  directory: ksm/0-4
-  subnav_template: ksm_0-4_subnav.erb
-  product_info:
-    use_local_header: true
-    latest_stable_version: 0.4
-    local_header_img: /images/cloud_rings.png
-    local_header_title: Kubernetes Service Manager for PCF
-    search_placeholder: Search Kubernetes Service Manager for PCF 0.4
-    url_prefix: ksm/0-4
-    local_product_version: 0.4
-    local_header_links: []
-- repository:
     name: pivotal-cf/docs-runtimes
   directory: runtimes
 - repository:
