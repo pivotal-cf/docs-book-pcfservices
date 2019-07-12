@@ -250,6 +250,7 @@ r301 %r{/pivotalcf/1-11/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.11.p
 r301 %r{/pivotalcf/1-12/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.12.pdf'
 r301 %r{/pivotalcf/2-0/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-2.0.pdf'
 r301 %r{/pivotalcf/2-1/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-2.1.pdf'
+r301 %r{/pivotalcf/2-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.2.pdf'
 
 r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://docs.pivotal.io/archives/scheduler-1.0.pdf'
 r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://docs.pivotal.io/archives/scheduler-1.1.pdf'
