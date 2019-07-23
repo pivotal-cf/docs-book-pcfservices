@@ -310,10 +310,10 @@ r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
 r301 '/pivotalcf/2-6/getstarted/pcf-docs.html', '/pivotalcf/2-6/'
 
-r301 %r{/push/1-6/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.6.pdf'
-r301 %r{/push/1-7/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.7.pdf'
-r301 %r{/push/1-8/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.8.pdf'
-r301 %r{/push/1-9/(.*)}, 'http://docs.pivotal.io/archives/push-notifications-1.9.pdf'
+r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf'
+r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
+r301 %r{/push/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf'
+r301 %r{/push/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf'
 
 r301 %r{/pcf/nist/(.*)}, '/nist/$1'
 
@@ -321,15 +321,17 @@ r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 r301 %r{/pks/1-2/concourse-helm.html}, '/pks/1-2/helm.html'
 r301 %r{/pks/1-3/concourse-helm.html}, '/pks/1-3/helm.html'
 
-
-r301 %r{/spring-flo/(.*)}, 'http://docs.pivotal.io/archives/spring-flo.pdf'
+r301 %r{/spring-flo/(.*)}, 'https://resources.docs.pivotal.io/pdfs/spring-flo.pdf'
 
 # Redirect older PKS to PDF
-r301 %r{/runtimes/pks/1-0/(.*)}, 'https://docs.pivotal.io/archives/pks-1-0.pdf'
-r301 %r{/runtimes/pks/1-1/(.*)}, 'https://docs.pivotal.io/archives/pks-1-1.pdf'
+r301 %r{/runtimes/pks/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-0.pdf'
+r301 %r{/runtimes/pks/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-1.pdf'
 
 # Redirect non-versioned and 'latest' URL calls to the most recent version of PKS
-r301 %r{/runtimes/pks/latest/(.*)}, "/runtimes/pks/1-4/$1"
-r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/runtimes/pks/1-4/$1"
+r301 %r{/runtimes/pks/latest/(.*)}, "/pks/1-4/$1"
+r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "pks/1-4/$1"
+r301 %r{/pks/latest/(.*)}, "/pks/1-4/$1"
+r301 %r{/pks/(?![\d-]+)(.*)}, "pks/1-4/$1"
 
+# Redirect 'archives' (contains PDFs)
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
