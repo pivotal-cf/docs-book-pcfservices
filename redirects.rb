@@ -329,9 +329,9 @@ r301 %r{/runtimes/pks/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-1
 
 # Redirect non-versioned and 'latest' URL calls to the most recent version of PKS
 r301 %r{/runtimes/pks/latest/(.*)}, "/pks/1-4/$1"
-r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "pks/1-4/$1"
+r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/pks/1-4/$1"
 r301 %r{/pks/latest/(.*)}, "/pks/1-4/$1"
-r301 %r{/pks/(?![\d-]+)(.*)}, "pks/1-4/$1"
+r301 %r{/pks/(?![\d-]+)(.*)}, "/pks/1-4/$1"
 
 # Redirect 'archives' (contains PDFs)
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
