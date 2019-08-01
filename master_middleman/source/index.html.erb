@@ -162,6 +162,18 @@
   .content .type-accent-5 {
     color: #0065d5 !important;
   }
+
+  @media(max-width:1200px) {
+    #container-main.container {
+     max-width: 960px;
+    }
+  }
+
+  @media(max-width:768px) {
+    #container-main.container {
+     max-width: 500px;
+    }
+  }
   </style>
   <form method="get" id='search-home' action="/search">
     <input name="q" placeholder="Search docs" class="search-box" />
