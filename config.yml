@@ -27,9 +27,6 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    name: pivotal-cf/docs-runtimes
-  directory: runtimes
-- repository:
     name: pivotal-cf/docs-credhub-service-broker
   directory: credhub-service-broker
   subnav_template: credhub_service_broker.erb
