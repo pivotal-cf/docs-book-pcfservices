@@ -27,12 +27,21 @@ sections:
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    name: pivotal-cf/docs-runtimes
-  directory: runtimes
-- repository:
     name: pivotal-cf/docs-credhub-service-broker
   directory: credhub-service-broker
   subnav_template: credhub_service_broker.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: "1.4"
+    changelog_href: https://docs.pivotal.io/credhub-service-broker/release-notes.html
+    local_header_img: /images/cloud_rings.png
+    local_header_title: CredHub Service Broker for PCF
+    search_placeholder: Search CredHub Service Broker for PCF
+    url_prefix: credhub-service-broker/
+    local_product_version:
+    local_header_links: []
+    local_header_version_list:
+
 - repository:
     name: pivotal-cf/docs-logsearch
   directory: logsearch
