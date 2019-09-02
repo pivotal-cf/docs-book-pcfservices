@@ -73,10 +73,10 @@ sections:
     local_product_version: "1.10"
     local_header_links: []
     local_header_version_list:
-      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf">v1.9</a>
-      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf">v1.8</a>
-      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf">v1.7</a>
-      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf">v1.6</a>
+      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf">v1.9&nbsp;(PDF)</a>
+      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf">v1.8&nbsp;(PDF)</a>
+      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf">v1.7&nbsp;(PDF)</a>
+      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf">v1.6&nbsp;(PDF)</a>
 
 - repository:
     name: gemfire/docs-gemfire-cf
