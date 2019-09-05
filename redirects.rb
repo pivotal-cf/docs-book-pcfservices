@@ -37,10 +37,10 @@ r301 %r{/pivotalcf/1-9/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-9/pcf-re
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 # JMX Bridge
-r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, 'http://docs.pivotal.io/archives/jmx-bridge-1.9.pdf'
-r301 %r{/jmx-bridge/1-9/(.*)}, 'http://docs.pivotal.io/archives/jmx-bridge-1.9.pdf'
-r301 %r{/jmx-bridge/1-8/(.*)}, 'http://docs.pivotal.io/archives/jmx-bridge-1.8.pdf'
-r301 %r{/jmx-bridge/1-7/(.*)}, 'http://docs.pivotal.io/archives/jmx-bridge-1.7.pdf'
+r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, 'https://resources.docs.pivotal.io/pdfs/jmx-bridge-1.9.pdf'
+r301 %r{/jmx-bridge/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/jmx-bridge-1.9.pdf'
+r301 %r{/jmx-bridge/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/jmx-bridge-1.8.pdf'
+r301 %r{/jmx-bridge/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/jmx-bridge-1.7.pdf'
 
 r301 %r{/200/hawq/(.*)}, "http://hdb.docs.pivotal.io/200/hawq/$1"
 r301 %r{/201/hawq/(.*)}, "http://hdb.docs.pivotal.io/201/hawq/$1"
@@ -69,16 +69,16 @@ r301 %r{/(.*)/gemfire/(.*)}, "http://gemfire.docs.pivotal.io/$1/gemfire/$2"
 r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
 
-# For GemFire Native
+# For GemFire Nativehttps://resources.docs.pivotal.io/pdfs/
 r301 %r{/(.*)/gemfire-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client/$2"
 r301 %r{/(.*)/geode-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/geode-native-client/$2"
 r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client-ssp/$2"
 
 #For GemFire for PCF
-r301 %r{/gemfire-cf/(.*)}, 'http://docs.pivotal.io/archives/gemfire-for-pcf-1.7.pdf'
+r301 %r{/gemfire-cf/(.*)}, 'https://resources.docs.pivotal.io/pdfs/gemfire-for-pcf-1.7.pdf'
 
 #For SSC for GemFire
-r301 %r{/ssc-gemfire/(.*)}, 'http://docs.pivotal.io/archives/ssc-gemfire-1.2.pdf'
+r301 %r{/ssc-gemfire/(.*)}, 'https://resources.docs.pivotal.io/pdfs/ssc-gemfire-1.2.pdf'
 
 #For GPDB
 r301 %r{/gpdb/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
@@ -178,7 +178,7 @@ r301 %r{/mobile/datasync/(.*)}, '/mobile/data/'
 r301 '/mobile/notifications/mobile-home.html', '/mobile/index.html'
 r301 %r{/mobile/notifications/(.*)}, '/push/'
 r301 %r{/mobile/app_distribution/(.*)}, '/app-dist/'
-r301 %r{/app-dist/(.*)}, 'http://docs.pivotal.io/archives/app-dist.pdf'
+r301 %r{/app-dist/(.*)}, 'https://resources.docs.pivotal.io/pdfs/app-dist.pdf'
 r301 %r{/mobile/push/(.*)}, '/push/'
 r301 'v1_6_0/api/tags/index.html', '/v1_6_0/api/topics/index.html'
 r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
@@ -237,23 +237,23 @@ r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/
 r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-backup/$1-$2/$3"
 
 # Redirect older versions to PDFs
-r301 %r{/pivotalcf/1-2/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.2.pdf'
-r301 %r{/pivotalcf/1-3/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.3.pdf'
-r301 %r{/pivotalcf/1-4/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.4.pdf'
-r301 %r{/pivotalcf/1-5/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.5.pdf'
-r301 %r{/pivotalcf/1-6/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.6.pdf'
-r301 %r{/pivotalcf/1-7/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.7.pdf'
-r301 %r{/pivotalcf/1-8/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.8.pdf'
-r301 %r{/pivotalcf/1-9/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.9.pdf'
-r301 %r{/pivotalcf/1-10/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.10.pdf'
-r301 %r{/pivotalcf/1-11/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.11.pdf'
-r301 %r{/pivotalcf/1-12/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-1.12.pdf'
-r301 %r{/pivotalcf/2-0/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-2.0.pdf'
-r301 %r{/pivotalcf/2-1/(.*)}, 'https://docs.pivotal.io/archives/pcf-docs-2.1.pdf'
+r301 %r{/pivotalcf/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.2.pdf'
+r301 %r{/pivotalcf/1-3/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.3.pdf'
+r301 %r{/pivotalcf/1-4/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.4.pdf'
+r301 %r{/pivotalcf/1-5/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.5.pdf'
+r301 %r{/pivotalcf/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.6.pdf'
+r301 %r{/pivotalcf/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.7.pdf'
+r301 %r{/pivotalcf/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.8.pdf'
+r301 %r{/pivotalcf/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.9.pdf'
+r301 %r{/pivotalcf/1-10/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.10.pdf'
+r301 %r{/pivotalcf/1-11/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.11.pdf'
+r301 %r{/pivotalcf/1-12/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.12.pdf'
+r301 %r{/pivotalcf/2-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.0.pdf'
+r301 %r{/pivotalcf/2-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.1.pdf'
 r301 %r{/pivotalcf/2-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.2.pdf'
 
-r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://docs.pivotal.io/archives/scheduler-1.0.pdf'
-r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://docs.pivotal.io/archives/scheduler-1.1.pdf'
+r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf'
+r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf'
 
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
