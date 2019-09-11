@@ -15,6 +15,10 @@ template_variables:
   support_call_to_action: <a href="http://support.pivotal.io" target="_blank">Need Support?</a>
   support_url: http://support.pivotal.io
 
+  use_global_header: true
+  global_header_product_href: https://network.pivotal.io/
+  global_header_product_link_text: Downloads
+
   api_version: 235
 
   ga_account_id: UA-39702075-1
@@ -98,8 +102,6 @@ template_variables:
   external_ips: external IP addresses
   first_product_name: Pivotal Cloud Foundry&reg; (PCF)
   gen_GSG:
-  global_header_product_href: https://network.pivotal.io/
-  global_header_product_link_text: Downloads
   GSG_intro_sentence:
   incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='../opsguide/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry&reg; Deployment</a>.</p>
   info_loc: In Pivotal Operations Manager
@@ -163,7 +165,6 @@ template_variables:
   stacks_cf: <%= partial 'stacks_cf' %>
   uaa_cred: refer to <strong>Elastic Runtime > Credentials</strong>
   uaa: <a href="http://docs.pivotal.io/pivotalcf/adminguide/notifications.html">UAA</a>
-  use_global_header: true
   warden_garden: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry versions 1.6 and above no longer use Warden. The platform-independent Garden subsystem replaces its function. This topic is published here to help people who are running older versions of PCF.</p>
 
   scs_platform_name: Pivotal Cloud Foundry&reg;
