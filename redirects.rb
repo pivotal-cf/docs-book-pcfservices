@@ -259,6 +259,7 @@ r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/2-6/$1"
+r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
 
 # Spring Cloud Services
 
