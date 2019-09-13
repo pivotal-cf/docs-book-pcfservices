@@ -263,7 +263,13 @@ r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/2-6/$1"
 r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
-
+r301 %r{/platform/2-6/(.*)}, '/pivotalcf/2-6/$1'
+r301 %r{/platform/2-5/(.*)}, '/pivotalcf/2-5/$1'
+r301 %r{/platform/2-4/(.*)}, '/pivotalcf/2-4/$1'
+r301 %r{/platform/2-3/(.*)}, '/pivotalcf/2-3/$1'
+r301 %r{/platform/2-2/(.*)}, '/pivotalcf/2-2/$1'
+r301 %r{/platform/2-1/(.*)}, '/pivotalcf/2-1/$1'
+r301 %r{/platform/2-0/(.*)}, '/pivotalcf/2-0/$1'
 # Spring Cloud Services
 
 # DataStax Cassandra
