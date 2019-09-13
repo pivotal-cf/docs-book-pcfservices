@@ -4,7 +4,7 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
 }
 
 # Build service redirect
-r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/$1"
+# r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/$1"
 
 # Redirects to docs-book-services-sdk
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
