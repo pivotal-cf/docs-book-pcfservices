@@ -7,6 +7,11 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/0-0-3/$1"
 r301 %r{/build-service/0-0-3/(.*)}, "/platform/build-service/0-0-3/$1"
 
+# service mesh redirects
+r301 %r{/service-mesh/(?![\d-]+)(.*)}, "/platform/service-mesh/$1"
+r301 %r{/service-mesh/0-2/(.*)}, "/platform/service-mesh/0-2/$1"
+r301 %r{/service-mesh/0-1/(.*)}, "/platform/service-mesh/0-1/$1"
+
 # Redirects to docs-book-services-sdk
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
