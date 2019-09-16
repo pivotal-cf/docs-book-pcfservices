@@ -9,6 +9,7 @@ r301 %r{/build-service/0-0-3/(.*)}, "/platform/build-service/0-0-3/$1"
 
 # service mesh redirects
 r301 %r{/service-mesh/(?![\d-]+)(.*)}, "/platform/service-mesh/$1"
+r301 %r{/service-mesh/0-1/(.*)}, "/platform/service-mesh/0-1/$1"
 r301 %r{/service-mesh/0-2/(.*)}, "/platform/service-mesh/0-2/$1"
 
 # Redirects to docs-book-services-sdk
