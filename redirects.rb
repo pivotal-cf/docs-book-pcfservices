@@ -279,8 +279,9 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/2-6/$1"
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-7/$1"
 r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
+r301 %r{/platform/(?![\d-]+)(.*)}, "/platform/2-7/$1"
 r301 %r{/platform/2-6/(.*)}, '/pivotalcf/2-6/$1'
 r301 %r{/platform/2-5/(.*)}, '/pivotalcf/2-5/$1'
 r301 %r{/platform/2-4/(.*)}, '/pivotalcf/2-4/$1'
@@ -336,7 +337,7 @@ r301 %r{/redis/syslog.html}, '/redis/1-9/installing.html#syslog'
 
 r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
-r301 '/pivotalcf/2-6/getstarted/pcf-docs.html', '/pivotalcf/2-6/'
+r301 '/platform/2-7/getstarted/pcf-docs.html', '/platform/2-7/'
 
 r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf'
 r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
