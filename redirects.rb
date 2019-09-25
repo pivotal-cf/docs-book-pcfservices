@@ -9,12 +9,6 @@ r301 %r{/platform/application-service-windows/2-5/(.*)}, "/pivotalcf/2-5/windows
 r301 %r{/platform/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
 r301 %r{/platform/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows/$1"
 
-# OM redirects for /platform/ops-manager to old way
-r301 %r{/platform/ops-manager/2-6/(.*)}, "/pivotalcf/2-6/om/$1"
-r301 %r{/platform/ops-manager/2-5/(.*)}, "/pivotalcf/2-5/om/$1"
-r301 %r{/platform/ops-manager/2-4/(.*)}, "/pivotalcf/2-4/om/$1"
-r301 %r{/platform/ops-manager/2-3/(.*)}, "/pivotalcf/2-3/om/$1"
-
 # Build service redirect
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/0-0-3/$1"
 r301 %r{/build-service/0-0-3/(.*)}, "/platform/build-service/0-0-3/$1"
