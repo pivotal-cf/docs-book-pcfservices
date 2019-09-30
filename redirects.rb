@@ -276,6 +276,7 @@ r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-7/$1"
+r301 %r{/pivotalcf/2-8/(.*)}, '/platform/2-8/$1'
 r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
 r301 %r{/platform/(?![\d-]+)(.*)}, "/platform/2-7/$1"
 r301 %r{/platform/2-6/(.*)}, '/pivotalcf/2-6/$1'
