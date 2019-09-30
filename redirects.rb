@@ -15,9 +15,10 @@ r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/0-0-3/$1"
 r301 %r{/build-service/0-0-3/(.*)}, "/platform/build-service/0-0-3/$1"
 
 # service mesh redirects
-r301 %r{/service-mesh/(?![\d-]+)(.*)}, "/platform/service-mesh/$1"
-r301 %r{/service-mesh/0-1/(.*)}, "/platform/service-mesh/0-1/$1"
-r301 %r{/service-mesh/0-2/(.*)}, "/platform/service-mesh/0-2/$1"
+r301 %r{/service-mesh/(.*)}, "/ingress-router/$1"
+r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/platform/ingress-router/$1"
+r301 %r{/ingress-router/0-1/(.*)}, "/platform/ingress-router/0-1/$1"
+r301 %r{/ingress-router/0-2/(.*)}, "/platform/ingress-router/0-2/$1"
 
 # Redirects to docs-book-services-sdk
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
