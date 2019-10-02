@@ -14,6 +14,10 @@ r301 %r{/platform/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/0-0-3/$1"
 r301 %r{/build-service/0-0-3/(.*)}, "/platform/build-service/0-0-3/$1"
 
+# Scheduler rename redirect
+r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
+r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$1"
+
 # service mesh redirects
 r301 %r{/service-mesh/(.*)}, "/ingress-router/$1"
 r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/platform/ingress-router/$1"
@@ -199,7 +203,7 @@ r301 %r{/app-dist/(.*)}, 'https://resources.docs.pivotal.io/pdfs/app-dist.pdf'
 r301 %r{/mobile/push/(.*)}, '/push/'
 r301 'v1_6_0/api/tags/index.html', '/v1_6_0/api/topics/index.html'
 r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
-r301 %r{/pcf-scheduler/(?![\d-]+)(.*)}, "/pcf-scheduler/1-2/$1"
+
 
 #For Kubernates Service Manager
 
