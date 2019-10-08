@@ -373,4 +373,4 @@ r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-1/$1"
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
 
 # Redirect PAS WOK unversioned to 2.6.0
-r301 %r{/pas-kubernetes/(?![\d-]+)(.*)}, '/pas-kubernetes/2-6-0-alpha-1/$1'
+r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1'
