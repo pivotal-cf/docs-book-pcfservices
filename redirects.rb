@@ -531,6 +531,8 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-7/$1"
+
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-7/$1"
 r301 %r{/pivotalcf/2-8/(.*)}, '/platform/2-8/$1'
 r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
@@ -543,7 +545,6 @@ r301 %r{/platform/2-2/(.*)}, '/pivotalcf/2-2/$1'
 r301 %r{/platform/2-1/(.*)}, '/pivotalcf/2-1/$1'
 r301 %r{/platform/2-0/(.*)}, '/pivotalcf/2-0/$1'
 
-r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-7/$1"
 
 
 # Spring Cloud Services
