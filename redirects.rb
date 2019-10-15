@@ -11,7 +11,6 @@ r301 %r{/platform/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows
 r301 %r{/platform/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows/$1"
 
 # Redirects for Application Service Book starting in 2.7
-r301 %r{/platform/application-service/(.*)}, "/platform/application-service/2-7/$1"
 
 r301 %r{/platform/application-service/2-6/buildpacks/(.*)}, "/pivotalcf/2-6/buildpacks/$1"
 r301 %r{/platform/application-service/2-6/adminguide/(.*)}, "/pivotalcf/2-6/adminguide/$1"
@@ -543,6 +542,10 @@ r301 %r{/platform/2-3/(.*)}, '/pivotalcf/2-3/$1'
 r301 %r{/platform/2-2/(.*)}, '/pivotalcf/2-2/$1'
 r301 %r{/platform/2-1/(.*)}, '/pivotalcf/2-1/$1'
 r301 %r{/platform/2-0/(.*)}, '/pivotalcf/2-0/$1'
+
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-7/$1"
+
+
 # Spring Cloud Services
 
 # DataStax Cassandra
