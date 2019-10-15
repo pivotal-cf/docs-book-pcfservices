@@ -532,6 +532,13 @@ r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-7/$1"
+r301 %r{/pivotalcf/2-6/operating/(.*)}, '/pivotalcf/2-6/opsguide/$1'
+r301 %r{/platform/2-5/operating/(.*)}, '/pivotalcf/2-5//opsguide/$1'
+r301 %r{/platform/2-4/operating/(.*)}, '/pivotalcf/2-4/opsguide/$1'
+r301 %r{/platform/2-3/operating/(.*)}, '/pivotalcf/2-3/opsguide/$1'
+r301 %r{/platform/2-2/operating/(.*)}, '/pivotalcf/2-2/opsguide/$1'
+r301 %r{/platform/2-1/operating/(.*)}, '/pivotalcf/2-1/opsguide/$1'
+r301 %r{/platform/2-0/operating/(.*)}, '/pivotalcf/2-0/opsguide/$1'
 
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-7/$1"
 r301 %r{/pivotalcf/2-8/(.*)}, '/platform/2-8/$1'
