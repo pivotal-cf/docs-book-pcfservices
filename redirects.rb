@@ -1,4 +1,4 @@
-# Redirect all production http traffic to https
+ f# Redirect all production http traffic to https
 r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
   rack_env['SERVER_NAME'] == 'docs.pivotal.io' && rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
 }
@@ -277,8 +277,9 @@ r301 %r{/ingress-router/0-1/(.*)}, "/platform/ingress-router/0-1/$1"
 r301 %r{/ingress-router/0-2/(.*)}, "/platform/ingress-router/0-2/$1"
 
 # function service redirects
+r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
+r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
 
-r301 %r{/pfs/(.*)}, "/platform/function-service/$1"
 
 # Redirects to docs-book-services-sdk
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
