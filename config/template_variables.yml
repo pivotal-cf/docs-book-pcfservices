@@ -139,8 +139,8 @@ template_variables:
   odb_pcfdev_version_pivnet: 1811
   odb_pcfdev_version: pcfdev-v0.19.1-rc.46
   odb_warden_stemcell_version: 3262.2
-  om_resurrector_header: <h4>Ops Manager Resurrector</h4>
-  om_resurrector_text: Enable the <a href="http://docs.pivotal.io/pivotalcf/customizing/resurrector.html#enabling">Ops Manager Resurrector</a>.
+  om_resurrector_header: <h4>BOSH Resurrector</h4>
+  om_resurrector_text: Enable the <a href="http://docs.pivotal.io/pivotalcf/customizing/resurrector.html#enabling">BOSH Resurrector</a>.
   org_members_multi: images/pcf/org-members-multi.png
   org_members: images/pcf/org-members.png
   org_roles: "Organization Manager and Organization Auditor"
