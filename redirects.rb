@@ -263,7 +263,7 @@ r301 '/platform/application-service/2-4/operating/configure-lb.html', '/pivotalc
 
 
 # Build service redirect
-r301 %r{/build-service/(?![\d-]+)(.*)}/$1, "/platform/build-service/$1"
+r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/$1"
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
