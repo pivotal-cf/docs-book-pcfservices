@@ -535,6 +535,7 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
+
 r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-7/$1"
 r301 %r{/pivotalcf/2-6/operating/(.*)}, '/platform/application-service/2-6/operating/$1'
 r301 %r{/pivotalcf/2-5/operating/(.*)}, '/platform/application-service/2-5/operating/$1'
@@ -555,6 +556,10 @@ r301 %r{/platform/2-3/(.*)}, '/pivotalcf/2-3/$1'
 r301 %r{/platform/2-2/(.*)}, '/pivotalcf/2-2/$1'
 r301 %r{/platform/2-1/(.*)}, '/pivotalcf/2-1/$1'
 r301 %r{/platform/2-0/(.*)}, '/pivotalcf/2-0/$1'
+
+# Remove 'pcf' in release notes
+r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
+r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
 
 
 
