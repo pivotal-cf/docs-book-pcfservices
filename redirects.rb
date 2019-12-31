@@ -4,6 +4,7 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
 }
 
 # Remove 'pcf' in release notes
+r301 %r{/platform/2-9/pcf-release-notes/(.*)}, '/platform/2-9/release-notes/$1'
 r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
 r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
 
