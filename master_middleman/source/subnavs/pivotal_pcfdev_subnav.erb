@@ -5,49 +5,82 @@
   <div class="nav-content">
     <ul>
       <li>
-        <a id='home-nav-link' href="/pcf-dev/index.html">Pivotal Platform Dev Overview</a>
+        <a id='home-nav-link' href="/pcf-dev/index.html"><%= vars.platform_name %> Dev Overview</a>
+      </li>
+      <li class="has_submenu">
+            <span role="button"><strong>Installing <%= vars.platform_name %> Dev</strong></span>
+              <ul>
+                <li>
+                  <a href="/pcf-dev/install-osx.html">Installing <%= vars.platform_name %> Dev on Mac OS X</a>
+                </li>
+                <li>
+                  <span role="button"><strong>Installing <%= vars.platform_name %> Dev on Microsoft Windows</strong></span>
+                    <ul>
+                      <li>
+                        <a href="/pcf-dev/install-windows.html">Installing <%= vars.platform_name %> Dev on Microsoft Windows 10</a>
+                      </li>
+                      <li>
+                        <a href="/pcf-dev/install-windows-legacy.html">Installing <%= vars.platform_name %> Dev on Microsoft Windows 7 and 8</a>
+                      </li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="/pcf-dev/install-linux.html">Installing <%= vars.platform_name %> Dev on Linux</a>
+                </li>
+                <li>
+                  <a href="/pcf-dev/configuring.html">Configuring <%= vars.platform_name %> Dev</a>
+                </li>
+                <li>
+                  <a href="/pcf-dev/configuring-legacy.html">Configuring <%= vars.platform_name %> Dev (Legacy)</a>
+                </li>
+              </ul>
+      </li>
+      <li class="has_submenu">
+            <span role="button"><strong>Using <%= vars.platform_name %> Dev</strong></span>
+              <ul>
+                <li>
+                  <span role="button"><strong>Using <%= vars.platform_name %> Dev</strong></span>
+                    <ul>
+                      <li>
+                        <a href="/pcf-dev/usage.html">Using <%= vars.platform_name %> Dev</a>
+                      </li>
+                      <li>
+                        <a href="/pcf-dev/usage-legacy.html">Using <%= vars.platform_name %> Dev (Legacy)</a>
+                      </li>
+                        <a href="/pcf-dev/proxy.html">Using <%= vars.platform_name %> Dev Behind a Proxy</a>
+                      </li>
+                      <li>
+                        <a href="/pcf-dev/work-offline.html">Using <%= vars.platform_name %> Dev Offline</a>
+                      </li>
+                      <li>
+                        <a href="/pcf-dev/import-ova.html">Using <%= vars.platform_name %> Dev with a Local OVA</a>
+                      </li>
+                    </ul>
+                </li>
+                <li>
+                  <span role="button"><strong>Using Services in <%= vars.platform_name %> Dev</strong></span>
+                    <ul>
+                      <li>
+                        <a href="/pcf-dev/dev-services.html">Using Services in <%= vars.platform_name %> Dev</a>
+                      </li>
+                      <li>
+                        <a href="/pcf-dev/usage-scs.html">Using Spring Cloud Services in <%= vars.platform_name %> Dev</a>
+                      </li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="/pcf-dev/aws.html"><%= vars.platform_name %> Dev on AWS (Experimental)</a>
+                </li>
+              </ul>
       </li>
       <li>
-        <a href="/pcf-dev/install-osx.html">Installing Pivotal Platform Dev on Mac OS X</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/install-windows.html">Installing Pivotal Platform Dev on Microsoft Windows 10</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/install-linux.html">Installing Pivotal Platform Dev on Linux</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/configuring.html">Configuring Pivotal Platform Dev</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/usage.html">Using Pivotal Platform Dev</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/dev-services.html">Using Services in Pivotal Platform Dev</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/usage-scs.html">Using Spring Cloud Services in Pivotal Platform Dev</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/proxy.html">Using Pivotal Platform Dev Behind a Proxy</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/work-offline.html">Using Pivotal Platform Dev Offline</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/import-ova.html">Using a Local OVA with Pivotal Platform Dev</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/aws.html">Pivotal Platform Dev on AWS (Experimental)</a>
-      </li>
-      <li>
-        <a href="/pcf-dev/telemetry.html">Telemetry in Pivotal Platform Dev</a>
+        <a href="/pcf-dev/telemetry.html">Telemetry in <%= vars.platform_name %> Dev</a>
       </li>
       <li>
         <a href="/pcf-dev/faq.html">Frequently Asked Questions</a>
       </li>
       <li>
-        <a href="http://docs.pivotal.io/pivotalcf/">Back to Pivotal Platform Documentation</a>
+        <a href="http://docs.pivotal.io/pivotalcf/">Back to <%= vars.platform_name %> Documentation</a>
       </li>
     </ul>
   </div>
