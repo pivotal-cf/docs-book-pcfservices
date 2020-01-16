@@ -32,6 +32,8 @@ template_variables:
   windows_runtime_full: Pivotal Application Service for Windows
   windows_runtime: Application Service for Windows
   windows_runtime_abbr: PASW
+  ops_manager_full: Pivotal Operations Manager
+  ops_manager: Ops Manager
 
 # Book content variables
   admin: your Cloud Foundry administrator
