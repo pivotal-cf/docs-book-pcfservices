@@ -5,19 +5,37 @@ template_variables:
   title: <span class="title-deemph">Pivotal</span> Documentation
   title_image: images/icon-p-green.jpg
   hero_text: "Detailed documentation to help you install, understand, and succeed with Pivotal's enterprise-grade software."
-  product_full: Elastic Runtime
-  product_short: Elastic Runtime
   product_name: PCF
-  product_abbr: 
   product_url: https://network.pivotal.io/products/pivotal-cf
   product_link: <div class="header-item"><a href="https://network.pivotal.io/products/pivotal-cf">Back to Product Page</a></div>
   support_link: <a href="http://support.pivotal.io" target="_blank">Support</a>
   support_call_to_action: <a href="http://support.pivotal.io" target="_blank">Need Support?</a>
   support_url: http://support.pivotal.io
-
+  use_global_header: true
+  global_header_product_href: https://network.pivotal.io/
+  global_header_product_link_text: Downloads
   api_version: 235
+  ga_account_id: UA-39702075-1
   gtm_account_id: GTM-MW4LZHR
 
+# Product variables
+  platform_name: Pivotal Platform
+  platform_old: Pivotal Cloud Foundry
+  platform_code: PCF
+  product_name_lc: pcf
+  app_runtime_full: Pivotal Application Service
+  app_runtime: Application Service
+  app_runtime_abbr: PAS
+  k8s_runtime_full: Enterprise Pivotal Container Service
+  k8s_runtime: Enterprise PKS
+  k8s_runtime_abbr: PKS
+  windows_runtime_full: Pivotal Application Service for Windows
+  windows_runtime: Application Service for Windows
+  windows_runtime_abbr: PASW
+  ops_manager_full: Pivotal Operations Manager
+  ops_manager: Ops Manager
+
+# Book content variables
   admin: your Cloud Foundry administrator
   api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Elastic Runtime Instance topic](http://docs.pivotal.io/pivotalcf/customizing/api-endpoint.html).
   api_endpoint: <a href="http://docs.pivotal.io/pivotalcf/opsguide/api-endpoint.html">the URL of the Cloud Controller in your Elastic Runtime instance</a>
@@ -29,6 +47,28 @@ template_variables:
   appdog_notifications: <p class='note'><strong>Note</strong>&#58; If the Cloud Foundry Notifications service is not installed in your PCF deployment, notifications are disabled.</p>
   asg_notifications_prereq:
   az: <a href="http://docs.pivotal.io/pivotalcf/customizing/understand-az.html">availability zones</a>
+  bbr_pcf: To use BBR to back up and restore Pivotal Cloud Foundry (PCF) v1.11 and later, see the [Backing Up Pivotal Cloud Foundry with BBR](https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html) and [Restoring Pivotal Cloud Foundry from Backup with BBR](https://docs.pivotal.io/pivotalcf/customizing/backup-restore/restore-pcf-bbr.html) topics.
+  bbr_pcf2: For more information about how PCF tile authors can implement the BBR contract, see [BOSH Backup and Restore Developer's Guide](bbr-devguide.html).
+  bbr_ert: <li>Elastic Runtime (Pivotal Cloud Foundry 1.11+)<span>:</span> To use BBR with PCF v1.11+, see the <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html">Backing Up Pivotal Cloud Foundry with BBR</a> and <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/restore-pcf-bbr.html">Restoring Pivotal Cloud Foundry from Backup with BBR</a> topics.</li>
+  bbr_space: If you are backing up Pivotal Cloud Foundry (PCF), your jumpbox must be between 2 CPUs, 7GB RAM, 50GB disk and 4 CPUs, 16GB RAM, 150GB disk.
+  #BOSH Version-Difference Variables
+  bosh_cloud_check: cloud-check #v1: cloudcheck
+  bosh_create_release: create-release #v1: create release
+  bosh_delete: bosh delete-env #v1: bosh-init delete
+  bosh_delete_deployment: delete-deployment #v1: delete deployment
+  bosh_delete_stemcell: delete-stemcell #v1: delete stemcell
+  bosh_deploy: bosh create-env #v1: bosh-init deploy
+  bosh_init_release: init-release --dir #v1: init release
+  bosh_generate_package: generate-package #v1: generate package
+  bosh_generate_job: generate-job #v1: generate job
+  bosh_login: log-in #v1: login
+  bosh_run_errand: run-errand #v1: run errand
+  bosh_update_cloud_config: update-cloud-config #v1: update cloud-config
+  bosh_update_runtime_config: update-runtime-config #v1: update runtime-config
+  bosh_upload_blobs: upload-blobs #v1: upload blobs
+  bosh_upload_release: upload-release #v1: upload release
+  bosh_upload_stemcell: upload-stemcell #v1: upload stemcell
+  # ---end-bosh-version-difference-variables---
   cli_download: the Tools page of your Apps Manager instance
   cli_v6: <a href="http://docs.pivotal.io/pivotalcf/cf-cli/getting-started.html">Getting Started with cf CLI v6</a>
   cloud_controller_dea_agent: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry (PCF) versions 1.6 and above no longer use Droplet Execution Agents (DEAs). <a href="../diego/diego-components.html#cell-components">Diego Cells</a> replace their function. This topic is published here to help people who are running older versions of PCF.</p>
@@ -51,7 +91,6 @@ template_variables:
   custom_stack:
   dea_diego_table_row: <tr><td>1.5 and below</td><td>1.6 and above</td><td>CF version numbers</td><td></td></tr>
   dea_diego_version: Diego architecture for version 1.5
-  dea_properties: <a href="http://bosh.io/jobs/dea_next?source=github.com/cloudfoundry/cf-release&version=197">DEA Network Properties</a>
   dev_console_1: You can use either the CLI or the <a href="http://docs.pivotal.io/pivotalcf/console/index.html">Apps Manager</a> to perform this task.
   dev_console_2: CLI or the <a href="http://docs.run.pivotal.io/console/index.html">Apps Manager</a>
   dev_console_3: For more information about using the Apps Manager, refer to the <a href="http://docs.pivotal.io/pivotalcf/console/index.html">Using the Apps Manager</a> topics.
@@ -74,18 +113,15 @@ template_variables:
   example_ip_3: 203.0.113.1
   external_ips: external IP addresses
   first_product_name: Pivotal Cloud Foundry&reg; (PCF)
-  ga_account_id: UA-39702075-1
   gen_GSG:
-  global_header_product_href: https://network.pivotal.io/
-  global_header_product_link_text: Downloads
   GSG_intro_sentence:
-  incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='../customizing/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry&reg; Deployment</a>.</p>
+  incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='../opsguide/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry&reg; Deployment</a>.</p>
   info_loc: In Pivotal Operations Manager
   invite_members: images/pcf/invite-members.png
   kb_link: <a href="http://support.pivotal.io/kb" target="_blank">Knowledge Base</a>
   known_issues: <a href="http://docs.pivotal.io/pivotalcf/pcf-release-notes/index.html">Known Issues</a>
   link_adminguid_buildpack: You can find more documentation at the <a href="http://docs.pivotal.io/pivotalcf/adminguide/buildpacks.html">buildpack admin guide</a>.
-  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../adminguide/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
+  link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
   link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
   logg_forwarding: <a href="../opsguide/logging-config-opsman.html#syslog-forward">Configuring System Logging in Elastic Runtime</a>
   logg_scaling: <a href="../opsguide/logging-config-opsman.html#scaling">Configuring System Logging in Elastic Runtime</a>
@@ -105,12 +141,12 @@ template_variables:
   odb_pcfdev_version_pivnet: 1811
   odb_pcfdev_version: pcfdev-v0.19.1-rc.46
   odb_warden_stemcell_version: 3262.2
-  om_resurrector_header: <h4>Ops Manager Resurrector</h4>
-  om_resurrector_text: Enable the <a href="http://docs.pivotal.io/pivotalcf/customizing/resurrector.html#enabling">Ops Manager Resurrector</a>.
+  om_resurrector_header: <h4>BOSH Resurrector</h4>
+  om_resurrector_text: Enable the <a href="http://docs.pivotal.io/pivotalcf/customizing/resurrector.html#enabling">BOSH Resurrector</a>.
   org_members_multi: images/pcf/org-members-multi.png
   org_members: images/pcf/org-members.png
   org_roles: "Organization Manager and Organization Auditor"
-  pcf_pools: For [Amazon Web Services](http://aws.amazon.com/ec2/faqs/#How_many_instances_can_I_run_in_Amazon_EC2), review the documentation regarding scaling instances. If you are using OpenStack, see the topic regarding [managing projects and users](http://docs.openstack.org/openstack-ops/content/projects_users.html). For vSphere, review the [Configuring Ops Manager Director for VMware vSphere](http://docs.pivotal.io/pivotalcf/customizing/vsphere-config.html#resource-config) topic.
+  pcf_pools: For [Amazon Web Services](http://aws.amazon.com/ec2/faqs/#How_many_instances_can_I_run_in_Amazon_EC2), review the documentation regarding scaling instances. If you are using OpenStack, see the topic regarding [managing projects and users](http://docs.openstack.org/openstack-ops/content/projects_users.html). For vSphere, review the [Configuring BOSH Director on vSphere](http://docs.pivotal.io/pivotalcf/customizing/vsphere-config.html#resource-config) topic.
   pcf_rec: Pivotal
   platform_ssh_configuration: Pivotal Cloud Foundry deployments control SSH access to apps at the Elastic Runtime level. Additionally, Cloud Foundry supports load balancing of SSH sessions with your load balancer. The [Configuring SSH Access](../../customizing/config-ssh.html) topic describes how to set SSH access for your deployment.
   pools_link: <a href="http://docs.pivotal.io/pivotalcf/customizing/vsphere-config.html">resource pools</a>
@@ -121,6 +157,7 @@ template_variables:
   pw_policy: See the <a href="../opsguide/pw-policy.html">Configuring UAA Password Policy</a> topic to configure the password policy.
   pws_metrics:
   quota_resource: quota space
+  recommended_by: Pivotal
   route_services_config: <h2><a id='enabling-route-services'></a>Enabling Route Services in Pivotal Cloud Foundry</h2>You configure Route Services for your deployment in the Elastic Runtime tile, under **Settings**>**Networking**. Depending on your infrastructure, refer to the Elastic Runtime configuration topics for <a href="../customizing/cloudform-er-config.html#route-services">Amazon Web Services</a>, <a href="../customizing/openstack-er-config.html#route-services">OpenStack</a>, or <a href="../customizing/config-er-vmware.html#route-services">vSphere and vCloud</a>.
   scaling_ert_db:
   scaling_ert: For more information regarding zero downtime deployment, see the [Scaling Instances in Elastic Runtime](./../opsguide/scaling-ert-components.html) topic.
@@ -140,5 +177,72 @@ template_variables:
   stacks_cf: <%= partial 'stacks_cf' %>
   uaa_cred: refer to <strong>Elastic Runtime > Credentials</strong>
   uaa: <a href="http://docs.pivotal.io/pivotalcf/adminguide/notifications.html">UAA</a>
-  use_global_header: true
   warden_garden: <p class="note"><strong>Note</strong><span>:</span> Pivotal Cloud Foundry versions 1.6 and above no longer use Warden. The platform-independent Garden subsystem replaces its function. This topic is published here to help people who are running older versions of PCF.</p>
+
+  scs_platform_name: Pivotal Cloud Foundry&reg;
+  scs_suffix: for <a href="https://network.pivotal.io/products/pivotal-cf">Pivotal Cloud Foundry</a> (PCF)
+  scs_suffix_abbrev: for PCF
+  scs_details: "_details"
+  scs_sr_instance_specific_routing_intro: As of the 1.4.0 release, the Spring Cloud Services Connectors now include the Cloud Foundry application GUID and instance ID in Ribbon request headers when these values are available. This allows Ribbon to specify a particular instance of an application when making a request. In Pivotal Cloud Foundry 1.8 or later, the Gorouter will respect such instance-specific routing decisions as made by Ribbon.
+  scs_creating_instance_discrepancy: <p class='note'><strong>Note</strong><span>:</span> You may notice a discrepancy between the status given for a service instance by the cf CLI (e.g., by the <code>cf service</code> command) versus that shown on the <a href="/spring-cloud-services/operator-information.html#service-instances-dashboard">Service Instances dashboard</a>. The dashboard is updated frequently (close to real-time); the status retrieved by the cf CLI is not updated as frequently and may take time to match the dashboard.</p>
+  scs_cbd_creating_instance_intro: You can create a Circuit Breaker Dashboard service instance using either the Cloud Foundry Command Line Interface tool (cf CLI) or [Pivotal Cloud Foundry](https://network.pivotal.io/products/pivotal-cf) (PCF) Apps Manager.
+  scs_cbd_creating_instance_target: "_target"
+  scs_cbd_creating_instance_marketplace: "_marketplace"
+  scs_cbd_creating_instance_create: "_create"
+  scs_cbd_creating_instance_service: "_service"
+  scs_cbd_creating_instance_img_marketplace: marketplace.png
+  scs_cbd_creating_instance_img_select_plan: select_plan.png
+  scs_cbd_creating_instance_img_instance_name: instance_name.png
+  scs_cbd_creating_instance_img_service_successfully_added: service_successfully_added.png
+  scs_cbd_creating_instance_img_manage_link: manage_link.png
+  scs_cbd_using_dashboard_img_manage_link: cbd_manage_link.png
+  scs_cbd_using_dashboard_img_dashboard_start: dashboard_start.png
+  scs_cbd_using_dashboard_img_dashboard_closed: dashboard_closed.png
+  scs_cbd_using_dashboard_img_dashboard_opening: dashboard_opening.png
+  scs_cbd_using_dashboard_img_dashboard_open: dashboard_open.png
+  scs_cs_self_signed_cert: "_self_signed_cert"
+  scs_cs_oauth_token: "_oauth_token"
+  scs_cs_configuration_clients_img_bind_apps: bind-apps.png
+  scs_cs_configuration_clients_img_save_binding: save-binding.png
+  scs_cs_configuration_clients_bind_service: "_bind"
+  scs_cs_configuration_clients_restage: "_restage"
+  scs_cs_configuration_clients_env: "_env"
+  scs_cs_configuration_clients_response: "_response"
+  scs_cs_creating_instance_target: "_target"
+  scs_cs_creating_instance_marketplace: "_marketplace"
+  scs_cs_creating_instance_create: "_create"
+  scs_cs_creating_instance_service: "_service"
+  scs_cs_creating_instance_encryption_create: "_encryption_create"
+  scs_cs_creating_instance_ssh_verification_create: "_encryption_create"
+  scs_cs_creating_instance_ssh_no_verification_create: "_encryption_create"
+  scs_cs_creating_instance_img_marketplace: marketplace.png
+  scs_cs_creating_instance_img_select_plan: select_plan.png
+  scs_cs_creating_instance_img_instance_name: instance_name.png
+  scs_cs_creating_instance_img_service_successfully_added: service_successfully_added.png
+  scs_cs_creating_instance_img_dashboard_new: dashboard-new.png
+  scs_cs_using_dashboard_manage_link: cs_manage_link.png
+  scs_cs_using_dashboard_updated_dashboard: updated-dashboard.png
+  scs_cs_writing_client_applications_add_buildpack: <p class='tip'>If you cannot use version 3.7.1 or later, you can add the JCE Unlimited Strength policy files to an earlier version of the Cloud Foundry Java buildpack. Fork the <a href="https://github.com/cloudfoundry/java-buildpack">buildpack on GitHub</a>, then download the policy files from Oracle and place them in the buildpack's <code>resources/open_jdk_jre/lib/security</code> directory. Follow the instructions in the <a href="http://docs.pivotal.io/pivotalcf/adminguide/buildpacks.html">Managing Custom Buildpacks</a> topic to add this buildpack to Pivotal Cloud Foundry. Be sure that it has the lowest position of all enabled Java buildpacks.</p>
+  scs_sr_self_signed_cert: "_self_signed_cert"
+  scs_sr_creating_instance_target: "_target"
+  scs_sr_creating_instance_marketplace: "_marketplace"
+  scs_sr_creating_instance_create_one_node: "_create_one_node"
+  scs_sr_creating_instance_create_multiple_nodes: "_create_multiple_nodes"
+  scs_sr_creating_instance_service: "_service"
+  scs_sr_creating_instance_img_marketplace: marketplace.png
+  scs_sr_creating_instance_img_select_plan: select_plan.png
+  scs_sr_creating_instance_img_instance_name: instance_name.png
+  scs_sr_creating_instance_img_service_successfully_added: service_successfully_added.png
+  scs_sr_creating_instance_img_manage_link: manage_link.png
+  scs_sr_creating_instance_img_dashboard_new: dashboard_more.png
+  scs_sr_replication_img_copy_url: pr-copy-url.png
+  scs_sr_replication_img_copy_peer_url: pr-copy-peer-url.png
+  scs_sr_replication_img_peer_not_found: dashboard-peer-not-found.png
+  scs_sr_replication_img_cert_not_verified: dashboard-cert-not-verified.png
+  scs_sr_replication_img_different_node_counts: dashboard-different-node-counts.png
+  scs_sr_replication_img_different_peer_list: dashboard-different-peer-list.png
+  scs_sr_replication_img_version_difference: dashboard-version-difference.png
+  scs_sr_using_dashboard_manage_link: sr_manage_link.png
+  scs_sr_using_dashboard_empty_dashboard_top: empty-dashboard-top.png
+  scs_sr_using_dashboard_empty_dashboard_middle: empty-dashboard-middle.png
+  scs_sr_using_dashboard_registered_service: registered_service.png
