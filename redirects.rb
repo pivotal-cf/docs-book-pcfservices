@@ -15,6 +15,12 @@ r301 %r{/platform/application-service-windows/2-5/(.*)}, "/pivotalcf/2-5/windows
 r301 %r{/platform/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
 r301 %r{/platform/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows/$1"
 
+# Redirects for deleted Logging and Metrics index topic
+
+r301 '/platform/application-service/2-7/loggregator/index.html', '/platform/application-service/2-7/loggregator/data-sources.html'
+r301 '/platform/application-service/2-8/loggregator/index.html', '/platform/application-service/2-8/loggregator/data-sources.html'
+r301 '/platform/application-service/2-9/loggregator/index.html', '/platform/application-service/2-9/loggregator/data-sources.html'
+
 # Redirects for Application Service Book starting in 2.7
 
 r301 %r{/platform/application-service/2-6/buildpacks/(.*)}, "/pivotalcf/2-6/buildpacks/$1"
@@ -649,10 +655,3 @@ r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
 
 # Redirect PAS WOK unversioned to 2.6.0
 r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1'
-
-# Redirects for deleted Logging and Metrics index topic
-
-r301 '/platform/application-service/2-7/loggregator/index.html', '/platform/application-service/2-7/loggregator/data-sources.html'
-r301 '/platform/application-service/2-8/loggregator/index.html', '/platform/application-service/2-8/loggregator/data-sources.html'
-r301 '/platform/application-service/2-9/loggregator/index.html', '/platform/application-service/2-9/loggregator/data-sources.html'
-
