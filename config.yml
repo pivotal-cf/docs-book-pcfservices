@@ -3,7 +3,7 @@ book_repo: pivotal-cf/docs-book-pcfservices
 layout_repo: pivotal-cf/docs-layout-repo
 layout_repo_ref: layout-test
 
-feedback_enabled: true
+feedback_enabled: false
 
 broken_link_exclusions: iefix|arrowhead
 repo_link_enabled: true
@@ -91,7 +91,7 @@ sections:
     ref: '1.2'
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
-  directory: pcf-scheduler/1-2
+  directory: scheduler/1-2
   subnav_template: pcf-scheduler-1-2_subnav.erb
   product_info:
     use_local_header: true

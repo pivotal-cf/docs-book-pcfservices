@@ -3,20 +3,287 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
   rack_env['SERVER_NAME'] == 'docs.pivotal.io' && rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
 }
 
-# OM redirects for /platform/ops-manager to old way
-r301 %r{/platform/ops-manager/2-6/(.*)}, "/pivotalcf/2-6/om/$1"
-r301 %r{/platform/ops-manager/2-5/(.*)}, "/pivotalcf/2-5/om/$1"
-r301 %r{/platform/ops-manager/2-4/(.*)}, "/pivotalcf/2-4/om/$1"
-r301 %r{/platform/ops-manager/2-3/(.*)}, "/pivotalcf/2-3/om/$1"
+# Remove 'pcf' in release notes
+r301 %r{/platform/2-9/pcf-release-notes/(.*)}, '/platform/2-9/release-notes/$1'
+r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
+r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
+
+# PASW redirects for /platform/application-service-windows to old way
+r301 %r{/pivotalcf/2-7/windows/(.*)}, "/platform/application-service-windows/2-7/$1"
+r301 %r{/platform/application-service-windows/2-6/(.*)}, "/pivotalcf/2-6/windows/$1"
+r301 %r{/platform/application-service-windows/2-5/(.*)}, "/pivotalcf/2-5/windows/$1"
+r301 %r{/platform/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
+r301 %r{/platform/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows/$1"
+
+# Redirects for Application Service Book starting in 2.7
+
+r301 %r{/platform/application-service/2-6/buildpacks/(.*)}, "/pivotalcf/2-6/buildpacks/$1"
+r301 %r{/platform/application-service/2-6/adminguide/(.*)}, "/pivotalcf/2-6/adminguide/$1"
+r301 %r{/platform/application-service/2-6/cf-cli/(.*)}, "/pivotalcf/2-6/cf-cli/$1"
+r301 %r{/platform/application-service/2-6/concepts/(.*)}, "/pivotalcf/2-6/concepts/$1"
+r301 %r{/platform/application-service/2-6/devguide/(.*)}, "/pivotalcf/2-6/devguide/$1"
+r301 %r{/platform/application-service/2-6/loggregator/(.*)}, "/pivotalcf/2-6/loggregator/$1"
+r301 %r{/platform/application-service/2-6/routing/(.*)}, "/pivotalcf/2-6/routing/$1"
+r301 %r{/platform/application-service/2-6/services/(.*)}, "/pivotalcf/2-6/services/$1"
+r301 %r{/platform/application-service/2-6/uaa/(.*)}, "/pivotalcf/2-6/uaa/$1"
+r301 %r{/platform/application-service/2-6/metric-registrar/(.*)}, "/pivotalcf/2-6/metric-registrar/$1"
+r301 %r{/platform/application-service/2-6/mysql/(.*)}, "/pivotalcf/2-6/mysql/$1"
+r301 %r{/platform/application-service/2-6/overview/(.*)}, "/pivotalcf/2-6/pas/$1"
+r301 %r{/platform/application-service/2-6/appsman-services/(.*)}, "/pivotalcf/2-6/appsman-services/$1"
+r301 %r{/platform/application-service/2-6/console/(.*)}, "/pivotalcf/2-6/console/$1"
+
+r301 %r{/platform/application-service/2-5/buildpacks/(.*)}, "/pivotalcf/2-5/buildpacks/$1"
+r301 %r{/platform/application-service/2-5/adminguide/(.*)}, "/pivotalcf/2-5/adminguide/$1"
+r301 %r{/platform/application-service/2-5/cf-cli/(.*)}, "/pivotalcf/2-5/cf-cli/$1"
+r301 %r{/platform/application-service/2-5/concepts/(.*)}, "/pivotalcf/2-5/concepts/$1"
+r301 %r{/platform/application-service/2-5/devguide/(.*)}, "/pivotalcf/2-5/devguide/$1"
+r301 %r{/platform/application-service/2-5/loggregator/(.*)}, "/pivotalcf/2-5/loggregator/$1"
+r301 %r{/platform/application-service/2-5/routing/(.*)}, "/pivotalcf/2-5/routing/$1"
+r301 %r{/platform/application-service/2-5/services/(.*)}, "/pivotalcf/2-5/services/$1"
+r301 %r{/platform/application-service/2-5/uaa/(.*)}, "/pivotalcf/2-5/uaa/$1"
+r301 %r{/platform/application-service/2-5/metric-registrar/(.*)}, "/pivotalcf/2-5/metric-registrar/$1"
+r301 %r{/platform/application-service/2-5/mysql/(.*)}, "/pivotalcf/2-5/mysql/$1"
+r301 %r{/platform/application-service/2-5/overview/(.*)}, "/pivotalcf/2-5/pas/$1"
+r301 %r{/platform/application-service/2-5/appsman-services/(.*)}, "/pivotalcf/2-5/appsman-services/$1"
+r301 %r{/platform/application-service/2-5/console/(.*)}, "/pivotalcf/2-5/console/$1"
+
+r301 %r{/platform/application-service/2-4/buildpacks/(.*)}, "/pivotalcf/2-4/buildpacks/$1"
+r301 %r{/platform/application-service/2-4/adminguide/(.*)}, "/pivotalcf/2-4/adminguide/$1"
+r301 %r{/platform/application-service/2-4/cf-cli/(.*)}, "/pivotalcf/2-4/cf-cli/$1"
+r301 %r{/platform/application-service/2-4/concepts/(.*)}, "/pivotalcf/2-4/concepts/$1"
+r301 %r{/platform/application-service/2-4/devguide/(.*)}, "/pivotalcf/2-4/devguide/$1"
+r301 %r{/platform/application-service/2-4/loggregator/(.*)}, "/pivotalcf/2-4/loggregator/$1"
+r301 %r{/platform/application-service/2-4/routing/(.*)}, "/pivotalcf/2-4/routing/$1"
+r301 %r{/platform/application-service/2-4/services/(.*)}, "/pivotalcf/2-4/services/$1"
+r301 %r{/platform/application-service/2-4/uaa/(.*)}, "/pivotalcf/2-4/uaa/$1"
+r301 %r{/platform/application-service/2-4/metric-registrar/(.*)}, "/pivotalcf/2-4/metric-registrar/$1"
+r301 %r{/platform/application-service/2-4/mysql/(.*)}, "/pivotalcf/2-4/mysql/$1"
+r301 %r{/platform/application-service/2-4/overview/(.*)}, "/pivotalcf/2-4/pas/$1"
+r301 %r{/platform/application-service/2-4/appsman-services/(.*)}, "/pivotalcf/2-4/appsman-services/$1"
+r301 %r{/platform/application-service/2-4/console/(.*)}, "/pivotalcf/2-4/console/$1"
+
+# Install Redirects
+
+r301 '/platform/application-service/2-6/operating/configure-pas.html', '/pivotalcf/2-6/customizing/configure-pas.html'
+r301 '/platform/application-service/2-6/operating/console-login.html', '/pivotalcf/2-6/customizing/console-login.html'
+r301 '/platform/application-service/2-6/operating/create-pas-dbs.html', '/pivotalcf/2-6/customizing/create-pas-dbs.html'
+r301 '/platform/application-service/2-6/operating/creating-account.html', '/pivotalcf/2-6/customizing/creating-account.html'
+r301 '/platform/application-service/2-6/operating/custom-load-balancer.html', '/pivotalcf/2-6/customizing/custom-load-balancer.html'
+r301 '/platform/application-service/2-6/operating/custom-syslog-rules.html', '/pivotalcf/2-6/customizing/custom-syslog-rules.html'
+r301 '/platform/application-service/2-6/operating/day2.html' , '/pivotalcf/2-6/customizing/day2.html'
+r301 '/platform/application-service/2-6/operating/pas-file-storage.html', '/pivotalcf/2-6/customizing/pas-file-storage.html'
+r301 '/platform/application-service/2-6/operating/pas-vsphere-requirements.html', '/pivotalcf/2-6/customizing/pas-vsphere-requirements.html'
+r301 '/platform/application-service/2-6/operating/pas.html', '/pivotalcf/2-6/customizing/pas.html'
+r301 '/platform/application-service/2-6/operating/diagnostics.html', '/pivotalcf/2-6/customizing/diagnostics.html'
+r301 '/platform/application-service/2-6/operating/disk-format.html', '/pivotalcf/2-6/customizing/disk-format.html'
+r301 'platform/application-service/2-6/operating/elb-ssh-proxy.html/', '/pivotalcf/2-6/customizing/elb-ssh-proxy.html'
+r301 '/platform/application-service/2-6/operating/external-user-management.html', '/pivotalcf/2-6/customizing/external-user-management.html'
+r301 '/platform/application-service/2-6/operating/f5-lb.html', '/pivotalcf/2-6/customizing/f5-lb.html'
+r301 '/platform/application-service/2-6/operating/frontend-idle-timeout.html', '/pivotalcf/2-6/customizing/frontend-idle-timeout.html'
+r301 '/platform/application-service/2-6/operating/quickstart-pas.html', '/pivotalcf/2-6/customizing/quickstart-pas.html'
+r301 '/platform/application-service/2-6/operating/route-service-lookup.html ', '/pivotalcf/2-6/customizing/route-service-lookup.html'
+r301 '/platform/application-service/2-6/operating/api-endpoint.html', '/pivotalcf/2-6/customizing/api-endpoint.html'
+r301 '/platform/application-service/2-6/operating/gcp-troubleshooting.html', '/pivotalcf/2-6/customizing/gcp-troubleshooting.html'
+r301 '/platform/application-service/2-6/operating/small-footprint.html', '/pivotalcf/2-6/customizing/small-footprint.html'
+r301 '/platform/application-service/2-6/operating/installing-pcf-is.html', '/pivotalcf/2-6/customizing/installing-pcf-is.html'
+r301 '/platform/application-service/2-6/operating/cfpush-availability-during-upgrade.html', '/pivotalcf/2-6/customizing/cfpush-availability-during-upgrade.html'
+r301 '/platform/application-service/2-6/operating/user-types.html', '/pivotalcf/2-6/customizing/user-types.html'
+r301 '/platform/application-service/2-6/operating/vsphere-nsx-t.html', '/pivotalcf/2-6/customizing/vsphere-nsx-t.html'
+r301 '/platform/application-service/2-6/operating/configure-lb.html', '/pivotalcf/2-6/customizing/configure-lb.html'
+
+r301 '/platform/application-service/2-5/operating/configure-pas.html', '/pivotalcf/2-5/customizing/configure-pas.html'
+r301 '/platform/application-service/2-5/operating/console-login.html', '/pivotalcf/2-5/customizing/console-login.html'
+r301 '/platform/application-service/2-5/operating/create-pas-dbs.html', '/pivotalcf/2-5/customizing/create-pas-dbs.html'
+r301 '/platform/application-service/2-5/operating/creating-account.html', '/pivotalcf/2-5/customizing/creating-account.html'
+r301 '/platform/application-service/2-5/operating/custom-load-balancer.html', '/pivotalcf/2-5/customizing/custom-load-balancer.html'
+r301 '/platform/application-service/2-5/operating/custom-syslog-rules.html', '/pivotalcf/2-5/customizing/custom-syslog-rules.html'
+r301 '/platform/application-service/2-5/operating/day2.html' , '/pivotalcf/2-5/customizing/day2.html'
+r301 '/platform/application-service/2-5/operating/pas-file-storage.html', '/pivotalcf/2-5/customizing/pas-file-storage.html'
+r301 '/platform/application-service/2-5/operating/pas-vsphere-requirements.html', '/pivotalcf/2-5/customizing/pas-vsphere-requirements.html'
+r301 '/platform/application-service/2-5/operating/pas.html', '/pivotalcf/2-5/customizing/pas.html'
+r301 '/platform/application-service/2-5/operating/diagnostics.html', '/pivotalcf/2-5/customizing/diagnostics.html'
+r301 '/platform/application-service/2-5/operating/disk-format.html', '/pivotalcf/2-5/customizing/disk-format.html'
+r301 'platform/application-service/2-5/operating/elb-ssh-proxy.html/', '/pivotalcf/2-5/customizing/elb-ssh-proxy.html'
+r301 '/platform/application-service/2-5/operating/external-user-management.html', '/pivotalcf/2-5/customizing/external-user-management.html'
+r301 '/platform/application-service/2-5/operating/f5-lb.html', '/pivotalcf/2-5/customizing/f5-lb.html'
+r301 '/platform/application-service/2-5/operating/frontend-idle-timeout.html', '/pivotalcf/2-5/customizing/frontend-idle-timeout.html'
+r301 '/platform/application-service/2-5/operating/quickstart-pas.html', '/pivotalcf/2-5/customizing/quickstart-pas.html'
+r301 '/platform/application-service/2-5/operating/route-service-lookup.html ', '/pivotalcf/2-5/customizing/route-service-lookup.html'
+r301 '/platform/application-service/2-5/operating/api-endpoint.html', '/pivotalcf/2-5/customizing/api-endpoint.html'
+r301 '/platform/application-service/2-5/operating/gcp-troubleshooting.html', '/pivotalcf/2-5/customizing/gcp-troubleshooting.html'
+r301 '/platform/application-service/2-5/operating/small-footprint.html', '/pivotalcf/2-5/customizing/small-footprint.html'
+r301 '/platform/application-service/2-5/operating/installing-pcf-is.html', '/pivotalcf/2-5/customizing/installing-pcf-is.html'
+r301 '/platform/application-service/2-5/operating/cfpush-availability-during-upgrade.html', '/pivotalcf/2-5/customizing/cfpush-availability-during-upgrade.html'
+r301 '/platform/application-service/2-5/operating/user-types.html', '/pivotalcf/2-5/customizing/user-types.html'
+r301 '/platform/application-service/2-5/operating/vsphere-nsx-t.html', '/pivotalcf/2-5/customizing/vsphere-nsx-t.html'
+r301 '/platform/application-service/2-5/operating/configure-lb.html', '/pivotalcf/2-5/customizing/configure-lb.html'
+
+r301 '/platform/application-service/2-4/operating/configure-pas.html', '/pivotalcf/2-4/customizing/configure-pas.html'
+r301 '/platform/application-service/2-4/operating/console-login.html', '/pivotalcf/2-4/customizing/console-login.html'
+r301 '/platform/application-service/2-4/operating/create-pas-dbs.html', '/pivotalcf/2-4/customizing/create-pas-dbs.html'
+r301 '/platform/application-service/2-4/operating/creating-account.html', '/pivotalcf/2-4/customizing/creating-account.html'
+r301 '/platform/application-service/2-4/operating/custom-load-balancer.html', '/pivotalcf/2-4/customizing/custom-load-balancer.html'
+r301 '/platform/application-service/2-4/operating/custom-syslog-rules.html', '/pivotalcf/2-4/customizing/custom-syslog-rules.html'
+r301 '/platform/application-service/2-4/operating/day2.html' , '/pivotalcf/2-4/customizing/day2.html'
+r301 '/platform/application-service/2-4/operating/pas-file-storage.html', '/pivotalcf/2-4/customizing/pas-file-storage.html'
+r301 '/platform/application-service/2-4/operating/pas-vsphere-requirements.html', '/pivotalcf/2-4/customizing/pas-vsphere-requirements.html'
+r301 '/platform/application-service/2-4/operating/pas.html', '/pivotalcf/2-4/customizing/pas.html'
+r301 '/platform/application-service/2-4/operating/diagnostics.html', '/pivotalcf/2-4/customizing/diagnostics.html'
+r301 '/platform/application-service/2-4/operating/disk-format.html', '/pivotalcf/2-4/customizing/disk-format.html'
+r301 'platform/application-service/2-4/operating/elb-ssh-proxy.html/', '/pivotalcf/2-4/customizing/elb-ssh-proxy.html'
+r301 '/platform/application-service/2-4/operating/external-user-management.html', '/pivotalcf/2-4/customizing/external-user-management.html'
+r301 '/platform/application-service/2-4/operating/f5-lb.html', '/pivotalcf/2-4/customizing/f5-lb.html'
+r301 '/platform/application-service/2-4/operating/frontend-idle-timeout.html', '/pivotalcf/2-4/customizing/frontend-idle-timeout.html'
+r301 '/platform/application-service/2-4/operating/quickstart-pas.html', '/pivotalcf/2-4/customizing/quickstart-pas.html'
+r301 '/platform/application-service/2-4/operating/route-service-lookup.html ', '/pivotalcf/2-4/customizing/route-service-lookup.html'
+r301 '/platform/application-service/2-4/operating/api-endpoint.html', '/pivotalcf/2-4/customizing/api-endpoint.html'
+r301 '/platform/application-service/2-4/operating/gcp-troubleshooting.html', '/pivotalcf/2-4/customizing/gcp-troubleshooting.html'
+r301 '/platform/application-service/2-4/operating/small-footprint.html', '/pivotalcf/2-4/customizing/small-footprint.html'
+r301 '/platform/application-service/2-4/operating/installing-pcf-is.html', '/pivotalcf/2-4/customizing/installing-pcf-is.html'
+r301 '/platform/application-service/2-4/operating/cfpush-availability-during-upgrade.html', '/pivotalcf/2-4/customizing/cfpush-availability-during-upgrade.html'
+r301 '/platform/application-service/2-4/operating/user-types.html', '/pivotalcf/2-4/customizing/user-types.html'
+r301 '/platform/application-service/2-4/operating/vsphere-nsx-t.html', '/pivotalcf/2-4/customizing/vsphere-nsx-t.html'
+r301 '/platform/application-service/2-4/operating/configure-lb.html', '/pivotalcf/2-4/customizing/configure-lb.html'
+
+
+# Ops Guide
+
+ r301 '/platform/application-service/2-6/operating/gdpr.html', '/pivotalcf/2-6/opsguide/gdpr.html'
+ r301 '/platform/application-service/2-6/operating/id-jobs.html', '/pivotalcf/2-6/opsguide/id-jobs.html'
+ r301 '/platform/application-service/2-6/operating/identify-metric-source.html', '/pivotalcf/2-6/opsguide/identify-metric-source.html'
+ r301 '/platform/application-service/2-6/operating/accounting-report-apps-man.html', '/pivotalcf/2-6/opsguide/accounting-report-apps-man.html'
+ r301 '/platform/application-service/2-6/operating/accounting-report.html', '/pivotalcf/2-6/opsguide/accounting-report.html'
+ r301 '/platform/application-service/2-6/operating/internal-databases.html', '/pivotalcf/2-6/opsguide/internal-databases.html'
+ r301 '/platform/application-service/2-6/operating/api-endpoint.html', '/pivotalcf/2-6/opsguide/api-endpoint.html'
+ r301 '/platform/application-service/2-6/operating/logging-config-opsman.html', '/pivotalcf/2-6/opsguide/logging-config-opsman.html'
+ r301 '/platform/application-service/2-6/operating/app-sec-groups.html', '/pivotalcf/2-6/opsguide/app-sec-groups.html'
+ r301 '/platform/application-service/2-6/operating/notifications-asg.html', '/pivotalcf/2-6/opsguide/notifications-asg.html'
+ r301 '/platform/application-service/2-6/operating/auth-sso.html', '/pivotalcf/2-6/opsguide/auth-sso.html'
+ r301 '/platform/application-service/2-6/operating/ca-sso-config.html', '/pivotalcf/2-6/opsguide/ca-sso-config.html'
+ r301 '/platform/application-service/2-6/operating/ping-federate-sso-configuration.html', '/pivotalcf/2-6/opsguide/ping-federate-sso-configuration.html'
+ r301 '/platform/application-service/2-6/operating/config-cell-cleanup.html', '/pivotalcf/2-6/opsguide/config-cell-cleanup.html'
+ r301 '/platform/application-service/2-6/operating/power-failure.html', '/pivotalcf/2-6/opsguide/power-failure.html'
+ r301 '/platform/application-service/2-6/operating/config-proxy.html', '/pivotalcf/2-6/opsguide/config-proxy.html'
+ r301 '/platform/application-service/2-6/operating/pw-policy.html', '/pivotalcf/2-6/opsguide/pw-policy.html'
+ r301 '/platform/application-service/2-6/operating/pws_upgrade_load.html', '/pivotalcf/2-6/opsguide/pws_upgrade_load.html'
+ r301 '/platform/application-service/2-6/operating/config-ssh.html', '/pivotalcf/2-6/opsguide/config-ssh.html'
+ r301 '/platform/application-service/2-6/operating/rotate-ccdb-key.html', '/pivotalcf/2-6/opsguide/rotate-ccdb-key.html'
+ r301 '/platform/application-service/2-6/operating/configure-multi-foundation.html', '/pivotalcf/2-6/opsguide/configure-multi-foundation.html'
+ r301 '/platform/application-service/2-6/operating/scaling-cloud-controller.html', '/pivotalcf/2-6/opsguide/scaling-cloud-controller.html'
+ r301 '/platform/application-service/2-6/operating/creating-account.html', '/pivotalcf/2-6/opsguide/creating-account.html'
+ r301 '/platform/application-service/2-6/operating/scaling-ert-components.html', '/pivotalcf/2-6/opsguide/scaling-ert-components.html'
+ r301 '/platform/application-service/2-6/operating/credential-rotation.html', '/pivotalcf/2-6/opsguide/credential-rotation.html'
+ r301 '/platform/application-service/2-6/operating/secure-si-creds.html', '/pivotalcf/2-6/opsguide/secure-si-creds.html'
+ r301 '/platform/application-service/2-6/operating/custom-branding.html', '/pivotalcf/2-6/opsguide/custom-branding.html'
+ r301 '/platform/application-service/2-6/operating/securing-endpoints.html', '/pivotalcf/2-6/opsguide/securing-endpoints.html'
+ r301 '/platform/application-service/2-6/operating/deploying-service-mesh.html', '/pivotalcf/2-6/opsguide/deploying-service-mesh.html'
+ r301 '/platform/application-service/2-6/operating/security_config.html', '/pivotalcf/2-6/opsguide/security_config.html'
+ r301 '/platform/application-service/2-6/operating/docker-registry.html', '/pivotalcf/2-6/opsguide/docker-registry.html'
+ r301 '/platform/application-service/2-6/operating/ssl-term-haproxy.html', '/pivotalcf/2-6/opsguide/ssl-term-haproxy.html'
+ r301 '/platform/application-service/2-6/operating/enable-vol-services.html', '/pivotalcf/2-6/opsguide/enable-vol-services.html'
+ r301 '/platform/application-service/2-6/operating/ssl-term.html', '/pivotalcf/2-6/opsguide/ssl-term.html'
+ r301 '/platform/application-service/2-6/operating/er_network.html', '/pivotalcf/2-6/opsguide/er_network.html'
+ r301 '/platform/application-service/2-6/operating/switching-domains.html', '/pivotalcf/2-6/opsguide/switching-domains.html'
+ r301 '/platform/application-service/2-6/operating/external-user-management.html', '/pivotalcf/2-6/opsguide/external-user-management.html'
+ r301 '/platform/application-service/2-6/operating/tcp-routing-ert-config.html', '/pivotalcf/2-6/opsguide/tcp-routing-ert-config.html'
+
+
+ r301 '/platform/application-service/2-5/operating/gdpr.html', '/pivotalcf/2-5/opsguide/gdpr.html'
+ r301 '/platform/application-service/2-5/operating/id-jobs.html', '/pivotalcf/2-5/opsguide/id-jobs.html'
+ r301 '/platform/application-service/2-5/operating/identify-metric-source.html', '/pivotalcf/2-5/opsguide/identify-metric-source.html'
+ r301 '/platform/application-service/2-5/operating/accounting-report-apps-man.html', '/pivotalcf/2-5/opsguide/accounting-report-apps-man.html'
+ r301 '/platform/application-service/2-5/operating/accounting-report.html', '/pivotalcf/2-5/opsguide/accounting-report.html'
+ r301 '/platform/application-service/2-5/operating/internal-databases.html', '/pivotalcf/2-5/opsguide/internal-databases.html'
+ r301 '/platform/application-service/2-5/operating/api-endpoint.html', '/pivotalcf/2-5/opsguide/api-endpoint.html'
+ r301 '/platform/application-service/2-5/operating/logging-config-opsman.html', '/pivotalcf/2-5/opsguide/logging-config-opsman.html'
+ r301 '/platform/application-service/2-5/operating/app-sec-groups.html', '/pivotalcf/2-5/opsguide/app-sec-groups.html'
+ r301 '/platform/application-service/2-5/operating/notifications-asg.html', '/pivotalcf/2-5/opsguide/notifications-asg.html'
+ r301 '/platform/application-service/2-5/operating/auth-sso.html', '/pivotalcf/2-5/opsguide/auth-sso.html'
+ r301 '/platform/application-service/2-5/operating/ca-sso-config.html', '/pivotalcf/2-5/opsguide/ca-sso-config.html'
+ r301 '/platform/application-service/2-5/operating/ping-federate-sso-configuration.html', '/pivotalcf/2-5/opsguide/ping-federate-sso-configuration.html'
+ r301 '/platform/application-service/2-5/operating/config-cell-cleanup.html', '/pivotalcf/2-5/opsguide/config-cell-cleanup.html'
+ r301 '/platform/application-service/2-5/operating/power-failure.html', '/pivotalcf/2-5/opsguide/power-failure.html'
+ r301 '/platform/application-service/2-5/operating/config-proxy.html', '/pivotalcf/2-5/opsguide/config-proxy.html'
+ r301 '/platform/application-service/2-5/operating/pw-policy.html', '/pivotalcf/2-5/opsguide/pw-policy.html'
+ r301 '/platform/application-service/2-5/operating/pws_upgrade_load.html', '/pivotalcf/2-5/opsguide/pws_upgrade_load.html'
+ r301 '/platform/application-service/2-5/operating/config-ssh.html', '/pivotalcf/2-5/opsguide/config-ssh.html'
+ r301 '/platform/application-service/2-5/operating/rotate-ccdb-key.html', '/pivotalcf/2-5/opsguide/rotate-ccdb-key.html'
+ r301 '/platform/application-service/2-5/operating/configure-multi-foundation.html', '/pivotalcf/2-5/opsguide/configure-multi-foundation.html'
+ r301 '/platform/application-service/2-5/operating/scaling-cloud-controller.html', '/pivotalcf/2-5/opsguide/scaling-cloud-controller.html'
+ r301 '/platform/application-service/2-5/operating/creating-account.html', '/pivotalcf/2-5/opsguide/creating-account.html'
+ r301 '/platform/application-service/2-5/operating/scaling-ert-components.html', '/pivotalcf/2-5/opsguide/scaling-ert-components.html'
+ r301 '/platform/application-service/2-5/operating/credential-rotation.html', '/pivotalcf/2-5/opsguide/credential-rotation.html'
+ r301 '/platform/application-service/2-5/operating/secure-si-creds.html', '/pivotalcf/2-5/opsguide/secure-si-creds.html'
+ r301 '/platform/application-service/2-5/operating/custom-branding.html', '/pivotalcf/2-5/opsguide/custom-branding.html'
+ r301 '/platform/application-service/2-5/operating/securing-endpoints.html', '/pivotalcf/2-5/opsguide/securing-endpoints.html'
+ r301 '/platform/application-service/2-5/operating/deploying-service-mesh.html', '/pivotalcf/2-5/opsguide/deploying-service-mesh.html'
+ r301 '/platform/application-service/2-5/operating/security_config.html', '/pivotalcf/2-5/opsguide/security_config.html'
+ r301 '/platform/application-service/2-5/operating/docker-registry.html', '/pivotalcf/2-5/opsguide/docker-registry.html'
+ r301 '/platform/application-service/2-5/operating/ssl-term-haproxy.html', '/pivotalcf/2-5/opsguide/ssl-term-haproxy.html'
+ r301 '/platform/application-service/2-5/operating/enable-vol-services.html', '/pivotalcf/2-5/opsguide/enable-vol-services.html'
+ r301 '/platform/application-service/2-5/operating/ssl-term.html', '/pivotalcf/2-5/opsguide/ssl-term.html'
+ r301 '/platform/application-service/2-5/operating/er_network.html', '/pivotalcf/2-5/opsguide/er_network.html'
+ r301 '/platform/application-service/2-5/operating/switching-domains.html', '/pivotalcf/2-5/opsguide/switching-domains.html'
+ r301 '/platform/application-service/2-5/operating/external-user-management.html', '/pivotalcf/2-5/opsguide/external-user-management.html'
+ r301 '/platform/application-service/2-5/operating/tcp-routing-ert-config.html', '/pivotalcf/2-5/opsguide/tcp-routing-ert-config.html'
+
+ r301 '/platform/application-service/2-4/operating/gdpr.html', '/pivotalcf/2-4/opsguide/gdpr.html'
+ r301 '/platform/application-service/2-4/operating/id-jobs.html', '/pivotalcf/2-4/opsguide/id-jobs.html'
+ r301 '/platform/application-service/2-4/operating/identify-metric-source.html', '/pivotalcf/2-4/opsguide/identify-metric-source.html'
+ r301 '/platform/application-service/2-4/operating/accounting-report-apps-man.html', '/pivotalcf/2-4/opsguide/accounting-report-apps-man.html'
+ r301 '/platform/application-service/2-4/operating/accounting-report.html', '/pivotalcf/2-4/opsguide/accounting-report.html'
+ r301 '/platform/application-service/2-4/operating/internal-databases.html', '/pivotalcf/2-4/opsguide/internal-databases.html'
+ r301 '/platform/application-service/2-4/operating/api-endpoint.html', '/pivotalcf/2-4/opsguide/api-endpoint.html'
+ r301 '/platform/application-service/2-4/operating/logging-config-opsman.html', '/pivotalcf/2-4/opsguide/logging-config-opsman.html'
+ r301 '/platform/application-service/2-4/operating/app-sec-groups.html', '/pivotalcf/2-4/opsguide/app-sec-groups.html'
+ r301 '/platform/application-service/2-4/operating/notifications-asg.html', '/pivotalcf/2-4/opsguide/notifications-asg.html'
+ r301 '/platform/application-service/2-4/operating/auth-sso.html', '/pivotalcf/2-4/opsguide/auth-sso.html'
+ r301 '/platform/application-service/2-4/operating/ca-sso-config.html', '/pivotalcf/2-4/opsguide/ca-sso-config.html'
+ r301 '/platform/application-service/2-4/operating/ping-federate-sso-configuration.html', '/pivotalcf/2-4/opsguide/ping-federate-sso-configuration.html'
+ r301 '/platform/application-service/2-4/operating/config-cell-cleanup.html', '/pivotalcf/2-4/opsguide/config-cell-cleanup.html'
+ r301 '/platform/application-service/2-4/operating/power-failure.html', '/pivotalcf/2-4/opsguide/power-failure.html'
+ r301 '/platform/application-service/2-4/operating/config-proxy.html', '/pivotalcf/2-4/opsguide/config-proxy.html'
+ r301 '/platform/application-service/2-4/operating/pw-policy.html', '/pivotalcf/2-4/opsguide/pw-policy.html'
+ r301 '/platform/application-service/2-4/operating/pws_upgrade_load.html', '/pivotalcf/2-4/opsguide/pws_upgrade_load.html'
+ r301 '/platform/application-service/2-4/operating/config-ssh.html', '/pivotalcf/2-4/opsguide/config-ssh.html'
+ r301 '/platform/application-service/2-4/operating/rotate-ccdb-key.html', '/pivotalcf/2-4/opsguide/rotate-ccdb-key.html'
+ r301 '/platform/application-service/2-4/operating/configure-multi-foundation.html', '/pivotalcf/2-4/opsguide/configure-multi-foundation.html'
+ r301 '/platform/application-service/2-4/operating/scaling-cloud-controller.html', '/pivotalcf/2-4/opsguide/scaling-cloud-controller.html'
+ r301 '/platform/application-service/2-4/operating/creating-account.html', '/pivotalcf/2-4/opsguide/creating-account.html'
+ r301 '/platform/application-service/2-4/operating/scaling-ert-components.html', '/pivotalcf/2-4/opsguide/scaling-ert-components.html'
+ r301 '/platform/application-service/2-4/operating/credential-rotation.html', '/pivotalcf/2-4/opsguide/credential-rotation.html'
+ r301 '/platform/application-service/2-4/operating/secure-si-creds.html', '/pivotalcf/2-4/opsguide/secure-si-creds.html'
+ r301 '/platform/application-service/2-4/operating/custom-branding.html', '/pivotalcf/2-4/opsguide/custom-branding.html'
+ r301 '/platform/application-service/2-4/operating/securing-endpoints.html', '/pivotalcf/2-4/opsguide/securing-endpoints.html'
+ r301 '/platform/application-service/2-4/operating/deploying-service-mesh.html', '/pivotalcf/2-4/opsguide/deploying-service-mesh.html'
+ r301 '/platform/application-service/2-4/operating/security_config.html', '/pivotalcf/2-4/opsguide/security_config.html'
+ r301 '/platform/application-service/2-4/operating/docker-registry.html', '/pivotalcf/2-4/opsguide/docker-registry.html'
+ r301 '/platform/application-service/2-4/operating/ssl-term-haproxy.html', '/pivotalcf/2-4/opsguide/ssl-term-haproxy.html'
+ r301 '/platform/application-service/2-4/operating/enable-vol-services.html', '/pivotalcf/2-4/opsguide/enable-vol-services.html'
+ r301 '/platform/application-service/2-4/operating/ssl-term.html', '/pivotalcf/2-4/opsguide/ssl-term.html'
+ r301 '/platform/application-service/2-4/operating/er_network.html', '/pivotalcf/2-4/opsguide/er_network.html'
+ r301 '/platform/application-service/2-4/operating/switching-domains.html', '/pivotalcf/2-4/opsguide/switching-domains.html'
+ r301 '/platform/application-service/2-4/operating/external-user-management.html', '/pivotalcf/2-4/opsguide/external-user-management.html'
+ r301 '/platform/application-service/2-4/operating/tcp-routing-ert-config.html', '/pivotalcf/2-4/opsguide/tcp-routing-ert-config.html'
+
 
 # Build service redirect
-r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/0-0-3/$1"
-r301 %r{/build-service/0-0-3/(.*)}, "/platform/build-service/0-0-3/$1"
+r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/$1"
+
+# Scheduler rename redirect
+r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
+r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$1"
 
 # service mesh redirects
-r301 %r{/service-mesh/(?![\d-]+)(.*)}, "/platform/service-mesh/$1"
-r301 %r{/service-mesh/0-1/(.*)}, "/platform/service-mesh/0-1/$1"
-r301 %r{/service-mesh/0-2/(.*)}, "/platform/service-mesh/0-2/$1"
+r301 %r{/service-mesh/(.*)}, "/ingress-router/$1"
+r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/platform/ingress-router/$1"
+r301 %r{/ingress-router/0-1/(.*)}, "/platform/ingress-router/0-1/$1"
+r301 %r{/ingress-router/0-2/(.*)}, "/platform/ingress-router/0-2/$1"
+
+# function service redirects
+r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
+r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
+
 
 # Redirects to docs-book-services-sdk
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
@@ -197,7 +464,7 @@ r301 %r{/app-dist/(.*)}, 'https://resources.docs.pivotal.io/pdfs/app-dist.pdf'
 r301 %r{/mobile/push/(.*)}, '/push/'
 r301 'v1_6_0/api/tags/index.html', '/v1_6_0/api/topics/index.html'
 r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
-r301 %r{/pcf-scheduler/(?![\d-]+)(.*)}, "/pcf-scheduler/1-2/$1"
+
 
 #For Kubernates Service Manager
 
@@ -273,8 +540,20 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/pivotalcf/2-6/$1"
+
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-8/$1"
+r301 %r{/pivotalcf/2-6/operating/(.*)}, '/platform/application-service/2-6/operating/$1'
+r301 %r{/pivotalcf/2-5/operating/(.*)}, '/platform/application-service/2-5/operating/$1'
+r301 %r{/pivotalcf/2-4/operating/(.*)}, '/platform/application-service/2-4/operating/$1'
+r301 %r{/pivotalcf/2-3/operating/(.*)}, '/platform/application-service/2-3/operating/$1'
+r301 %r{/pivotalcf/2-2/operating/(.*)}, '/platform/application-service/2-2/operating/$1'
+r301 %r{/pivotalcf/2-1/operating/(.*)}, '/platform/application-service/2-1/operating/$1'
+r301 %r{/pivotalcf/2-0/operating/(.*)}, '/platform/application-service/2-0/operating/$1'
+
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-8/$1"
+r301 %r{/pivotalcf/2-8/(.*)}, '/platform/2-8/$1'
 r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
+r301 %r{/platform/(?![\d-]+)(.*)}, "/platform/2-8/$1"
 r301 %r{/platform/2-6/(.*)}, '/pivotalcf/2-6/$1'
 r301 %r{/platform/2-5/(.*)}, '/pivotalcf/2-5/$1'
 r301 %r{/platform/2-4/(.*)}, '/pivotalcf/2-4/$1'
@@ -282,6 +561,10 @@ r301 %r{/platform/2-3/(.*)}, '/pivotalcf/2-3/$1'
 r301 %r{/platform/2-2/(.*)}, '/pivotalcf/2-2/$1'
 r301 %r{/platform/2-1/(.*)}, '/pivotalcf/2-1/$1'
 r301 %r{/platform/2-0/(.*)}, '/pivotalcf/2-0/$1'
+
+
+
+
 # Spring Cloud Services
 
 # DataStax Cassandra
@@ -330,7 +613,7 @@ r301 %r{/redis/syslog.html}, '/redis/1-9/installing.html#syslog'
 
 r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
-r301 '/pivotalcf/2-6/getstarted/pcf-docs.html', '/pivotalcf/2-6/'
+r301 '/platform/2-7/getstarted/pcf-docs.html', '/platform/2-7/'
 
 r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf'
 r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
@@ -352,13 +635,17 @@ r301 %r{/pks/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-1.pdf'
 r301 %r{/pks/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-2.pdf'
 
 # Redirect non-versioned and 'latest' URL calls to the most recent version of PKS
-r301 %r{/runtimes/pks/latest/(.*)}, "/pks/1-5/$1"
-r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/pks/1-5/$1"
-r301 %r{/pks/latest/(.*)}, "/pks/1-5/$1"
-r301 %r{/pks/(?![\d-]+)(.*)}, "/pks/1-5/$1"
+r301 %r{/runtimes/pks/(.*)}, "/pks/$1"
+r301 %r{/runtimes/pks/latest/(.*)}, "/pks/1-6/$1"
+r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/pks/1-6/$1"
+r301 %r{/pks/latest/(.*)}, "/pks/1-6/$1"
+r301 %r{/pks/(?![\d-]+)(.*)}, "/pks/1-6/$1"
 
 # Redirect PRA docs
-r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-0/$1"
+r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-2/$1"
 
 # Redirect 'archives' (contains PDFs)
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
+
+# Redirect PAS WOK unversioned to 2.6.0
+r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1'
