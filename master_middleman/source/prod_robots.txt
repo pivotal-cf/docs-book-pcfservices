@@ -68,6 +68,7 @@ Noindex: /rabbitmq-cf/1-8/
 Noindex: /rabbitmq-cf/1-7/
 Noindex: /rabbitmq-cf/1-6/
 Noindex: /rabbitmq-cf/1-5/
+Noindex: /redis/2-1/
 Noindex: /redis/2-0/
 Noindex: /redis/1-14/
 Noindex: /redis/1-13/
@@ -167,6 +168,7 @@ Disallow: /rabbitmq-cf/1-8/
 Disallow: /rabbitmq-cf/1-7/
 Disallow: /rabbitmq-cf/1-6/
 Disallow: /rabbitmq-cf/1-5/
+Disallow: /redis/2-1/
 Disallow: /redis/2-0/
 Disallow: /redis/1-14/
 Disallow: /redis/1-13/
