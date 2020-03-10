@@ -1,10 +1,10 @@
 ---
 template_variables:
-  book_title: Pivotal Documentation
-  book_title_short: Pivotal Docs
+  book_title: VMware Tanzu Documentation
+  book_title_short: VMware Tanzu Docs
   title: <span class="title-deemph">Pivotal</span> Documentation
   title_image: images/icon-p-green.jpg
-  hero_text: "Detailed documentation to help you install, understand, and succeed with Pivotal's enterprise-grade software."
+  hero_text: "Detailed documentation to help you install, understand, and succeed with VMware Tanzu enterprise-grade software."
   product_name: PCF
   product_url: https://network.pivotal.io/products/pivotal-cf
   product_link: <div class="header-item"><a href="https://network.pivotal.io/products/pivotal-cf">Back to Product Page</a></div>
