@@ -1,14 +1,14 @@
 ---
 book_repo: pivotal-cf/docs-book-pcfservices
 layout_repo: pivotal-cf/docs-layout-repo
-layout_repo_ref: master-rebrand
+layout_repo_ref: master
 
 feedback_enabled: false
 
 broken_link_exclusions: iefix|arrowhead
 repo_link_enabled: true
 
-public_host: docs-layout-test.cfapps.io
+public_host: docs.pivotal.io
 
 elastic_search: true
 
