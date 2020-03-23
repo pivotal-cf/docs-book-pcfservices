@@ -732,8 +732,8 @@ r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
 r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1'
 
 # Redirect for SSO docs
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-11/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-11/$1"
+r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
 r301 '/p-identity/1-6/configure-internal-us.html', '/p-identity/1-6/configure-id-providers.html'
 r301 '/p-identity/1-7/configure-internal-us.html', '/p-identity/1-7/configure-id-providers.html'
