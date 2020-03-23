@@ -736,9 +736,17 @@ r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
 r301 '/p-identity/1-6/configure-internal-us.html', '/p-identity/1-6/configure-id-providers.html'
+r301 '/p-identity/1-6/configure-external-id.html', '/p-identity/1-6/configure-id-providers.html'
+
 r301 '/p-identity/1-7/configure-internal-us.html', '/p-identity/1-7/configure-id-providers.html'
+r301 '/p-identity/1-7/configure-external-id.html', '/p-identity/1-7/configure-id-providers.html'
+
 r301 '/p-identity/1-8/configure-internal-us.html', '/p-identity/1-8/configure-id-providers.html'
+r301 '/p-identity/1-8/configure-external-id.html', '/p-identity/1-8/configure-id-providers.html'
+
 r301 '/p-identity/1-9/configure-internal-us.html', '/p-identity/1-9/configure-id-providers.html'
+r301 '/p-identity/1-9/configure-external-id.html', '/p-identity/1-9/configure-id-providers.html'
+
 r301 '/p-identity/1-10/configure-id-providers.html', '/p-identity/1-10/configure-internal-us.html'
 
 r301 '/p-identity/1-5/plan-to-plan/index.html', '/p-identity/1-5/plan-to-plan-oidc.html'
