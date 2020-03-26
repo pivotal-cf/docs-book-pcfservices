@@ -731,3 +731,6 @@ r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1
 # Redirect for SSO docs
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+
+# Redirect to the most recent version of Build Service
+r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-0-4/$1"
