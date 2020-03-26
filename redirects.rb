@@ -734,3 +734,6 @@ r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-0-4/$1"
+
+# Redirect to the most recent version of Healthwtch
+r301 %r{/platform/healthwatch/(?![\d-]+)(.*)}, "/platform/healthwatch/2-0/$1"
