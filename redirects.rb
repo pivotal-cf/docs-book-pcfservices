@@ -346,9 +346,6 @@ r301 '/platform/application-service/2-3/operating/configure-lb.html', '/pivotalc
  r301 '/platform/application-service/2-3/operating/external-user-management.html', '/pivotalcf/2-3/opsguide/external-user-management.html'
  r301 '/platform/application-service/2-3/operating/tcp-routing-ert-config.html', '/pivotalcf/2-3/opsguide/tcp-routing-ert-config.html'
 
-# Build service redirect
-r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/$1"
-
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
 r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$1"
