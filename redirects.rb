@@ -546,7 +546,7 @@ r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
 
 #For Kubernates Service Manager
 
-r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-4/$1"
+r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-7/$1"
 
 r301 %r{/pivotalcf/packaging/(.*)}, '/tiledev/$1'
 r301 %r{/pivotalcf/partners/(.*)}, '/tiledev/$1'
