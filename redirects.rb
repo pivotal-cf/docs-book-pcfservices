@@ -733,4 +733,4 @@ r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
 # Redirect to the most recent version of Build Service
-r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-0-4/$1"
+r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
