@@ -725,10 +725,10 @@ r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-2/$1"
 # Redirect 'archives' (contains PDFs)
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
 
-# Redirect PAS WOK unversioned to 2.6.0
-r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1'
 # Redirect TAS for K8s v0.1 Beta
 r301 %r{/pas-kubernetes/0-1/(.*)}, '/tas-kubernetes/0-1/$1'
+# Redirect PAS WOK unversioned to 2.6.0
+r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1'
 
 # Redirect for SSO docs
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
