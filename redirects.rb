@@ -589,8 +589,6 @@ r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
 r301 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
-r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/2-6/windows/index.html'
-
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
 r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/$3"
