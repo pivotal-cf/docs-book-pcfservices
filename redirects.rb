@@ -619,7 +619,7 @@ r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 
-r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-8/$1"
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-9/$1"
 r301 %r{/pivotalcf/2-6/operating/(.*)}, '/platform/application-service/2-6/operating/$1'
 r301 %r{/pivotalcf/2-5/operating/(.*)}, '/platform/application-service/2-5/operating/$1'
 r301 %r{/pivotalcf/2-4/operating/(.*)}, '/platform/application-service/2-4/operating/$1'
