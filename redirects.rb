@@ -736,5 +736,12 @@ r301 %r{/tas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
+# Redirect for MySQL docs
+r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
+r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
+
+# Redirect for Compliance Scanner
+r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
+
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
