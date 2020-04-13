@@ -727,8 +727,8 @@ r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
 
 # Redirect TAS for K8s v0.1 Beta
 r301 %r{/pas-kubernetes/0-1/(.*)}, '/tas-kubernetes/0-1/$1'
-# Redirect PAS WOK unversioned to 2.6.0
-r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1'
+# Redirect PAS for k8s unversioned to TAS for k8s 0.1
+r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
 # Redirect TAS for K8s unversioned to 0.1
 r301 %r{/tas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
 
