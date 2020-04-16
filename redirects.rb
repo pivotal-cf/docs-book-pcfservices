@@ -550,6 +550,11 @@ r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
 
 r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-8/$1"
 
+#MySQL
+
+r301 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+r301 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+
 r301 %r{/pivotalcf/packaging/(.*)}, '/tiledev/$1'
 r301 %r{/pivotalcf/partners/(.*)}, '/tiledev/$1'
 
