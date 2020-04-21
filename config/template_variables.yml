@@ -47,9 +47,8 @@ template_variables:
   appdog_notifications: <p class='note'><strong>Note</strong>&#58; If the Cloud Foundry Notifications service is not installed in your PCF deployment, notifications are disabled.</p>
   asg_notifications_prereq:
   az: <a href="http://docs.pivotal.io/pivotalcf/customizing/understand-az.html">availability zones</a>
-  bbr_pcf: To use BBR to back up and restore Pivotal Cloud Foundry (PCF) v1.11 and later, see the [Backing Up Pivotal Cloud Foundry with BBR](https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html) and [Restoring Pivotal Cloud Foundry from Backup with BBR](https://docs.pivotal.io/pivotalcf/customizing/backup-restore/restore-pcf-bbr.html) topics.
   bbr_pcf2: For more information about how PCF tile authors can implement the BBR contract, see [BOSH Backup and Restore Developer's Guide](bbr-devguide.html).
-  bbr_ert: <li>Elastic Runtime (Pivotal Cloud Foundry 1.11+)<span>:</span> To use BBR with PCF v1.11+, see the <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html">Backing Up Pivotal Cloud Foundry with BBR</a> and <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/restore-pcf-bbr.html">Restoring Pivotal Cloud Foundry from Backup with BBR</a> topics.</li>
+  bbr_ert: <li>Pivotal Cloud Foundry 1.11+<span>:</span> To use BBR with PCF v1.11+, see the <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/backup-pcf-bbr.html">Backing Up Deployments with BBR</a> and <a href="https://docs.pivotal.io/pivotalcf/customizing/backup-restore/restore-pcf-bbr.html">Restoring Deployments from Backup with BBR</a> topics.</li>
   bbr_space: If you are backing up Pivotal Cloud Foundry (PCF), your jumpbox must be between 2 CPUs, 7GB RAM, 50GB disk and 4 CPUs, 16GB RAM, 150GB disk.
   #BOSH Version-Difference Variables
   bosh_cloud_check: cloud-check #v1: cloudcheck

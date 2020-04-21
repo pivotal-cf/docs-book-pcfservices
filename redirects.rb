@@ -10,6 +10,8 @@ r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
 
 # PASW redirects for /platform/application-service-windows to old way
 r301 %r{/pivotalcf/2-7/windows/(.*)}, "/platform/application-service-windows/2-7/$1"
+r301 %r{/pivotalcf/2-8/windows/(.*)}, "/platform/application-service-windows/2-8/$1"
+r301 %r{/pivotalcf/2-9/windows/(.*)}, "/platform/application-service-windows/2-9/$1"
 r301 %r{/platform/application-service-windows/2-6/(.*)}, "/pivotalcf/2-6/windows/$1"
 r301 %r{/platform/application-service-windows/2-5/(.*)}, "/pivotalcf/2-5/windows/$1"
 r301 %r{/platform/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
@@ -346,9 +348,6 @@ r301 '/platform/application-service/2-3/operating/configure-lb.html', '/pivotalc
  r301 '/platform/application-service/2-3/operating/external-user-management.html', '/pivotalcf/2-3/opsguide/external-user-management.html'
  r301 '/platform/application-service/2-3/operating/tcp-routing-ert-config.html', '/pivotalcf/2-3/opsguide/tcp-routing-ert-config.html'
 
-# Build service redirect
-r301 %r{/build-service/(?![\d-]+)(.*)}, "/platform/build-service/$1"
-
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
 r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$1"
@@ -363,6 +362,8 @@ r301 %r{/ingress-router/0-2/(.*)}, "/platform/ingress-router/0-2/$1"
 r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
 
+# service instance manager redirects
+r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
 
 # Redirects to docs-book-services-sdk
 r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
@@ -547,7 +548,12 @@ r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
 
 #For Kubernates Service Manager
 
-r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-4/$1"
+r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-8/$1"
+
+#MySQL
+
+r301 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+r301 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
 
 r301 %r{/pivotalcf/packaging/(.*)}, '/tiledev/$1'
 r301 %r{/pivotalcf/partners/(.*)}, '/tiledev/$1'
@@ -590,8 +596,6 @@ r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
 r301 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
-r301 %r{/windows/(.*)}, 'http://docs.pivotal.io/pivotalcf/2-6/windows/index.html'
-
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
 r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/$3"
@@ -620,7 +624,7 @@ r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 
-r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-8/$1"
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-9/$1"
 r301 %r{/pivotalcf/2-6/operating/(.*)}, '/platform/application-service/2-6/operating/$1'
 r301 %r{/pivotalcf/2-5/operating/(.*)}, '/platform/application-service/2-5/operating/$1'
 r301 %r{/pivotalcf/2-4/operating/(.*)}, '/platform/application-service/2-4/operating/$1'
@@ -629,10 +633,10 @@ r301 %r{/pivotalcf/2-2/operating/(.*)}, '/platform/application-service/2-2/opera
 r301 %r{/pivotalcf/2-1/operating/(.*)}, '/platform/application-service/2-1/operating/$1'
 r301 %r{/pivotalcf/2-0/operating/(.*)}, '/platform/application-service/2-0/operating/$1'
 
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-8/$1"
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-9/$1"
 r301 %r{/pivotalcf/2-8/(.*)}, '/platform/2-8/$1'
 r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
-r301 %r{/platform/(?![\d-]+)(.*)}, "/platform/2-8/$1"
+r301 %r{/platform/(?![\d-]+)(.*)}, "/platform/2-9/$1"
 r301 %r{/platform/2-6/(.*)}, '/pivotalcf/2-6/$1'
 r301 %r{/platform/2-5/(.*)}, '/pivotalcf/2-5/$1'
 r301 %r{/platform/2-4/(.*)}, '/pivotalcf/2-4/$1'
@@ -726,5 +730,27 @@ r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-2/$1"
 # Redirect 'archives' (contains PDFs)
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
 
-# Redirect PAS WOK unversioned to 2.6.0
-r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/pas-kubernetes/2-6-0-alpha-1/$1'
+# Redirect TAS for K8s v0.1 Beta
+r301 %r{/pas-kubernetes/0-1/(.*)}, '/tas-kubernetes/0-1/$1'
+# Redirect PAS for k8s unversioned to TAS for k8s 0.1
+r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
+# Redirect TAS for K8s unversioned to 0.1
+r301 %r{/tas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
+
+# Redirect for SSO docs
+r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+
+# Redirect for MySQL docs
+r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
+r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
+
+# Redirect for Compliance Scanner
+r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
+
+# Redirect to the most recent version of Build Service
+r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
+
+# Redirect unversioned and 'latest' calls for application-service-windows/ to 2-9
+r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-9/$1"
+r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/application-service-windows/2-9/$1"
