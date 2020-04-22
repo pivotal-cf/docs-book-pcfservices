@@ -736,6 +736,8 @@ r301 %r{/pas-kubernetes/0-1/(.*)}, '/tas-kubernetes/0-1/$1'
 r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
 # Redirect TAS for K8s unversioned to 0.1
 r301 %r{/tas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
+# Redirect PAS Kubernetes 2.6.0 alpha to current version of TAS Kubernetes
+r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
 
 # Redirect for SSO docs
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
@@ -755,5 +757,3 @@ r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
 r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-9/$1"
 r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/application-service-windows/2-9/$1"
 
-# Redirect PAS Kubernetes 2.6.0 alpha to current version of TAS Kubernetes
-301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
