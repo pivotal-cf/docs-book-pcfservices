@@ -129,7 +129,20 @@
   background-color: #1D428A;
   border-color: #1D428A;
   }
+
+  @media(max-width:993px) {
+    body[class*=__index] header.global-header .pivotal-logo {
+    max-width: 233px;
+    }
+  }
+
+  @media (max-width: 993px) {
+    header.global-header #info-search-bar {
+    min-height: 0;
+    }
+  }
   </style>
+
   <form method="get" id='search-home' action="/search">
     <input name="q" placeholder="Search docs" class="search-box" />
   </form>
