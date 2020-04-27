@@ -596,10 +596,13 @@ r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
 
+
+# Redirect for IPsec
+r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
+
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
 
 # Redirect unversioned and 'latest' calls for application-service-windows/ to 2-9
 r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-9/$1"
 r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/application-service-windows/2-9/$1"
-
