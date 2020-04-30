@@ -90,6 +90,7 @@ Noindex: /addon-ipsec/1-7/
 Noindex: /addon-ipsec/1-6/
 Noindex: /addon-ipsec/1-5/
 Noindex: /addon-ipsec/1-4/
+Noindex: /addon-fim/1-2/
 Noindex: /svc-sdk/service-backup/17-1/
 Noindex: /svc-sdk/service-backup/17-0/
 Noindex: /svc-sdk/service-backup/16-0/
@@ -198,6 +199,7 @@ Disallow: /addon-ipsec/1-7/
 Disallow: /addon-ipsec/1-6/
 Disallow: /addon-ipsec/1-5/
 Disallow: /addon-ipsec/1-4/
+Disallow: /addon-fim/1-2/
 Disallow: /svc-sdk/service-backup/17-1/
 Disallow: /svc-sdk/service-backup/17-0/
 Disallow: /svc-sdk/service-backup/16-0/
