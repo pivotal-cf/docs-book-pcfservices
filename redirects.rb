@@ -609,3 +609,6 @@ r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/applicati
 
 # Redirect for FIM
 r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-0/$1"
+
+# Redirect for SIM
+r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
