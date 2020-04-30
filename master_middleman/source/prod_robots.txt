@@ -32,6 +32,7 @@ Noindex: /svc-sdk/odb/0-18/
 Noindex: /svc-sdk/odb/0-17/
 Noindex: /svc-sdk/odb/0-16/
 Noindex: /svc-sdk/odb/0-15/
+Noindex: /p-identity/1-9/
 Noindex: /p-identity/1-8/
 Noindex: /p-identity/1-7/
 Noindex: /p-identity/1-6/
@@ -140,6 +141,7 @@ Disallow: /svc-sdk/odb/0-18/
 Disallow: /svc-sdk/odb/0-17/
 Disallow: /svc-sdk/odb/0-16/
 Disallow: /svc-sdk/odb/0-15/
+Disallow: /p-identity/1-9/
 Disallow: /p-identity/1-8/
 Disallow: /p-identity/1-7/
 Disallow: /p-identity/1-6/
