@@ -538,7 +538,7 @@ r301 %r{/solace-messaging/(.*)}, "/partners/solace-messaging/$1"
 r301 %r{/splunk/(.*)}, "/partners/splunk/$1"
 r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
 
-r301 %r{/redis/syslog.html}, '/redis/1-9/installing.html#syslog'
+
 
 r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
@@ -595,7 +595,6 @@ r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
 
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
-
 
 # Redirect for IPsec
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
