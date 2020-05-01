@@ -620,3 +620,6 @@ r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-3/$1"
 # Redirect for SSO docs
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+
+#Redirect for Antivirus
+r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
