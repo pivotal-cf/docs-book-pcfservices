@@ -1,6 +1,7 @@
 User-agent: *
 Noindex: /archives/
 Noindex: /pks/1-3/
+Noindex: /pivotalcf/2-6/
 Noindex: /pivotalcf/2-5/
 Noindex: /pivotalcf/2-4/
 Noindex: /pivotalcf/2-3/
@@ -113,6 +114,7 @@ Noindex: /scdf/1-0/
 
 Disallow: /archives/
 Disallow: /pks/1-3/
+Disallow: /pivotalcf/2-6/
 Disallow: /pivotalcf/2-5/
 Disallow: /pivotalcf/2-4/
 Disallow: /pivotalcf/2-3/
