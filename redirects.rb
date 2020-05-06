@@ -629,3 +629,7 @@ r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
 #Redirect paths without version number and are partial images to image
 r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
 r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+
+# Redirect for RabbitMQ for VMs
+#Redirect paths without version number and are partial images to image
+r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-18/$1"
