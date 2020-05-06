@@ -633,3 +633,6 @@ r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
 # Redirect for RabbitMQ for VMs
 #Redirect paths without version number and are partial images to image
 r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-18/$1"
+
+# Redirect for RabbitMQ for K8s
+r302 %r{/rabbitmq-kubernetes/(?![\d-]+)(.*)}, "/rabbitmq-kubernetes/0-7/$1"
