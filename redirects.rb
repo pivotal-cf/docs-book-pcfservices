@@ -623,3 +623,9 @@ r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
 #Redirect for Antivirus
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
+
+# Redirects for MySQL
+#Redirect paths without version number to latest
+#Redirect paths without version number and are partial images to image
+r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
+r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
