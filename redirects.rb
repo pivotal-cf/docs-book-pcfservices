@@ -639,6 +639,3 @@ r302 %r{/rabbitmq-kubernetes/(?![\d-]+)(.*)}, "/rabbitmq-kubernetes/0-7/$1"
 
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
-
-#Redirect for ODB
-r302 %r{/svc-sdk/odb/(?![\d-]|[p][a][r][t]+)(.*)}, "/svc-sdk/odb/0-39/$1"
