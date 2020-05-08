@@ -391,16 +391,6 @@ r301 %r{/mobile/push/(.*)}, '/push/'
 r301 'v1_6_0/api/tags/index.html', '/v1_6_0/api/topics/index.html'
 r301 %r{^/push/(?![\d-]+)(.*)}, "/push/1-10/$1"
 
-
-#For Kubernates Service Manager
-
-r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-8/$1"
-
-#MySQL
-
-r301 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
-r301 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
-
 r301 %r{/pivotalcf/packaging/(.*)}, '/tiledev/$1'
 r301 %r{/pivotalcf/partners/(.*)}, '/tiledev/$1'
 
@@ -590,8 +580,13 @@ r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
 # Redirect for MySQL docs
-r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
-r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-7/$1"
+r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+
+
+#For Kubernates Service Manager
+
+r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-8/$1"
 
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
@@ -614,12 +609,6 @@ r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-
 
 # Redirect for Redis
 r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-3/$1"
-
-# Redirect for SSO
-
-# Redirect for SSO docs
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
 #Redirect for Antivirus
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
