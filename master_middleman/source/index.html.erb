@@ -575,6 +575,68 @@ addon:
     - name:  Pivotal Telemetry Collector
       url: https://docs.pivotal.io/telemetry/index.html
       logo: telemetry-logo.png
+misc_sections:
+- name: Software Development Kits and Guides
+  id: services-sdk
+  default_logo: icon_pcfServicesSDK@2x.png
+  tiles:
+  - name: On-Demand Services SDK
+    url: https://docs.pivotal.io/svc-sdk/odb
+  - name: PCF <br>Service Backup SDK
+    url: https://docs.pivotal.io/svc-sdk/service-backup
+  - name: PCF <br>Service Metrics SDK
+    url: https://docs.pivotal.io/svc-sdk/service-metrics
+  - name: Ops Manager Tile Developer Guide
+    url: https://docs.pivotal.io/tiledev/index.html
+- name: Open Source
+  id: oss
+  style: logo_only
+  tiles: 
+  - name: Cloud Foundry BOSH
+    url: https://bosh.io/docs
+    logo: CFF-BOSH-Full-Color-1-768x279.png
+  - name: Cloud Foundry Application Runtime
+    url: https://cloudfoundry.org/application-runtime/
+    logo: CFF-Application-Runtime-Full-Color-768x209.png
+  - name: Cloud Foundry Container Runtime
+    url: https://cloudfoundry.org/container-runtime/
+    logo: CFF-Container-Runtime-Full-Color-768x230.png
+  - name: Spring
+    url: https://spring.io/docs
+    logo: OSS_Spring.png
+  - name: Concourse
+    url: https://concourse-ci.org
+    logo: Concourse-Full-Color-768x264.png
+  - name: CredHub
+    url: https://docs.cloudfoundry.org/credhub/
+    logo: credhub.png
+  - name: Redis
+    url: https://redis.docs.pivotal.io/index.html
+    logo: OSS_Redis.png
+  - name: Rabbit MQ
+    url: https://www.rabbitmq.com/documentation.html
+    logo: OSS_RabbitMQ.png
+  - name: Mad Lib
+    url: https://madlib.incubator.apache.org
+    logo: OSS_MADlib.png
+- name: Legacy Products
+  id: legacy
+  style: text_only
+  tiles:
+  - name: Pivotal Cloud Foundry JMX Bridge
+    url: https://docs.pivotal.io/jmx-bridge/index.html
+  - name: Pivotal Cloud Foundry Log Search
+    url: https://docs.pivotal.io/logsearch/index.html
+  - name: Pivotal GemFire for PCF
+    url: https://docs.pivotal.io/gemfire-cf/index.html
+  - name: Pivotal HDB
+    url: https://hdb.docs.pivotal.io/
+  - name: Pivotal HD
+    url: https://pivotalhd.docs.pivotal.io/
+  - name: Pivotal Redis
+    url: https://redis.docs.pivotal.io/index.html
+  - name: Pivotal Web Server
+    url: https://webserver.docs.pivotal.io/
 ---
 
 <div class="main-container">
@@ -725,262 +787,180 @@ addon:
   <form method="get" id='search-home' action="/search">
     <input name="q" placeholder="Search docs" class="search-box" />
   </form>
+  
+
   <div id="pcf-landing" class="main">
 
 
 
+    <%# -------------- FEATURED SERVICE ------------- %>
 
-
-<%# -------------- FEATURED SERVICE ------------- %>
-
-<% current_page.data.featured_service do |featured_service| %>
-  <div class="docs-home-panel box-shadow-1 border-rounded mbxl grid paxl">
-    <div class="col">
-      <div class="grid">
-        <div class="col col-2 col-md"><img src="images/<%= featured_service.logo ? featured_service.logo : current_page.data.default_logo %>" height="64" alt="<%= featured_service.name %> logo"></div>
-        <div class="col col-md pvxl">
-          <div class="configure">
-            <div class="prodname">
-              <h2><%= featured_service.name %></h2>
-              <p class="type-dark-4 h6"><%= featured_service.desc %></p><br />
-              <a href="<%= featured_service.button.url %>" class="btn btn-default" type="button" aria-label="Default">
-                <span class="btn-inner-content">
-                  <%= featured_service.button.name.upcase %>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col col-8 col-sm">
-          <% featured_service.links.each do |link|  %>
-            <h6><%= link.open_source ? "Open Source: " : "" %><a href="<%= link.url %>"><%= link.name %></a></h6>
-          <% end %>
-        </div>
-      </div>
-    </div>
-  </div>
-<% end %>
-
-
-
-
-<%# ---------- TOP SERVICES ------------ %>
-
-<%# Record starting point so that row can reset when you configure a different
-number of items in a row. %>
-<% @starting_point = 0 %>
-
-<div class="grid">
-<% current_page.data.top_services.each_with_index do |top_service, index| %>
-
-<%# Default number of items in a row is 3. Can be changed in Frontmatter. %>
-<% @num_in_row = top_service.num_in_row? ? top_service.num_in_row : 3 %>
-
-
-<div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
-  <div class="grid">
-    <div class="col col-4"><img src="images/<%= top_service.logo ? top_service.logo : current_page.data.default_logo %>" height="64" alt="<%= top_service.name %> logo"></div>
-    <div class="col">
-      <h4><%= top_service.name %></h4>
-      <h6 class="type-dark-4"><%= top_service.desc %></h6>
-      <% if top_service.links? %>
-        <% top_service.links.each do |link| %>
-          <h6><%= link.open_source? ? "Open Source: " : "" %><a href="<%= link.url %>"><%= link.name %></a></h6>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-</div>
-<% if (index - @starting_point) % @num_in_row == (@num_in_row - 1) and index != 0 and index < current_page.data.top_services.length - 1 %>
-  <% @starting_point = index + 1 %>
-  </div>
-  <div class="grid">
-<% end %>
-<% end %>
-</div>
-
-
-
-
-<%# ------------ ADD-ON SECTIONS ------------- %>
-
-<% current_page.data.addon do |addon| %>
-
-<br />
-<h2 id="add-ons"><%= addon.name %></h2>
-
-<% addon.addon_sections.each do |addon_section| %>
-<br />
-<div class="grid">
-  <div class="col col-8 col-sm col-lg pvxl">
-    <h3><%= addon_section.name  %></h3>
-    <h6><%= addon_section.desc %></h6></div>
-      <div class="col">
-        <div class="grid">
-          <% addon_section.addon_services.each do |addon_service| %>
-          <div class="col col-12 col-sm">
-            <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="<%= addon_service.url %>">
-              <div class="grid docs-link-panel">
-                <div class="col col-4 col-middle"><img src="images/<%= addon_service.logo ? addon_service.logo : current_page.data.default_logo %>" height="64" alt="<%= addon_service.name %> logo"></div>
-                <div class="col col-middle h6 em-high type-neutral-1">
-                  <%= addon_service.name %>
-                </div>
-
-                <div class="col col-fixed col-bottom">
-                  <% if addon_service.is_partner? %>
-                    <div class="type-accent-5 txt-b h6">PARTNER</div>
-                  <% else %>
-                    <div class="type-brand-8 txt-b h6">VMware</div>
-                  <% end %>
+    <% current_page.data.featured_service do |featured_service| %>
+      <div class="docs-home-panel box-shadow-1 border-rounded mbxl grid paxl">
+        <div class="col">
+          <div class="grid">
+            <div class="col col-2 col-md"><img src="images/<%= featured_service.logo ? featured_service.logo : current_page.data.default_logo %>" height="64" alt="<%= featured_service.name %> logo"></div>
+            <div class="col col-md pvxl">
+              <div class="configure">
+                <div class="prodname">
+                  <h2><%= featured_service.name %></h2>
+                  <p class="type-dark-4 h6"><%= featured_service.desc %></p><br />
+                  <a href="<%= featured_service.button.url %>" class="btn btn-default" type="button" aria-label="Default">
+                    <span class="btn-inner-content">
+                      <%= featured_service.button.name.upcase %>
+                    </span>
+                  </a>
                 </div>
               </div>
-            </a>
+            </div>
+            <div class="col col-8 col-sm">
+              <% featured_service.links.each do |link|  %>
+                <h6><%= link.open_source ? "Open Source: " : "" %><a href="<%= link.url %>"><%= link.name %></a></h6>
+              <% end %>
+            </div>
           </div>
+        </div>
+      </div>
+    <% end %>
+
+
+
+
+    <%# ---------- TOP SERVICES ------------ %>
+
+    <%# Record starting point so that row can reset when you configure a different
+    number of items in a row. %>
+    <% @starting_point = 0 %>
+
+    <div class="grid">
+    <% current_page.data.top_services.each_with_index do |top_service, index| %>
+
+    <%# Default number of items in a row is 3. Can be changed in Frontmatter. %>
+    <% @num_in_row = top_service.num_in_row? ? top_service.num_in_row : 3 %>
+
+
+    <div class="docs-home-panel pvxl phxl box-shadow-1 border-rounded col mbxl mhl">
+      <div class="grid">
+        <div class="col col-4"><img src="images/<%= top_service.logo ? top_service.logo : current_page.data.default_logo %>" height="64" alt="<%= top_service.name %> logo"></div>
+        <div class="col">
+          <h4><%= top_service.name %></h4>
+          <h6 class="type-dark-4"><%= top_service.desc %></h6>
+          <% if top_service.links? %>
+            <% top_service.links.each do |link| %>
+              <h6><%= link.open_source? ? "Open Source: " : "" %><a href="<%= link.url %>"><%= link.name %></a></h6>
+            <% end %>
           <% end %>
         </div>
       </div>
     </div>
+    <% if (index - @starting_point) % @num_in_row == (@num_in_row - 1) and index != 0 and index < current_page.data.top_services.length - 1 %>
+      <% @starting_point = index + 1 %>
+      </div>
+      <div class="grid">
+    <% end %>
+    <% end %>
+    </div>
+
+
+
+
+    <%# ------------ ADD-ON SECTIONS ------------- %>
+
+    <% current_page.data.addon do |addon| %>
+
+    <br />
+    <h2 id="add-ons"><%= addon.name %></h2>
+
+    <% addon.addon_sections.each do |addon_section| %>
+    <br />
+    <div class="grid">
+      <div class="col col-8 col-sm col-lg pvxl">
+        <h3><%= addon_section.name  %></h3>
+        <h6><%= addon_section.desc %></h6></div>
+          <div class="col">
+            <div class="grid">
+              <% addon_section.addon_services.each do |addon_service| %>
+              <div class="col col-12 col-sm">
+                <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="<%= addon_service.url %>">
+                  <div class="grid docs-link-panel">
+                    <div class="col col-4 col-middle"><img src="images/<%= addon_service.logo ? addon_service.logo : current_page.data.default_logo %>" height="64" alt="<%= addon_service.name %> logo"></div>
+                    <div class="col col-middle h6 em-high type-neutral-1">
+                      <%= addon_service.name %>
+                    </div>
+
+                    <div class="col col-fixed col-bottom">
+                      <% if addon_service.is_partner? %>
+                        <div class="type-accent-5 txt-b h6">PARTNER</div>
+                      <% else %>
+                        <div class="type-brand-8 txt-b h6">VMware</div>
+                      <% end %>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+
+
+    <%# ---------- OTHER SECTIONS -------------- %>
+
+    <% current_page.data.misc_sections.each do |misc_section| %>
+
+    <br />
+    <h2 id="<%= misc_section.id %>"><%= misc_section.name %></h2>
+
+    <br />
+
+    <% if misc_section.style == "text_only" %>
+      <ul>
+
+        <% misc_section.tiles.each do |link| %>
+          <li class="h6 em-high type-neutral-1">
+            <a href="<%= link.url %>"><%= link.name %></a>
+          </li>
+        <% end %>
+
+      </ul>
+
+    <% else%>
+
+    <div class="grid">
+
+      <% misc_section.tiles.each_with_index do |tile, index| %>
+      <div class="col col-8 col-sm">
+
+        <% if misc_section.style == "logo_only" %>
+          <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="<%= tile.logo %>">
+            <div class="grid docs-link-panel">
+              <div class="logo-icon col-middle"><img src="images/<%= tile.logo? ? tile.logo : misc_section.default_logo? ? misc_section.default_logo : current_page.data.default_logo  %>" height="64" alt="<%= tile.name%>" title="<%= tile.name %>"></div>
+            </div>
+          </a>
+
+        <% else %>
+          <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="<%= tile.url %>">
+            <div class="grid docs-link-panel">
+              <div class="col col-4 col-middle"><img src="images/<%= tile.logo? ? tile.logo : misc_section.default_logo? ? misc_section.default_logo : current_page.data.default_logo  %>" height="64" alt=""></div>
+              <div class="col col-middle h6 em-high type-neutral-1">
+                <%= tile.name %>
+              </div>
+            </div>
+          </a>
+        <% end %>
+      </div>
+      <% if index % 3 == 2 and index != 0 and index < misc_section.tiles.length - 1 %>
+        </div>
+        <div class="grid">
+      <% end %>
+    <% end %>
+
+    </div>
+
+
+    <% end %>
   <% end %>
-<% end %>
-
-
-
-    <br />
-    <h2 id="services-sdk">Software Development Kits and Guides</h2>
-
-    <br />
-    <div class="grid">
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://docs.pivotal.io/svc-sdk/odb">
-          <div class="grid docs-link-panel">
-            <div class="col col-4 col-middle"><img src="images/icon_pcfServicesSDK@2x.png" height="64" alt=""></div>
-            <div class="col col-middle h6 em-high type-neutral-1">
-              On-Demand Services SDK
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://docs.pivotal.io/svc-sdk/service-backup">
-          <div class="grid docs-link-panel">
-            <div class="col col-4 col-middle"><img src="images/icon_pcfServicesSDK@2x.png" height="64" alt=""></div>
-            <div class="col col-middle h6 em-high type-neutral-1">
-              PCF <br>Service Backup SDK
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://docs.pivotal.io/svc-sdk/service-metrics">
-          <div class="grid docs-link-panel">
-            <div class="col col-4 col-middle"><img src="images/icon_pcfServicesSDK@2x.png" height="64" alt=""></div>
-            <div class="col col-middle h6 em-high type-neutral-1">
-              PCF <br>Service Metrics SDK
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://docs.pivotal.io/tiledev/index.html">
-          <div class="grid docs-link-panel">
-            <div class="col col-4 col-middle"><img src="images/icon_pcfServicesSDK@2x.png" height="64" alt=""></div>
-            <div class="col col-middle h6 em-high type-neutral-1">
-              Ops Manager Tile Developer Guide
-            </div>
-          </div>
-        </a>
-    </div>
-    </div>
-
-    <br />
-    <h2 id="oss">Open Source</h2>
-
-    <br />
-    <div class="grid">
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://bosh.io/docs">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/CFF-BOSH-Full-Color-1-768x279.png" height="64" alt="Cloud Foundry BOSH"></div>
-          </div>
-        </a>
-      </div>
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://cloudfoundry.org/application-runtime/">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/CFF-Application-Runtime-Full-Color-768x209.png" height="64" alt="Cloud Foundry Application Runtime"></div>
-          </div>
-        </a>
-      </div>
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://cloudfoundry.org/container-runtime/">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/CFF-Container-Runtime-Full-Color-768x230.png" height="64" alt="Cloud Foundry Container Runtime"></div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://spring.io/docs">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/OSS_Spring.png" height="64" alt="Spring"></div>
-          </div>
-        </a>
-      </div>
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://concourse-ci.org">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/Concourse-Full-Color-768x264.png" height="64" alt="Concourse"></div>
-          </div>
-        </a>
-      </div>
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://docs.cloudfoundry.org/credhub/">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/credhub.png" height="64" alt="CredHub"></div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://redis.docs.pivotal.io/index.html">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/OSS_Redis.png" height="64" alt="Redis"></div>
-          </div>
-        </a>
-      </div>
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://www.rabbitmq.com/documentation.html">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/OSS_RabbitMQ.png" height="64" alt="Rabbit MQ"></div>
-          </div>
-        </a>
-      </div>
-      <div class="col col-8 col-sm">
-        <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="https://madlib.incubator.apache.org">
-          <div class="grid docs-link-panel">
-            <div class="logo-icon col-middle"><img src="images/OSS_MADlib.png" height="64" alt="Mad Lib"></div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <br />
-    <h2 id="legacy">Legacy Products</h2>
-
-    <br />
-    <ul>
-      <li class="h6 em-high type-neutral-1"><a href="https://docs.pivotal.io/jmx-bridge/index.html">Pivotal Cloud Foundry JMX Bridge</a></li>
-      <li class="h6 em-high type-neutral-1"><a href="https://docs.pivotal.io/logsearch/index.html">Pivotal Cloud Foundry Log Search</a></li>
-      <li class="h6 em-high type-neutral-1"><a href="https://docs.pivotal.io/gemfire-cf/index.html">Pivotal GemFire for PCF</a></li>
-      <li class="h6 em-high type-neutral-1"><a href="https://hdb.docs.pivotal.io/">Pivotal HDB</a></li>
-      <li class="h6 em-high type-neutral-1"><a href="https://pivotalhd.docs.pivotal.io/">Pivotal HD</a></li>
-      <li class="h6 em-high type-neutral-1"><a href="https://redis.docs.pivotal.io/index.html">Pivotal Redis</a></li>
-      <li class="h6 em-high type-neutral-1"><a href="https://webserver.docs.pivotal.io/">Pivotal Web Server</a></li>
-    </ul>
-
   </div>
 </div>
