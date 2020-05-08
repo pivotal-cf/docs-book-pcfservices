@@ -911,7 +911,9 @@ misc_sections:
     <% current_page.data.misc_sections.each do |misc_section| %>
 
     <br />
-    <h2 id="<%= misc_section.id %>"><%= misc_section.name %></h2>
+    <h2 id="<%= misc_section.id ? misc_section.id : misc_section.name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') %>">
+      <%= misc_section.name %>
+    </h2>
 
     <br />
 
