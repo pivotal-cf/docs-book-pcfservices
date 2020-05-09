@@ -936,7 +936,7 @@ misc_sections:
       <div class="col col-8 col-sm">
 
         <% if misc_section.style == "logo_only" %>
-          <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="<%= tile.logo %>">
+          <a class="docs-home-panel box-shadow-1 border-rounded col mbxl" href="<%= tile.url %>">
             <div class="grid docs-link-panel">
               <div class="logo-icon col-middle"><img src="images/<%= tile.logo? ? tile.logo : misc_section.default_logo? ? misc_section.default_logo : current_page.data.default_logo  %>" height="64" alt="<%= tile.name%>" title="<%= tile.name %>"></div>
             </div>
