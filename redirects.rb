@@ -208,13 +208,7 @@ r301 %r{/ingress-router/0-2/(.*)}, "/platform/ingress-router/0-2/$1"
 r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
 
-# service instance manager redirects
-r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
 
-# Redirects to docs-book-services-sdk
-r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
-r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
-r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 # r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-6/buildpacks/$1'
@@ -432,10 +426,7 @@ r301 '/mobile/', 'https://network.pivotal.io/products/api-gateway'
 r301 %r{/appmon/(.*)}, '/dynatrace/index.html'
 r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
-# Link structure changed for ODB, service-backup and service-metrics
-r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
-r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/$3"
-r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-backup/$1-$2/$3"
+
 
 # Redirect older versions to PDFs
 r301 %r{/pivotalcf/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.2.pdf'
@@ -534,10 +525,6 @@ r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
 r301 '/platform/2-7/getstarted/pcf-docs.html', '/platform/2-7/'
 
-r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf'
-r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
-r301 %r{/push/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf'
-r301 %r{/push/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf'
 
 r301 %r{/pcf/nist/(.*)}, '/nist/$1'
 
@@ -575,25 +562,6 @@ r301 %r{/tas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
 # Redirect PAS Kubernetes 2.6.0 alpha to current version of TAS Kubernetes
 r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
 
-# Redirect for SSO docs
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
-
-# Redirect for MySQL docs
-r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
-r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
-
-
-#For Kubernates Service Manager
-
-r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-8/$1"
-
-# Redirect for Compliance Scanner
-r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
-
-# Redirect for IPsec
-r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
-
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
 
@@ -601,33 +569,63 @@ r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
 r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-9/$1"
 r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/application-service-windows/2-9/$1"
 
-# Redirect for FIM
-r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-0/$1"
 
-# Redirect for SIM
-r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
 
-# Redirect for Redis
-r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-3/$1"
+# Services
 
-#Redirect for Antivirus
+# Redirect for Antivirus
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
-
-# Redirects for MySQL
-#Redirect paths without version number to latest
-#Redirect paths without version number and are partial images to image
-r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
-r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
-
-# Redirect for RabbitMQ for VMs
-#Redirect paths without version number and are partial images to image
-r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-18/$1"
-
-# Redirect for RabbitMQ for K8s
-r302 %r{/rabbitmq-kubernetes/(?![\d-]+)(.*)}, "/rabbitmq-kubernetes/0-7/$1"
 
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
 
-#Redirect for ODB
+# Redirect for Developer Console
+r302 %r{/developer-console/(?![\d-]+)(.*)}, "/developer-console/0-alpha/$1"
+
+# Redirect for FIM
+r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-0/$1"
+
+# Redirect for IPsec
+r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
+
+# Redirect for Kubernates Service Manager
+r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-8/$1"
+
+# Redirects for MySQL
+r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+
+# Redirect for ODB
 r302 %r{/svc-sdk/odb/(?![\d-]|[p][a][r][t]+)(.*)}, "/svc-sdk/odb/0-39/$1"
+
+# Redirect for RabbitMQ for K8s
+r302 %r{/rabbitmq-kubernetes/(?![\d-]+)(.*)}, "/rabbitmq-kubernetes/0-7/$1"
+
+# Redirect for RabbitMQ for VMs
+r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-18/$1"
+
+# Redirect for Redis
+r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-3/$1"
+
+# Redirect for SIM
+r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
+
+# Redirects for SSO
+r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+
+# Link structure changed for ODB, service-backup and service-metrics
+r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
+r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/$3"
+r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-backup/$1-$2/$3"
+
+# Redirects to docs-book-services-sdk
+r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
+r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
+r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
+
+# Redirect old Push notifications versions to PDFs
+r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf'
+r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
+r301 %r{/push/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf'
+r301 %r{/push/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf'
