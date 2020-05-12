@@ -629,3 +629,8 @@ r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notificati
 r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
 r301 %r{/push/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf'
 r301 %r{/push/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf'
+# Redirect old IPsec versions to PDFs
+r301 %r{/addon-ipsec/1-8/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.8.pdf'
+r301 %r{/addon-ipsec/1-7/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.7.pdf'
+r301 %r{/addon-ipsec/1-6/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.6.pdf'
+r301 %r{/addon-ipsec/1-5/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.5.pdf'
