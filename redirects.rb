@@ -325,14 +325,9 @@ r301 %r{/43210/(.*)}, 'http://gpdb.docs.pivotal.io/43210/$1'
 r301 %r{/43220/(.*)}, 'http://gpdb.docs.pivotal.io/43220/$1'
 r301 %r{/43230/(.*)}, 'http://gpdb.docs.pivotal.io/43230/$1'
 r301 %r{/43240/(.*)}, 'http://gpdb.docs.pivotal.io/43240/$1'
-r301 %r{/500/(.*)}, 'http://gpdb.docs.pivotal.io/500/$1'
-r301 %r{/510/(.*)}, 'http://gpdb.docs.pivotal.io/510/$1'
-r301 %r{/520/(.*)}, 'http://gpdb.docs.pivotal.io/520/$1'
-r301 %r{/530/(.*)}, 'http://gpdb.docs.pivotal.io/530/$1'
-r301 %r{/540/(.*)}, 'http://gpdb.docs.pivotal.io/540/$1'
-r301 %r{/550/(.*)}, 'http://gpdb.docs.pivotal.io/550/$1'
-r301 %r{/560/(.*)}, 'http://gpdb.docs.pivotal.io/560/$1'
-r301 %r{/570/(.*)}, 'http://gpdb.docs.pivotal.io/570/$1'
+r301 %r{/5(.*)}, 'http://gpdb.docs.pivotal.io/5$1'
+r301 %r{/6-(.*)}, 'http://gpdb.docs.pivotal.io/6-$1'
+
 
 # For GPCC
 r301 '/supported-platforms/gpcc.html/', 'https://gpcc.docs.pivotal.io/supported-platforms/gpcc.html'
