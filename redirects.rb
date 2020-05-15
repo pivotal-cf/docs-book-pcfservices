@@ -597,7 +597,7 @@ r302 %r{/svc-sdk/odb/(?![\d-]|[p][a][r][t]+)(.*)}, "/svc-sdk/odb/0-39/$1"
 r302 %r{/rabbitmq-kubernetes/(?![\d-]+)(.*)}, "/rabbitmq-kubernetes/0-7/$1"
 
 # Redirect for RabbitMQ for VMs
-r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-18/$1"
+r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-19/$1"
 
 # Redirect for Redis
 r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-3/$1"
