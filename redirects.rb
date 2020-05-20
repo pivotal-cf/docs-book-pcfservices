@@ -620,25 +620,19 @@ r301 %r{/on-demand-service-broker/(?![\d-]+)(.*)}, "/svc-sdk/odb/$1"
 r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
 r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
 
-# Redirect old Push notifications versions to PDFs
-r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf'
-r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
-r301 %r{/push/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf'
-r301 %r{/push/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf'
+# Redirect old Antivirus versions to PDFs
+r301 %r{/addon-antivirus/1-3/(.*)}, 'http://docs.pivotal.io/archives/addon-antivirus-1.3.pdf'
+r301 %r{/addon-antivirus/1-2/(.*)}, 'http://docs.pivotal.io/archives/addon-antivirus-1.2.pdf'
+# Redirect old Identity versions to PDFs
+r301 %r{/p-identity/1-1/(.*)}, "http://docs.pivotal.io/archives/docs-identity-1.1.pdf"
+r301 %r{/p-identity/1-2/(.*)}, "http://docs.pivotal.io/archives/docs-identity-1.2.pdf"
+r301 %r{/p-identity/1-3/(.*)}, "http://docs.pivotal.io/archives/docs-identity-1.3.pdf"
+r301 %r{/p-identity/1-4/(.*)}, "http://docs.pivotal.io/archives/docs-identity-1.4.pdf"
 # Redirect old IPsec versions to PDFs
 r301 %r{/addon-ipsec/1-8/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.8.pdf'
 r301 %r{/addon-ipsec/1-7/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.7.pdf'
 r301 %r{/addon-ipsec/1-6/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.6.pdf'
 r301 %r{/addon-ipsec/1-5/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.5.pdf'
-# Redirect old RabbitMQ versions to PDFs
-r301 %r{/rabbitmq-cf/1-12/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.12.pdf"
-r301 %r{/rabbitmq-cf/1-11/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.11.pdf"
-r301 %r{/rabbitmq-cf/1-10/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.10.pdf"
-r301 %r{/rabbitmq-cf/1-9/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.9.pdf"
-r301 %r{/rabbitmq-cf/1-8/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.8.pdf"
-r301 %r{/rabbitmq-cf/1-7/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.7.pdf"
-r301 %r{/rabbitmq-cf/1-6/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.6.pdf"
-r301 %r{/rabbitmq-cf/1-5/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.5.pdf"
 # Redirect old MySQL versions to PDFs
 r301 %r{/p-mysql/2-2/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.2.pdf'
 r301 %r{/p-mysql/2-1/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.1.pdf'
@@ -653,5 +647,30 @@ r301 %r{/svc-sdk/odb/0-17/(.*)}, "http://docs.pivotal.io/archives/odb-0.17.pdf"
 r301 %r{/svc-sdk/odb/0-18/(.*)}, "http://docs.pivotal.io/archives/odb-0.18.pdf"
 r301 %r{/svc-sdk/odb/0-19/(.*)}, "http://docs.pivotal.io/archives/odb-0.19.pdf"
 r301 %r{/svc-sdk/odb/0-20/(.*)}, "http://docs.pivotal.io/archives/odb-0.20.pdf"
+# Redirect old Push notifications versions to PDFs
+r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf'
+r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
+r301 %r{/push/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf'
+r301 %r{/push/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf'
+# Redirect old RabbitMQ versions to PDFs
+r301 %r{/rabbitmq-cf/1-12/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.12.pdf"
+r301 %r{/rabbitmq-cf/1-11/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.11.pdf"
+r301 %r{/rabbitmq-cf/1-10/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.10.pdf"
+r301 %r{/rabbitmq-cf/1-9/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.9.pdf"
+r301 %r{/rabbitmq-cf/1-8/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.8.pdf"
+r301 %r{/rabbitmq-cf/1-7/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.7.pdf"
+r301 %r{/rabbitmq-cf/1-6/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.6.pdf"
+r301 %r{/rabbitmq-cf/1-5/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.5.pdf"
+# Redirect old Redis versions to PDFs
+r301 %r{/redis/1-13/(.*)}, 'http://docs.pivotal.io/archives/redis-1.13.pdf'
+r301 %r{/redis/1-12/(.*)}, 'http://docs.pivotal.io/archives/redis-1.12.pdf'
+r301 %r{/redis/1-11/(.*)}, 'http://docs.pivotal.io/archives/redis-1.11.pdf'
+r301 %r{/redis/1-10/(.*)}, 'http://docs.pivotal.io/archives/redis-1.10.pdf'
+r301 %r{/redis/1-9/(.*)}, 'http://docs.pivotal.io/archives/redis-1.9.pdf'
+r301 %r{/redis/1-8/(.*)}, 'http://docs.pivotal.io/archives/redis-1.8.pdf'
+r301 %r{/redis/1-7/(.*)}, 'http://docs.pivotal.io/archives/redis-1.7.pdf'
+r301 %r{/redis/1-6/(.*)}, 'http://docs.pivotal.io/archives/redis-1.6.pdf'
+r301 %r{/redis/1-5/(.*)}, 'http://docs.pivotal.io/archives/redis-1.5.pdf'
+r301 %r{/redis/1-4/(.*)}, 'http://docs.pivotal.io/archives/redis-1.4.pdf'
 # Redirect old Service Metrics versions to PDFs
 r301 %r{/svc-sdk/service-metrics/1-4(.*)}, "https://docs.pivotal.io/archives/service-metrics-pcf-1.4.3.pdf"
