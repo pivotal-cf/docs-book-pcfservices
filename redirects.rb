@@ -578,6 +578,9 @@ r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1
 # Redirect for Developer Console
 r302 %r{/developer-console/(?![\d-]+)(.*)}, "/developer-console/0-alpha/$1"
 
+# Redirect for Event Alerts
+r301 %r{/event-alerts/(?![\d-]+)(.*)}, "/event-alerts/1-2/$1"
+
 # Redirect for FIM
 r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-0/$1"
 
