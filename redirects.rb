@@ -563,7 +563,8 @@ r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
 # Redirect unversioned and 'latest' calls for application-service-windows/ to 2-9
 r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-9/$1"
 r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/application-service-windows/2-9/$1"
-
+# Redirect Healthwatch
+r301 %r{/pcf-healthwatch/(.*)}, '/platform/healthwatch/$1'
 
 
 # Services
@@ -629,8 +630,6 @@ r301 %r{/addon-ipsec/1-8/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.8
 r301 %r{/addon-ipsec/1-7/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.7.pdf'
 r301 %r{/addon-ipsec/1-6/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.6.pdf'
 r301 %r{/addon-ipsec/1-5/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.5.pdf'
-# Redirect healthwatch
-r301 %r{/pcf-healthwatch/(.*)}, '/platform/healthwatch/$1'
 # Redirect old RabbitMQ versions to PDFs
 r301 %r{/rabbitmq-cf/1-12/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.12.pdf"
 r301 %r{/rabbitmq-cf/1-11/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.11.pdf"
@@ -640,3 +639,10 @@ r301 %r{/rabbitmq-cf/1-8/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1
 r301 %r{/rabbitmq-cf/1-7/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.7.pdf"
 r301 %r{/rabbitmq-cf/1-6/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.6.pdf"
 r301 %r{/rabbitmq-cf/1-5/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.5.pdf"
+# Redirect old MySQL versions to PDFs
+r301 %r{/p-mysql/2-2/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.2.pdf'
+r301 %r{/p-mysql/2-1/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.1.pdf'
+r301 %r{/p-mysql/2-0/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.0.pdf'
+r301 %r{/p-mysql/1-9/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.9.pdf'
+r301 %r{/p-mysql/1-8/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.8.pdf'
+r301 %r{/p-mysql/1-7/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.7.pdf'
