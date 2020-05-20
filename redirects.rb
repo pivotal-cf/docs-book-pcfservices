@@ -591,6 +591,9 @@ r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-8/$1"
 r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
 r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
 
+# Redirect for ODB
+r302 %r{/svc-sdk/odb/(?![\d-]|[p][a][r][t]+)(.*)}, "/svc-sdk/odb/0-39/$1"
+
 # Redirect for RabbitMQ for K8s
 r302 %r{/rabbitmq-kubernetes/(?![\d-]+)(.*)}, "/rabbitmq-kubernetes/0-7/$1"
 
