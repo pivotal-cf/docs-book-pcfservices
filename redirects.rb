@@ -646,3 +646,10 @@ r301 %r{/p-mysql/2-0/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.0.pdf'
 r301 %r{/p-mysql/1-9/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.9.pdf'
 r301 %r{/p-mysql/1-8/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.8.pdf'
 r301 %r{/p-mysql/1-7/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.7.pdf'
+# Redirect old ODB versions to PDFs
+r301 %r{/svc-sdk/odb/0-15/(.*)}, "http://docs.pivotal.io/archives/odb-0.15.pdf"
+r301 %r{/svc-sdk/odb/0-16/(.*)}, "http://docs.pivotal.io/archives/odb-0.16.pdf"
+r301 %r{/svc-sdk/odb/0-17/(.*)}, "http://docs.pivotal.io/archives/odb-0.17.pdf"
+r301 %r{/svc-sdk/odb/0-18/(.*)}, "http://docs.pivotal.io/archives/odb-0.18.pdf"
+r301 %r{/svc-sdk/odb/0-19/(.*)}, "http://docs.pivotal.io/archives/odb-0.19.pdf"
+r301 %r{/svc-sdk/odb/0-20/(.*)}, "http://docs.pivotal.io/archives/odb-0.20.pdf"
