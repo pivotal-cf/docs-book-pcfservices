@@ -653,3 +653,5 @@ r301 %r{/svc-sdk/odb/0-17/(.*)}, "http://docs.pivotal.io/archives/odb-0.17.pdf"
 r301 %r{/svc-sdk/odb/0-18/(.*)}, "http://docs.pivotal.io/archives/odb-0.18.pdf"
 r301 %r{/svc-sdk/odb/0-19/(.*)}, "http://docs.pivotal.io/archives/odb-0.19.pdf"
 r301 %r{/svc-sdk/odb/0-20/(.*)}, "http://docs.pivotal.io/archives/odb-0.20.pdf"
+# Redirect old Service Metrics versions to PDFs
+r301 %r{/svc-sdk/service-metrics/1-4(.*)}, "https://docs.pivotal.io/archives/service-metrics-pcf-1.4.3.pdf"
