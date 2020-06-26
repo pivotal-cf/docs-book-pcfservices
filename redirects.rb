@@ -558,7 +558,7 @@ r301 %r{/tas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-1/$1'
 r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
 
 # Redirect to the most recent version of Build Service
-r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-1-0/$1"
+r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-2-0/$1"
 
 # Redirect unversioned and 'latest' calls for application-service-windows/ to 2-9
 r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-9/$1"
