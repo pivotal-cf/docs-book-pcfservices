@@ -446,7 +446,7 @@ r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 
-r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-9/$1"
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/platform/application-service/2-10/$1"
 r301 %r{/pivotalcf/2-6/operating/(.*)}, '/platform/application-service/2-6/operating/$1'
 r301 %r{/pivotalcf/2-5/operating/(.*)}, '/platform/application-service/2-5/operating/$1'
 r301 %r{/pivotalcf/2-4/operating/(.*)}, '/platform/application-service/2-4/operating/$1'
@@ -455,10 +455,11 @@ r301 %r{/pivotalcf/2-2/operating/(.*)}, '/platform/application-service/2-2/opera
 r301 %r{/pivotalcf/2-1/operating/(.*)}, '/platform/application-service/2-1/operating/$1'
 r301 %r{/pivotalcf/2-0/operating/(.*)}, '/platform/application-service/2-0/operating/$1'
 
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-9/$1"
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-10/$1"
+r301 %r{/pivotalcf/2-9/(.*)}, '/platform/2-9/$1'
 r301 %r{/pivotalcf/2-8/(.*)}, '/platform/2-8/$1'
 r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
-r301 %r{/platform/(?![\d-]+)(.*)}, "/platform/2-9/$1"
+r301 %r{/platform/(?![\d-]+)(.*)}, "/platform/2-10/$1"
 r301 %r{/platform/2-6/(.*)}, '/pivotalcf/2-6/$1'
 r301 %r{/platform/2-5/(.*)}, '/pivotalcf/2-5/$1'
 r301 %r{/platform/2-4/(.*)}, '/pivotalcf/2-4/$1'
