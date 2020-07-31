@@ -4,6 +4,7 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
 }
 
 # Remove 'pcf' in release notes
+r302 %r{/platform/2-10/pcf-release-notes/(.*)}, '/platform/2-10/release-notes/$1'
 r301 %r{/platform/2-9/pcf-release-notes/(.*)}, '/platform/2-9/release-notes/$1'
 r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
 r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
@@ -12,6 +13,7 @@ r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
 r301 %r{/pivotalcf/2-7/windows/(.*)}, "/platform/application-service-windows/2-7/$1"
 r301 %r{/pivotalcf/2-8/windows/(.*)}, "/platform/application-service-windows/2-8/$1"
 r301 %r{/pivotalcf/2-9/windows/(.*)}, "/platform/application-service-windows/2-9/$1"
+r301 %r{/pivotalcf/2-10/windows/(.*)}, "/platform/application-service-windows/2-10/$1"
 r301 %r{/platform/application-service-windows/2-6/(.*)}, "/pivotalcf/2-6/windows/$1"
 r301 %r{/platform/application-service-windows/2-5/(.*)}, "/pivotalcf/2-5/windows/$1"
 r301 %r{/platform/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
@@ -546,7 +548,7 @@ r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
 r301 %r{/pks/latest/(.*)}, "/tkgi/1-8/$1"
 
 # Redirect PRA docs
-r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-3/$1"
+r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-4/$1"
 
 # Redirect 'archives' (contains PDFs)
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
@@ -563,9 +565,9 @@ r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-2-0/$1"
 
-# Redirect unversioned and 'latest' calls for application-service-windows/ to 2-9
-r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-9/$1"
-r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/application-service-windows/2-9/$1"
+# Redirect unversioned and 'latest' calls for application-service-windows/ to 2-10
+r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-10/$1"
+r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/application-service-windows/2-10/$1"
 # Redirect Healthwatch
 r301 %r{/pcf-healthwatch/(.*)}, '/platform/healthwatch/$1'
 
@@ -591,7 +593,7 @@ r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-1/$1"
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 
 # Redirect for Kubernates Service Manager
-r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-9/$1"
+r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-10/$1"
 
 # Redirects for MySQL
 r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
