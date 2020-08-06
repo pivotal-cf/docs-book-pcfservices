@@ -554,13 +554,14 @@ r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-4/$1"
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
 
 # Redirect TAS for K8s v0.1 Beta
-r301 %r{/pas-kubernetes/0-1/(.*)}, '/tas-kubernetes/0-1/$1'
-# Redirect PAS for k8s unversioned to TAS for k8s 0.1
-r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-3/$1'
-# Redirect TAS for K8s unversioned to 0.1
-r301 %r{/tas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-3/$1'
+# Redirect PAS for k8s to TAS for k8s 0.1
+#r301 %r{/pas-kubernetes/0-1/(.*)}, '/tas-kubernetes/0-1/$1'
+# Redirect TAS for K8s unversioned to latest
+#r301 %r{/pas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-3/$1'
+#r301 %r{/tas-kubernetes/(?!\d-\d[^/]*/)(.*)$}, '/tas-kubernetes/0-3/$1'
+#r302 %r{/tas-kubernetes/latest/(.*)$}, '/tas-kubernetes/0-3/$1'
 # Redirect PAS Kubernetes 2.6.0 alpha to current version of TAS Kubernetes
-r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
+#r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
 
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-2-0/$1"
