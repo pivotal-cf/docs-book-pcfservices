@@ -592,6 +592,7 @@ r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-1/$1"
 
 # Redirect for IPsec
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
+r301 %r{/addon-ipsec/1-9/credhub.html}, "/addon-ipsec/1-9/"
 
 # Redirect for Kubernates Service Manager
 r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-10/$1"
