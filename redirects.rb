@@ -54,6 +54,8 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pas/$2}, '/platform/application-service/$1/
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/appsman-services/$2}, '/platform/application-service/$1/appsman-services/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/console/$2}, '/platform/application-service/$1/console/$2'
 
+# Stemcell Topic moved in December 1019
+r301 '/releasenotes/stemcell-index.html', '/platform/stemcells/stemcells.html'
 
 # Install Redirects
 
