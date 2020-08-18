@@ -110,6 +110,11 @@ Noindex: /scdf/1-3/
 Noindex: /scdf/1-2/
 Noindex: /scdf/1-1/
 Noindex: /scdf/1-0/
+Noindex: /platform/healthwatch/1-3/
+Noindex: /platform/healthwatch/1-2/
+Noindex: /platform/healthwatch/1-1/
+Noindex: /platform/healthwatch/1-0/
+
 
 
 Disallow: /archives/
@@ -220,3 +225,8 @@ Disallow: /scdf/1-3/
 Disallow: /scdf/1-2/
 Disallow: /scdf/1-1/
 Disallow: /scdf/1-0/
+Disallow: /platform/healthwatch/1-3/
+Disallow: /platform/healthwatch/1-3/
+Disallow: /platform/healthwatch/1-2/
+Disallow: /platform/healthwatch/1-1/
+Disallow: /platform/healthwatch/1-0/
