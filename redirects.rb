@@ -466,7 +466,7 @@ r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
 r301 %r{/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
-r301 %r{/platform/ops-manager/(?![\d-]+)(.*)}, "/opsmanager/2-10/$1"
+r301 %r{/platform/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
 r301 %r{/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
 
 
