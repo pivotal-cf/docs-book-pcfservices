@@ -465,6 +465,11 @@ r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 
 r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
+r301 %r{/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
+r301 %r{/platform/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
+r301 %r{/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
+
+
 r301 %r{/pivotalcf/2-6/operating/(.*)}, '/application-service/2-6/operating/$1'
 r301 %r{/pivotalcf/2-5/operating/(.*)}, '/application-service/2-5/operating/$1'
 r301 %r{/pivotalcf/2-4/operating/(.*)}, '/application-service/2-4/operating/$1'
@@ -590,8 +595,8 @@ r301 %r{/application-service-windows/(?![\d-]+)(.*)}, "/application-service-wind
 r301 %r{/application-service-windows/latest/(.*)}, "/application-service-windows/2-10/$1"
 
 # Redirect Healthwatch
-r301 %r{/pcf-healthwatch/(.*)}, '/platform/healthwatch/$1'
-
+r301 %r{/pcf-healthwatch/(.*)}, '/healthwatch/$1'
+r301 %r{/platform/healthwatch/(.*)}, '/healthwatch/$1'
 
 # Services
 
@@ -632,7 +637,7 @@ r301 %r{/rabbitmq-kubernetes/0-4/(.*)}, "/rabbitmq-kubernetes/0-7/$1"
 r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-19/$1"
 
 # Redirect for Redis
-r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-3/$1"
+r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
 
 # Redirect for SIM
 r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
