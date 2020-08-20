@@ -590,9 +590,10 @@ r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/0-2-0/$1"
 # Redirect unversioned and 'latest' calls for application-service-windows/ to 2-10
 r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/platform/application-service-windows/2-10/$1"
 r301 %r{/platform/application-service-windows/latest/(.*)}, "/platform/application-service-windows/2-10/$1"
-# Redirect Healthwatch
-r301 %r{/pcf-healthwatch/(.*)}, '/platform/healthwatch/$1'
 
+# Redirect Healthwatch
+r301 %r{/pcf-healthwatch/(.*)}, '/healthwatch/$1'
+r301 %r{/platform/healthwatch/(.*)}, '/healthwatch/$1'
 
 # Services
 
