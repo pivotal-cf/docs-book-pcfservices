@@ -628,7 +628,7 @@ r301 %r{/rabbitmq-kubernetes/0-4/(.*)}, "/rabbitmq-kubernetes/0-7/$1"
 r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-19/$1"
 
 # Redirect for Redis
-r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-3/$1"
+r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
 
 # Redirect for SIM
 r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
