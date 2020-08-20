@@ -465,6 +465,8 @@ r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 
 r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
+r301 %r{/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
+
 r301 %r{/pivotalcf/2-6/operating/(.*)}, '/application-service/2-6/operating/$1'
 r301 %r{/pivotalcf/2-5/operating/(.*)}, '/application-service/2-5/operating/$1'
 r301 %r{/pivotalcf/2-4/operating/(.*)}, '/application-service/2-4/operating/$1'
