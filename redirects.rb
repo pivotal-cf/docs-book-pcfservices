@@ -464,19 +464,19 @@ r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
 
 
-r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
 r301 %r{/platform/application-service/2-10/(.*)}, "/application-service/2-10/$1"
 r301 %r{/platform/application-service/2-9/(.*)}, "/application-service/2-9/$1"
 r301 %r{/platform/application-service/2-8/(.*)}, "/application-service/2-8/$1"
 r301 %r{/platform/application-service/2-7/(.*)}, "/application-service/2-7/$1"
 r301 %r{/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
 
-r301 %r{/platform/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
 r301 %r{/platform/ops-manager/2-10/(.*)}, "/ops-manager/2-10/$1"
 r301 %r{/platform/ops-manager/2-9/(.*)}, "/ops-manager/2-9/$1"
 r301 %r{/platform/ops-manager/2-8/(.*)}, "/ops-manager/2-8/$1"
 r301 %r{/platform/ops-manager/2-7/(.*)}, "/ops-manager/2-7/$1"
 r301 %r{/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
+r301 %r{/platform/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
 
 r301 %r{/pivotalcf/2-6/operating/(.*)}, '/application-service/2-6/operating/$1'
 r301 %r{/pivotalcf/2-5/operating/(.*)}, '/application-service/2-5/operating/$1'
