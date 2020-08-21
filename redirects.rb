@@ -642,7 +642,7 @@ r302 %r{/rabbitmq-kubernetes/(?![\d-]+)(.*)}, "/rabbitmq-kubernetes/0-7/$1"
 r301 %r{/rabbitmq-kubernetes/0-4/(.*)}, "/rabbitmq-kubernetes/0-7/$1"
 
 # Redirect for RabbitMQ for VMs
-r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-19/$1"
+r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-20/$1"
 
 # Redirect for Redis
 r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
