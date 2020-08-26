@@ -15,17 +15,17 @@ r301 '/platform/2-10/release-notes/windows-rn.html', '/application-service-windo
 r301 %r{/platform/(2-[7-9])/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 '/platform/2-10/release-notes/opsmanager-rn.html', '/ops-manager/2-10/release-notes.html'
 
-# PASW redirects for /platform/application-service-windows to old way
-r301 %r{/pivotalcf/2-7/windows/(.*)}, "/platform/application-service-windows/2-7/$1"
-r301 %r{/pivotalcf/2-8/windows/(.*)}, "/platform/application-service-windows/2-8/$1"
-r301 %r{/pivotalcf/2-9/windows/(.*)}, "/platform/application-service-windows/2-9/$1"
-r301 %r{/pivotalcf/2-10/windows/(.*)}, "/platform/application-service-windows/2-10/$1"
-r301 %r{/platform/application-service-windows/2-6/(.*)}, "/pivotalcf/2-6/windows/$1"
-r301 %r{/platform/application-service-windows/2-5/(.*)}, "/pivotalcf/2-5/windows/$1"
-r301 %r{/platform/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
-r301 %r{/platform/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows/$1"
-
 # Redirects for Windows to /application-service-windows
+r301 %r{/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
+r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
+r301 %r{/platform/application-service-windows/2-10/(.*)}, "/application-service-windows/2-10/$1"
+r301 %r{/platform/application-service-windows/2-9/(.*)}, "/application-service-windows/2-9/$1"
+r301 %r{/platform/application-service-windows/2-8/(.*)}, "/application-service-windows/2-8/$1"
+r301 %r{/platform/application-service-windows/2-7/(.*)}, "/application-service-windows/2-7/$1"
+r301 %r{/platform/application-service-windows/2-6/(.*)}, "/application-service-windows/$1"
+r301 %r{/platform/application-service-windows/2-5/(.*)}, "/application-service-windows/$1"
+r301 %r{/platform/application-service-windows/2-4/(.*)}, "/application-service-windows/$1"
+r301 %r{/platform/application-service-windows/2-3/(.*)}, "/application-service-windows/$1"
 r301 %r{/pivotalcf/2-7/windows/(.*)}, "/application-service-windows/2-7/$1"
 r301 %r{/pivotalcf/2-8/windows/(.*)}, "/application-service-windows/2-8/$1"
 r301 %r{/pivotalcf/2-9/windows/(.*)}, "/application-service-windows/2-9/$1"
@@ -34,10 +34,6 @@ r301 %r{/application-service-windows/2-6/(.*)}, "/pivotalcf/2-6/windows/$1"
 r301 %r{/application-service-windows/2-5/(.*)}, "/pivotalcf/2-5/windows/$1"
 r301 %r{/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
 r301 %r{/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows/$1"
-r301 %r{/platform/application-service-windows/2-6/(.*)}, "/application-service-windows/$1"
-r301 %r{/platform/application-service-windows/2-5/(.*)}, "/application-service-windows/$1"
-r301 %r{/platform/application-service-windows/2-4/(.*)}, "/application-service-windows/$1"
-r301 %r{/platform/application-service-windows/2-3/(.*)}, "/application-service-windows/$1"
 
 # Redirects for Application Service Book starting in 2.7
 
