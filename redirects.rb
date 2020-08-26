@@ -216,6 +216,11 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-lb.html}, '/applicati
  r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/external-user-management.html}, '/application-service/$1/operating/external-user-management.html'
  r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/tcp-routing-ert-config.html}, '/application-service/$1/operating/tcp-routing-ert-config.html'
 
+
+# Rest of Ops Guide goes to Ops Manager
+r301 %r{/platform/(?![\d-]+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
+
+
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
 r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$1"
