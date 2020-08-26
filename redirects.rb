@@ -9,6 +9,12 @@ r301 %r{/platform/2-9/pcf-release-notes/(.*)}, '/platform/2-9/release-notes/$1'
 r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
 r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
 
+# Release notes moved to product books
+r301 %r{/platform/(2-[7-9])/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
+r301 '/platform/2-10/release-notes/windows-rn.html', '/application-service-windows/2-10/release-notes.html'
+r301 %r{/platform/(2-[7-9])/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
+r301 '/platform/2-10/release-notes/opsmanager-rn.html', '/ops-manager/2-10/release-notes.html'
+
 # PASW redirects for /platform/application-service-windows to old way
 r301 %r{/pivotalcf/2-7/windows/(.*)}, "/platform/application-service-windows/2-7/$1"
 r301 %r{/pivotalcf/2-8/windows/(.*)}, "/platform/application-service-windows/2-8/$1"
