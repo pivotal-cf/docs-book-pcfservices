@@ -76,6 +76,10 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/console/$2}, '/application-service/$1/conso
 # Stemcell Topic moved in December 1019
 r301 '/releasenotes/stemcell-index.html', '/platform/stemcells/stemcells.html'
 
+
+# Redirect TAS and IST release notes to TAS book
+r301 %r{/platform/(?![\d-]+/)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
+
 # Install Redirects
 
 # 2-3 to 2-6 redirects
