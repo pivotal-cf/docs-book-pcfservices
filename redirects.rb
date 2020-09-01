@@ -643,7 +643,7 @@ r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 
 # Redirect for Kubernates Service Manager
-r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-10/$1"
+r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-11/$1"
 
 # Redirects for MySQL
 r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
