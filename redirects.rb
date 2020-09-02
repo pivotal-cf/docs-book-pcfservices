@@ -225,6 +225,13 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-lb.html}, '/applicati
 # Rest of Ops Guide goes to Ops Manager
 r301 %r{/platform/(?![\d-]+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
+# Security moved to Ops Manager
+r301 %r{/platform/2-11/security/(.*)}, '/ops-manager/2-11/security'
+r301 %r{/platform/2-10/security/(.*)}, '/ops-manager/2-10/security'
+r301 %r{/platform/2-9/security/(.*)}, '/ops-manager/2-9/security'
+r301 %r{/platform/2-8/security/(.*)}, '/ops-manager/2-8/security'
+r301 %r{/platform/2-7/security/(.*)}, '/ops-manager/2-7/security'
+
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
