@@ -10,11 +10,11 @@ r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
 r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
 
 # Redirect `/release-notes/index.html` to 404 page
-r301 %r{/platform/2-11/release-notes/index.html}, 'platform/2-11/release-notes/rn-links.html'
-r301 %r{/platform/2-10/release-notes/index.html}, 'platform/2-10/release-notes/rn-links.html'
-r301 %r{/platform/2-9/release-notes/index.html}, 'platform/2-9/release-notes/rn-links.html'
-r301 %r{/platform/2-8/release-notes/index.html}, 'platform/2-8/release-notes/rn-links.html'
-r301 %r{/platform/2-7/release-notes/index.html}, 'platform/2-7/release-notes/rn-links.html'
+r301 '/platform/2-11/release-notes/index.html', 'platform/2-11/release-notes/rn-links.html'
+r301 '/platform/2-10/release-notes/index.html', 'platform/2-10/release-notes/rn-links.html'
+r301 '/platform/2-9/release-notes/index.html', 'platform/2-9/release-notes/rn-links.html'
+r301 '/platform/2-8/release-notes/index.html', 'platform/2-8/release-notes/rn-links.html'
+r301 '/platform/2-7/release-notes/index.html', 'platform/2-7/release-notes/rn-links.html'
 
 # Release notes moved to product books
 r301 %r{/platform/(2-[7-9])/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
