@@ -3,18 +3,18 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
   rack_env['SERVER_NAME'] == 'docs.pivotal.io' && rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
 }
 
-# Remove 'pcf' in release notes
-r302 %r{/platform/2-10/pcf-release-notes/(.*)}, '/platform/2-10/release-notes/$1'
-r301 %r{/platform/2-9/pcf-release-notes/(.*)}, '/platform/2-9/release-notes/$1'
-r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
-r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
-
 # Redirect `/release-notes/index.html` to 404 page
 r301 '/platform/2-11/release-notes/index.html', 'platform/2-11/release-notes/rn-links.html'
 r301 '/platform/2-10/release-notes/index.html', 'platform/2-10/release-notes/rn-links.html'
 r301 '/platform/2-9/release-notes/index.html', 'platform/2-9/release-notes/rn-links.html'
 r301 '/platform/2-8/release-notes/index.html', 'platform/2-8/release-notes/rn-links.html'
 r301 '/platform/2-7/release-notes/index.html', 'platform/2-7/release-notes/rn-links.html'
+
+# Remove 'pcf' in release notes
+r302 %r{/platform/2-10/pcf-release-notes/(.*)}, '/platform/2-10/release-notes/$1'
+r301 %r{/platform/2-9/pcf-release-notes/(.*)}, '/platform/2-9/release-notes/$1'
+r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
+r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
 
 # Release notes moved to product books
 r301 %r{/platform/(2-[7-9])/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
