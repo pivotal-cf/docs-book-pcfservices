@@ -15,8 +15,8 @@ r301 %r{/platform/2-10/release-notes/index.html}, 'platform/2-10/release-notes/r
 r301 %r{/platform/2-9/release-notes/index.html}, 'platform/2-9/release-notes/rn-links.html'
 r301 %r{/platform/2-8/release-notes/index.html}, 'platform/2-8/release-notes/rn-links.html'
 r301 %r{/platform/2-7/release-notes/index.html}, 'platform/2-7/release-notes/rn-links.html'
-r301 %r{/platform/release-notes/}, 'platform/2-10/release-notes/rn-links.html'
-r301 %r{/pivotalcf/pcf-release-notes/}, 'platform/2-10/release-notes/rn-links.html'
+r301 %r{/platform/(2-[7-11])/release-notes/index.html}, 'platform/2-10/release-notes/rn-links.html'
+r301 %r{/pivotalcf/(2-[7-11])/pcf-release-notes/index.html}, 'platform/2-10/release-notes/rn-links.html'
 
 # Release notes moved to product books
 r301 %r{/platform/(2-[7-9])/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
