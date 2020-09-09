@@ -15,6 +15,8 @@ r301 '/platform/2-10/release-notes/windows-rn.html', '/application-service-windo
 r301 %r{/platform/(2-[7-9])/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 '/platform/2-10/release-notes/opsmanager-rn.html', '/ops-manager/2-10/release-notes.html'
 r301 %r{/platform/(2-[0-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
+r301 '/platform/2-10/release-notes/highlights.html', '/ops-manager/2-10/release-notes.html'
+r301 %r{/platform/(2-[7-9])/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
 
 # Redirects for Windows to /application-service-windows
 r301 %r{/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
