@@ -118,7 +118,7 @@ template_variables:
   info_loc: In Pivotal Operations Manager
   invite_members: images/pcf/invite-members.png
   kb_link: <a href="http://support.pivotal.io/kb" target="_blank">Knowledge Base</a>
-  known_issues: <a href="http://docs.pivotal.io/pivotalcf/pcf-release-notes/index.html">Known Issues</a>
+  known_issues: <a href="http://docs.pivotal.io/application-service/overview/release-notes/runtime-rn.html">Known Issues</a>
   link_adminguid_buildpack: You can find more documentation at the <a href="http://docs.pivotal.io/pivotalcf/adminguide/buildpacks.html">buildpack admin guide</a>.
   link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
   link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.
