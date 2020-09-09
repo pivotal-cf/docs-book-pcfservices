@@ -4,10 +4,7 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
 }
 
 # Remove 'pcf' in release notes
-r302 %r{/platform/2-10/pcf-release-notes/(.*)}, '/platform/2-10/release-notes/$1'
-r301 %r{/platform/2-9/pcf-release-notes/(.*)}, '/platform/2-9/release-notes/$1'
-r301 %r{/platform/2-8/pcf-release-notes/(.*)}, '/platform/2-8/release-notes/$1'
-r301 %r{/platform/2-7/pcf-release-notes/(.*)}, '/platform/2-7/release-notes/$1'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
 
 # Release notes moved to product books
 r301 %r{/platform/(2-[7-9])/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
@@ -17,6 +14,13 @@ r301 '/platform/2-10/release-notes/opsmanager-rn.html', '/ops-manager/2-10/relea
 r301 %r{/platform/(2-[0-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
 r301 '/platform/2-10/release-notes/highlights.html', '/ops-manager/2-10/release-notes.html'
 r301 %r{/platform/(2-[7-9])/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
+
+# Release notes redirect to application service
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/runtime-rn.html}, '/application-service/$1/overview/release-notes/runtime-rn.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/segment-rn.html}, '/application-service/$1/overview/release-notes/segment-rn.html'
+
+
+
 
 # Redirects for Windows to /application-service-windows
 r301 %r{/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
