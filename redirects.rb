@@ -14,13 +14,11 @@ r301 '/platform/2-10/release-notes/opsmanager-rn.html', '/ops-manager/2-10/relea
 r301 %r{/platform/(2-[0-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
 r301 '/platform/2-10/release-notes/highlights.html', '/ops-manager/2-10/release-notes.html'
 r301 %r{/platform/(2-[7-9])/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html}, '/ops-manager/$1/release-notes.html'
 
 # Release notes redirect to application service
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/runtime-rn.html}, '/application-service/$1/overview/release-notes/runtime-rn.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/segment-rn.html}, '/application-service/$1/overview/release-notes/segment-rn.html'
-
-
-
 
 # Redirects for Windows to /application-service-windows
 r301 %r{/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
