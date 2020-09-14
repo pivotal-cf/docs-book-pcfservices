@@ -666,6 +666,12 @@ r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 # Redirect for Kubernates Service Manager
 r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-11/$1"
 
+# Redirects for Metrics
+r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
+r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
+
+
+
 # Redirects for MySQL
 r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
 r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
