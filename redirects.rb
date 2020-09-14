@@ -666,8 +666,8 @@ r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-11/$1"
 
 # Redirects for MySQL
-r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
-r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-8/$1"
+r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
+r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
 
 # Redirect for RabbitMQ for K8s
 r302 %r{/rabbitmq-kubernetes/(?![\d-]+)(.*)}, "/rabbitmq-kubernetes/0-7/$1"
