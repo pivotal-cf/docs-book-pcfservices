@@ -3,9 +3,12 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
   rack_env['SERVER_NAME'] == 'docs.pivotal.io' && rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
 }
 
+# Remove old landing page
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/pcf-docs.html}, '/platform/$1/customizing/index.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/index.html}, '/platform/$1/customizing/index.html'
+
 # Remove 'pcf' in release notes
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
-
 
 # Release notes moved to product books
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
