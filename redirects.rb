@@ -63,7 +63,6 @@ r301 %r{/application-service/(2-[3-6])/appsman-services/(.*)}, "/pivotalcf/$1/ap
 r301 %r{/application-service/(2-[3-6])/console/(.*)}, "/pivotalcf/$1/console/$2"
 
 # 2.7 and later redirects
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/index.html}, '/application-service/$1/concepts/overview.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/buildpacks/$2}, '/application-service/$1/buildpacks/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/adminguide/$2}, '/application-service/$1/adminguide/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/cf-cli/$2}, '/application-service/$1/cf-cli/$2'
