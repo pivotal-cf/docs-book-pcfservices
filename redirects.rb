@@ -663,7 +663,8 @@ r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 
 # Redirect for Kubernates Service Manager
-r301 %r{/ksm/(?![\d-]+)(.*)}, "/ksm/0-11/$1"
+r301 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/0-11/$1"
+r301 %r{/ksm/(.*)}, "/tanzu-service-manager/$1"
 
 # Redirects for Metrics
 r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
