@@ -44,7 +44,7 @@ r301 %r{/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
 r301 %r{/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows/$1"
 
 # Redirects for Application Service Book starting in 2.7
-
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$1/overview/monitoring/$2'
 
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/buildpacks/(.*)}, "/pivotalcf/$1/buildpacks/$2"
