@@ -48,6 +48,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$1/o
 
 # Redirects for Ops Manager starting in 2.7
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
 
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/buildpacks/(.*)}, "/pivotalcf/$1/buildpacks/$2"
