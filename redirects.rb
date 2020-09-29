@@ -694,8 +694,8 @@ r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
 r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
 
 # Redirects for SSO
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
+r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
 
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
