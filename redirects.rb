@@ -14,7 +14,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/relea
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/platform/(2-[0-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html(.*)}, '/ops-manager/$1/release-notes.html$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
 
 # Release notes redirect to application service
