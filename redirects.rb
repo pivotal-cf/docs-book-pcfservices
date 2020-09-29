@@ -606,12 +606,12 @@ r301 %r{/pks/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-2.pdf'
 
 # Redirect non-versioned and 'latest' URL calls to the most recent version of PKS
 r301 %r{/runtimes/pks/(.*)}, "/tkgi/$1"
-r301 %r{/runtimes/pks/latest/(.*)}, "/tkgi/1-8/$1"
-r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
-r301 %r{/tkgi/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
-r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-8/$1"
-r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
-r301 %r{/pks/latest/(.*)}, "/tkgi/1-8/$1"
+r301 %r{/runtimes/pks/latest/(.*)}, "/tkgi/1-9/$1"
+r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
+r301 %r{/tkgi/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
+r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-9/$1"
+r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
+r301 %r{/pks/latest/(.*)}, "/tkgi/1-9/$1"
 
 # Redirect PRA docs
 r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-4/$1"
