@@ -599,7 +599,6 @@ r301 %r{/pks/1-3/concourse-helm.html}, '/pks/1-3/helm.html'
 r301 %r{/spring-flo/(.*)}, 'https://resources.docs.pivotal.io/pdfs/spring-flo.pdf'
 
 # Redirect older PKS to PDF
-r301 %r{/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-docs-1.0.pdf'
 r301 %r{/pks/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-docs-1.0.pdf'
 r301 %r{/pks/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-1.pdf'
 r301 %r{/pks/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-2.pdf'
