@@ -14,12 +14,17 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/relea
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/platform/(2-[0-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html}, '/ops-manager/$1/release-notes.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html(.*)}, '/ops-manager/$1/release-notes.html$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
 
 # Release notes redirect to application service
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/runtime-rn.html}, '/application-service/$1/overview/release-notes/runtime-rn.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/segment-rn.html}, '/application-service/$1/overview/release-notes/segment-rn.html'
+
+# docs-pcf-upgrade moved to Ops Manager and TAS
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/understanding-pas.html}, '/application-service/$1/operating/understanding-pas.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-service/$1/operating/configuring.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/checklist.html(.*)}, '/ops-manager/$1/upgrade/checklist.html$1'
 
 # Redirects for Windows to /application-service-windows
 r301 %r{/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
