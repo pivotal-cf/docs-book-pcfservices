@@ -240,8 +240,14 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-lb.html}, '/applicati
 r301 %r{/platform/(?![\d-]+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
 # Security moved to Ops Manager
-
+r301 %r{/platform/2-11/security/(.*)}, '/ops-manager/2-11/security/$1'
+r301 %r{/platform/2-10/security/(.*)}, '/ops-manager/2-10/security/$1'
+r301 %r{/platform/2-8/security/(.*)}, '/ops-manager/2-9/security/$1'
+r301 %r{/platform/2-8/security/(.*)}, '/ops-manager/2-8/security/$1'
 r301 %r{/platform/2-7/security/(.*)}, '/ops-manager/2-7/security/$1'
+r301 %r{/pivotalcf/2-6/security/(.*)}, '/ops-manager/2-6/security/$1'
+r301 %r{/pivotalcf/2-5/security/(.*)}, '/ops-manager/2-5/security/$1'
+r301 %r{/pivotalcf/2-4/security/(.*)}, '/ops-manager/2-4/security/$1'
 r301 %r{/pivotalcf/2-3/security/(.*)}, '/ops-manager/2-3/security/$1'
 
 # Scheduler rename redirect
