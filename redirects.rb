@@ -241,8 +241,8 @@ r301 %r{/platform/(?![\d-]+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
 # Security moved to Ops Manager
 
-r301 %r{/platform/(2-[7-11])/security/(.*)}, '/ops-manager/$1/security/$2'
-r301 %r{/pivotalcf/(2-[3-6])/security/(.*)}, '/ops-manager/$1/security/$2'
+r301 %r{/platform/2-7/security/(.*)}, '/ops-manager/2-7/security/$1'
+r301 %r{/pivotalcf/2-3/security/(.*)}, '/ops-manager/2-3/security/$1'
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
