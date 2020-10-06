@@ -675,7 +675,7 @@ r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 
 # Redirect for Tanzu Service Manager
-r301 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/1-0/$1"
+r302 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/1-0/$1"
 r301 %r{/ksm/(.*)}, '/tanzu-service-manager/$1'
 
 # Redirects for Metrics
