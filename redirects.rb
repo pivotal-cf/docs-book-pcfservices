@@ -657,6 +657,9 @@ r301 %r{/platform/healthwatch/(.*)}, '/healthwatch/$1'
 # Redirect for Antivirus
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
 
+# Redirect for Cloud Service Broker
+r301 %r{/cloud-service-broker/(?![\d-]+)(.*)}, "/cloud-service-broker/1-0/$1"
+
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
 
@@ -681,8 +684,6 @@ r301 %r{/ksm/(.*)}, '/tanzu-service-manager/$1'
 # Redirects for Metrics
 r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
 r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
-
-
 
 # Redirects for MySQL
 r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
