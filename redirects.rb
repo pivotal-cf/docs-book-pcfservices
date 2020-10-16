@@ -3,58 +3,76 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
   rack_env['SERVER_NAME'] == 'docs.pivotal.io' && rack_env['HTTP_X_FORWARDED_PROTO'] == 'http'
 }
 
-# Remove old landing page
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/pcf-docs.html}, '/platform/$1/customizing/index.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/index.html}, '/platform/$1/customizing/index.html'
+
+r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
+
+
+r301 %r{/pivotalcf/(.*)}, '/platform/$1'
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, '/platform/2-10/$1'
+r301 %r{/platform/2-[0-6]/(.*)}, '/pivotalcf/2-6/$1'
+
+
+# Remove old landing pages
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/pcf-docs.html}, '/ops-manager/$1/install/index.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/index.html}, '/ops-manager/$1/install/index.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/index.html}, '/ops-manager/$1/install/index.html'
+
+
+# Core release notes redirects
 
 # Remove 'pcf' in release notes
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
 
 # Release notes moved to product books
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
+r301 %r{/platform/(?![\d-]+)/release-notes/breaking-changes.html}, '/ops-manager/2-10/release-notes.html'
+r301 %r{/platform/(?![\d-]+)/release-notes/opsmanager-rn.html}, '/ops-manager/2-10/release-notes.html'
+r301 %r{/platform/(?![\d-]+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/2-10/overview/release-notes/$2'
+r301 %r{/platform/(?![\d-]+)/release-notes/windows-rn.html}, '/application-service-windows/2-10/release-notes.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
-r301 %r{/platform/(2-[0-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html(.*)}, '/ops-manager/$1/release-notes.html$2'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/credhub/(.*)}, '/credhub/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
+r301 %r{/platform/(2-[3-6]/release-notes/breaking-changes.html}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/platform/(2-[3-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
+r301 %r{/platform/(2-[3-6]/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/platform/(2-[3-6]/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 
-# Release notes redirect to application service
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/runtime-rn.html}, '/application-service/$1/overview/release-notes/runtime-rn.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/segment-rn.html}, '/application-service/$1/overview/release-notes/segment-rn.html'
+# Highlights redirect
+r301 %r{/platform/(?![\d-]+)/release-notes/highlights.html}, '/ops-manager/2-10/release-notes.html'
+r301 %r{/platform/(2-[5-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
+r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/highlights.html}, '/pivotalcf/$1/installing/highlights.html'
 
-# docs-pcf-upgrade moved to Ops Manager and TAS
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/understanding-pas.html}, '/application-service/$1/operating/understanding-pas.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-service/$1/operating/configuring.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/checklist.html(.*)}, '/ops-manager/$1/upgrade/checklist.html$1'
+# Known issue redirects
+r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#known-issues'
+r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/runtime-ki.html}, 'pivotalcf/$1/pcf-release-notes/runtime-rn.html#known-issues'
+r301 %r{/pivotalcf/1-9|1-10)/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#knownissues'
+r301 %r{/pivotalcf/1-9|1-10)/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-$1/pcf-release-notes/runtime-rn.html#knownissues'
+
 
 # Redirects for Windows to /application-service-windows
-r301 %r{/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
-r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
-r301 %r{/platform/application-service-windows/2-11/(.*)}, "/application-service-windows/2-11/$1"
-r301 %r{/platform/application-service-windows/2-10/(.*)}, "/application-service-windows/2-10/$1"
-r301 %r{/platform/application-service-windows/2-9/(.*)}, "/application-service-windows/2-9/$1"
-r301 %r{/platform/application-service-windows/2-8/(.*)}, "/application-service-windows/2-8/$1"
-r301 %r{/platform/application-service-windows/2-7/(.*)}, "/application-service-windows/2-7/$1"
-r301 %r{/platform/application-service-windows/2-6/(.*)}, "/application-service-windows/$1"
-r301 %r{/platform/application-service-windows/2-5/(.*)}, "/application-service-windows/$1"
-r301 %r{/platform/application-service-windows/2-4/(.*)}, "/application-service-windows/$1"
-r301 %r{/platform/application-service-windows/2-3/(.*)}, "/application-service-windows/$1"
-r301 %r{/pivotalcf/2-7/windows/(.*)}, "/application-service-windows/2-7/$1"
-r301 %r{/pivotalcf/2-8/windows/(.*)}, "/application-service-windows/2-8/$1"
-r301 %r{/pivotalcf/2-9/windows/(.*)}, "/application-service-windows/2-9/$1"
-r301 %r{/pivotalcf/2-10/windows/(.*)}, "/application-service-windows/2-10/$1"
-r301 %r{/pivotalcf/2-11/windows/(.*)}, "/application-service-windows/2-11/$1"
-r301 %r{/application-service-windows/2-6/(.*)}, "/pivotalcf/2-6/windows/$1"
-r301 %r{/application-service-windows/2-5/(.*)}, "/pivotalcf/2-5/windows/$1"
-r301 %r{/application-service-windows/2-4/(.*)}, "/pivotalcf/2-4/windows/$1"
-r301 %r{/application-service-windows/2-3/(.*)}, "/pivotalcf/2-3/windows/$1"
+r301 %r{/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-10/$1'
+r301 %r{/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
+r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-10/$1'
+r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
+r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service-windows/$1/$2'
+r301 %r{/platform/application-service-windows/2-[3-6]/(.*)}, '/pivotalcf/$1/windows/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
+r301 %r{/pivotalcf/2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
+r301 %r{/application-service-windows/2-[3-6]/(.*)}, '/pivotalcf/$1/windows/$2'
 
-# Redirects for Application Service Book starting in 2.7
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$1/overview/monitoring/$2'
 
-# Redirects for Ops Manager starting in 2.7
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
+# Redirects for Application Service book starting in 2.7
+
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/buildpacks/detection.html}, '/platform/buildpacks/understand-buildpacks.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/index.html}, 'application-service/$1/concepts/security.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, 'application-service/$1/concepts/security.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/security/index.html}, 'application-service/$1/concepts/security.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, 'application-service/$1/concepts/security.html'
+r301 %r{/application-service/(2-[3-6])/concepts/security.html}, '/pivotalcf/$1/security/index.html'
+r301 %r{/application-service/(2-[3-6])/security/concepts/security.html}, '/pivotalcf/$1/security/concepts/security.html'
 
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/buildpacks/(.*)}, "/pivotalcf/$1/buildpacks/$2"
@@ -72,7 +90,7 @@ r301 %r{/application-service/(2-[3-6])/overview/(.*)}, "/pivotalcf/$1/pas/$2"
 r301 %r{/application-service/(2-[3-6])/appsman-services/(.*)}, "/pivotalcf/$1/appsman-services/$2"
 r301 %r{/application-service/(2-[3-6])/console/(.*)}, "/pivotalcf/$1/console/$2"
 
-# 2.7 and later redirects
+# 2-7 and later redirects
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/buildpacks/$2}, '/application-service/$1/buildpacks/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/adminguide/$2}, '/application-service/$1/adminguide/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/cf-cli/$2}, '/application-service/$1/cf-cli/$2'
@@ -88,14 +106,12 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pas/$2}, '/application-service/$1/overview/
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/appsman-services/$2}, '/application-service/$1/appsman-services/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/console/$2}, '/application-service/$1/console/$2'
 
-# Stemcell Topic moved in December 1019
-r301 '/releasenotes/stemcell-index.html', '/platform/stemcells/stemcells.html'
+
+# Redirects for Monitoring topics formerly in docs-monitoring, now in docs-pas
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$1/overview/monitoring/$2'
 
 
-# Redirect TAS and IST release notes to TAS book
-r301 %r{/platform/(?![\d-]+/)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
-
-# Install Redirects
+# Install redirects
 
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/operating/configure-pas.html}, '/pivotalcf/$1/customizing/configure-pas.html'
@@ -125,8 +141,7 @@ r301 %r{/application-service/(2-[3-6])/operating/user-types.html}, '/pivotalcf/$
 r301 %r{/application-service/(2-[3-6])/operating/vsphere-nsx-t.html}, '/pivotalcf/$1/customizing/vsphere-nsx-t.html'
 r301 %r{/application-service/(2-[3-6])/operating/configure-lb.html}, '/pivotalcf/$1/customizing/configure-lb.html'
 
-
-# 2-7 redirects and later
+# 2-7 and later redirects
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-pas.html}, '/application-service/$1/operating/configure-pas.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/console-login.html}, '/application-service/$1/operating/console-login.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/create-pas-dbs.html}, '/application-service/$1/operating/create-pas-dbs.html'
@@ -154,7 +169,11 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/user-types.html}, '/application
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/vsphere-nsx-t.html}, '/application-service/$1/operating/vsphere-nsx-t.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-lb.html}, '/application-service/$1/operating/configure-lb.html'
 
-# Ops Guide
+# Rest of docs-pcf-install redirects to Ops Manager
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
+
+
+# Ops Guide redirects
 
 # 2-3 to 2-6 redirects
  r301 '/application-service/(2-[3-6])/operating/gdpr.html', '/pivotalcf/$1/opsguide/gdpr.html'
@@ -196,7 +215,7 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-lb.html}, '/applicati
  r301 '/application-service/(2-[3-6])/operating/external-user-management.html', '/pivotalcf/$1/opsguide/external-user-management.html'
  r301 '/application-service/(2-[3-6])/operating/tcp-routing-ert-config.html', '/pivotalcf/$1/opsguide/tcp-routing-ert-config.html'
 
-# 2-7 redirects and later
+# 2-7 and later redirects
  r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/gdpr.html}, '/application-service/$1/operating/gdpr.html'
  r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/id-jobs.html}, '/application-service/$1/operating/id-jobs.html'
  r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/identify-metric-source.html}, '/application-service/$1/operating/identify-metric-source.html'
@@ -236,36 +255,89 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-lb.html}, '/applicati
  r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/external-user-management.html}, '/application-service/$1/operating/external-user-management.html'
  r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/tcp-routing-ert-config.html}, '/application-service/$1/operating/tcp-routing-ert-config.html'
 
-
 # Rest of Ops Guide goes to Ops Manager
 r301 %r{/platform/(?![\d-]+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
-# Security moved to Ops Manager
-r301 %r{/platform/2-11/security/(.*)}, '/ops-manager/2-11/security/$1'
-r301 %r{/platform/2-10/security/(.*)}, '/ops-manager/2-10/security/$1'
-r301 %r{/platform/2-8/security/(.*)}, '/ops-manager/2-9/security/$1'
-r301 %r{/platform/2-8/security/(.*)}, '/ops-manager/2-8/security/$1'
-r301 %r{/platform/2-7/security/(.*)}, '/ops-manager/2-7/security/$1'
-r301 %r{/pivotalcf/2-6/security/(.*)}, '/ops-manager/2-6/security/$1'
-r301 %r{/pivotalcf/2-5/security/(.*)}, '/ops-manager/2-5/security/$1'
-r301 %r{/pivotalcf/2-4/security/(.*)}, '/ops-manager/2-4/security/$1'
-r301 %r{/pivotalcf/2-3/security/(.*)}, '/ops-manager/2-3/security/$1'
+
+# docs-pcf-upgrade moved to TAS
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/understanding-pas.html}, '/application-service/$1/operating/understanding-pas.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-service/$1/operating/configuring.html'
+
+# All other /application-service redirects
+r301 %r{/platform/application-service/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service/$1/$2'
+r301 %r{/application-service/(?![\d-]+)(.*)}, '/application-service/2-10/$1'
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, '/application-service/2-10/$1'
+
+
+# Ops Manager redirects
+
+# Security redirects
+r301 %r{/platform/(2-[3-9]|2-\d\d+)/security/(.*)}, '/ops-manager/$1/security/$2'
+
+# Reference architecture redirects
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/refarch/(.*)}, '/ops-manager/$1/refarch/$1'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$1'
+
+# All other /ops-manager redirects
+r301 %r{/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/2-10/$1'
+r301 %r{/platform/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/2-10/$1'
+r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
+r301 %r{/platform/ops-manager/2-[3-6]/(.*)}, '/pivotalcf/$1/$2'
+r301 %r{/platform/(?![\d-]+)/om/(.*)}, '/ops-manager/2-10/$1'
+
+
+# CredHub redirects
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/credhub/(.*)}, '/credhub/$2'
+
+
+# Stemcell redirect
+r301 %r{/platform/(?![\d-]+)/stemcells/(.*)}, '/platform/stemcells/$1'
+
+# Windows stemcell release notes: redirect non-2.8-relevant versions
+r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1200x.html}, '/platform/stemcells/windows-stemcell-v2019x.html'
+r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1709x.html}, '/platform/stemcells/windows-stemcell-v2019x.html'
+r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1803x.html}, '/platform/stemcells/windows-stemcell-v2019x.html'
+
+# Stemcell topic moved in December 2019
+r301 '/releasenotes/stemcell-index.html', '/platform/stemcells/stemcells.html'
+
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
 r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$1"
 
-# service mesh redirects
+
+# Redirect older versions to PDFs
+r301 %r{/pivotalcf/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.2.pdf'
+r301 %r{/pivotalcf/1-3/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.3.pdf'
+r301 %r{/pivotalcf/1-4/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.4.pdf'
+r301 %r{/pivotalcf/1-5/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.5.pdf'
+r301 %r{/pivotalcf/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.6.pdf'
+r301 %r{/pivotalcf/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.7.pdf'
+r301 %r{/pivotalcf/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.8.pdf'
+r301 %r{/pivotalcf/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.9.pdf'
+r301 %r{/pivotalcf/1-10/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.10.pdf'
+r301 %r{/pivotalcf/1-11/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.11.pdf'
+r301 %r{/pivotalcf/1-12/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.12.pdf'
+r301 %r{/pivotalcf/2-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.0.pdf'
+r301 %r{/pivotalcf/2-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.1.pdf'
+r301 %r{/pivotalcf/2-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.2.pdf'
+
+r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf'
+r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf'
+
+
+# Service Mesh redirects
 r301 %r{/service-mesh/(.*)}, "/ingress-router/$1"
 r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/platform/ingress-router/$1"
-r301 %r{/ingress-router/0-1/(.*)}, "/platform/ingress-router/0-1/$1"
-r301 %r{/ingress-router/0-2/(.*)}, "/platform/ingress-router/0-2/$1"
+r301 %r{/ingress-router/0-1|0-2/(.*)}, "/platform/ingress-router/$1/$2"
 
-# function service redirects
+
+# Function Service redirects
 r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
 
-
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 # r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-6/buildpacks/$1'
@@ -283,17 +355,6 @@ r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 # r301 %r{/console/(.*)}, '/pivotalcf/2-6/console/$1'
 # r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/2-6/pcf-release-notes/$1'
 
-
-r301 %r{/pivotalcf/2-6/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/2-6/pcf-release-notes/opsmanager-rn.html#knownissues'
-r301 %r{/pivotalcf/2-6/pcf-release-notes/runtime-ki.html}, 'pivotalcf/2-6/pcf-release-notes/runtime-rn.html#knownissues'
-
-r301 %r{/pivotalcf/1-10/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/1-10/pcf-release-notes/opsmanager-rn.html#knownissues'
-r301 %r{/pivotalcf/1-10/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-10/pcf-release-notes/runtime-rn.html#knownissues'
-
-r301 %r{/pivotalcf/1-9/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/1-9/pcf-release-notes/opsmanager-rn.html#knownissues'
-r301 %r{/pivotalcf/1-9/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-9/pcf-release-notes/runtime-rn.html#knownissues'
-
-r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 # JMX Bridge
 r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, 'https://resources.docs.pivotal.io/pdfs/jmx-bridge-1.9.pdf'
@@ -321,12 +382,18 @@ r301 %r{/pivotalhd/advisories/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/a
 r301 %r{/pivotalhd/index.html}, 'http://pivotalhd.docs.pivotal.io/docs/index.html'
 r301 %r{/pivotalhd/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/2100/$1'
 
+
 # For GemFire
 r301 '/gemfire/', 'http://gemfire.docs.pivotal.io/'
 r301 %r{/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
 r301 %r{/(.*)/gemfire/(.*)}, "http://gemfire.docs.pivotal.io/$1/gemfire/$2"
+r301 '/gemfirexd/index.html', 'http://gemfirexd.docs.pivotal.io/index.html'
+r301 '/gemfirexd/', 'http://gemfirexd.docs.pivotal.io/'
 r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
+
+
+
 
 # For GemFire Nativehttps://resources.docs.pivotal.io/pdfs/
 r301 %r{/(.*)/gemfire-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client/$2"
@@ -418,6 +485,8 @@ r301 %r{/11-2/(.*)}, "https://postgres.docs.pivotal.io/11-2/$1"
 
 r301 '/rabbitmq/index.html', 'http://rabbitmq.docs.pivotal.io/index.html'
 r301 '/rabbitmq/', 'http://rabbitmq.docs.pivotal.io/index.html'
+r301 '/sqlfire/index.html', 'http://sqlfire.docs.pivotal.io/index.html'
+r301 '/sqlfire/', 'http://sqlfire.docs.pivotal.io/index.html'
 r301 '/dca/index.html', 'http://data.docs.pivotal.io/dca/index.html'
 r301 '/dca/', 'http://data.docs.pivotal.io/dca/index.html'
 r301 '/tcserver/index.html', 'http://tcserver.docs.pivotal.io/index.html'
@@ -464,6 +533,8 @@ r301 '/p1-services/Cassandra.html', 'https://github.com/pivotal-cf/docs-cassandr
 r301 '/compatibility-matrix.pdf', '/resources/product-compatibility-matrix.pdf'
 
 r301 '/services/asynchronous-operations.html', '/services/api.html#asynchronous-operations'
+r301 %r{/services/api-v(.*)}, '/services/api.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/services/api.html}, 'https://github.com/openservicebrokerapi/servicebroker/blob/v2.13/spec.md'
 
 r301 '/owners.html', 'http://docs-owners-app-staging.cfapps.io'
 
@@ -480,73 +551,8 @@ r301 %r{/ruxit/(.*)}, '/dynatrace/index.html'
 
 
 
-# Redirect older versions to PDFs
-r301 %r{/pivotalcf/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.2.pdf'
-r301 %r{/pivotalcf/1-3/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.3.pdf'
-r301 %r{/pivotalcf/1-4/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.4.pdf'
-r301 %r{/pivotalcf/1-5/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.5.pdf'
-r301 %r{/pivotalcf/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.6.pdf'
-r301 %r{/pivotalcf/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.7.pdf'
-r301 %r{/pivotalcf/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.8.pdf'
-r301 %r{/pivotalcf/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.9.pdf'
-r301 %r{/pivotalcf/1-10/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.10.pdf'
-r301 %r{/pivotalcf/1-11/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.11.pdf'
-r301 %r{/pivotalcf/1-12/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-1.12.pdf'
-r301 %r{/pivotalcf/2-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.0.pdf'
-r301 %r{/pivotalcf/2-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.1.pdf'
-r301 %r{/pivotalcf/2-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.2.pdf'
-
-r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf'
-r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf'
-
 r301 %r{/cjoc/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/p-riakcs/(.*)}, 'https://docs.pivotal.io'
-
-
-r301 %r{/platform/application-service/2-10/(.*)}, "/application-service/2-10/$1"
-r301 %r{/platform/application-service/2-9/(.*)}, "/application-service/2-9/$1"
-r301 %r{/platform/application-service/2-8/(.*)}, "/application-service/2-8/$1"
-r301 %r{/platform/application-service/2-7/(.*)}, "/application-service/2-7/$1"
-r301 %r{/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
-r301 %r{/platform/application-service/(?![\d-]+)(.*)}, "/application-service/2-10/$1"
-
-r301 %r{/platform/ops-manager/2-10/(.*)}, "/ops-manager/2-10/$1"
-r301 %r{/platform/ops-manager/2-9/(.*)}, "/ops-manager/2-9/$1"
-r301 %r{/platform/ops-manager/2-8/(.*)}, "/ops-manager/2-8/$1"
-r301 %r{/platform/ops-manager/2-7/(.*)}, "/ops-manager/2-7/$1"
-r301 %r{/platform/ops-manager/2-6/(.*)}, "/ops-manager/2-6/$1"
-r301 %r{/platform/ops-manager/2-5/(.*)}, "/ops-manager/2-5/$1"
-r301 %r{/platform/ops-manager/2-4/(.*)}, "/ops-manager/2-4/$1"
-r301 %r{/platform/ops-manager/2-3/(.*)}, "/ops-manager/2-3/$1"
-r301 %r{/platform/ops-manager/2-2/(.*)}, "/ops-manager/2-2/$1"
-r301 %r{/platform/ops-manager/2-1/(.*)}, "/ops-manager/2-1/$1"
-r301 %r{/platform/ops-manager/2-0/(.*)}, "/ops-manager/2-0/$1"
-
-r301 %r{/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
-r301 %r{/platform/ops-manager/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
-
-r301 %r{/pivotalcf/2-6/operating/(.*)}, '/application-service/2-6/operating/$1'
-r301 %r{/pivotalcf/2-5/operating/(.*)}, '/application-service/2-5/operating/$1'
-r301 %r{/pivotalcf/2-4/operating/(.*)}, '/application-service/2-4/operating/$1'
-r301 %r{/pivotalcf/2-3/operating/(.*)}, '/application-service/2-3/operating/$1'
-r301 %r{/pivotalcf/2-2/operating/(.*)}, '/application-service/2-2/operating/$1'
-r301 %r{/pivotalcf/2-1/operating/(.*)}, '/application-service/2-1/operating/$1'
-r301 %r{/pivotalcf/2-0/operating/(.*)}, '/application-service/2-0/operating/$1'
-
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, "/platform/2-10/$1"
-r301 %r{/pivotalcf/2-9/(.*)}, '/platform/2-9/$1'
-r301 %r{/pivotalcf/2-8/(.*)}, '/platform/2-8/$1'
-r301 %r{/pivotalcf/2-7/(.*)}, '/platform/2-7/$1'
-r301 %r{/platform/(?![\d-]+)(.*)}, "/platform/2-10/$1"
-r301 %r{/platform/2-6/(.*)}, '/pivotalcf/2-6/$1'
-r301 %r{/platform/2-5/(.*)}, '/pivotalcf/2-5/$1'
-r301 %r{/platform/2-4/(.*)}, '/pivotalcf/2-4/$1'
-r301 %r{/platform/2-3/(.*)}, '/pivotalcf/2-3/$1'
-r301 %r{/platform/2-2/(.*)}, '/pivotalcf/2-2/$1'
-r301 %r{/platform/2-1/(.*)}, '/pivotalcf/2-1/$1'
-r301 %r{/platform/2-0/(.*)}, '/pivotalcf/2-0/$1'
-
-
 
 
 # Spring Cloud Services
@@ -609,18 +615,19 @@ r301 %r{/pks/1-3/concourse-helm.html}, '/pks/1-3/helm.html'
 r301 %r{/spring-flo/(.*)}, 'https://resources.docs.pivotal.io/pdfs/spring-flo.pdf'
 
 # Redirect older PKS to PDF
+r301 %r{/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-docs-1.0.pdf'
 r301 %r{/pks/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-docs-1.0.pdf'
 r301 %r{/pks/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-1.pdf'
 r301 %r{/pks/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-2.pdf'
 
 # Redirect non-versioned and 'latest' URL calls to the most recent version of PKS
 r301 %r{/runtimes/pks/(.*)}, "/tkgi/$1"
-r301 %r{/runtimes/pks/latest/(.*)}, "/tkgi/1-9/$1"
-r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
-r301 %r{/tkgi/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
-r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-9/$1"
-r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
-r301 %r{/pks/latest/(.*)}, "/tkgi/1-9/$1"
+r301 %r{/runtimes/pks/latest/(.*)}, "/tkgi/1-8/$1"
+r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
+r301 %r{/tkgi/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
+r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-8/$1"
+r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
+r301 %r{/pks/latest/(.*)}, "/tkgi/1-8/$1"
 
 # Redirect PRA docs
 r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-4/$1"
@@ -641,13 +648,6 @@ r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/1-0/$1"
 
-# Redirect unversioned and 'latest' calls for application-service-windows/ to 2-10
-r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
-r301 %r{/platform/application-service-windows/latest/(.*)}, "/application-service-windows/2-10/$1"
-
-r301 %r{/application-service-windows/(?![\d-]+)(.*)}, "/application-service-windows/2-10/$1"
-r301 %r{/application-service-windows/latest/(.*)}, "/application-service-windows/2-10/$1"
-
 # Redirect Healthwatch
 r301 %r{/pcf-healthwatch/(.*)}, '/healthwatch/$1'
 r301 %r{/platform/healthwatch/(.*)}, '/healthwatch/$1'
@@ -656,9 +656,6 @@ r301 %r{/platform/healthwatch/(.*)}, '/healthwatch/$1'
 
 # Redirect for Antivirus
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
-
-# Redirect for Cloud Service Broker
-r301 %r{/cloud-service-broker/(?![\d-]+)(.*)}, "/cloud-service-broker/1-0/$1"
 
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
@@ -677,13 +674,15 @@ r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 
 r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
 
-# Redirect for Tanzu Service Manager
-r302 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/1-0/$1"
+# Redirect for Kubernates Service Manager
+r301 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/0-11/$1"
 r301 %r{/ksm/(.*)}, '/tanzu-service-manager/$1'
 
 # Redirects for Metrics
 r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
 r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
+
+
 
 # Redirects for MySQL
 r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
@@ -704,8 +703,8 @@ r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
 r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
 
 # Redirects for SSO
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
+r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
 # Link structure changed for ODB, service-backup and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
