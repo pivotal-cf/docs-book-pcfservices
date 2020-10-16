@@ -34,8 +34,8 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/(runtime-rn.html|segment-rn.ht
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 r301 %r{/platform/(2-[3-6]/release-notes/breaking-changes.html}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/platform/(2-[3-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
-r301 %r{/platform/(2-[3-6]/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
-r301 %r{/platform/(2-[3-6]/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/platform/(2-[3-6])/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/platform/(2-[3-6])/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
@@ -48,8 +48,8 @@ r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/highlights.html}, '/pivotalcf/$1/
 # Known issue redirects
 r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#known-issues'
 r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/runtime-ki.html}, 'pivotalcf/$1/pcf-release-notes/runtime-rn.html#known-issues'
-r301 %r{/pivotalcf/1-9|1-10)/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#knownissues'
-r301 %r{/pivotalcf/1-9|1-10)/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-$1/pcf-release-notes/runtime-rn.html#knownissues'
+r301 %r{/pivotalcf/1-9|1-10/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#knownissues'
+r301 %r{/pivotalcf/1-9|1-10/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-$1/pcf-release-notes/runtime-rn.html#knownissues'
 
 
 # Redirects for Windows to /application-service-windows
@@ -60,7 +60,7 @@ r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-servic
 r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service-windows/$1/$2'
 r301 %r{/platform/application-service-windows/2-[3-6]/(.*)}, '/pivotalcf/$1/windows/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
-r301 %r{/pivotalcf/2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
 r301 %r{/application-service-windows/2-[3-6]/(.*)}, '/pivotalcf/$1/windows/$2'
 
 
