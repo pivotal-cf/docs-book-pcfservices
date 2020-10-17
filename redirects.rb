@@ -20,9 +20,6 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/index.html}, '/ops-manager/$1/install/index.
 
 # Core release notes redirects
 
-# Remove 'pcf' in release notes
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
-
 # Release notes moved to product books
 r301 %r{/platform/(?![\d-]+)/release-notes/breaking-changes.html}, '/ops-manager/2-10/release-notes.html'
 r301 %r{/platform/(?![\d-]+)/release-notes/opsmanager-rn.html}, '/ops-manager/2-10/release-notes.html'
@@ -50,6 +47,9 @@ r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/
 r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/runtime-ki.html}, 'pivotalcf/$1/pcf-release-notes/runtime-rn.html#known-issues'
 r301 %r{/pivotalcf/1-9|1-10/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#knownissues'
 r301 %r{/pivotalcf/1-9|1-10/pcf-release-notes/runtime-ki.html}, 'pivotalcf/1-$1/pcf-release-notes/runtime-rn.html#knownissues'
+
+# Remove 'pcf' in release notes
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
 
 
 # Redirects for Windows to /application-service-windows
