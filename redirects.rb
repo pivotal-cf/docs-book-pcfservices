@@ -8,7 +8,7 @@ r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
-r301 %r{/pivotalcf/(?![\d-]+)/(.*)}, '/platform/2-10/$1/$2'
+r301 %r{/pivotalcf/(?![\d-]+)/(.*)}, '/platform/2-10/$2'
 r301 %r{/platform/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
@@ -48,14 +48,17 @@ r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/runtime-ki.html}, 'pivotalcf/$1/p
 r301 %r{/pivotalcf/(1-9|1-10)/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#knownissues'
 r301 %r{/pivotalcf/(1-9|1-10)/pcf-release-notes/runtime-ki.html}, 'pivotalcf/$1/pcf-release-notes/runtime-rn.html#knownissues'
 
+# BBR release notes redirect to OSS
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
+
 # Remove 'pcf' in release notes
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
 
 
 # Redirects for Windows to /application-service-windows
-r301 %r{/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-10/$1'
+r301 %r{/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
 r301 %r{/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
-r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-10/$1'
+r301 %r{/platform/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
 r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
 r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service-windows/$1/$2'
 r301 %r{/platform/application-service-windows/2-[3-6]/(.*)}, '/pivotalcf/$1/windows/$2'
@@ -265,8 +268,8 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-s
 
 # All other /application-service redirects
 r301 %r{/platform/application-service/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service/$1/$2'
-r301 %r{/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$1'
-r301 %r{/platform/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$1'
+r301 %r{/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$2'
+r301 %r{/platform/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$2'
 
 
 # Ops Manager redirects
@@ -279,11 +282,11 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/refarch/(.*)}, '/ops-manager/$1/refarch/$1'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$1'
 
 # All other /ops-manager redirects
-r301 %r{/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$1/$2'
-r301 %r{/platform/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$1/$2'
+r301 %r{/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
+r301 %r{/platform/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
 r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
-r301 %r{/platform/(?![\d-]+)/om/(.*)}, '/ops-manager/2-10/$1/$2'
+r301 %r{/platform/(?![\d-]+)/om/(.*)}, '/ops-manager/2-10/$2'
 
 
 # CredHub redirects
@@ -304,7 +307,7 @@ r301 '/releasenotes/stemcell-index.html', '/platform/stemcells/stemcells.html'
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
-r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$1"
+r301 %r{/scheduler/(?![\d-]+)/(.*)}, "/scheduler/1-2/$2"
 
 
 # Redirect older versions to PDFs
@@ -328,7 +331,7 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 
 
 # Service Mesh redirects
-r301 %r{/service-mesh/(.*)}, "/ingress-router/$1"
+r301 %r{/service-mesh/(.*)}, "/platform/ingress-router/$1"
 r301 %r{/ingress-router/(?![\d-]+)/(.*)}, "/platform/ingress-router/$1/$2"
 r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/$1/$2"
 
@@ -337,7 +340,6 @@ r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/$1/$2"
 r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
 
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 # r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-6/buildpacks/$1'
