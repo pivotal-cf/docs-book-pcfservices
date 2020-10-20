@@ -7,6 +7,8 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
+
 
 # Remove old landing pages
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/pcf-docs.html}, '/ops-manager/$1/install/index.html'
@@ -143,7 +145,7 @@ r301 %r{/application-service/(2-[3-6])/operating/vsphere-nsx-t.html}, '/pivotalc
 r301 %r{/application-service/(2-[3-6])/operating/configure-lb.html}, '/pivotalcf/$1/customizing/configure-lb.html'
 
 # 2-7 and later redirects
-r301 %r{/(pivotalcf|platform)/(2-[7-9]|2-\d\d+)/customizing/configure-pas.html}, '/application-service/$1/operating/configure-pas.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-pas.html}, '/application-service/$1/operating/configure-pas.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/console-login.html}, '/application-service/$1/operating/console-login.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/create-pas-dbs.html}, '/application-service/$1/operating/create-pas-dbs.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/creating-account.html}, '/application-service/$1/operating/creating-account.html'
