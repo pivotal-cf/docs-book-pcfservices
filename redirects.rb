@@ -92,7 +92,6 @@ r301 %r{/application-service/(2-[3-6])/mysql/(.*)}, "/pivotalcf/$1/mysql/$2"
 r301 %r{/application-service/(2-[3-6])/overview/(.*)}, "/pivotalcf/$1/pas/$2"
 r301 %r{/application-service/(2-[3-6])/appsman-services/(.*)}, "/pivotalcf/$1/appsman-services/$2"
 r301 %r{/application-service/(2-[3-6])/console/(.*)}, "/pivotalcf/$1/console/$2"
-
 # 2-7 and later redirects
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/buildpacks/$2}, '/application-service/$1/buildpacks/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/adminguide/$2}, '/application-service/$1/adminguide/$2'
@@ -109,13 +108,10 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pas/$2}, '/application-service/$1/overview/
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/appsman-services/$2}, '/application-service/$1/appsman-services/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/console/$2}, '/application-service/$1/console/$2'
 
-
 # Redirects for Monitoring topics formerly in docs-monitoring, now in docs-pas
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$1/overview/monitoring/$2'
 
-
 # Install redirects
-
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/operating/configure-pas.html}, '/pivotalcf/$1/customizing/configure-pas.html'
 r301 %r{/application-service/(2-[3-6])/operating/console-login.html}, '/pivotalcf/$1/customizing/console-login.html'
@@ -143,7 +139,6 @@ r301 %r{/application-service/(2-[3-6])/operating/cfpush-availability-during-upgr
 r301 %r{/application-service/(2-[3-6])/operating/user-types.html}, '/pivotalcf/$1/customizing/user-types.html'
 r301 %r{/application-service/(2-[3-6])/operating/vsphere-nsx-t.html}, '/pivotalcf/$1/customizing/vsphere-nsx-t.html'
 r301 %r{/application-service/(2-[3-6])/operating/configure-lb.html}, '/pivotalcf/$1/customizing/configure-lb.html'
-
 # 2-7 and later redirects
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-pas.html}, '/application-service/$1/operating/configure-pas.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/console-login.html}, '/application-service/$1/operating/console-login.html'
@@ -172,52 +167,46 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/user-types.html}, '/application
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/vsphere-nsx-t.html}, '/application-service/$1/operating/vsphere-nsx-t.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-lb.html}, '/application-service/$1/operating/configure-lb.html'
 
-# Rest of docs-pcf-install redirects to Ops Manager
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
-
-
 # Ops Guide redirects
-
 # 2-3 to 2-6 redirects
-r301 '/application-service/(2-[3-6])/operating/gdpr.html', '/pivotalcf/$1/opsguide/gdpr.html'
-r301 '/application-service/(2-[3-6])/operating/id-jobs.html', '/pivotalcf/$1/opsguide/id-jobs.html'
-r301 '/application-service/(2-[3-6])/operating/identify-metric-source.html', '/pivotalcf/$1/opsguide/identify-metric-source.html'
-r301 '/application-service/(2-[3-6])/operating/accounting-report-apps-man.html', '/pivotalcf/$1/opsguide/accounting-report-apps-man.html'
-r301 '/application-service/(2-[3-6])/operating/accounting-report.html', '/pivotalcf/$1/opsguide/accounting-report.html'
-r301 '/application-service/(2-[3-6])/operating/internal-databases.html', '/pivotalcf/$1/opsguide/internal-databases.html'
-r301 '/application-service/(2-[3-6])/operating/api-endpoint.html', '/pivotalcf/$1/opsguide/api-endpoint.html'
-r301 '/application-service/(2-[3-6])/operating/logging-config-opsman.html', '/pivotalcf/$1/opsguide/logging-config-opsman.html'
-r301 '/application-service/(2-[3-6])/operating/app-sec-groups.html', '/pivotalcf/$1/opsguide/app-sec-groups.html'
-r301 '/application-service/(2-[3-6])/operating/notifications-asg.html', '/pivotalcf/$1/opsguide/notifications-asg.html'
-r301 '/application-service/(2-[3-6])/operating/auth-sso.html', '/pivotalcf/$1/opsguide/auth-sso.html'
-r301 '/application-service/(2-[3-6])/operating/ca-sso-config.html', '/pivotalcf/$1/opsguide/ca-sso-config.html'
-r301 '/application-service/(2-[3-6])/operating/ping-federate-sso-configuration.html', '/pivotalcf/$1/opsguide/ping-federate-sso-configuration.html'
-r301 '/application-service/(2-[3-6])/operating/config-cell-cleanup.html', '/pivotalcf/$1/opsguide/config-cell-cleanup.html'
-r301 '/application-service/(2-[3-6])/operating/power-failure.html', '/pivotalcf/$1/opsguide/power-failure.html'
-r301 '/application-service/(2-[3-6])/operating/config-proxy.html', '/pivotalcf/$1/opsguide/config-proxy.html'
-r301 '/application-service/(2-[3-6])/operating/pw-policy.html', '/pivotalcf/$1/opsguide/pw-policy.html'
-r301 '/application-service/(2-[3-6])/operating/pws_upgrade_load.html', '/pivotalcf/$1/opsguide/pws_upgrade_load.html'
-r301 '/application-service/(2-[3-6])/operating/config-ssh.html', '/pivotalcf/$1/opsguide/config-ssh.html'
-r301 '/application-service/(2-[3-6])/operating/rotate-ccdb-key.html', '/pivotalcf/$1/opsguide/rotate-ccdb-key.html'
-r301 '/application-service/(2-[3-6])/operating/configure-multi-foundation.html', '/pivotalcf/$1/opsguide/configure-multi-foundation.html'
-r301 '/application-service/(2-[3-6])/operating/scaling-cloud-controller.html', '/pivotalcf/$1/opsguide/scaling-cloud-controller.html'
-r301 '/application-service/(2-[3-6])/operating/creating-account.html', '/pivotalcf/$1/opsguide/creating-account.html'
-r301 '/application-service/(2-[3-6])/operating/scaling-ert-components.html', '/pivotalcf/$1/opsguide/scaling-ert-components.html'
-r301 '/application-service/(2-[3-6])/operating/credential-rotation.html', '/pivotalcf/$1/opsguide/credential-rotation.html'
-r301 '/application-service/(2-[3-6])/operating/secure-si-creds.html', '/pivotalcf/$1/opsguide/secure-si-creds.html'
-r301 '/application-service/(2-[3-6])/operating/custom-branding.html', '/pivotalcf/$1/opsguide/custom-branding.html'
-r301 '/application-service/(2-[3-6])/operating/securing-endpoints.html', '/pivotalcf/$1/opsguide/securing-endpoints.html'
-r301 '/application-service/(2-[3-6])/operating/deploying-service-mesh.html', '/pivotalcf/$1/opsguide/deploying-service-mesh.html'
-r301 '/application-service/(2-[3-6])/operating/security_config.html', '/pivotalcf/$1/opsguide/security_config.html'
-r301 '/application-service/(2-[3-6])/operating/docker-registry.html', '/pivotalcf/$1/opsguide/docker-registry.html'
-r301 '/application-service/(2-[3-6])/operating/ssl-term-haproxy.html', '/pivotalcf/$1/opsguide/ssl-term-haproxy.html'
-r301 '/application-service/(2-[3-6])/operating/enable-vol-services.html', '/pivotalcf/$1/opsguide/enable-vol-services.html'
-r301 '/application-service/(2-[3-6])/operating/ssl-term.html', '/pivotalcf/$1/opsguide/ssl-term.html'
-r301 '/application-service/(2-[3-6])/operating/er_network.html', '/pivotalcf/$1/opsguide/er_network.html'
-r301 '/application-service/(2-[3-6])/operating/switching-domains.html', '/pivotalcf/$1/opsguide/switching-domains.html'
-r301 '/application-service/(2-[3-6])/operating/external-user-management.html', '/pivotalcf/$1/opsguide/external-user-management.html'
-r301 '/application-service/(2-[3-6])/operating/tcp-routing-ert-config.html', '/pivotalcf/$1/opsguide/tcp-routing-ert-config.html'
-
+r301 %r{/application-service/(2-[3-6])/operating/gdpr.html}, '/pivotalcf/$1/opsguide/gdpr.html'
+r301 %r{/application-service/(2-[3-6])/operating/id-jobs.html}, '/pivotalcf/$1/opsguide/id-jobs.html'
+r301 %r{/application-service/(2-[3-6])/operating/identify-metric-source.html}, '/pivotalcf/$1/opsguide/identify-metric-source.html'
+r301 %r{/application-service/(2-[3-6])/operating/accounting-report-apps-man.html}, '/pivotalcf/$1/opsguide/accounting-report-apps-man.html'
+r301 %r{/application-service/(2-[3-6])/operating/accounting-report.html}, '/pivotalcf/$1/opsguide/accounting-report.html'
+r301 %r{/application-service/(2-[3-6])/operating/internal-databases.html}, '/pivotalcf/$1/opsguide/internal-databases.html'
+r301 %r{/application-service/(2-[3-6])/operating/api-endpoint.html}, '/pivotalcf/$1/opsguide/api-endpoint.html'
+r301 %r{/application-service/(2-[3-6])/operating/logging-config-opsman.html}, '/pivotalcf/$1/opsguide/logging-config-opsman.html'
+r301 %r{/application-service/(2-[3-6])/operating/app-sec-groups.html}, '/pivotalcf/$1/opsguide/app-sec-groups.html'
+r301 %r{/application-service/(2-[3-6])/operating/notifications-asg.html}, '/pivotalcf/$1/opsguide/notifications-asg.html'
+r301 %r{/application-service/(2-[3-6])/operating/auth-sso.html}, '/pivotalcf/$1/opsguide/auth-sso.html'
+r301 %r{/application-service/(2-[3-6])/operating/ca-sso-config.html}, '/pivotalcf/$1/opsguide/ca-sso-config.html'
+r301 %r{/application-service/(2-[3-6])/operating/ping-federate-sso-configuration.html}, '/pivotalcf/$1/opsguide/ping-federate-sso-configuration.html'
+r301 %r{/application-service/(2-[3-6])/operating/config-cell-cleanup.html}, '/pivotalcf/$1/opsguide/config-cell-cleanup.html'
+r301 %r{/application-service/(2-[3-6])/operating/power-failure.html}, '/pivotalcf/$1/opsguide/power-failure.html'
+r301 %r{/application-service/(2-[3-6])/operating/config-proxy.html}, '/pivotalcf/$1/opsguide/config-proxy.html'
+r301 %r{/application-service/(2-[3-6])/operating/pw-policy.html}, '/pivotalcf/$1/opsguide/pw-policy.html'
+r301 %r{/application-service/(2-[3-6])/operating/pws_upgrade_load.html}, '/pivotalcf/$1/opsguide/pws_upgrade_load.html'
+r301 %r{/application-service/(2-[3-6])/operating/config-ssh.html}, '/pivotalcf/$1/opsguide/config-ssh.html'
+r301 %r{/application-service/(2-[3-6])/operating/rotate-ccdb-key.html}, '/pivotalcf/$1/opsguide/rotate-ccdb-key.html'
+r301 %r{/application-service/(2-[3-6])/operating/configure-multi-foundation.html}, '/pivotalcf/$1/opsguide/configure-multi-foundation.html'
+r301 %r{/application-service/(2-[3-6])/operating/scaling-cloud-controller.html}, '/pivotalcf/$1/opsguide/scaling-cloud-controller.html'
+r301 %r{/application-service/(2-[3-6])/operating/creating-account.html}, '/pivotalcf/$1/opsguide/creating-account.html'
+r301 %r{/application-service/(2-[3-6])/operating/scaling-ert-components.html}, '/pivotalcf/$1/opsguide/scaling-ert-components.html'
+r301 %r{/application-service/(2-[3-6])/operating/credential-rotation.html}, '/pivotalcf/$1/opsguide/credential-rotation.html'
+r301 %r{/application-service/(2-[3-6])/operating/secure-si-creds.html}, '/pivotalcf/$1/opsguide/secure-si-creds.html'
+r301 %r{/application-service/(2-[3-6])/operating/custom-branding.html}, '/pivotalcf/$1/opsguide/custom-branding.html'
+r301 %r{/application-service/(2-[3-6])/operating/securing-endpoints.html}, '/pivotalcf/$1/opsguide/securing-endpoints.html'
+r301 %r{/application-service/(2-[3-6])/operating/deploying-service-mesh.html}, '/pivotalcf/$1/opsguide/deploying-service-mesh.html'
+r301 %r{/application-service/(2-[3-6])/operating/security_config.html}, '/pivotalcf/$1/opsguide/security_config.html'
+r301 %r{/application-service/(2-[3-6])/operating/docker-registry.html}, '/pivotalcf/$1/opsguide/docker-registry.html'
+r301 %r{/application-service/(2-[3-6])/operating/ssl-term-haproxy.html}, '/pivotalcf/$1/opsguide/ssl-term-haproxy.html'
+r301 %r{/application-service/(2-[3-6])/operating/enable-vol-services.html}, '/pivotalcf/$1/opsguide/enable-vol-services.html'
+r301 %r{/application-service/(2-[3-6])/operating/ssl-term.html}, '/pivotalcf/$1/opsguide/ssl-term.html'
+r301 %r{/application-service/(2-[3-6])/operating/er_network.html}, '/pivotalcf/$1/opsguide/er_network.html'
+r301 %r{/application-service/(2-[3-6])/operating/switching-domains.html}, '/pivotalcf/$1/opsguide/switching-domains.html'
+r301 %r{/application-service/(2-[3-6])/operating/external-user-management.html}, '/pivotalcf/$1/opsguide/external-user-management.html'
+r301 %r{/application-service/(2-[3-6])/operating/tcp-routing-ert-config.html}, '/pivotalcf/$1/opsguide/tcp-routing-ert-config.html'
 # 2-7 and later redirects
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/gdpr.html}, '/application-service/$1/operating/gdpr.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/id-jobs.html}, '/application-service/$1/operating/id-jobs.html'
@@ -258,10 +247,6 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/switching-domains.html}, '/applica
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/external-user-management.html}, '/application-service/$1/operating/external-user-management.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/opsguide/tcp-routing-ert-config.html}, '/application-service/$1/operating/tcp-routing-ert-config.html'
 
-# Rest of Ops Guide goes to Ops Manager
-r301 %r{/platform/(?![\d-]+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
-
-
 # docs-pcf-upgrade moved to TAS
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/understanding-pas.html}, '/application-service/$1/operating/understanding-pas.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-service/$1/operating/configuring.html'
@@ -280,6 +265,12 @@ r301 %r{/platform/(2-[3-9]|2-\d\d+)/security/(.*)}, '/ops-manager/$1/security/$2
 # Reference architecture redirects
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/refarch/(.*)}, '/ops-manager/$1/refarch/$1'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$1'
+
+# Rest of docs-pcf-install redirects to Ops Manager
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
+
+# Rest of docs-ops-guide redirects to Ops Manager
+r301 %r{/platform/(?![\d-]+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
 # All other /ops-manager redirects
 r301 %r{/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
@@ -330,6 +321,7 @@ r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf'
 
 
+# All other /platform to /pivotalcf redirects
 r301 %r{/platform/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
