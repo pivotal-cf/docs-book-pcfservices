@@ -30,7 +30,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/applicatio
 r301 %r{/platform/(2-[3-6])/release-notes/breaking-changes.html}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/platform/(2-[3-6])/ops-manager/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
 r301 %r{/platform/(2-[3-6])/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
-r301 %r{/platform/(2-[3-6])/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/platform/(2-[3-6])/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/windows-rn.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
@@ -59,10 +59,10 @@ r301 %r{/application-service-windows/latest/(.*)}, '/application-service-windows
 r301 %r{/platform/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
 r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
 r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service-windows/$1/$2'
-r301 %r{/platform/application-service-windows/2-[3-6]/(.*)}, '/pivotalcf/$1/windows/$2'
+r301 %r{/platform/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
-r301 %r{/application-service-windows/2-[3-6]/(.*)}, '/pivotalcf/$1/windows/$2'
+r301 %r{/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 
 
 # Redirects for Application Service book starting in 2.7
