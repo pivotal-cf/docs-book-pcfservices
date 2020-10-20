@@ -54,10 +54,10 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/relea
 
 
 # Redirects for Windows to /application-service-windows
-r301 %r{/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
 r301 %r{/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
-r301 %r{/platform/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
+r301 %r{/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
 r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
+r301 %r{/platform/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
 r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service-windows/$1/$2'
 r301 %r{/platform/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
@@ -93,20 +93,20 @@ r301 %r{/application-service/(2-[3-6])/overview/(.*)}, "/pivotalcf/$1/pas/$2"
 r301 %r{/application-service/(2-[3-6])/appsman-services/(.*)}, "/pivotalcf/$1/appsman-services/$2"
 r301 %r{/application-service/(2-[3-6])/console/(.*)}, "/pivotalcf/$1/console/$2"
 # 2-7 and later redirects
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/buildpacks/$2}, '/application-service/$1/buildpacks/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/adminguide/$2}, '/application-service/$1/adminguide/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/cf-cli/$2}, '/application-service/$1/cf-cli/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/concepts/$2}, '/application-service/$1/concepts/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/devguide/$2}, '/application-service/$1/devguide/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/loggregator/$2}, '/application-service/$1/loggregator/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/routing/$2}, '/application-service/$1/routing/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/services/$2}, '/application-service/$1/services/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/uaa/$2}, '/application-service/$1/uaa/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/metric-registrar/$2}, '/application-service/$1/metric-registrar/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/mysql/$2}, '/application-service/$1/mysql/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pas/$2}, '/application-service/$1/overview/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/appsman-services/$2}, '/application-service/$1/appsman-services/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/console/$2}, '/application-service/$1/console/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/buildpacks/(.*)}, '/application-service/$1/buildpacks/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/adminguide/(.*)}, '/application-service/$1/adminguide/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/cf-cli/(.*)}, '/application-service/$1/cf-cli/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/concepts/(.*)}, '/application-service/$1/concepts/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/devguide/(.*)}, '/application-service/$1/devguide/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/loggregator/(.*)}, '/application-service/$1/loggregator/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/routing/(.*)}, '/application-service/$1/routing/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/services/(.*)}, '/application-service/$1/services/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/uaa/(.*)}, '/application-service/$1/uaa/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/metric-registrar/(.*)}, '/application-service/$1/metric-registrar/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/mysql/(.*)}, '/application-service/$1/mysql/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pas/(.*)}, '/application-service/$1/overview/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/appsman-services/(.*)}, '/application-service/$1/appsman-services/$2'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/console/(.*)}, '/application-service/$1/console/$2'
 
 # Redirects for Monitoring topics formerly in docs-monitoring, now in docs-pas
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$1/overview/monitoring/$2'
@@ -125,7 +125,7 @@ r301 %r{/application-service/(2-[3-6])/operating/pas-vsphere-requirements.html},
 r301 %r{/application-service/(2-[3-6])/operating/pas.html}, '/pivotalcf/$1/customizing/pas.html'
 r301 %r{/application-service/(2-[3-6])/operating/diagnostics.html}, '/pivotalcf/$1/customizing/diagnostics.html'
 r301 %r{/application-service/(2-[3-6])/operating/disk-format.html}, '/pivotalcf/$1/customizing/disk-format.html'
-r301 %r{application-service/(2-[3-6])/operating/elb-ssh-proxy.html}, '/pivotalcf/$1/customizing/elb-ssh-proxy.html'
+r301 %r{/application-service/(2-[3-6])/operating/elb-ssh-proxy.html}, '/pivotalcf/$1/customizing/elb-ssh-proxy.html'
 r301 %r{/application-service/(2-[3-6])/operating/external-user-management.html}, '/pivotalcf/$1/customizing/external-user-management.html'
 r301 %r{/application-service/(2-[3-6])/operating/f5-lb.html}, '/pivotalcf/$1/customizing/f5-lb.html'
 r301 %r{/application-service/(2-[3-6])/operating/frontend-idle-timeout.html}, '/pivotalcf/$1/customizing/frontend-idle-timeout.html'
