@@ -47,7 +47,9 @@ r301 %r{/pivotalcf/(1-9|1-10)/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf
 r301 %r{/pivotalcf/(1-9|1-10)/pcf-release-notes/runtime-ki.html}, 'pivotalcf/$1/pcf-release-notes/runtime-rn.html#knownissues'
 
 # BBR release notes redirect to OSS
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
+r301 %r{/pivotalcf/(2-[0-9]|2-\d\d+)/pcf-release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
+r301 %r{/pivotalcf/(1-\d\d+)/pcf-release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
 
 # Remove 'pcf' in release notes
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
@@ -263,14 +265,14 @@ r301 %r{/platform/application-service/(?![\d-]+)/(.*)}, '/application-service/2-
 r301 %r{/platform/(2-[3-9]|2-\d\d+)/security/(.*)}, '/ops-manager/$1/security/$2'
 
 # Reference architecture redirects
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/refarch/(.*)}, '/ops-manager/$1/refarch/$1'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$1'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/refarch/(.*)}, '/ops-manager/$1/refarch/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
 
 # Rest of docs-pcf-install redirects to Ops Manager
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
 
 # Rest of docs-ops-guide redirects to Ops Manager
-r301 %r{/platform/(?![\d-]+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
 # All other /ops-manager redirects
 r301 %r{/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
