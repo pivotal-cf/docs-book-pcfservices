@@ -65,13 +65,15 @@ r301 %r{/application-service-windows/2-[3-6]/(.*)}, '/pivotalcf/$1/windows/$2'
 
 # Redirects for Application Service book starting in 2.7
 
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/buildpacks/detection.html}, '/platform/buildpacks/understand-buildpacks.html'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/index.html}, 'application-service/$1/concepts/security.html'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, 'application-service/$1/concepts/security.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/buildpacks/detection.html}, 'application-service/$1/buildpacks/understand-buildpacks.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/buildpacks/understand-buildpacks.html}, 'application-service/$1/buildpacks/understand-buildpacks.html'
+
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/security/index.html}, 'application-service/$1/concepts/security.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, 'application-service/$1/concepts/security.html'
-r301 %r{/application-service/(2-[3-6])/concepts/security.html}, '/pivotalcf/$1/security/index.html'
-r301 %r{/application-service/(2-[3-6])/security/concepts/security.html}, '/pivotalcf/$1/security/concepts/security.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/index.html}, 'application-service/$1/concepts/security.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, 'application-service/$1/concepts/security.html'
+r301 %r{/application-service/(2-[3-6])/concepts/security.html}, '/pivotalcf/$1/concepts/security.html'
+r301 %r{/application-service/(2-[3-6])/security/concepts/security.html}, '/pivotalcf/$1/concepts/security.html'
 
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/buildpacks/(.*)}, "/pivotalcf/$1/buildpacks/$2"
@@ -326,8 +328,6 @@ r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf'
 
 
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
-r301 %r{/pivotalcf/(?![\d-]+)/(.*)}, '/platform/2-10/$2'
 r301 %r{/platform/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
