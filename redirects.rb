@@ -7,10 +7,6 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
-r301 %r{/pivotalcf/(?![\d-]+)/(.*)}, '/platform/2-10/$2'
-r301 %r{/platform/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
-
 
 # Remove old landing pages
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/pcf-docs.html}, '/ops-manager/$1/install/index.html'
@@ -328,6 +324,11 @@ r301 %r{/pivotalcf/2-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2
 
 r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf'
 r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf'
+
+
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
+r301 %r{/pivotalcf/(?![\d-]+)/(.*)}, '/platform/2-10/$2'
+r301 %r{/platform/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
 # Service Mesh redirects
