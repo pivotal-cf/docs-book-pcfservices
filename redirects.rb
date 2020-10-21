@@ -282,8 +282,7 @@ r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 r301 %r{/platform/(?![\d-]+)/om/(.*)}, '/ops-manager/2-10/$2'
 r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/2-10/$2"
 r301 %r{/pcf/om/(2-[7-9]|2-\d\d+)/(.*)}, "/ops-manager/$1/$2"
-r301 %r{/pcf/om/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
-r301 %r{/platform/ops-manager/2-0/(?![\d-]+)(.*)}, "/ops-manager/2-0/$1"
+r301 %r{/pcf/om/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
 # CredHub redirects
