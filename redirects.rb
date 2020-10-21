@@ -255,8 +255,8 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-s
 
 # All other /application-service redirects
 r301 %r{/platform/application-service/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service/$1/$2'
-r301 %r{/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$2'
 r301 %r{/platform/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$2'
+r301 %r{/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$2'
 
 
 # Ops Manager redirects
