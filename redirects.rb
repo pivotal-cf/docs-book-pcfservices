@@ -257,7 +257,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-s
 # All other /application-service redirects
 r301 %r{/platform/application-service/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service/$1/$2'
 r301 %r{/platform/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$2'
-r301 %r{/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$2'
+r301 %r{/application-service/(?![\d-]+)(.*)}, '/application-service/2-10/$1'
 
 
 # Ops Manager redirects
@@ -291,15 +291,15 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/credhub/(.*)}, '/credhub/$1/$2'
 
 
 # Stemcell redirect
-r301 %r{/platform/(2-[3-9]|2-\d\d+)/stemcells/(.*)}, '/platform/stemcells/$1/$2'
+r301 %r{/platform/(2-[3-9]|2-\d\d+)/stemcells/(.*)}, '/stemcells/$1/$2'
 
 # Windows stemcell release notes: redirect non-2.8-relevant versions
-r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1200x.html}, '/platform/stemcells/windows-stemcell-v2019x.html'
-r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1709x.html}, '/platform/stemcells/windows-stemcell-v2019x.html'
-r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1803x.html}, '/platform/stemcells/windows-stemcell-v2019x.html'
+r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1200x.html}, '/stemcells/windows-stemcell-v2019x.html'
+r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1709x.html}, '/stemcells/windows-stemcell-v2019x.html'
+r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1803x.html}, '/stemcells/windows-stemcell-v2019x.html'
 
 # Stemcell topic moved in December 2019
-r301 '/releasenotes/stemcell-index.html', '/platform/stemcells/stemcells.html'
+r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
 
 
 # Scheduler rename redirect
