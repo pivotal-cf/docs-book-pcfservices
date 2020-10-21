@@ -1,26 +1,36 @@
 ---
 default_logo: tanzu-bug.svg
-featured_service:
-  name: Tanzu Application Service
-  desc: App development and deployment platform for public and private clouds.
-  button:
-    name: View Add-Ons
-    url: "#add-ons"
+top_services:
+- name: Tanzu Application Service
+  desc: App development and deployment platform for public and private clouds
   links:
-  - name: Ops Manager Installation Overview
-    url: https://docs.pivotal.io/platform/customizing/index.html
-  - name: Configuring TAS for VMs
-    url: https://docs.pivotal.io/application-service/operating/configure-pas.html
-  - name: TAS for VMs [Windows] Overview
-    url: https://docs.pivotal.io/application-service-windows/index.html
-  - name: Ops Manager Tile Developer Guide
-    url: https://docs.pivotal.io/tiledev
-  - name: VMware Tanzu Architecture for Dell EMC VxRail
-    url: https://docs.pivotal.io/pra
-  - name: Cloud Foundry Documentation
+  - name: Documentation
+    url: https://docs.pivotal.io/application-service/concepts/overview.html
+  - name: Release Notes
+    url: https://docs.pivotal.io/application-service/overview/release-notes/runtime-rn.html
+  - name: Cloud Foundry
     url: https://docs.cloudfoundry.org
     open_source: true
-top_services:
+- name: TAS for Windows
+  desc: Build and operate .NET and Windows apps on a modern application runtime
+  links:
+  - name: Documentation
+    url: https://docs.pivotal.io/application-service-windows/
+  - name: Release Notes
+    url: https://docs.pivotal.io/application-service-windows/release-notes.html
+  - name: Cloud Foundry
+    url: https://docs.cloudfoundry.org
+    open_source: true
+- name: Ops Manager
+  desc: Automated management and upgrades for TAS deployments
+  links:
+  - name: Documentation
+    url: https://docs.pivotal.io/ops-manager/install/ops-man.html
+  - name: Release Notes
+    url: https://docs.pivotal.io/ops-manager/2-10/release-notes.html
+  - name: Cloud Foundry
+    url: https://docs.cloudfoundry.org
+    open_source: true
 - name: Tanzu Build Service
   desc: Container creation and management
   links:
@@ -56,13 +66,13 @@ top_services:
 - name: Tanzu GemFire<span class='tmr'>&reg;</span>
   desc: In-Memory Data Grid
   links:
-  - name: Tanzu GemFire<span class='tmr'>&reg;</span> [VMs]
+  - name: Tanzu GemFire<span class='tmr'>&reg;</span> for VMs
     url: https://docs.pivotal.io/p-cloud-cache/index.html
-  - name: Tanzu GemFire<span class='tmr'>&reg;</span> Node.js<span class='tmr'>&reg;</span> Client
+  - name: Node.js Client for Tanzu GemFire<span class='tmr'>&reg;</span>
     url: https://gemfire-nodeclient.docs.pivotal.io
   - name: Tanzu GemFire<span class='tmr'>&reg;</span>
     url: https://gemfire.docs.pivotal.io/index.html
-  - name: Tanzu GemFire<span class='tmr'>&reg;</span> Native Client
+  - name: Native Client for Tanzu GemFire<span class='tmr'>&reg;</span>
     url: https://gemfire-native.docs.pivotal.io/index.html
   - name: Apache Geode Documentation
     url: https://geode.apache.org/docs/
@@ -118,8 +128,6 @@ top_services:
   links:
   - name: Pivotal RabbitMQ<span class='tmr'>&reg;</span>
     url: https://rabbitmq.docs.pivotal.io/index.html
-  - name: VMware Tanzu RabbitMQ<span class='tmr'> [Kubernetes]
-    url: https://docs.pivotal.io/rabbitmq-kubernetes/index.html
   - name: VMware Tanzu<span class='tmr'>&trade;</span> RabbitMQ<span class='tmr'>&reg;</span> for VMs
     url: https://docs.pivotal.io/rabbitmq-cf/index.html
   - name: RabbitMQ
@@ -179,19 +187,25 @@ addon:
     desc: Cloud runtime environments that support apps, containers, and services on Linux and Windows VMs.
     addon_services:
     - name: Tanzu Application Service (TAS) for VMs
-      url: https://docs.pivotal.io/pivotalcf/customizing/pas.html
+      url: https://docs.pivotal.io/application-service/operating/configure-pas.html
     - name: Tanzu Kubernetes Grid Integrated Edition
       url: https://docs.pivotal.io/tkgi/index.html
       logo: pks.png
     - name: TAS for VMs &#91;Windows&#93;
       url: https://docs.pivotal.io/pivotalcf/windows/index.html
     - name: Isolation Segment
-      url: https://docs.pivotal.io/pivotalcf/customizing/installing-pcf-is.html
+      url: https://docs.pivotal.io/application-service/operating/installing-pcf-is.html
     - name: TAS for VMs &#91;Small Footprint&#93;
-      url: https://docs.pivotal.io/pivotalcf/customizing/small-footprint.html
+      url: https://docs.pivotal.io/application-service/operating/small-footprint.html
     - name: Pivotal Ingress Router
       url: https://docs.pivotal.io/ingress-router/
       logo: icon-p-green.jpg
+  - name: Managing Services on Kubernetes
+    desc: Tools for offering services running on Kubernetes through the Cloud Foundry Marketplace.
+    addon_services:
+    - name: Tanzu Service Manager
+      url: https://docs.pivotal.io/tanzu-service-manager/index.html
+      is_partner: false
   - name: Data Management
     desc: Relational database, key-value stores, in-memory database, and distributed session state.
     addon_services:
@@ -229,7 +243,7 @@ addon:
       url: https://docs.pivotal.io/partners/neo4j-enterprise/index.html
       logo: neo4j_logo_globe.png
       is_partner: true
-    - name: Tanzu GemFire&reg; [VMs]
+    - name: Tanzu GemFire&reg; for VMs
       url: https://docs.pivotal.io/p-cloud-cache/index.html
       logo: icon_pivotal-cloud-cache@2x.png
     - name: Redis Enterprise <br>for VMware Tanzu
@@ -263,9 +277,6 @@ addon:
   - name: Messaging and Integration
     desc: Message buses and other communication and integration tools for components and applications.
     addon_services:
-    - name: VMware Tanzu RabbitMQ [Kubernetes]
-      url: https://docs.pivotal.io/rabbitmq-kubernetes/index.html
-      logo: icon_rabbitmq_k8s.png
     - name: VMware Tanzu RabbitMQ [VMs]
       url: https://docs.pivotal.io/rabbitmq-cf/index.html
       logo: icon_rabbitmq_cf@2x.png
@@ -529,6 +540,8 @@ addon:
       url: https://docs.pivotal.io/partners/awslabs-service-broker/index.html
       logo: aws-service-broker-logo.png
       is_partner: true
+    - name: Cloud Service Broker <br> for VMware Tanzu
+      url: https://docs.pivotal.io/cloud-service-broker/index.html
     - name: File Integrity Monitoring for VMware Tanzu
       url: https://docs.pivotal.io/addon-fim/index.html
       logo: icon_pivotal_generic@2x.png
