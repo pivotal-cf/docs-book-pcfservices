@@ -280,6 +280,10 @@ r301 %r{/platform/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
 r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 r301 %r{/platform/(?![\d-]+)/om/(.*)}, '/ops-manager/2-10/$2'
+r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/2-10/$2"
+r301 %r{/pcf/om/(2-[7-9]|2-\d\d+)/(.*)}, "/ops-manager/$1/$2"
+r301 %r{/pcf/om/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
+r301 %r{/platform/ops-manager/2-0/(?![\d-]+)(.*)}, "/ops-manager/2-0/$1"
 
 
 # CredHub redirects
@@ -287,7 +291,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/credhub/(.*)}, '/credhub/$1/$2'
 
 
 # Stemcell redirect
-r301 %r{/platform/(?![\d-]+)/stemcells/(.*)}, '/platform/stemcells/$1/$2'
+r301 %r{/platform/(2-[3-9]|2-\d\d+)/stemcells/(.*)}, '/platform/stemcells/$1/$2'
 
 # Windows stemcell release notes: redirect non-2.8-relevant versions
 r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1200x.html}, '/platform/stemcells/windows-stemcell-v2019x.html'
@@ -324,7 +328,7 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 
 
 # All other /platform to /pivotalcf redirects
-r301 %r{/platform/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
+r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
 # Service Mesh redirects
