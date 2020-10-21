@@ -690,7 +690,7 @@ r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
 r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
 
 # Redirect RabbitMQ for K8s to the open source RMQ docs
-r301 %r{/rabbitmq-kubernetes/(.*)}, "https://www.rabbitmq.com/kubernetes/operator/operator-overview.html"
+r301 %r{/rabbitmq-kubernetes/\d?(.*)}, "https://www.rabbitmq.com/kubernetes/operator/operator-overview.html"
 
 # Redirect for RabbitMQ for VMs
 r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-20/$1"
