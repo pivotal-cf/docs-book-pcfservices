@@ -94,8 +94,8 @@ sections:
     use_local_header: true
     latest_stable_version: 1.3
     local_header_img: /images/cloud_rings.png
-    local_header_title: Scheduler for PCF
-    search_placeholder: Search Scheduler for PCF 1.3
+    local_header_title: Scheduler
+    search_placeholder: Search Scheduler 1.3
     url_prefix: scheduler/1-3
     local_product_version: 1.3
     local_header_links: []
