@@ -677,12 +677,6 @@ r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-1/$1"
 # Redirect for IPsec
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 
-r301 %r{/pks/1-1/concourse-helm.html}, '/pks/1-2/helm.html'
-
-# Redirect for Tanzu Service Manager
-r301 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/1-0/$1"
-r301 %r{/ksm/(.*)}, '/tanzu-service-manager/$1'
-
 # Redirects for Metrics
 r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
 r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
@@ -707,7 +701,11 @@ r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-
 r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
 
-# Link structure changed for ODB, service-backup and service-metrics
+# Redirect for Tanzu Service Manager
+r302 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/1-0/$1"
+r301 %r{/ksm/(.*)}, '/tanzu-service-manager/$1'
+
+# URL structure changed for ODB, service-backup, and service-metrics
 r301 %r{/on-demand-service-broker/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/odb/$1-$2/$3"
 r301 %r{/service-metrics/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-metrics/$1-$2/$3"
 r301 %r{/service-backup/(\d+)-(\d+)-\d+/(.*)}, "/svc-sdk/service-backup/$1-$2/$3"
