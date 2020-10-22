@@ -44,9 +44,9 @@ r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/highlights.html}, '/pivotalcf/$1/
 
 # Known issue redirects
 r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#known-issues'
-r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/runtime-ki.html}, 'pivotalcf/$1/pcf-release-notes/runtime-rn.html#known-issues'
+r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/runtime-ki.html}, '/pivotalcf/$1/pcf-release-notes/runtime-rn.html#known-issues'
 r301 %r{/pivotalcf/(1-\d+|1-\d\d+)/pcf-release-notes/opsmanager-ki.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html#knownissues'
-r301 %r{/pivotalcf/(1-\d+|1-\d\d+)/pcf-release-notes/runtime-ki.html}, 'pivotalcf/$1/pcf-release-notes/runtime-rn.html#knownissues'
+r301 %r{/pivotalcf/(1-\d+|1-\d\d+)/pcf-release-notes/runtime-ki.html}, '/pivotalcf/$1/pcf-release-notes/runtime-rn.html#knownissues'
 
 # BBR release notes redirect to OSS
 r301 %r{/platform/(2-[0-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
