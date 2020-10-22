@@ -8,7 +8,7 @@ r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
-r301 %r{/platform/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
+r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
 # Remove old landing pages
@@ -71,13 +71,13 @@ r301 %r{/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 
 # Redirects for Application Service book starting in 2.7
 
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/buildpacks/detection.html}, 'application-service/$1/buildpacks/understand-buildpacks.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/buildpacks/understand-buildpacks.html}, 'application-service/$1/buildpacks/understand-buildpacks.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/buildpacks/detection.html}, '/application-service/$1/buildpacks/understand-buildpacks.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/buildpacks/understand-buildpacks.html}, '/application-service/$1/buildpacks/understand-buildpacks.html'
 
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/security/index.html}, 'application-service/$1/concepts/security.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, 'application-service/$1/concepts/security.html'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/index.html}, 'application-service/$1/concepts/security.html'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, 'application-service/$1/concepts/security.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/security/index.html}, '/application-service/$1/concepts/security.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, '/application-service/$1/concepts/security.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/index.html}, '/application-service/$1/concepts/security.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, '/application-service/$1/concepts/security.html'
 r301 %r{/application-service/(2-[3-6])/concepts/security.html}, '/pivotalcf/$1/concepts/security.html'
 r301 %r{/application-service/(2-[3-6])/security/concepts/security.html}, '/pivotalcf/$1/concepts/security.html'
 
@@ -331,7 +331,7 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 
 
 # All other /platform to /pivotalcf redirects
-r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
+
 
 
 # Service Mesh redirects
