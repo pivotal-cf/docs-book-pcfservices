@@ -307,7 +307,7 @@ r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
-r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-3/$2"
+r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-3/$1"
 
 
 # Redirect older versions to PDFs
@@ -343,6 +343,9 @@ r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/$1/$2"
 # Function Service redirects
 r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
+
+# Cloud Service Broker redirects
+r301 %r{/cloud-service-broker/(?![\d-]+)(.*)}, "/cloud-service-broker/1-0/$1"
 
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
@@ -605,6 +608,7 @@ r301 %r{/solace-messaging/(.*)}, "/partners/solace-messaging/$1"
 r301 %r{/splunk/(.*)}, "/partners/splunk/$1"
 r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
 
+r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
 
 
 r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
@@ -717,50 +721,50 @@ r301 %r{/service-metrics/(?![\d-]+)(.*)}, "/svc-sdk/service-metrics/$1"
 r301 %r{/service-backup/(?![\d-]+)(.*)}, "/svc-sdk/service-backup/$1"
 
 # Redirect old Antivirus versions to PDFs
-r301 %r{/addon-antivirus/1-3/(.*)}, 'http://docs.pivotal.io/archives/addon-antivirus-1.3.pdf'
-r301 %r{/addon-antivirus/1-2/(.*)}, 'http://docs.pivotal.io/archives/addon-antivirus-1.2.pdf'
+r301 %r{/addon-antivirus/1-3/(.*)}, 'http://docs.pivotal.io/pdfs/addon-antivirus-1.3.pdf'
+r301 %r{/addon-antivirus/1-2/(.*)}, 'http://docs.pivotal.io/pdfs/addon-antivirus-1.2.pdf'
 # Redirect old Identity versions to PDFs
-r301 %r{/p-identity/1-1/(.*)}, "http://docs.pivotal.io/archives/docs-identity-1.1.pdf"
-r301 %r{/p-identity/1-2/(.*)}, "http://docs.pivotal.io/archives/docs-identity-1.2.pdf"
-r301 %r{/p-identity/1-3/(.*)}, "http://docs.pivotal.io/archives/docs-identity-1.3.pdf"
-r301 %r{/p-identity/1-4/(.*)}, "http://docs.pivotal.io/archives/docs-identity-1.4.pdf"
+r301 %r{/p-identity/1-1/(.*)}, "http://docs.pivotal.io/pdfs/docs-identity-1.1.pdf"
+r301 %r{/p-identity/1-2/(.*)}, "http://docs.pivotal.io/pdfs/docs-identity-1.2.pdf"
+r301 %r{/p-identity/1-3/(.*)}, "http://docs.pivotal.io/pdfs/docs-identity-1.3.pdf"
+r301 %r{/p-identity/1-4/(.*)}, "http://docs.pivotal.io/pdfs/docs-identity-1.4.pdf"
 # Redirect old IPsec versions to PDFs
-r301 %r{/addon-ipsec/1-8/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.8.pdf'
-r301 %r{/addon-ipsec/1-7/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.7.pdf'
-r301 %r{/addon-ipsec/1-6/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.6.pdf'
-r301 %r{/addon-ipsec/1-5/(.*)}, 'http://docs.pivotal.io/archives/addon-ipsec-1.5.pdf'
+r301 %r{/addon-ipsec/1-8/(.*)}, 'http://docs.pivotal.io/pdfs/addon-ipsec-1.8.pdf'
+r301 %r{/addon-ipsec/1-7/(.*)}, 'http://docs.pivotal.io/pdfs/addon-ipsec-1.7.pdf'
+r301 %r{/addon-ipsec/1-6/(.*)}, 'http://docs.pivotal.io/pdfs/addon-ipsec-1.6.pdf'
+r301 %r{/addon-ipsec/1-5/(.*)}, 'http://docs.pivotal.io/pdfs/addon-ipsec-1.5.pdf'
 # Redirect old MySQL versions to PDFs
-r301 %r{/p-mysql/2-2/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.2.pdf'
-r301 %r{/p-mysql/2-1/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.1.pdf'
-r301 %r{/p-mysql/2-0/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-2.0.pdf'
-r301 %r{/p-mysql/1-9/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.9.pdf'
-r301 %r{/p-mysql/1-8/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.8.pdf'
-r301 %r{/p-mysql/1-7/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.7.pdf'
-r301 %r{/p-mysql/1-6/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.7.pdf'
-r301 %r{/p-mysql/1-5/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.7.pdf'
-r301 %r{/p-mysql/1-4/(.*)}, 'http://docs.pivotal.io/archives/mysql-docs-1.7.pdf'
+r301 %r{/p-mysql/2-2/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-2.2.pdf'
+r301 %r{/p-mysql/2-1/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-2.1.pdf'
+r301 %r{/p-mysql/2-0/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-2.0.pdf'
+r301 %r{/p-mysql/1-9/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-1.9.pdf'
+r301 %r{/p-mysql/1-8/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-1.8.pdf'
+r301 %r{/p-mysql/1-7/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-1.7.pdf'
+r301 %r{/p-mysql/1-6/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-1.7.pdf'
+r301 %r{/p-mysql/1-5/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-1.7.pdf'
+r301 %r{/p-mysql/1-4/(.*)}, 'http://docs.pivotal.io/pdfs/mysql-docs-1.7.pdf'
 # Redirect old Push notifications versions to PDFs
 r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf'
 r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
 r301 %r{/push/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf'
 r301 %r{/push/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf'
 # Redirect old RabbitMQ versions to PDFs
-r301 %r{/rabbitmq-cf/1-12/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.12.pdf"
-r301 %r{/rabbitmq-cf/1-11/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.11.pdf"
-r301 %r{/rabbitmq-cf/1-10/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.10.pdf"
-r301 %r{/rabbitmq-cf/1-9/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.9.pdf"
-r301 %r{/rabbitmq-cf/1-8/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.8.pdf"
-r301 %r{/rabbitmq-cf/1-7/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.7.pdf"
-r301 %r{/rabbitmq-cf/1-6/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.6.pdf"
-r301 %r{/rabbitmq-cf/1-5/(.*)}, "https://docs.pivotal.io/archives/rabbitmq-pcf-1.5.pdf"
+r301 %r{/rabbitmq-cf/1-12/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.12.pdf"
+r301 %r{/rabbitmq-cf/1-11/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.11.pdf"
+r301 %r{/rabbitmq-cf/1-10/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.10.pdf"
+r301 %r{/rabbitmq-cf/1-9/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.9.pdf"
+r301 %r{/rabbitmq-cf/1-8/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.8.pdf"
+r301 %r{/rabbitmq-cf/1-7/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.7.pdf"
+r301 %r{/rabbitmq-cf/1-6/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.6.pdf"
+r301 %r{/rabbitmq-cf/1-5/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.5.pdf"
 # Redirect old Redis versions to PDFs
-r301 %r{/redis/1-13/(.*)}, 'http://docs.pivotal.io/archives/redis-1.13.pdf'
-r301 %r{/redis/1-12/(.*)}, 'http://docs.pivotal.io/archives/redis-1.12.pdf'
-r301 %r{/redis/1-11/(.*)}, 'http://docs.pivotal.io/archives/redis-1.11.pdf'
-r301 %r{/redis/1-10/(.*)}, 'http://docs.pivotal.io/archives/redis-1.10.pdf'
-r301 %r{/redis/1-9/(.*)}, 'http://docs.pivotal.io/archives/redis-1.9.pdf'
-r301 %r{/redis/1-8/(.*)}, 'http://docs.pivotal.io/archives/redis-1.8.pdf'
-r301 %r{/redis/1-7/(.*)}, 'http://docs.pivotal.io/archives/redis-1.7.pdf'
-r301 %r{/redis/1-6/(.*)}, 'http://docs.pivotal.io/archives/redis-1.6.pdf'
-r301 %r{/redis/1-5/(.*)}, 'http://docs.pivotal.io/archives/redis-1.5.pdf'
-r301 %r{/redis/1-4/(.*)}, 'http://docs.pivotal.io/archives/redis-1.4.pdf'
+r301 %r{/redis/1-13/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.13.pdf'
+r301 %r{/redis/1-12/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.12.pdf'
+r301 %r{/redis/1-11/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.11.pdf'
+r301 %r{/redis/1-10/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.10.pdf'
+r301 %r{/redis/1-9/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.9.pdf'
+r301 %r{/redis/1-8/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.8.pdf'
+r301 %r{/redis/1-7/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.7.pdf'
+r301 %r{/redis/1-6/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.6.pdf'
+r301 %r{/redis/1-5/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.5.pdf'
+r301 %r{/redis/1-4/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.4.pdf'
