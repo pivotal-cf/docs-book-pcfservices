@@ -58,9 +58,9 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/relea
 
 # Redirects for Windows to /application-service-windows
 r301 %r{/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
-r301 %r{/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
+r301 %r{/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-10/$1'
 r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
-r301 %r{/platform/application-service-windows/(?![\d-]+)/(.*)}, '/application-service-windows/2-10/$2'
+r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-10/$1'
 r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service-windows/$1/$2'
 r301 %r{/platform/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
@@ -256,7 +256,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-s
 
 # All other /application-service redirects
 r301 %r{/platform/application-service/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service/$1/$2'
-r301 %r{/platform/application-service/(?![\d-]+)/(.*)}, '/application-service/2-10/$2'
+r301 %r{/platform/application-service/(?![\d-]+)(.*)}, '/application-service/2-10/$1'
 r301 %r{/application-service/(?![\d-]+)(.*)}, '/application-service/2-10/$1'
 
 
@@ -276,21 +276,23 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
 # All other /ops-manager redirects
-r301 %r{/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
-r301 %r{/platform/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
+r301 %r{/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/2-10/$1'
+r301 %r{/platform/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/2-10/$1'
 r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 r301 %r{/platform/(?![\d-]+)/om/(.*)}, '/ops-manager/2-10/$2'
-r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/2-10/$2"
+r301 %r{/pcf/om/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
 r301 %r{/pcf/om/(2-[7-9]|2-\d\d+)/(.*)}, "/ops-manager/$1/$2"
 r301 %r{/pcf/om/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
 # CredHub redirects
+r301 %r{/platform/credhub/(.*)}, "/credhub/$1"
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/credhub/(.*)}, '/credhub/$1/$2'
 
 
 # Stemcell redirect
+r301 %r{/platform/stemcells/(.*)}, "/stemcells/$1"
 r301 %r{/platform/(2-[3-9]|2-\d\d+)/stemcells/(.*)}, '/stemcells/$1/$2'
 
 # Windows stemcell release notes: redirect non-2.8-relevant versions
@@ -304,7 +306,7 @@ r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
-r301 %r{/scheduler/(?![\d-]+)/(.*)}, "/scheduler/1-2/$2"
+r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$2"
 
 
 # Redirect older versions to PDFs
@@ -333,7 +335,7 @@ r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 # Service Mesh redirects
 r301 %r{/service-mesh/(.*)}, "/platform/ingress-router/$1"
-r301 %r{/ingress-router/(?![\d-]+)/(.*)}, "/platform/ingress-router/$1/$2"
+r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/platform/ingress-router/$1"
 r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/$1/$2"
 
 
