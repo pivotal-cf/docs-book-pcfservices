@@ -19,7 +19,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/index.html}, '/ops-manager/$1/install/index.
 # Core release notes redirects
 
 # Release notes moved to product books
-r301 %r{/platform/(?![\d-]+)/release-notes/breaking-changes.html}, '/ops-manager/2-10/release-notes.html'
+r301 %r{/platform/(?!\d-\d[^/]*/)/release-notes/breaking-changes.html}, '/ops-manager/2-10/release-notes.html'
 r301 %r{/platform/(?![\d-]+)/release-notes/opsmanager-rn.html}, '/ops-manager/2-10/release-notes.html'
 r301 %r{/platform/(?![\d-]+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/2-10/overview/release-notes/$2'
 r301 %r{/platform/(?![\d-]+)/release-notes/windows-rn.html}, '/application-service-windows/2-10/release-notes.html'
