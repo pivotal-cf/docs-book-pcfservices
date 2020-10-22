@@ -8,6 +8,7 @@ r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
+r301 %r{/platform/(2-[0-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
 # Remove old landing pages
@@ -306,7 +307,7 @@ r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
-r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-2/$2"
+r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-3/$2"
 
 
 # Redirect older versions to PDFs
