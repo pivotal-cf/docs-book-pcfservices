@@ -9,10 +9,10 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
 r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 # Reinstate versionless pivotalcf link
-r301 %r{/pivotalcf/(?![\d-]+)/(.*)}, '/platform/2-10/$2'
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, '/platform/2-10/$1'
 
 # Reinstate versionless platform link
-r301 %r{/platform/(?![\d-]+)/(.*)}, '/platform/2-10/$2'
+r301 %r{/platform/(?![\d-]+)(.*)}, '/platform/2-10/$1'
 
 # Remove old landing pages
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/pcf-docs.html}, '/ops-manager/$1/install/index.html'
