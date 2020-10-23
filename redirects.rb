@@ -12,6 +12,7 @@ r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, '/platform/2-10/$1'
 
 # Reinstate versionless platform link
+r301 %r{/platform/opsman-api(?![\d-]+)(.*)}, '/platform/2-10/opsman-api/$1'
 r301 %r{/platform/(?![\d-]+)(.*)}, '/platform/2-10/$1'
 
 # Remove old landing pages
@@ -147,6 +148,7 @@ r301 %r{/application-service/(2-[3-6])/operating/cfpush-availability-during-upgr
 r301 %r{/application-service/(2-[3-6])/operating/user-types.html}, '/pivotalcf/$1/customizing/user-types.html'
 r301 %r{/application-service/(2-[3-6])/operating/vsphere-nsx-t.html}, '/pivotalcf/$1/customizing/vsphere-nsx-t.html'
 r301 %r{/application-service/(2-[3-6])/operating/configure-lb.html}, '/pivotalcf/$1/customizing/configure-lb.html'
+
 # 2-7 and later redirects
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/configure-pas.html}, '/application-service/$1/operating/configure-pas.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/customizing/console-login.html}, '/application-service/$1/operating/console-login.html'
