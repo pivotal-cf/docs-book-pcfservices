@@ -138,7 +138,7 @@ r301 %r{/application-service/(2-[3-6])/operating/vsphere-nsx-t.html}, '/pivotalc
 r301 %r{/application-service/(2-[3-6])/operating/configure-lb.html}, '/pivotalcf/$1/customizing/configure-lb.html'
 
 # 2-7 and later redirects
-r301 %r{(\/pivotalcf|\/platform)/(2-[7-9]|2-\d\d+)/customizing/configure-pas.html}, '/application-service/$1/operating/configure-pas.html'
+r301 %r{(\/pivotalcf|\/platform)/(2-[7-9]|2-\d\d+)/customizing/configure-pas.html}, '/application-service/$2/operating/configure-pas.html'
 r301 %r{(\/pivotalcf|\/platform)/(2-[7-9]|2-\d\d+)/customizing/console-login.html}, '/application-service/$1/operating/console-login.html'
 r301 %r{(\/pivotalcf|\/platform)/(2-[7-9]|2-\d\d+)/customizing/create-pas-dbs.html}, '/application-service/$1/operating/create-pas-dbs.html'
 r301 %r{(\/pivotalcf|\/platform)/(2-[7-9]|2-\d\d+)/customizing/creating-account.html}, '/application-service/$1/operating/creating-account.html'
