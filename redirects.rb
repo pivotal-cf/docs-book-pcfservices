@@ -287,7 +287,7 @@ r301 %r{/pcf/om/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 # CredHub redirects
 r301 %r{/platform/credhub/(.*)}, "/credhub/$1"
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/credhub/(.*)}, '/credhub/$1/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/credhub/(.*)}, '/credhub/$2'
 
 
 # Stemcell redirect
