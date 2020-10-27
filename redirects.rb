@@ -25,7 +25,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/(runtime-rn.html|segment-rn.ht
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 
 # 2-3 to 2-6 release note redirects
-r301 %r{/platform/(2-[3-6])/release-notes/breaking-changes.html}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/platform/(2-[3-6])/release-notes/breaking-changes.html}, '/pivotalcf/$1/pcf-release-notes/breaking-changes.html'
 r301 %r{/platform/(2-[3-6])/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/platform/(2-[3-6])/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/windows-rn.html'
 
@@ -52,8 +52,7 @@ r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-servic
 r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-10/$1'
 r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service-windows/$1/$2'
 r301 %r{/platform/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$1/$2'
+r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$2/$3'
 r301 %r{/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 
 
@@ -102,7 +101,6 @@ r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/appsman-services/(.*)}, '/appli
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/console/(.*)}, '/application-service/$2/console/$3'
 
 # Redirects for Monitoring topics formerly in docs-monitoring, now in docs-pas
-r301 %r{/application-service/(2-[3-6])/monitoring/configure-pas.html}, '/pivotalcf/$1/monitoring/$2'
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$2/overview/monitoring/$3'
 
 # Install redirects
