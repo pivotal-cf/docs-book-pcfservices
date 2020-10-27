@@ -271,12 +271,12 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
 # All other /ops-manager redirects
-r301 %r{/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/2-10/$1'
+r301 %r{/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
 r301 %r{/platform/ops-manager/(.*)}, '/ops-manager/$1'
 r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 r301 %r{/platform/(?![\d-]+)/om/(.*)}, '/ops-manager/2-10/$2'
-r301 %r{/pcf/om/(?![\d-]+)(.*)}, "/ops-manager/2-10/$1"
+r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/2-10/$1"
 r301 %r{/pcf/om/(2-[7-9]|2-\d\d+)/(.*)}, "/ops-manager/$1/$2"
 r301 %r{/pcf/om/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
@@ -292,8 +292,8 @@ r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1709x.html}, '/stemc
 r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1803x.html}, '/stemcells/windows-stemcell-v2019x.html'
 
 # Stemcell redirect
-r301 %r{/platform/stemcells/(.*)}, "/stemcells/$1"
-r301 %r{/platform/(2-[3-9]|2-\d\d+)/stemcells/(.*)}, '/stemcells/$1/$2'
+r301 %r{/platform/stemcells/(?![\d-]+)/(.*)}, "/stemcells/$2"
+r301 %r{/platform/(2-[3-9]|2-\d\d+)/stemcells/(.*)}, '/stemcells/$2'
 
 # Stemcell topic moved in December 2019
 r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
