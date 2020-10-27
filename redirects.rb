@@ -286,14 +286,14 @@ r301 %r{/platform/credhub/(.*)}, "/credhub/$1"
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/credhub/(.*)}, '/credhub/$2'
 
 
-# Stemcell redirect
-r301 %r{/platform/stemcells/(.*)}, "/stemcells/$1"
-r301 %r{/platform/(2-[3-9]|2-\d\d+)/stemcells/(.*)}, '/stemcells/$1/$2'
-
 # Windows stemcell release notes: redirect non-2.8-relevant versions
 r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1200x.html}, '/stemcells/windows-stemcell-v2019x.html'
 r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1709x.html}, '/stemcells/windows-stemcell-v2019x.html'
 r301 %r{/platform/(2-9|2-\d\d+)/stemcells/windows-stemcell-v1803x.html}, '/stemcells/windows-stemcell-v2019x.html'
+
+# Stemcell redirect
+r301 %r{/platform/stemcells/(.*)}, "/stemcells/$1"
+r301 %r{/platform/(2-[3-9]|2-\d\d+)/stemcells/(.*)}, '/stemcells/$1/$2'
 
 # Stemcell topic moved in December 2019
 r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
