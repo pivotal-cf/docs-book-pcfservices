@@ -25,7 +25,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/(runtime-rn.html|segment-rn.ht
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 
 # 2-3 to 2-6 release note redirects
-r301 %r{/platform/(2-[3-6])/release-notes/breaking-changes.html}, '/pivotalcf/$1/pcf-release-notes/breaking-changes.html'
+r301 %r{/platform/(2-[3-6])/release-notes/breaking-changes.html(.*)}, '/pivotalcf/$1/pcf-release-notes/breaking-changes.html$2'
 r301 %r{/platform/(2-[3-6])/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/platform/(2-[3-6])/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/windows-rn.html'
 
@@ -39,8 +39,7 @@ r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/highlights.html}, '/pivotalcf/$1/
 
 # BBR release notes redirect to OSS
 r301 %r{/platform/(2-[0-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
-r301 %r{/pivotalcf/(2-[0-9]|2-\d\d+)/pcf-release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
-r301 %r{/pivotalcf/(1-\d\d+)/pcf-release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
 
 # Remove 'pcf' in release notes
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
@@ -275,7 +274,7 @@ r301 %r{/ops-manager/(?![\d-]+)/(.*)}, '/ops-manager/2-10/$2'
 r301 %r{/platform/ops-manager/(.*)}, '/ops-manager/$1'
 r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
-r301 %r{/platform/(?![\d-]+)/om/(.*)}, '/ops-manager/2-10/$2'
+r301 %r{/platform/om/(.*)}, '/ops-manager/2-10/$1'
 r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/2-10/$1"
 r301 %r{/pcf/om/(2-[7-9]|2-\d\d+)/(.*)}, "/ops-manager/$1/$2"
 r301 %r{/pcf/om/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
