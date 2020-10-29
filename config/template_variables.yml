@@ -26,9 +26,9 @@ template_variables:
   app_runtime_full: Pivotal Application Service
   app_runtime: Application Service
   app_runtime_abbr: PAS
-  k8s_runtime_full: Enterprise Pivotal Container Service
-  k8s_runtime: Enterprise PKS
-  k8s_runtime_abbr: PKS
+  k8s_runtime_full: Tanzu Kubernetes Grid Integrated Edition
+  k8s_runtime: Tanzu Kubernetes Grid Integrated Edition
+  k8s_runtime_abbr: TKGI
   windows_runtime_full: Pivotal Application Service for Windows
   windows_runtime: Application Service for Windows
   windows_runtime_abbr: PASW
@@ -114,11 +114,11 @@ template_variables:
   first_product_name: Pivotal Cloud Foundry&reg; (PCF)
   gen_GSG:
   GSG_intro_sentence:
-  incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='../opsguide/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry&reg; Deployment</a>.</p>
+  incompatible_ldap_saml: <p class='note'><strong>Note</strong>&#58; The procedures described here are not compatible with using SAML or LDAP for user identity management. To create and manage user accounts in a SAML- or LDAP-enabled Cloud Foundry deployment, see <a href='https://docs.pivotal.io/application-service/2-11/operating/external-user-management.html'>Adding Existing SAML or LDAP Users to a Pivotal Cloud Foundry&reg; Deployment</a>.</p>
   info_loc: In Pivotal Operations Manager
   invite_members: images/pcf/invite-members.png
   kb_link: <a href="http://support.pivotal.io/kb" target="_blank">Knowledge Base</a>
-  known_issues: <a href="http://docs.pivotal.io/pivotalcf/pcf-release-notes/index.html">Known Issues</a>
+  known_issues: <a href="http://docs.pivotal.io/application-service/overview/release-notes/runtime-rn.html#known-issues">Known Issues</a>
   link_adminguid_buildpack: You can find more documentation at the <a href="http://docs.pivotal.io/pivotalcf/adminguide/buildpacks.html">buildpack admin guide</a>.
   link_adminguide_commands: <p class="note"><strong>Note</strong>&#58; An Org Manager needs explicit administrator permissions to perform certain actions. Refer to the <a href="../uaa/uaa-user-management.html">Creating and Managing Users with the UAA CLI (UAAC)</a> topic to learn how to create a user with admin rights.</p>
   link_adminguide_domains: For admin-specific commands, refer to the <a href="../../adminguide/manage-domains-routes.html">Managing Domains and Routes</a> topic.

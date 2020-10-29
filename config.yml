@@ -21,9 +21,6 @@ sections:
     name: pivotal-cf/docs-pcf-upgrade
     ref: 'upgrade-table'
   directory: upgrading
-- repository:
-    name: pivotal-cf/pcf-release-notes
-  directory: releasenotes
 
 # repos in org pivotal-cf: alphabetical
 - repository:
@@ -88,25 +85,26 @@ sections:
   subnav_template: gemfire_cf_subnav.erb
 
 - repository:
-    ref: '1.2'
+    ref: '1.3'
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
-  directory: scheduler/1-2
-  subnav_template: pcf-scheduler-1-2_subnav.erb
+  directory: scheduler/1-3
+  subnav_template: pcf-scheduler_subnav.erb
   product_info:
     use_local_header: true
-    latest_stable_version: 1.2
+    latest_stable_version: 1.3
     local_header_img: /images/cloud_rings.png
-    local_header_title: Scheduler for PCF
-    search_placeholder: Search Scheduler for PCF 1.2
-    url_prefix: pcf-scheduler/1-2
-    local_product_version: 1.2
+    local_header_title: Scheduler
+    search_placeholder: Search Scheduler 1.3
+    url_prefix: scheduler/1-3
+    local_product_version: 1.3
     local_header_links: []
     local_header_version_list:
+      - <a href="http://docs.pivotal.io/scheduler/1-2/index.html">v1.2</a>
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf">v1.1</a>
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf">v1.0</a>
 
 - repository:
-    name: pivotal-cf/docs-tracker-pcf-new
+    name: pivotal-cf/docs-tracker-pcf
   directory: tracker-pcf
   subnav_template: pivotal_tracker_subnav.erb
