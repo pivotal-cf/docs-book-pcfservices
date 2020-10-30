@@ -73,6 +73,7 @@ Noindex: /rabbitmq-cf/1-8/
 Noindex: /rabbitmq-cf/1-7/
 Noindex: /rabbitmq-cf/1-6/
 Noindex: /rabbitmq-cf/1-5/
+Noindex: /redis/2-2/
 Noindex: /redis/2-1/
 Noindex: /redis/2-0/
 Noindex: /redis/1-14/
