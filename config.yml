@@ -100,7 +100,7 @@ sections:
     local_product_version: 1.4
     local_header_links: []
     local_header_version_list:
-      - <a href="http://docs.pivotal.io/scheduler/1-2/index.html">v1.3</a>
+      - <a href="http://docs.pivotal.io/scheduler/1-3/index.html">v1.3</a>
       - <a href="http://docs.pivotal.io/scheduler/1-2/index.html">v1.2</a>
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf">v1.1</a>
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf">v1.0</a>
