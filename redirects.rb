@@ -339,8 +339,12 @@ r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
 
 # Cloud Service Broker redirects
-r301 %r{/cloud-service-broker/(?![\d-]+)(.*)}, "/cloud-service-broker/1-0/$1"
+# csb-azure
+r302 %r{/cloud-service-broker/(.*)}, "/csb-azure/$1" # redirect from old URL
+r301 %r{/csb-azure/(?![\d-]+)(.*)}, "/csb-azure/1-1/$1" # redirect to current released version
 
+# csb-aws
+r301 %r{/csb-aws/(?![\d-]+)(.*)}, "/csb-aws/1-0/$1" # redirect to current released version
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 # r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-6/buildpacks/$1'
