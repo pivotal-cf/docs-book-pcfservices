@@ -60,6 +60,7 @@ Noindex: /push/1-9/
 Noindex: /push/1-8/
 Noindex: /push/1-7/
 Noindex: /push/1-6/
+Noindex: /rabbitmq-cf/1-18/
 Noindex: /rabbitmq-cf/1-17/
 Noindex: /rabbitmq-cf/1-16/
 Noindex: /rabbitmq-cf/1-15/
@@ -179,6 +180,7 @@ Disallow: /push/1-9/
 Disallow: /push/1-8/
 Disallow: /push/1-7/
 Disallow: /push/1-6/
+Disallow: /rabbitmq-cf/1-18/
 Disallow: /rabbitmq-cf/1-17/
 Disallow: /rabbitmq-cf/1-16/
 Disallow: /rabbitmq-cf/1-15/
