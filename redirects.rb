@@ -691,6 +691,7 @@ r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-1/$1"
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 
 # Redirects for Metrics
+r301 %r{/app-metrics/$}, "/app-metrics/2-0/index.html"
 r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
 r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
 
