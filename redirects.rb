@@ -338,13 +338,6 @@ r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/$1/$2"
 r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
 
-# Cloud Service Broker redirects
-# csb-azure
-r302 %r{/cloud-service-broker/(.*)}, "/csb-azure/$1" # redirect from old URL
-r301 %r{/csb-azure/(?![\d-]+)(.*)}, "/csb-azure/1-1/$1" # redirect to current released version
-
-# csb-aws
-r301 %r{/csb-aws/(?![\d-]+)(.*)}, "/csb-aws/1-0/$1" # redirect to current released version
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 # r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-6/buildpacks/$1'
@@ -674,6 +667,13 @@ r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 # Redirect for Antivirus
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
+
+# Redirects for Cloud Service Broker
+# csb-azure
+r301 %r{/cloud-service-broker/(.*)}, "/csb-azure/$1" # redirect from old URL
+r302 %r{/csb-azure/(?![\d-]+)(.*)}, "/csb-azure/1-1/$1" # redirect to current released version
+# csb-aws
+r302 %r{/csb-aws/(?![\d-]+)(.*)}, "/csb-aws/1-0/$1" # redirect to current released version
 
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
