@@ -119,7 +119,7 @@ Noindex: /healthwatch/1-3/
 Noindex: /healthwatch/1-2/
 Noindex: /healthwatch/1-1/
 Noindex: /healthwatch/1-0/
-
+Noindex: /aws-services/
 
 
 Disallow: /archives/
@@ -239,3 +239,4 @@ Disallow: /healthwatch/1-3/
 Disallow: /healthwatch/1-2/
 Disallow: /healthwatch/1-1/
 Disallow: /healthwatch/1-0/
+Disallow: /aws-services/
