@@ -44,6 +44,10 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://do
 # Remove 'pcf' in release notes
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
 
+# 47 Remove 'overview' from dropdown formed release note links for 1
+r301 %r{/pivotalcf/(2-[0-6])/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/pivotalcf/(1-\d+|1-\d\d+)/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
+
 # Redirects for Windows to /application-service-windows
 r301 %r{/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
 r301 %r{/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-10/$1'
@@ -101,6 +105,7 @@ r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/console/(.*)}, '/application-se
 
 # Redirects for Monitoring topics formerly in docs-monitoring, now in docs-pas
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$2/overview/monitoring/$3'
+r301 %r{(/pivotalcf|/platform)/(2-[3-6])/overview/monitoring/(.*)}, '/$1/$2/monitoring/$3'
 
 # Install redirects
 # 2-3 to 2-6 redirects
