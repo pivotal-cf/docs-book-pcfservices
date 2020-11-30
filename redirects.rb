@@ -265,6 +265,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
 
 # Redirects for OM topics formerly in customizing
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/pcf-interface.html}, '/ops-manager/$1/pcf-interface.html'
+r301 %r{/ops-manager/(2-[3-6]/pcf-interface.html}, '/pivotalcf/$1/customizing/pcf-interface.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/trusted-certificates.html}, '/ops-manager/$1/trusted-certificates.html'
 
 # Rest of docs-pcf-install redirects to Ops Manager
