@@ -284,7 +284,7 @@ r301 %r{/pivotalcf/(2-[3-6])/vsphere/(.*)}, '/ops-manager/$1/vsphere/$2'
 # Rest of docs-ops-guide redirects to Ops Manager
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
-# docs-pcf-upgrade in OM 2-3 to 2-6 redirect
+# 2-3 to 2-6 upgrade checklist redirect
 r301 %r{/pivotalcf/(2-[3-6])/upgrade/checklist.html}, '/pivotalcf/($1/upgrading/checklist.html'
 
 # All other /ops-manager redirects
