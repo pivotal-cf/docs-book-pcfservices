@@ -33,6 +33,8 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/opsmanager-rn.html}, '/op
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 
+r301 %r{/pivotalcf/(2-[3-6])/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
+
 # Highlights redirect
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
 
@@ -270,10 +272,14 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/trusted-certificates.html}, '/ops-manager/$1
 
 # Rest of docs-pcf-install redirects to Ops Manager
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
-r301 %r{/ops-manager/(2-[3-6]/install/(.*)}, '/pivotalcf/$1/customizing/$2'
+r301 %r{/ops-manager/(2-[3-6])/install/(.*)}, '/pivotalcf/$1/customizing/$2'
 
 # IaaS-specific install redirects
-r301 %r{
+r301 %r{/pivotalcf/(2-[3-6])/aws/(.*)}, '/ops-manager/$1/aws/$2'
+r301 %r{/pivotalcf/(2-[3-6])/azure/(.*)}, '/ops-manager/$1/azure/$2'
+r301 %r{/pivotalcf/(2-[3-6])/gcp/(.*)}, '/ops-manager/$1/gcp/$2'
+r301 %r{/pivotalcf/(2-[3-6])/openstack/(.*)}, '/ops-manager/$1/openstack/$2'
+r301 %r{/pivotalcf/(2-[3-6])/vsphere/(.*)}, '/ops-manager/$1/vsphere/$2'
 
 # Rest of docs-ops-guide redirects to Ops Manager
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
