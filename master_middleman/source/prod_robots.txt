@@ -154,6 +154,7 @@ Disallow: /svc-sdk/odb/0-18/
 Disallow: /svc-sdk/odb/0-17/
 Disallow: /svc-sdk/odb/0-16/
 Disallow: /svc-sdk/odb/0-15/
+Disallow: /p-identity/1-10/
 Disallow: /p-identity/1-9/
 Disallow: /p-identity/1-8/
 Disallow: /p-identity/1-7/
@@ -219,7 +220,6 @@ Disallow: /addon-fim/1-2/
 Disallow: /svc-sdk/service-backup/17-1/
 Disallow: /svc-sdk/service-backup/17-0/
 Disallow: /svc-sdk/service-backup/16-0/
-Disallow: /ksm/0-4/
 Disallow: /event-alerts/1-1
 Disallow: /svc-sdk/service-metrics/1-5/
 Disallow: /spring-cloud-services/2-0/
