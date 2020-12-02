@@ -1,5 +1,6 @@
 User-agent: *
 Noindex: /archives/
+Noindex: /pcf-dev/
 Noindex: /pks/1-3/
 Noindex: /pivotalcf/2-6/
 Noindex: /pivotalcf/2-5/
@@ -123,6 +124,7 @@ Noindex: /aws-services/
 
 
 Disallow: /archives/
+Disallow: /pcf-dev/
 Disallow: /pks/1-3/
 Disallow: /pivotalcf/2-6/
 Disallow: /pivotalcf/2-5/
