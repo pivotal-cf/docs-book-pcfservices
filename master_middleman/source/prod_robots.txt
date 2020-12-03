@@ -34,6 +34,7 @@ Noindex: /svc-sdk/odb/0-18/
 Noindex: /svc-sdk/odb/0-17/
 Noindex: /svc-sdk/odb/0-16/
 Noindex: /svc-sdk/odb/0-15/
+Noindex: /p-identity/1-10/
 Noindex: /p-identity/1-9/
 Noindex: /p-identity/1-8/
 Noindex: /p-identity/1-7/
