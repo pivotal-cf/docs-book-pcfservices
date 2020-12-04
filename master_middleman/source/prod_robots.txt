@@ -1,5 +1,6 @@
 User-agent: *
 Noindex: /archives/
+Noindex: /pcf-dev/
 Noindex: /pks/1-3/
 Noindex: /pivotalcf/2-6/
 Noindex: /pivotalcf/2-5/
@@ -33,6 +34,7 @@ Noindex: /svc-sdk/odb/0-18/
 Noindex: /svc-sdk/odb/0-17/
 Noindex: /svc-sdk/odb/0-16/
 Noindex: /svc-sdk/odb/0-15/
+Noindex: /p-identity/1-10/
 Noindex: /p-identity/1-9/
 Noindex: /p-identity/1-8/
 Noindex: /p-identity/1-7/
@@ -60,6 +62,7 @@ Noindex: /push/1-9/
 Noindex: /push/1-8/
 Noindex: /push/1-7/
 Noindex: /push/1-6/
+Noindex: /rabbitmq-cf/1-18/
 Noindex: /rabbitmq-cf/1-17/
 Noindex: /rabbitmq-cf/1-16/
 Noindex: /rabbitmq-cf/1-15/
@@ -73,6 +76,7 @@ Noindex: /rabbitmq-cf/1-8/
 Noindex: /rabbitmq-cf/1-7/
 Noindex: /rabbitmq-cf/1-6/
 Noindex: /rabbitmq-cf/1-5/
+Noindex: /redis/2-2/
 Noindex: /redis/2-1/
 Noindex: /redis/2-0/
 Noindex: /redis/1-14/
@@ -117,10 +121,11 @@ Noindex: /healthwatch/1-3/
 Noindex: /healthwatch/1-2/
 Noindex: /healthwatch/1-1/
 Noindex: /healthwatch/1-0/
-
+Noindex: /aws-services/
 
 
 Disallow: /archives/
+Disallow: /pcf-dev/
 Disallow: /pks/1-3/
 Disallow: /pivotalcf/2-6/
 Disallow: /pivotalcf/2-5/
@@ -152,6 +157,7 @@ Disallow: /svc-sdk/odb/0-18/
 Disallow: /svc-sdk/odb/0-17/
 Disallow: /svc-sdk/odb/0-16/
 Disallow: /svc-sdk/odb/0-15/
+Disallow: /p-identity/1-10/
 Disallow: /p-identity/1-9/
 Disallow: /p-identity/1-8/
 Disallow: /p-identity/1-7/
@@ -178,6 +184,7 @@ Disallow: /push/1-9/
 Disallow: /push/1-8/
 Disallow: /push/1-7/
 Disallow: /push/1-6/
+Disallow: /rabbitmq-cf/1-18/
 Disallow: /rabbitmq-cf/1-17/
 Disallow: /rabbitmq-cf/1-16/
 Disallow: /rabbitmq-cf/1-15/
@@ -216,7 +223,6 @@ Disallow: /addon-fim/1-2/
 Disallow: /svc-sdk/service-backup/17-1/
 Disallow: /svc-sdk/service-backup/17-0/
 Disallow: /svc-sdk/service-backup/16-0/
-Disallow: /ksm/0-4/
 Disallow: /event-alerts/1-1
 Disallow: /svc-sdk/service-metrics/1-5/
 Disallow: /spring-cloud-services/2-0/
@@ -236,3 +242,4 @@ Disallow: /healthwatch/1-3/
 Disallow: /healthwatch/1-2/
 Disallow: /healthwatch/1-1/
 Disallow: /healthwatch/1-0/
+Disallow: /aws-services/

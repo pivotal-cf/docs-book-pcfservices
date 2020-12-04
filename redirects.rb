@@ -33,9 +33,10 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/opsmanager-rn.html}, '/op
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 
+r301 %r{/pivotalcf/(2-[3-6])/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
+
 # Highlights redirect
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
-r301 %r{/pivotalcf/(2-[3-6])/pcf-release-notes/highlights.html}, '/pivotalcf/$1/installing/highlights.html'
 
 # BBR release notes redirect to OSS
 r301 %r{/platform/(2-[0-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
@@ -43,6 +44,10 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://do
 
 # Remove 'pcf' in release notes
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
+
+# 47 Remove 'overview' from dropdown formed release note links for 1
+r301 %r{/pivotalcf/(2-[0-2])/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
+r301 %r{/pivotalcf/(1-\d+|1-\d\d+)/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
 
 # Redirects for Windows to /application-service-windows
 r301 %r{/application-service-windows/latest/(.*)}, '/application-service-windows/2-10/$1'
@@ -101,6 +106,7 @@ r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/console/(.*)}, '/application-se
 
 # Redirects for Monitoring topics formerly in docs-monitoring, now in docs-pas
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$2/overview/monitoring/$3'
+r301 %r{(/pivotalcf|/platform)/(2-[3-6])/overview/monitoring/(.*)}, '/$1/$2/monitoring/$3'
 
 # Install redirects
 # 2-3 to 2-6 redirects
@@ -262,12 +268,24 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
 # Redirects for OM topics formerly in customizing
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/pcf-interface.html}, '/ops-manager/$1/pcf-interface.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/trusted-certificates.html}, '/ops-manager/$1/trusted-certificates.html'
+r301 %r{/ops-manager/(2-[3-6])/pcf-interface.html}, '/pivotalcf/$1/customizing/pcf-interface.html'
 
 # Rest of docs-pcf-install redirects to Ops Manager
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
+r301 %r{/pivotalcf/(2-[3-6])/install/(.*)}, '/pivotalcf/$1/customizing/$2'
+
+# IaaS-specific install redirects
+r301 %r{/pivotalcf/(2-[3-6])/aws/(.*)}, '/ops-manager/$1/aws/$2'
+r301 %r{/pivotalcf/(2-[3-6])/azure/(.*)}, '/ops-manager/$1/azure/$2'
+r301 %r{/pivotalcf/(2-[3-6])/gcp/(.*)}, '/ops-manager/$1/gcp/$2'
+r301 %r{/pivotalcf/(2-[3-6])/openstack/(.*)}, '/ops-manager/$1/openstack/$2'
+r301 %r{/pivotalcf/(2-[3-6])/vsphere/(.*)}, '/ops-manager/$1/vsphere/$2'
 
 # Rest of docs-ops-guide redirects to Ops Manager
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
+
+# 2-3 to 2-6 upgrade checklist redirect
+r301 %r{/pivotalcf/(2-[3-6])/upgrade/checklist.html}, '/pivotalcf/$1/upgrading/checklist.html'
 
 # All other /ops-manager redirects
 r301 %r{/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/2-10/$1'
@@ -301,7 +319,7 @@ r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
-r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-3/$1"
+r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-4/$1"
 
 
 # Redirect older versions to PDFs
@@ -337,9 +355,6 @@ r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/$1/$2"
 # Function Service redirects
 r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
-
-# Cloud Service Broker redirects
-r301 %r{/cloud-service-broker/(?![\d-]+)(.*)}, "/cloud-service-broker/1-0/$1"
 
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
@@ -619,19 +634,18 @@ r301 %r{/pks/1-3/concourse-helm.html}, '/pks/1-3/helm.html'
 r301 %r{/spring-flo/(.*)}, 'https://resources.docs.pivotal.io/pdfs/spring-flo.pdf'
 
 # Redirect older PKS to PDF
-r301 %r{/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-docs-1.0.pdf'
 r301 %r{/pks/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-docs-1.0.pdf'
 r301 %r{/pks/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-1.pdf'
 r301 %r{/pks/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-2.pdf'
 
 # Redirect non-versioned and 'latest' URL calls to the most recent version of PKS
 r301 %r{/runtimes/pks/(.*)}, "/tkgi/$1"
-r301 %r{/runtimes/pks/latest/(.*)}, "/tkgi/1-8/$1"
-r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
-r301 %r{/tkgi/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
-r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-8/$1"
-r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-8/$1"
-r301 %r{/pks/latest/(.*)}, "/tkgi/1-8/$1"
+r301 %r{/runtimes/pks/latest/(.*)}, "/tkgi/1-9/$1"
+r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
+r301 %r{/tkgi/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
+r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-9/$1"
+r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
+r301 %r{/pks/latest/(.*)}, "/tkgi/1-9/$1"
 
 # Redirect PRA docs
 r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-4/$1"
@@ -672,6 +686,13 @@ r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 # Redirect for Antivirus
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
 
+# Redirects for Cloud Service Broker
+# csb-azure
+r301 %r{/cloud-service-broker/(.*)}, "/csb-azure/$1" # redirect from old URL
+r302 %r{/csb-azure/(?![\d-]+)(.*)}, "/csb-azure/1-1/$1" # redirect to current released version
+# csb-aws
+r302 %r{/csb-aws/(?![\d-]+)(.*)}, "/csb-aws/1-0/$1" # redirect to current released version
+
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
 
@@ -688,6 +709,7 @@ r302 %r{/addon-fim/(?![\d-]+)(.*)}, "/addon-fim/2-1/$1"
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 
 # Redirects for Metrics
+r301 %r{/app-metrics/$}, "/app-metrics/2-0/index.html"
 r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
 r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
 
@@ -708,8 +730,8 @@ r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
 r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
 
 # Redirects for SSO
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-12/$1"
+r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
+r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
 
 # Redirect for Tanzu Service Manager
 r302 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/1-0/$1"
