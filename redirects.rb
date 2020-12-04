@@ -730,8 +730,8 @@ r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
 r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
 
 # Redirects for SSO
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
+r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-14/$1"
+r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-14/$1"
 
 # Redirect for Tanzu Service Manager
 r302 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/1-0/$1"
