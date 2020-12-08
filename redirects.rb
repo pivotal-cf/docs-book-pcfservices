@@ -714,8 +714,8 @@ r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
 r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
 
 # Redirects for MySQL
-r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
-r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
+r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-10/$1"
+r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-10/$1"
 
 # Redirect RabbitMQ for K8s to the open source RMQ docs
 r301 %r{/rabbitmq-kubernetes/(.*)}, "https://www.rabbitmq.com/kubernetes/operator/operator-overview.html"
