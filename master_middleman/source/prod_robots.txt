@@ -125,7 +125,6 @@ Noindex: /aws-services/
 
 
 Disallow: /archives/
-Disallow: /pcf-dev/
 Disallow: /pks/1-3/
 Disallow: /pivotalcf/2-6/
 Disallow: /pivotalcf/2-5/
