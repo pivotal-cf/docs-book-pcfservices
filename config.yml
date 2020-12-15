@@ -13,26 +13,99 @@ public_host: docs.pivotal.io
 elastic_search: true
 
 sections:
+# cross-product resources
+- repository:
+    name: pivotal-cf/product-compatibility-matrix
+  directory: resources
+- repository:
+    name: pivotal-cf/docs-pcf-upgrade
+    ref: 'upgrade-table'
+  directory: upgrading
 
 # repos in org pivotal-cf: alphabetical
 - repository:
-    ref: '1.2'
+    name: pivotal-cf/docs-credhub-service-broker
+  directory: credhub-service-broker
+  subnav_template: credhub_service_broker.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: "1.4"
+    changelog_href: https://docs.pivotal.io/credhub-service-broker/release-notes.html
+    local_header_img: /images/cloud_rings.png
+    local_header_title: CredHub Service Broker for PCF
+    search_placeholder: Search CredHub Service Broker for PCF
+    url_prefix: credhub-service-broker/
+    local_product_version:
+    local_header_links: []
+    local_header_version_list:
+
+- repository:
+    name: pivotal-cf/docs-logsearch
+  directory: logsearch
+  subnav_template: pivotal_logsearch_subnav.erb
+- repository:
+    name: pivotal-cf/docs-pcf-dev
+  directory: pcf-dev
+  subnav_template: pivotal_pcfdev_subnav.erb
+
+- repository:
+    name: pivotal-cf/docs-spring-xd
+  directory: spring-xd
+  subnav_template: spring_xd_service_subnav.erb
+
+# repos in other orgs: alphabetical by org
+- repository:
+    name: cfmobile/docs-push-notifications
+    ref: '1.10'
+  directory: push/1-10
+  subnav_template: push_subnav_1-10.erb
+  product_info:
+    use_local_header: true
+    latest_stable_version: "1.10"
+    changelog_href: http://docs.pivotal.io/push/1-10/release-notes.html
+    local_header_img: /images/cloud_rings.png
+    local_header_title: Push Notification Services
+    search_placeholder: Search PCF Push 1.10
+    url_prefix: push/1-10
+    local_product_version: "1.10"
+    local_header_links: []
+    local_header_version_list:
+      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf">v1.9&nbsp;(PDF)</a>
+      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf">v1.8&nbsp;(PDF)</a>
+      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf">v1.7&nbsp;(PDF)</a>
+      - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf">v1.6&nbsp;(PDF)</a>
+
+- repository:
+    name: gemfire/docs-gemfire-cf
+  directory: gemfire-cf
+  subnav_template: gemfire_pcf_subnav.erb
+- repository:
+    name: gemfire/docs-ssc-gemfire-cf
+  directory: ssc-gemfire
+  subnav_template: gemfire_cf_subnav.erb
+
+- repository:
+    ref: '1.4'
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
-  directory: scheduler/1-2
+  directory: scheduler/1-4
   subnav_template: pcf-scheduler_subnav.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.4
     local_header_img: /images/cloud_rings.png
     local_header_title: Scheduler
-    search_placeholder: Search Scheduler 1.2
-    url_prefix: scheduler/1-2
-    local_product_version: 1.2
+    search_placeholder: Search Scheduler 1.4
+    url_prefix: scheduler/1-4
+    local_product_version: 1.4
     local_header_links: []
     local_header_version_list:
-      - <a href="http://docs.pivotal.io/scheduler/1-4/index.html">v1.4</a>
       - <a href="http://docs.pivotal.io/scheduler/1-3/index.html">v1.3</a>
+      - <a href="http://docs.pivotal.io/scheduler/1-2/index.html">v1.2</a>
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf">v1.1</a>
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf">v1.0</a>
 
+- repository:
+    name: pivotal-cf/docs-tracker-pcf
+  directory: tracker-pcf
+  subnav_template: pivotal_tracker_subnav.erb
