@@ -93,6 +93,8 @@ Noindex: /redis/1-4/
 Noindex: /addon-antivirus/2-1/
 Noindex: /addon-antivirus/2-0/
 Noindex: /addon-antivirus/1-4/
+Noindex: /addon-compliance-tools/1-1/
+Noindex: /addon-compliance-tools/1-0/
 Noindex: /addon-ipsec/1-8/
 Noindex: /addon-ipsec/1-7/
 Noindex: /addon-ipsec/1-6/
@@ -214,6 +216,8 @@ Disallow: /redis/1-4/
 Disallow: /addon-antivirus/2-1/
 Disallow: /addon-antivirus/2-0/
 Disallow: /addon-antivirus/1-4/
+Disallow: /addon-compliance-tools/1-1/
+Disallow: /addon-compliance-tools/1-0/
 Disallow: /addon-ipsec/1-8/
 Disallow: /addon-ipsec/1-7/
 Disallow: /addon-ipsec/1-6/
