@@ -59,6 +59,8 @@ r301 %r{/platform/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/wi
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$2/$3'
 r301 %r{/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 
+# Add redirect for Azure Log Analysis Nozzle, now VMware-owned
+r301 %r{/partners/azure-log-analytics-nozzle/(.*)}, '/azure-log-analytics-nozzle/$1'
 
 # Redirects for Application Service book starting in 2.7
 
