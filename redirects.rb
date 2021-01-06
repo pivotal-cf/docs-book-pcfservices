@@ -650,7 +650,7 @@ r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
 r301 %r{/pks/latest/(.*)}, "/tkgi/1-9/$1"
 
 # Redirect PRA docs
-r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-4/$1"
+r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/3-0/$1"
 
 # Redirect 'archives' (contains PDFs)
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
