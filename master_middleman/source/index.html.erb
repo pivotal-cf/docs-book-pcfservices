@@ -66,6 +66,8 @@ top_services:
 - name: Tanzu GemFire<span class='tmr'>&reg;</span>
   desc: In-Memory Data Grid
   links:
+  - name: Tanzu GemFire<span class='tmr'>&reg;</span> for Kubernetes
+    url: https://tgf.docs.pivotal.io
   - name: Tanzu GemFire<span class='tmr'>&reg;</span> for VMs
     url: https://docs.pivotal.io/p-cloud-cache/index.html
   - name: Node.js Client for Tanzu GemFire<span class='tmr'>&reg;</span>
@@ -92,32 +94,29 @@ top_services:
   - name: Spring
     url: https://spring.io/guides
     open_source: true
-- name: Pivotal Greenplum<span class='tmr'>&reg;</span>
+- name: Tanzu Greenplum<span class='tmr'>&reg;</span>
   desc: Massively Parallel Data Warehouse
-  logo: icon_gpdb.png
   links:
-  - name: Pivotal Greenplum<span class='tmr'>&reg; Database</span>
-    url: https://gpdb.docs.pivotal.io
-  - name: Pivotal Greenplum<span class='tmr'>&reg; for Kubernetes</span>
+  - name: Tanzu Greenplum<span class='tmr'>&reg;</span>
+    url: https://greenplum.docs.pivotal.io
+  - name: Tanzu Greenplum<span class='tmr'>&reg; for Kubernetes</span>
     url: https://greenplum-kubernetes.docs.pivotal.io
-  - name: Pivotal Greenplum<span class='tmr'>&reg; Text</span>
+  - name: Tanzu Greenplum<span class='tmr'>&reg; Text</span>
     url: https://gptext.docs.pivotal.io
-  - name: Pivotal Greenplum<span class='tmr'>&reg; Command Center</span>
+  - name: Tanzu Greenplum<span class='tmr'>&reg; Command Center</span>
     url: https://gpcc.docs.pivotal.io
-  - name: Pivotal Greenplum<span class='tmr'>&reg; Backup and Restore</span>
-    url: https://gpdb.docs.pivotal.io/backup-restore
-  - name: Pivotal Greenplum<span class='tmr'>&reg; gpcopy</span>
-    url: https://gpdb.docs.pivotal.io/data-copy/2-3/index-gpcopy.html
-  - name: Pivotal Greenplum<span class='tmr'>&reg;-Kafka Integration
-    url: https://gpdb.docs.pivotal.io/latest/greenplum-kafka/intro.html
-  - name: Pivotal GemFire<span class='tmr'>&reg;-Greenplum&reg; Connector</span>
-    url: https://ggc.docs.pivotal.io
-  - name: Pivotal Greenplum<span class='tmr'>&reg;-Spark&reg; Connector</span>
+  - name: Tanzu Greenplum<span class='tmr'>&reg; Backup and Restore</span>
+    url: https://greenplum.docs.pivotal.io/backup-restore
+  - name: Tanzu Greenplum<span class='tmr'>&reg; Platform Extension Framework</span>
+    url: https://greenplum.docs.pivotal.io/pxf
+  - name: Tanzu Greenplum<span class='tmr'>&reg; Data Copy Utility</span>
+    url: https://greenplum.docs.pivotal.io/data-copy
+  - name: Tanzu Greenplum<span class='tmr'>&reg;</span> Connector for Apache Spark<span class='tmr'>&trade;</span>
     url: https://greenplum-spark.docs.pivotal.io
-  - name: Pivotal Greenplum<span class='tmr'>&reg;-Informatica Connector</span>
+  - name: Tanzu Greenplum<span class='tmr'>&reg; Connector for Informatica</span>
     url: https://greenplum-informatica.docs.pivotal.io
-  - name: Pivotal Greenplum<span class='tmr'>&reg; Streaming Server</span>
-    url: https://gpdb.docs.pivotal.io/streaming-server
+  - name: Tanzu Greenplum<span class='tmr'>&reg; Streaming Server</span>
+    url: https://greenplum.docs.pivotal.io/streaming-server
   - name: Greenplum Database
     url: https://docs.greenplum.org/
     open_source: true
@@ -148,6 +147,10 @@ top_services:
   logo: PVIC_PCF_Service_hotSQL.png
   num_in_row: 4
   links:
+  - name: VMware Tanzu&trade; SQL with Postgres for Kubernetes
+    url: https://postgres-kubernetes.docs.pivotal.io
+  - name: VMware Tanzu&trade; SQL with MySQL for Kubernetes
+    url: https://docs.pivotal.io/tanzu-mysql-kubernetes/index.html
   - name: VMware Tanzu™ SQL<br>with MySQL for VMs
     url: https://docs.pivotal.io/p-mysql/index.html
 - name: VMware Postgres
@@ -239,6 +242,9 @@ addon:
     - name: VMware Tanzu™ SQL<br>with MySQL for VMs
       url: https://docs.pivotal.io/p-mysql/index.html
       logo: PVIC_PCF_Service_hotSQL.png
+    - name: VMware Tanzu&trade; SQL with MySQL for Kubernetes
+      url: https://docs.pivotal.io/tanzu-mysql-kubernetes/index.html
+      logo: PVIC_PCF_Service_hotSQL.png
     - name: Neo4j Enterprise <br>for VMware Tanzu (Beta)
       url: https://docs.pivotal.io/partners/neo4j-enterprise/index.html
       logo: neo4j_logo_globe.png
@@ -250,6 +256,9 @@ addon:
       url: https://docs.pivotal.io/partners/redis-labs-enterprise-pack/index.html
       logo: new-redis-labs-logo.png
       is_partner: true
+    - name: Tanzu GemFire&reg; for Kubernetes
+      url: https://tgf.docs.pivotal.io
+      is_partner: false
     - name: Redis Enterprise Service Broker<br>for VMware Tanzu
       url: https://docs.pivotal.io/partners/rle-service-broker/index.html
       logo: new-redis-labs-logo.png
@@ -284,7 +293,7 @@ addon:
       url: https://docs.pivotal.io/partners/solace-pubsub/index.html
       logo: icon_solace_pubsub@2x.png
       is_partner: true
-  - name: Monitoring, Metrics and Logging
+  - name: Monitoring, Metrics, and Logging
     desc: Tools for application performance monitoring, tracking key metrics, and debugging performance issues.
     addon_services:
     - name: Altoros Log Search<br>for VMware Tanzu
@@ -303,6 +312,9 @@ addon:
       url: https://docs.pivotal.io/partners/appdynamics-analytics/index.html
       logo: icon_appdynamics_v2@2x.png
       is_partner: true
+    - name: App Metrics
+      url: https://docs.pivotal.io/app-metrics/
+      logo: icon_pivotal_generic@2x.png
     - name: Axway AMPLIFY<br> APIM Service Broker for VMware Tanzu
       url: https://docs.pivotal.io/partners/axway-apim-service-broker/index.html
       logo: icon_axway@2x.png
@@ -331,9 +343,6 @@ addon:
       url: https://docs.pivotal.io/partners/dynatrace/index.html
       logo: icon-dynatrace.png
       is_partner: true
-    - name: Pivotal Healthwatch
-      url: https://docs.pivotal.io/healthwatch/index.html
-      logo: icon_healthwatch@2x.png
     - name: Instana Microservices Application Monitoring for VMware Tanzu
       url: https://docs.pivotal.io/partners/instana/index.html
       logo: icon_instana@2x.png
@@ -344,10 +353,9 @@ addon:
     - name: Metrics Forwarder <br>for PCF
       url: https://docs.pivotal.io/metrics-forwarder/index.html
       logo: icon_pivotal_generic@2x.png
-    - name: Microsoft Azure Log Analytics<br>Nozzle for VMware Tanzu
+    - name: Nozzle for VMware Tanzu<br>for Microsoft Azure Log Analytics
       url: https://docs.pivotal.io/partners/azure-log-analytics-nozzle/index.html
       logo: icon_microsoft_azure@2x.png
-      is_partner: true
     - name: New Relic Cluster Monitoring <br> for VMware Tanzu
       url: https://docs.pivotal.io/partners/new-relic-cluster-monitoring/index.html
       logo: icon_newrelic_cf@2x.png
@@ -367,9 +375,10 @@ addon:
     - name: Pivotal Event Alerts
       url: https://docs.pivotal.io/event-alerts/index.html
       logo: icon_pcf_event_alerts@2x.png
-    - name: App Metrics
-      url: https://docs.pivotal.io/app-metrics/
-      logo: icon_pivotal_generic@2x.png
+
+    - name: Pivotal Healthwatch
+      url: https://docs.pivotal.io/healthwatch/index.html
+      logo: icon_healthwatch@2x.png
     - name: Riverbed SteelCentral AppInternals for VMware Tanzu
       url: https://docs.pivotal.io/partners/riverbed-appinternals/index.html
       logo: icon_riverbed_steelcentral_appInternals@2x.png

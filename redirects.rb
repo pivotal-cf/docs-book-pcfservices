@@ -59,6 +59,8 @@ r301 %r{/platform/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/wi
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$2/$3'
 r301 %r{/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 
+# Add redirect for Azure Log Analysis Nozzle, now VMware-owned
+r301 %r{/partners/azure-log-analytics-nozzle/(.*)}, '/azure-log-analytics-nozzle/$1'
 
 # Redirects for Application Service book starting in 2.7
 
@@ -648,7 +650,7 @@ r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-9/$1"
 r301 %r{/pks/latest/(.*)}, "/tkgi/1-9/$1"
 
 # Redirect PRA docs
-r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/2-4/$1"
+r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/3-0/$1"
 
 # Redirect 'archives' (contains PDFs)
 r301 %r{/archives/(.*)}, "https://resources.docs.pivotal.io/pdfs/$1"
@@ -714,14 +716,17 @@ r301 %r{/app-metrics/(?![\d-]+)(.*)}, "/app-metrics/2-0/$1"
 r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
 
 # Redirects for MySQL
-r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
-r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-9/$1"
+r302 %r{/tanzu-mysql-kubernetes/(?![\d-]|[p][a][r][t]+)(.*)}, "/tanzu-mysql-kubernetes/0-1/$1"
+
+# Redirects for MySQL
+r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-10/$1"
+r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-10/$1"
 
 # Redirect RabbitMQ for K8s to the open source RMQ docs
 r301 %r{/rabbitmq-kubernetes/(.*)}, "https://www.rabbitmq.com/kubernetes/operator/operator-overview.html"
 
 # Redirect for RabbitMQ for VMs
-r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-20/$1"
+r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/1-21/$1"
 
 # Redirect for Redis
 r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
@@ -730,8 +735,8 @@ r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/2-4/$1"
 r302 %r{/service-instance-manager/(?![\d-]+)(.*)}, "/service-instance-manager/0-8/$1"
 
 # Redirects for SSO
-r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
-r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-13/$1"
+r302 %r{/p-identity/(?![\d-]+)(.*)}, "/p-identity/1-14/$1"
+r302 %r{/sso/(?![\d-]+)(.*)}, "/p-identity/1-14/$1"
 
 # Redirect for Tanzu Service Manager
 r302 %r{/tanzu-service-manager/(?![\d-]+)(.*)}, "/tanzu-service-manager/1-0/$1"
