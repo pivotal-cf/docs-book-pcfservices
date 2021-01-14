@@ -6,6 +6,19 @@
 //   color: mediumvioletred;
 // }
 
+
+
+// Fix layout bug on large font sizes
+
+.has-subnav .container {
+  max-width: 77em; // overrides pixels
+}
+
+pre {
+  max-width: 53em;
+}
+
+
 // Make warning
 .warning {
   & > strong:first-child {
