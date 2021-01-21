@@ -136,7 +136,6 @@ template_variables:
   net_traffic_rules: <a href="http://docs.pivotal.io/pivotalcf/adminguide/app-sec-groups.html">network traffic rules</a>
   notifications_api_1:
   odb_bosh_lite_version: v9000.131.0
-  odb_example_redis_service_adapter_version: master
   odb_pcfdev_version_pivnet: 1811
   odb_pcfdev_version: pcfdev-v0.19.1-rc.46
   odb_warden_stemcell_version: 3262.2
