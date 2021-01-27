@@ -151,6 +151,9 @@ template_variables:
   port_limitations: "Applications running on Elastic Runtime receive requests through the URLs configured for the application. HTTP requests arrive on ports 80 and 443. Additionally, Elastic Runtime requires a channel for TCP/WebSocket traffic. By default, this is port 443.<br><br> Some production load balancers require separate ports for HTTP and TCP/WebSocket traffic. If your load balancer has this requirement, you must do the following in order to access logs from your app with the <code>cf logs APP\\_NAME</code> command: <ul> <li>Configure a different port for TCP/WebSocket traffic. As of PCF 1.4, you can configure your ports from the Elastic Runtime product tile in Ops Manager. </li><li>Set the value of the <code>port</code> sub-key of the logger\\_endpoint key in your manifest.</li> <li>Configure your HAProxy or load balancer to receive TCP traffic on the port that you specified.</li></ul><br>"
   private_app_domain: private-domain.com
   private_app_domain: private-domain.example.com
+  product_pks_full: VMware Tanzu Kubernetes Grid Integrated Edition
+  product_pks_short: TKGI
+  product_pks_tile: Tanzu Kubernetes Grid Integrated Edition
   product_url: https://network.pivotal.io/products/pivotal-cf
   pw_policy: See the <a href="../opsguide/pw-policy.html">Configuring UAA Password Policy</a> topic to configure the password policy.
   pws_metrics:
