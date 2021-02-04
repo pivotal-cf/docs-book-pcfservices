@@ -680,7 +680,7 @@ r301 %r{/pivotalcf/(?![\d-]+)(.*)}, '/platform/2-10/$1'
 r301 %r{/platform/opsman-api/(?![\d-]+)(.*)}, 'ops-manager/2-10/api/$2'
 # r301 %r{/platform/opsman-api/(\d-\d+)(.*)}, 'ops-manager/$1/api/$2'
 # r301 %r{/ops-manager/(\d-\d+)/opsman-api/(.*)}, 'ops-manager/$1/api/$2'
-r301 %r{/ops-manager/(?!\d-\d+)/opsman-api/(.*)}, 'ops-manager/2-10/api/$2'
+# r301 %r{/ops-manager/(?!\d-\d+)/opsman-api/(.*)}, 'ops-manager/2-10/api/$2'
 
 # Reinstate versionless platform links
 r301 %r{/platform/(?![\d-]+)(.*)}, '/platform/2-10/$1'
