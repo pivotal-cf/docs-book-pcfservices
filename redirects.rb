@@ -666,7 +666,7 @@ r302 %r{/tas-kubernetes/latest/(.*)$}, '/tas-kubernetes/0-3/$1'
 r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/$1'
 
 # Redirect to the most recent version of Build Service
-r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/1-0/$1"
+r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/1-1/$1"
 
 # Redirect Healthwatch
 r301 %r{/pcf-healthwatch/(.*)}, '/healthwatch/$1'
