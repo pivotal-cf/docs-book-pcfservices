@@ -85,19 +85,19 @@ sections:
   subnav_template: gemfire_cf_subnav.erb
 
 - repository:
-    ref: '1.4'
     name: pivotal-cf/docs-pivotal-distribution-openjdk
     at_path: docs-content
   directory: pivotal-distribution-openjdk
   subnav_template: pivotal-distribution-openjdk_subnav.erb
   product_info:
-    use_local_header: true
-    latest_stable_version:
+    use_local_header: false
     local_header_img: /images/cloud_rings.png
     local_header_title: Pivotal Distribution of OpenJDK
-    search_placeholder: Search Scheduler 1.4
-    url_prefix: scheduler/1-4
-    local_product_version: 1.4
+    search_placeholder: Search Pivotal Distribution of OpenJDK
+    url_prefix: pivotal-distribution-openjdk/
+    local_product_version:
+    local_header_links: []
+    local_header_version_list:
 
 - repository:
     ref: '1.4'
@@ -139,7 +139,3 @@ sections:
     local_product_version:
     local_header_links: []
     local_header_version_list:
-
-
-
----
