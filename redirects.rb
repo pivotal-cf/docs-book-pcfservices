@@ -806,3 +806,7 @@ r301 %r{/redis/1-7/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.7.pdf'
 r301 %r{/redis/1-6/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.6.pdf'
 r301 %r{/redis/1-5/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.5.pdf'
 r301 %r{/redis/1-4/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.4.pdf'
+
+# Redirect for VMware Tanzu Observability by Wavefront Nozzle
+
+r301 %r{/wavefront-nozzle/(?![\d-]+)(.*)}, '/wavefront-nozzle/3-0/$1'
