@@ -642,10 +642,6 @@ r301 %r{/pks/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-docs-1.0.pdf
 r301 %r{/pks/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-1.pdf'
 r301 %r{/pks/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-2.pdf'
 
-# Redirect versioned PKS to TKGI
-r301 %r{/pks/1-8/(.*)}, "/tkgi/1-8/$1"
-r301 %r{/pks/1-9/(.*)}, "/tkgi/1-9/$1"
-r301 %r{/pks/(?1-[\d\d])(.*)}, "/tkgi/$1"
 
 # Redirect non-versioned and 'latest' URL calls to the most recent version of PKS
 r301 %r{/runtimes/pks/(.*)}, "/tkgi/$1"
