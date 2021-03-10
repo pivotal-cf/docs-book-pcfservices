@@ -651,11 +651,6 @@ r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-10/$1"
 r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-10/$1"
 r301 %r{/pks/latest/(.*)}, "/tkgi/1-10/$1"
 
-# Redirect versioned PKS 1-8 and higher to TKGI 1-8 and higher
-r301 %r{/pks/1-8/(.*)}, "/tkgi/1-8/$1"
-r301 %r{/pks/1-9/(.*)}, "/tkgi/1-9/$1"
-r301 %r{/pks/(?=1-\d\d)(.*)}, "/tkgi/$1"
-
 # Redirect PRA docs
 r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/3-0/$1"
 
