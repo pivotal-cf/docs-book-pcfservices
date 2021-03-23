@@ -323,7 +323,7 @@ r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
-r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-4/$1"
+r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-5/$1"
 
 
 # Redirect older versions to PDFs
