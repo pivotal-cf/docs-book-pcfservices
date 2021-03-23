@@ -32,8 +32,8 @@ sections:
     latest_stable_version: "1.5"
     changelog_href: https://docs.pivotal.io/credhub-service-broker/release-notes.html
     local_header_img: /images/cloud_rings.png
-    local_header_title: CredHub Service Broker for PCF
-    search_placeholder: Search CredHub Service Broker for PCF
+    local_header_title: CredHub Service Broker
+    search_placeholder: Search CredHub Service Broker
     url_prefix: credhub-service-broker/
     local_product_version:
     local_header_links: []
