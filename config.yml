@@ -35,6 +35,7 @@ sections:
     local_header_title: CredHub Service Broker
     search_placeholder: Search CredHub Service Broker
     url_prefix: credhub-service-broker/
+    skip_versioning: true
     local_product_version:
     local_header_links: []
     local_header_version_list:
