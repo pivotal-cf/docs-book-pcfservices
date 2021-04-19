@@ -726,7 +726,7 @@ r301 %r{/pcf-metrics/(.*)}, '/app-metrics/$1'
 
 # Redirects for MySQL
 r302 %r{/tanzu-mysql-kubernetes/(?![\d-]|[p][a][r][t]+)(.*)}, "/tanzu-mysql-kubernetes/1-0/$1"
-r302 %r{/tanzu-mysql-kubernetes/(0-[1-2])/(.*)}, "/tanzu-mysql-kubernetes/1-0/$1"
+r301 %r{/tanzu-mysql-kubernetes/(0-[1-2])/(.*)}, "/tanzu-mysql-kubernetes/1-0/$1"
 
 # Redirects for MySQL
 r302 %r{/p-mysql/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-10/$1"
