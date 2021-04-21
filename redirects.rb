@@ -475,7 +475,7 @@ r301 %r{/5(.*)}, 'http://gpdb.docs.pivotal.io/5$1'
 r301 %r{/6-(.*)}, 'http://gpdb.docs.pivotal.io/6-$1'
 
 # For gpupgrade
-r301 %r{/upgrade/(.*)}, 'http://gpdb.docs.pivotal.io/upgrade/$1'
+r301 %r{/upgrade/(.*)}, 'https://greenplum.docs.pivotal.io/upgrade/$1'
 
 # For GPCC
 r301 '/supported-platforms/gpcc.html/', 'https://gpcc.docs.pivotal.io/supported-platforms/gpcc.html'
