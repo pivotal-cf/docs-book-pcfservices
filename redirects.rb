@@ -284,7 +284,7 @@ r301 %r{/pivotalcf/(2-[3-6])/openstack/(.*)}, '/ops-manager/$1/openstack/$2'
 r301 %r{/pivotalcf/(2-[3-6])/vsphere/(.*)}, '/ops-manager/$1/vsphere/$2'
 
 # Rest of docs-ops-guide redirects to Ops Manager
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/' + $1.chars.last(2).join > 10 ? '2-10' : $1 + '/opsguide/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
 # 2-3 to 2-6 upgrade checklist redirect
 r301 %r{/pivotalcf/(2-[3-6])/upgrade/checklist.html}, '/pivotalcf/$1/upgrading/checklist.html'
