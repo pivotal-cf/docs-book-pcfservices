@@ -46,6 +46,8 @@ sections:
   subnav_template: pivotal_logsearch_subnav.erb
 - repository:
     name: pivotal-cf/docs-pcf-dev
+  product_info:
+    local_header_title: PCF Dev
   directory: pcf-dev
   subnav_template: pivotal_pcfdev_subnav.erb
 
