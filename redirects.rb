@@ -19,10 +19,8 @@ r301 %r{/platform/(?![\d-]+)/release-notes/(runtime-rn.html|segment-rn.html)}, '
 r301 %r{/platform/(?![\d-]+)/release-notes/windows-rn.html}, '/application-service-windows/2-11/release-notes.html'
 
 # General 2-7 to 2-xx release note and breaking change redirects
-r301 %r{/platform/(2-[7-9]|2-10)/release-notes/breaking-changes.html(.*)}, '/ops-manager/$1/release-notes.html$2'
-r301 %r{/platform/(2-[7-9]|2-10)/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
-r301 %r{/platform/(2-1[1-9])/release-notes/breaking-changes.html(.*)}, '/ops-manager/2-10/release-notes.html$2'
-r301 %r{/platform/(2-1[1-9])/release-notes/opsmanager-rn.html}, '/ops-manager/2-10/release-notes.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html(.*)}, '/ops-manager/$1/release-notes.html$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 
@@ -31,8 +29,7 @@ r301 %r{/platform/(2-[3-6])/release-notes/breaking-changes.html(.*)}, '/pivotalc
 r301 %r{/platform/(2-[3-6])/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/platform/(2-[3-6])/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/windows-rn.html'
 
-r301 %r{/pivotalcf/(2-[7-9]|2-10)/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
-r301 %r{/pivotalcf/(2-1[1-9])/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/2-10/release-notes.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/overview/release-notes/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 
@@ -264,28 +261,19 @@ r301 %r{/application-service/(?![\d-]+)(.*)}, '/application-service/2-11/$1'
 # Ops Manager redirects
 
 # Security redirects
-r301 %r{/platform/(2-[3-9]|2-10)/security/(.*)}, '/ops-manager/$1/security/$2'
-r301 %r{/platform/(2-1[1-9])/security/(.*)}, '/ops-manager/2-10/security/$2'
+r301 %r{/platform/(2-[3-9]|2-\d\d+)/security/(.*)}, '/ops-manager/$1/security/$2'
 
 # Reference architecture redirects
-r301 %r{/platform/(2-1[1-9])/refarch/(.*)}, '/ops-manager/2-10/refarch/$2'
-r301 %r{/platform/(2-1[1-9])/plan/(.*)}, '/ops-manager/2-10/refarch/$2'
-
-r301 %r{/platform/(2-[7-9]|2-10)/refarch/(.*)}, '/ops-manager/$1/refarch/$2'
-r301 %r{/platform/(2-[7-9]|2-10)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/refarch/(.*)}, '/ops-manager/$1/refarch/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
 
 # Redirects for OM topics formerly in customizing
-r301 %r{/platform/(2-1[1-9])/customizing/pcf-interface.html}, '/ops-manager/2-10/pcf-interface.html'
-r301 %r{/platform/(2-1[1-9])/trusted-certificates.html}, '/ops-manager/2-10/trusted-certificates.html'
-
-r301 %r{/platform/(2-[7-9]|2-10)/customizing/pcf-interface.html}, '/ops-manager/$1/pcf-interface.html'
-r301 %r{/platform/(2-[7-9]|2-10)/trusted-certificates.html}, '/ops-manager/$1/trusted-certificates.html'
-
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/pcf-interface.html}, '/ops-manager/$1/pcf-interface.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/trusted-certificates.html}, '/ops-manager/$1/trusted-certificates.html'
 r301 %r{/ops-manager/(2-[3-6])/pcf-interface.html}, '/pivotalcf/$1/customizing/pcf-interface.html'
 
 # Rest of docs-pcf-install redirects to Ops Manager
-r301 %r{/platform/(2-[7-9]|2-10)/customizing/(.*)}, '/ops-manager/$1/install/$2'
-r301 %r{/platform/(2-1[1-9])/customizing/(.*)}, '/ops-manager/2-10/install/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
 r301 %r{/pivotalcf/(2-[3-6])/install/(.*)}, '/pivotalcf/$1/customizing/$2'
 
 # IaaS-specific install redirects
@@ -296,8 +284,7 @@ r301 %r{/pivotalcf/(2-[3-6])/openstack/(.*)}, '/ops-manager/$1/openstack/$2'
 r301 %r{/pivotalcf/(2-[3-6])/vsphere/(.*)}, '/ops-manager/$1/vsphere/$2'
 
 # Rest of docs-ops-guide redirects to Ops Manager
-r301 %r{/platform/(2-[7-9]|2-10)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
-r301 %r{/platform/(2-1[1-9])/opsguide/(.*)}, '/ops-manager/2-10/opsguide/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/opsguide/(.*)}, '/ops-manager/$1/opsguide/$2'
 
 # 2-3 to 2-6 upgrade checklist redirect
 r301 %r{/pivotalcf/(2-[3-6])/upgrade/checklist.html}, '/pivotalcf/$1/upgrading/checklist.html'
@@ -306,20 +293,14 @@ r301 %r{/pivotalcf/(2-[3-6])/upgrade/checklist.html}, '/pivotalcf/$1/upgrading/c
 
 r301 %r{/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/2-10/$1'
 r301 %r{/platform/ops-manager/(.*)}, '/ops-manager/$1'
+r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/om/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/om/(.*)}, '/ops-manager/2-10/$1'
 r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/2-10/$1"
+r301 %r{/pcf/om/(2-[7-9]|2-\d\d+)/(.*)}, "/ops-manager/$1/$2"
 r301 %r{/pcf/om/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
-
-r301 %r{/pcf/om/(2-1[1-9])/(.*)}, "/ops-manager/2-10/$2"
-r301 %r{/platform/(2-1[1-9])/om/(.*)}, '/ops-manager/2-10/$2'
-r301 %r{/ops-manager/(2-1[1-9])/install/ops-man.html}, '/ops-manager/2-10/index.html'
-r301 %r{/platform/ops-manager/(2-1[1-9])/(.*)}, '/ops-manager/2-10/$2'
-
-r301 %r{/pcf/om/(2-[7-9]|2-10)/(.*)}, "/ops-manager/$1/$2"
-r301 %r{/platform/(2-[7-9]|2-10)/om/(.*)}, '/ops-manager/$1/$2'
-r301 %r{/ops-manager/(2-[7-9]|2-10)/install/ops-man.html}, '/ops-manager/$1/index.html'
-r301 %r{/platform/ops-manager/(2-[7-9]|2-10)/(.*)}, '/ops-manager/$1/$2'
+r301 %r{/ops-manager/(\d-\d+)/install/ops-man.html}, '/ops-manager/$1/index.html'
 
 
 # CredHub redirects
