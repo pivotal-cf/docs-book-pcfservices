@@ -352,8 +352,8 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 
 # Service Mesh redirects
 r301 %r{/service-mesh/(.*)}, "/platform/ingress-router/$1"
-r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/platform/ingress-router/$1"
-r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/$1/$2"
+r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/platform/ingress-router/0-6/$1"
+r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/0-6/$1/$2"
 
 
 # Function Service redirects
