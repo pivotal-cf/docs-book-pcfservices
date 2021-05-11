@@ -1,5 +1,10 @@
 User-agent: *
 Noindex: /archives/
+Noindex: /build-service/1-0
+Noindex: /build-service/0-2-0
+Noindex: /build-service/0-1-0
+Noindex: /build-service/0-0-3
+Noindex: /build-service/0-0-4
 Noindex: /pcf-dev/
 Noindex: /pks/1-3/
 Noindex: /pivotalcf/2-6/
@@ -131,8 +136,12 @@ Noindex: /healthwatch/1-1/
 Noindex: /healthwatch/1-0/
 Noindex: /aws-services/
 
-
 Disallow: /archives/
+Disallow: /build-service/1-0
+Disallow: /build-service/0-2-0
+Disallow: /build-service/0-1-0
+Disallow: /build-service/0-0-3
+Disallow: /build-service/0-0-4
 Disallow: /pks/1-3/
 Disallow: /pivotalcf/2-6/
 Disallow: /pivotalcf/2-5/
