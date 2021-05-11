@@ -162,7 +162,6 @@ Disallow: /healthwatch/1-0/
 Disallow: /healthwatch/1-1/
 Disallow: /healthwatch/1-2/
 Disallow: /healthwatch/1-3/
-Disallow: /healthwatch/1-3/
 Disallow: /p-identity/1-1/
 Disallow: /p-identity/1-10/
 Disallow: /p-identity/1-2/
