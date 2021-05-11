@@ -162,6 +162,8 @@ Disallow: /healthwatch/1-0/
 Disallow: /healthwatch/1-1/
 Disallow: /healthwatch/1-2/
 Disallow: /healthwatch/1-3/
+Disallow: /ksm/0-4/
+Disallow: /pcf-dev/
 Disallow: /p-identity/1-1/
 Disallow: /p-identity/1-10/
 Disallow: /p-identity/1-2/
@@ -173,6 +175,8 @@ Disallow: /p-identity/1-7/
 Disallow: /p-identity/1-8/
 Disallow: /p-identity/1-9/
 Disallow: /pivotalcf/1-10/
+Disallow: /pivotalcf/1-11/
+Disallow: /pivotalcf/1-12/
 Disallow: /pivotalcf/1-2/
 Disallow: /pivotalcf/1-3/
 Disallow: /pivotalcf/1-4/
@@ -201,6 +205,9 @@ Disallow: /p-mysql/2-2/
 Disallow: /p-mysql/2-3/
 Disallow: /p-mysql/2-4/
 Disallow: /p-mysql/2-5/
+Disallow: /p-mysql/2-6/
+Disallow: /p-mysql/2-7/
+Disallow: /p-mysql/2-8/
 Disallow: /push/1-10/
 Disallow: /push/1-6/
 Disallow: /push/1-7/
@@ -234,6 +241,7 @@ Disallow: /redis/1-8/
 Disallow: /redis/1-9/
 Disallow: /redis/2-0/
 Disallow: /redis/2-1/
+Disallow: /redis/2-2/
 Disallow: /redis/odb/
 Disallow: /scdf/1-0/
 Disallow: /scdf/1-1/
