@@ -676,6 +676,7 @@ r301 %r{/pas-kubernetes/(?![\d-]+)(.*)}, '/tas-kubernetes/0-7/$1'
 r301 %r{/pas-kubernetes/2-6-0-alpha-1/(.*)}, '/tas-kubernetes/0-7/$1'
 r301 %r{/tas-kubernetes/(0-[1-6])/(.*)}, '/tas-kubernetes/0-7/$2'
 r301 %r{/pas-kubernetes/(0-[1-7])/(.*)}, '/tas-kubernetes/0-7/$2'
+r301 %r{/tas-kubernetes/(0-n)/(.*)}, '/tas-kubernetes/0-7/$2'
 
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/1-1/$1"
