@@ -15,10 +15,6 @@ Noindex: /addon-ipsec/1-7/
 Noindex: /addon-ipsec/1-8/
 Noindex: /archives/
 Noindex: /aws-services/
-Noindex: /build-service/0-0-3
-Noindex: /build-service/0-0-4
-Noindex: /build-service/0-1-0
-Noindex: /build-service/0-2-0
 Noindex: /build-service/1-0
 Noindex: /event-alerts/1-1
 Noindex: /healthwatch/1-0/
