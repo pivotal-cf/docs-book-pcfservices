@@ -679,10 +679,10 @@ r301 %r{/pas-kubernetes/(0-[1-7])/(.*)}, '/tas-kubernetes/0-7/$2'
 r301 %r{/tas-kubernetes/(0-n)/(.*)}, '/tas-kubernetes/0-7/$2'
 
 # Redirect to the most recent version of Build Service
-r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/1-1/$1"
-r301 %r{/build-service/1-0/(.*)}, "/build-service/1-1/$1"
-r301 %r{/build-service/(0-[0-9])/(.*)}, "/build-service/1-1/$2"
-r301 %r{/build-service/(0-[0-9]-[0-9])/(.*)}, "/build-service/1-1/$2"
+r301 %r{/build-service/(?![\d-]+)(.*)}, "/build-service/1-2/$1"
+r301 %r{/build-service/1-0/(.*)}, "/build-service/1-2/$1"
+r301 %r{/build-service/(0-[0-9])/(.*)}, "/build-service/1-2/$2"
+r301 %r{/build-service/(0-[0-9]-[0-9])/(.*)}, "/build-service/1-2/$2"
 
 # Redirect Healthwatch
 r301 %r{/pcf-healthwatch/(.*)}, '/healthwatch/$1'
