@@ -51,7 +51,6 @@ Noindex: /pivotalcf/2-3/
 Noindex: /pivotalcf/2-4/
 Noindex: /pivotalcf/2-5/
 Noindex: /pivotalcf/2-6/
-Noindex: /pks/1-3/
 Noindex: /p-mysql/1-10/
 Noindex: /p-mysql/1-4/
 Noindex: /p-mysql/1-5/
@@ -188,7 +187,14 @@ Disallow: /pivotalcf/2-3/
 Disallow: /pivotalcf/2-4/
 Disallow: /pivotalcf/2-5/
 Disallow: /pivotalcf/2-6/
+Disallow: /pks/1-1/
+Disallow: /pks/1-2/
 Disallow: /pks/1-3/
+Disallow: /pks/1-4/
+Disallow: /pks/1-5/
+Disallow: /pks/1-6/
+Disallow: /pks/1-7/
+Disallow: /pks/1-8/
 Disallow: /p-mysql/1-10/
 Disallow: /p-mysql/1-4/
 Disallow: /p-mysql/1-5/
@@ -268,3 +274,4 @@ Disallow: /svc-sdk/service-backup/16-0/
 Disallow: /svc-sdk/service-backup/17-0/
 Disallow: /svc-sdk/service-backup/17-1/
 Disallow: /svc-sdk/service-metrics/1-5/
+Disallow: /tkgi/1-8/
