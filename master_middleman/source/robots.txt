@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /redis/odb/
-
-Noindex: /redis/odb/
+Disallow: /

@@ -194,7 +194,6 @@ Disallow: /pks/1-4/
 Disallow: /pks/1-5/
 Disallow: /pks/1-6/
 Disallow: /pks/1-7/
-Disallow: /pks/1-8/
 Disallow: /p-mysql/1-10/
 Disallow: /p-mysql/1-4/
 Disallow: /p-mysql/1-5/
@@ -274,4 +273,3 @@ Disallow: /svc-sdk/service-backup/16-0/
 Disallow: /svc-sdk/service-backup/17-0/
 Disallow: /svc-sdk/service-backup/17-1/
 Disallow: /svc-sdk/service-metrics/1-5/
-Disallow: /tkgi/1-8/
