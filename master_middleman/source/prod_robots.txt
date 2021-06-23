@@ -25,6 +25,8 @@ Noindex: /ksm/0-4/
 Noindex: /pcf-dev/
 Noindex: /p-identity/1-1/
 Noindex: /p-identity/1-10/
+Noindex: /p-identity/1-11/
+Noindex: /p-identity/1-12/
 Noindex: /p-identity/1-2/
 Noindex: /p-identity/1-3/
 Noindex: /p-identity/1-4/
