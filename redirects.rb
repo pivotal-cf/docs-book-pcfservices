@@ -706,7 +706,7 @@ r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 # Services
 
 # Redirect for Antivirus
-r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-2/$1"
+r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-3/$1"
 
 # Redirects for Cloud Service Broker
 # csb-azure
