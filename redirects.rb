@@ -107,8 +107,8 @@ r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/appsman-services/(.*)}, '/appli
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/console/(.*)}, '/application-service/$2/console/$3'
 
 # Redirects for Monitoring topics formerly in docs-monitoring, now in docs-pas
-r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$2/overview/monitoring/$3'
-r301 %r{(/pivotalcf|/platform)/(2-[3-6])/overview/monitoring/(.*)}, '/$1/$2/monitoring/$3'
+r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application-service/$2/operating/monitoring/$3'
+r301 %r{/application-service/(2-[7-9]|2-\d\d+)/overview/monitoring/(.*)}, '/application-service/$2/operating/monitoring/$3'
 
 # Install redirects
 # 2-3 to 2-6 redirects
