@@ -27,6 +27,7 @@ Noindex: /p-identity/1-1/
 Noindex: /p-identity/1-10/
 Noindex: /p-identity/1-11/
 Noindex: /p-identity/1-12/
+Noindex: /p-identity/1-13/
 Noindex: /p-identity/1-2/
 Noindex: /p-identity/1-3/
 Noindex: /p-identity/1-4/
@@ -164,6 +165,9 @@ Disallow: /ksm/0-4/
 Disallow: /pcf-dev/
 Disallow: /p-identity/1-1/
 Disallow: /p-identity/1-10/
+Disallow: /p-identity/1-11/
+Disallow: /p-identity/1-12/
+Disallow: /p-identity/1-13/
 Disallow: /p-identity/1-2/
 Disallow: /p-identity/1-3/
 Disallow: /p-identity/1-4/
