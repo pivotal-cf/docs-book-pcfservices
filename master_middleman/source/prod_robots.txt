@@ -69,6 +69,7 @@ Noindex: /p-mysql/2-5/
 Noindex: /p-mysql/2-6/
 Noindex: /p-mysql/2-7/
 Noindex: /p-mysql/2-8/
+Noindex: /p-mysql/2-9/
 Noindex: /push/1-10/
 Noindex: /push/1-6/
 Noindex: /push/1-7/
@@ -218,6 +219,7 @@ Disallow: /p-mysql/2-5/
 Disallow: /p-mysql/2-6/
 Disallow: /p-mysql/2-7/
 Disallow: /p-mysql/2-8/
+Disallow: /p-mysql/2-9/
 Disallow: /push/1-10/
 Disallow: /push/1-6/
 Disallow: /push/1-7/
