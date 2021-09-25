@@ -7155,951 +7155,951 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/about-lb.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/about-lb.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/access-dashboard.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/access-dashboard.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/admission-plugins.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/admission-plugins.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/admission-plugins-disable.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/admission-plugins-disable.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/api-auth.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/api-auth.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/aws-cluster-load-balancer.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/aws-cluster-load-balancer.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/aws-configure-users.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/aws-configure-users.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/aws-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/aws-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/aws-om-install-config.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/aws-om-install-config.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/aws-requirements.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/aws-requirements.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/azure-ad-sso-config.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/azure-ad-sso-config.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/azure-api-load-balancer.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/azure-api-load-balancer.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/azure-cluster-load-balancer.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/azure-cluster-load-balancer.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/azure-configure-users.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/azure-configure-users.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/azure-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/azure-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/azure-managed-identities.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/azure-managed-identities.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/azure-om-install-config.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/azure-om-install-config.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/azure-requirements.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/azure-requirements.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/backup-and-restore.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/backup-and-restore.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/backup-and-restore-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/backup-and-restore-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/backup-and-restore-infra.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/backup-and-restore-infra.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/backup-and-restore-intro.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/backup-and-restore-intro.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/backup-and-restore-nsxt.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/backup-and-restore-nsxt.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/backup-and-restore-tkgi.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/backup-and-restore-tkgi.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/backup-and-restore-vcenter.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/backup-and-restore-vcenter.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/backup-and-restore-work.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/backup-and-restore-work.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-backup.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-backup.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-backup-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-backup-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-backup-tkgi.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-backup-tkgi.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-install.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-install.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-install-config.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-install-config.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-logging.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-logging.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-restore.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-restore.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-restore-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-restore-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/bbr-restore-tkgi.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/bbr-restore-tkgi.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/certificate-concepts.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/certificate-concepts.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/checklist.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/checklist.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/cli/index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/cli/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/cli/index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/cli/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/cluster-credentials.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/cluster-credentials.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/compute-profiles-manage.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/compute-profiles-manage.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/compute-profiles-use.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/compute-profiles-use.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/concepts.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/concepts.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/configure-ingress.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/configure-ingress.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/configuring-ldap.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/configuring-ldap.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/configuring-saml.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/configuring-saml.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-bosh-cli.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-bosh-cli.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-compute-profile.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-compute-profile.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-create-and-manage-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-create-and-manage-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-create-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-create-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-delete-deployment.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-delete-deployment.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-deploy.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-deploy.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-deploy-ova.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-deploy-ova.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-deploy-wizard.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-deploy-wizard.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-deploy-yaml.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-deploy-yaml.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-identity-management.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-identity-management.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-install-vsphere.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-install-vsphere.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-login-opsmanager.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-login-opsmanager.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-monitor-manage.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-monitor-manage.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-monitor-manage-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-monitor-manage-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-network-profile.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-network-profile.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-ova-deployment-prereqs.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-ova-deployment-prereqs.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-patch-components.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-patch-components.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-ports-protocols.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-ports-protocols.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-prereqs-flannel.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-prereqs-flannel.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-prereqs-nsxt-automatednat.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-prereqs-nsxt-automatednat.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-prereqs-nsxt-byot.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-prereqs-nsxt-byot.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-prereqs-vsphere.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-prereqs-vsphere.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-reconfigure.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-reconfigure.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-resource-quotas.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-resource-quotas.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-troubleshooting.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-troubleshooting.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-upgrade.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-upgrade.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/console-windows-workers.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/console-windows-workers.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/control-plane.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/control-plane.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/create-cluster.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/create-cluster.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/create-config-cluster-lb.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/create-config-cluster-lb.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/create-sinks.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/create-sinks.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/create-vsphere-stemcell.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/create-vsphere-stemcell.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/custom-workloads.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/custom-workloads.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/delete.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/delete.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/delete-cluster.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/delete-cluster.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/deny-escalating-execution.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/deny-escalating-execution.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/deploy-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/deploy-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/deploy-windows-workloads.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/deploy-windows-workloads.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/deploy-workloads.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/deploy-workloads.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/diagnostic-tools.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/diagnostic-tools.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/docker-custom-ca-certs.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/docker-custom-ca-certs.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/download-logs.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/download-logs.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/gcp-api-load-balancer.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/gcp-api-load-balancer.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/gcp-cluster-load-balancer.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/gcp-cluster-load-balancer.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/gcp-configure-users.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/gcp-configure-users.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/gcp-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/gcp-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/gcp-om-install-config.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/gcp-om-install-config.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/gcp-requirements.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/gcp-requirements.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/gcp-service-accounts.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/gcp-service-accounts.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/harbor.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/harbor.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/helm.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/helm.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/host-monitoring.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/host-monitoring.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/in-cluster-monitoring.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/in-cluster-monitoring.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/installing.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/installing.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/installing-aws.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/installing-aws.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/installing-azure.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/installing-azure.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/installing-cli.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/installing-cli.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/installing-gcp.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/installing-gcp.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/installing-kubectl-cli.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/installing-kubectl-cli.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/installing-nsx-t.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/installing-nsx-t.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/installing-vsphere.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/installing-vsphere.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/interruptions.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/interruptions.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/k8s-profiles.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/k8s-profiles.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/k8s-profiles-dex-oidc.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/k8s-profiles-dex-oidc.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/k8s-profiles-encrypt-etcd.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/k8s-profiles-encrypt-etcd.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/login.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/login.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/maintain-uptime.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/maintain-uptime.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/manage-cluster-permissions.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/manage-cluster-permissions.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/manage-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/manage-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/manage-users.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/manage-users.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/managing.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/managing.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/managing-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/managing-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/managing-clusters-vsphere.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/managing-clusters-vsphere.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/monitor.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/monitor.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/monitor-audit-logs.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/monitor-audit-logs.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/monitor-etcd.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/monitor-etcd.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/monitor-sinks.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/monitor-sinks.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-define.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-define.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-dns.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-dns.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-edge.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-edge.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-fip.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-fip.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-lb-size.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-lb-size.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-ncp-dfw.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-ncp-dfw.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-ncp-ingress.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-ncp-ingress.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-ncp-lb.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-ncp-lb.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-ncp-logerr.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-ncp-logerr.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-nodes.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-nodes.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-nodes-dns.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-nodes-dns.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-ns-groups.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-ns-groups.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-opsmgr.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-opsmgr.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-pods.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-pods.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/network-profiles-shared-t1.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/network-profiles-shared-t1.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-3-0-install.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-3-0-install.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-create-objects.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-create-objects.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-generate-pi-cert.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-generate-pi-cert.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-health.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-health.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-ingress.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-ingress.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-ingress-monitor.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-ingress-monitor.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-ingress-rewrite-url.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-ingress-rewrite-url.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-ingress-scale.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-ingress-scale.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-ingress-srvc-lb.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-ingress-srvc-lb.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-mgmt-lb.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-mgmt-lb.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-multi.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-multi.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-multi-t0.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-multi-t0.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-prepare-env.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-prepare-env.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-service-mesh.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-service-mesh.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/nsxt-topologies.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/nsxt-topologies.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/oidc-provider.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/oidc-provider.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/okta-sso-config.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/okta-sso-config.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/password-management.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/password-management.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/pod-security-policy.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/pod-security-policy.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/ports-protocols-nsx-t.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/ports-protocols-nsx-t.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/ports-protocols-wo-nsx-t.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/ports-protocols-wo-nsx-t.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/proxies.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/proxies.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/proxies-aws.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/proxies-aws.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/quotas.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/quotas.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/release-notes.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/release-notes.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/resource-review.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/resource-review.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/resources-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/resources-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/resource-usage.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/resource-usage.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/rotate-cluster-certificates.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/rotate-cluster-certificates.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/rotate-tile-certificates.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/rotate-tile-certificates.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/scale-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/scale-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/security.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/security.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/security-context-deny.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/security-context-deny.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/security-process.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/security-process.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/shutdown-startup.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/shutdown-startup.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/sink-architecture.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/sink-architecture.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/support-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/support-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/support-windows-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/support-windows-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/tag-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/tag-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/telemetry.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/telemetry.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/troubleshoot.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/troubleshoot.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/troubleshoot-issues.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/troubleshoot-issues.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/uaa-scopes.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/uaa-scopes.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/understanding-upgrades.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/understanding-upgrades.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/upgrade.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/upgrade.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/upgrade-clusters.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/upgrade-clusters.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/upgrade-nsxt.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/upgrade-nsxt.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/upgrade-pipeline.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/upgrade-pipeline.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/upgrade-scenarios.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/upgrade-scenarios.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/upgrading.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/upgrading.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/upgrading-opsman.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/upgrading-opsman.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/users-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/users-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/users-opsmgr.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/users-opsmgr.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-cluster.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-cluster.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-install.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-install.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-scenarios.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-scenarios.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-stateful-ingress.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-stateful-ingress.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-stateful-label.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-stateful-label.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-stateful-lb.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-stateful-lb.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-stateful-lb-csi.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-stateful-lb-csi.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-stateful-ns.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-stateful-ns.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-stateful-ns-csi.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-stateful-ns-csi.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-statefulset-label.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-statefulset-label.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-statefulset-ns.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-statefulset-ns.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-statefulset-ns-csi.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-statefulset-ns-csi.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-stateless-label.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-stateless-label.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/velero-stateless-ns.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/velero-stateless-ns.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/verify-health.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/verify-health.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/view-cluster-details.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/view-cluster-details.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/view-cluster-list.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/view-cluster-list.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/view-cluster-plans.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/view-cluster-plans.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vm-sizing.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vm-sizing.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/volumes.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/volumes.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-cns.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-cns.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-configure-api.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-configure-api.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-configure-users.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-configure-users.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-flannel.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-flannel.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-host-group.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-host-group.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-nsxt-cluster-objects.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-nsxt-cluster-objects.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-nsxt-index.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-nsxt-index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-nsxt-index-adv.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-nsxt-index-adv.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-nsxt-index-prepare.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-nsxt-index-prepare.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-nsxt-om-config.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-nsxt-om-config.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-nsxt-om-deploy.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-nsxt-om-deploy.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-nsxt-requirements.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-nsxt-requirements.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-nsxt-rpd-mpd.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-nsxt-rpd-mpd.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-om-install-config.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-om-install-config.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-persistent-storage.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-persistent-storage.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-prepare-env.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-prepare-env.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-requirements.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-requirements.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/vsphere-vcf.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/vsphere-vcf.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/windows-logging.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/windows-logging.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/windows-monitoring.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/windows-monitoring.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/windows-pause-internetless.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/windows-pause-internetless.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/tkgi/1-9/windows-workers.html</loc>
+    <loc>https://docs.pivotal.io/tkgi/1-12/windows-workers.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
