@@ -43,9 +43,6 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manage
 r301 %r{/platform/(2-[0-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
 
-# Remove 'pcf' in release notes
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/pcf-release-notes/(.*)}, '/platform/$1/release-notes/$2'
-
 # 47 Remove 'overview' from dropdown formed release note links for 1
 r301 %r{/pivotalcf/(2-[0-2])/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/pivotalcf/(1-\d+|1-\d\d+)/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
@@ -353,15 +350,13 @@ r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/schedu
 
 
 # Service Mesh redirects
-r301 %r{/service-mesh/(.*)}, "/platform/ingress-router/$1"
-r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/platform/ingress-router/0-6/$1"
-r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/platform/ingress-router/0-6/$1/$2"
-
+r301 %r{/service-mesh/(.*)}, "/ingress-router/$1"
+r301 %r{/ingress-router/(?![\d-]+)(.*)}, "/ingress-router/0-6/$1"
+r301 %r{/ingress-router/(0-1|0-2)/(.*)}, "/ingress-router/0-6/$1/$2"
 
 # Function Service redirects
 r301 %r{/pfs/(.*)}, "/platform/function-service/$1" # redirect from old URL
 r301 %r{/platform/function-service/(?![\d-]+)(.*)}, "/platform/function-service/0-4/$1" # redirect to current released version
-
 
 r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 # r301 %r{/buildpacks/(.*)}, '/pivotalcf/2-6/buildpacks/$1'
@@ -377,8 +372,7 @@ r301 %r{/bbr/(.*)}, 'https://docs.cloudfoundry.org/bbr/$1'
 # r301 %r{/customizing/(.*)}, '/pivotalcf/2-6/customizing/$1'
 # r301 %r{/appsman-services/(.*)}, '/pivotalcf/2-6/appsman-services/$1'
 # r301 %r{/console/(.*)}, '/pivotalcf/2-6/console/$1'
-# r301 %r{/pcf-release-notes/(.*)}, '/pivotalcf/2-6/pcf-release-notes/$1'
-
+#
 
 # JMX Bridge
 r301 %r{/jmx-bridge/(?![\d-]+)(.*)}, 'https://resources.docs.pivotal.io/pdfs/jmx-bridge-1.9.pdf'
@@ -729,12 +723,6 @@ r301 %r{/pivotalcf/(?![\d-]+)(.*)}, '/platform/2-11/$1'
 r301 %r{/platform/opsman-api/(?![\d-]+)(.*)}, '/ops-manager/2-10/api/$1'
 r301 %r{/platform/opsman-api/(\d-\d+)(.*)}, '/ops-manager/$1/api/$2'
 r301 %r{/ops-manager/(?!\d-\d+)/opsman-api/(.*)}, '/ops-manager/2-10/api/$2'
-
-# Reinstate versionless platform links
-r301 %r{/platform/(?![\d-]+)(.*)}, '/platform/2-11/$1'
-
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
-r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 # Services
 
