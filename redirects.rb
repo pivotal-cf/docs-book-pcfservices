@@ -719,6 +719,13 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/healthwatch/(.*)}, '/healthwatch/$1'
 # Reinstate versionless pivotalcf link
 r301 %r{/pivotalcf/(?![\d-]+)(.*)}, '/platform/2-12/$1'
 
+# Reinstate versionless platform links
+r301 %r{/platform/(?![\d-]+)(.*)}, '/platform/2-11/$1'
+
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
+r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
+
+
 # Reinstate ops manager API platform links
 r301 %r{/platform/opsman-api/(?![\d-]+)(.*)}, '/ops-manager/2-10/api/$1'
 r301 %r{/platform/opsman-api/(\d-\d+)(.*)}, '/ops-manager/$1/api/$2'
