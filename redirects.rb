@@ -25,6 +25,10 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/(runtime-rn.html|segment-rn.ht
 r301 %r{/application-service/(2-[7-9]|2-\d\d+)/overview/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/release-notes/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
 
+# cf CLI help topic redirects
+r301 %r{/application-service/(2-[7-9]|2-\d\d+)/cf-cli/cf-help.html}, 'https://cli.cloudfoundry.org/en-US/v6/'
+r301 %r{/application-service/(2-[7-9]|2-\d\d+)/cf-cli/cf7-help.html}, 'https://cli.cloudfoundry.org/en-US/v7/'
+
 # 2-3 to 2-6 release note redirects
 r301 %r{/platform/(2-[3-6])/release-notes/breaking-changes.html(.*)}, '/pivotalcf/$1/pcf-release-notes/breaking-changes.html$2'
 r301 %r{/platform/(2-[3-6])/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
