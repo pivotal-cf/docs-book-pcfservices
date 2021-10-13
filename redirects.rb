@@ -44,8 +44,8 @@ r301 %r{/pivotalcf/(2-[3-6])/release-notes.html}, '/pivotalcf/$1/pcf-release-not
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
 
 # BBR release notes redirect to OSS
-r301 %r{/platform/(2-[0-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://docs.cloudfoundry.org/bbr/bbr-rn.html'
+r301 %r{/platform/(2-[0-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://github.com/cloudfoundry-incubator/bosh-backup-and-restore/releases'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://github.com/cloudfoundry-incubator/bosh-backup-and-restore/releases'
 
 # 47 Remove 'overview' from dropdown formed release note links for 1
 r301 %r{/pivotalcf/(2-[0-2])/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
