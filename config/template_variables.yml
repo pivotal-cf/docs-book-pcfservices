@@ -16,7 +16,7 @@ template_variables:
   global_header_product_link_text: Downloads
   api_version: 235
   ga_account_id: UA-39702075-1
-  gtm_account_id: GTM-MW4LZHR
+  gtm_account_id: GTM-MM86KCJ
 
 # Product variables
   platform_name: Pivotal Platform
