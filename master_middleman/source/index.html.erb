@@ -33,6 +33,7 @@ top_services:
     open_source: true
 - name: Tanzu Build Service
   desc: Container creation and management
+  num_in_row: 4
   links:
   - name: Tanzu Build Service
     url: https://docs.vmware.com/en/VMware-Tanzu-Build-Service/index.html
@@ -40,16 +41,25 @@ top_services:
     url: https://docs.pivotal.io/tanzu-buildpacks
 - name: Tanzu Application Catalog
   desc: Production-ready open-source containers
+  num_in_row: 4
   links:
   - name: Documentation
     url: https://docs.bitnami.com/tanzu-application-catalog/
 - name: Tanzu Kubernetes Grid
   desc: Enterprise-ready runtime
+  num_in_row: 4
   links:
   - name: Tanzu Kubernetes Grid
     url: https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html
   - name: Tanzu Kubernetes Grid Integrated Edition
     url: https://docs.pivotal.io/tkgi/index.html
+- name: Tanzu Community Edition
+  desc: Free, easy-to-manage Kubernetes platform
+  logo: TCE-icon.png
+  num_in_row: 4
+  links:
+  - name: Documentation
+    url: https://tanzucommunityedition.io/docs/latest/
 - name: Tanzu Mission Control
   desc: Centralized cluster management
   links:
@@ -582,6 +592,9 @@ misc_sections:
   id: oss
   style: logo_only
   tiles:
+  - name: Tanzu Community Edition
+    url: https://tanzucommunityedition.io/docs/latest/
+    logo: TCE-768x173.png
   - name: Cloud Foundry BOSH
     url: https://bosh.io/docs/
     logo: CFF-BOSH-Full-Color-1-768x279.png
