@@ -55,7 +55,7 @@ top_services:
     url: https://docs.pivotal.io/tkgi/index.html
 - name: Tanzu Community Edition
   desc: Free, easy-to-manage Kubernetes platform
-  logo: TCE-icon.png
+  logo: TCE-icon.svg
   num_in_row: 4
   links:
   - name: Documentation
@@ -594,7 +594,7 @@ misc_sections:
   tiles:
   - name: Tanzu Community Edition
     url: https://tanzucommunityedition.io/docs/latest/
-    logo: TCE-768x173.png
+    logo: TCE.svg
   - name: Cloud Foundry BOSH
     url: https://bosh.io/docs/
     logo: CFF-BOSH-Full-Color-1-768x279.png
@@ -726,6 +726,10 @@ misc_sections:
   .container img {
     max-width: 6.4em;
     width: 100%;
+  }
+  .container .grid a.docs-home-panel[href*='communityedition'] img {max-width:10em}
+  .docs-link-panel {
+    height: 64px;
   }
   .docs-link-panel {
     height: 64px;
