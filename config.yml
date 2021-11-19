@@ -107,7 +107,7 @@ sections:
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
   directory: scheduler/1-6
-  subnav_template: pcf-scheduler_subnav.erb
+  subnav_template: scheduler_subnav_1-6.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.6
@@ -129,7 +129,7 @@ sections:
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
   directory: scheduler/1-5
-  subnav_template: pcf-scheduler_subnav.erb
+  subnav_template: scheduler_subnav_1-5.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.6
@@ -151,7 +151,7 @@ sections:
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
   directory: scheduler/1-4
-  subnav_template: pcf-scheduler_subnav.erb
+  subnav_template: scheduler_subnav_1-4.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.6
@@ -173,7 +173,7 @@ sections:
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
   directory: scheduler/1-3
-  subnav_template: pcf-scheduler_subnav.erb
+  subnav_template: scheduler_subnav_1-3.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.6
@@ -195,7 +195,7 @@ sections:
     name: pivotal-cf/docs-scheduler
     at_path: docs-content
   directory: scheduler/1-2
-  subnav_template: pcf-scheduler_subnav.erb
+  subnav_template: scheduler_subnav_1-2.erb
   product_info:
     use_local_header: true
     latest_stable_version: 1.6

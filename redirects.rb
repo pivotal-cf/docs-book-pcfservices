@@ -326,7 +326,7 @@ r301 '/releasenotes/stemcell-index.html', '/stemcells/stemcells.html'
 
 # Scheduler rename redirect
 r301 %r{/pcf-scheduler/(.*)}, "/scheduler/$1"
-r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-5/$1"
+r301 %r{/scheduler/(?![\d-]+)(.*)}, "/scheduler/1-6/$1"
 
 
 # Redirect older versions to PDFs
@@ -345,8 +345,8 @@ r301 %r{/pivotalcf/2-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2
 r301 %r{/pivotalcf/2-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.1.pdf'
 r301 %r{/pivotalcf/2-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pcf-docs-2.2.pdf'
 
-r301 %r{/pcf-scheduler/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf'
-r301 %r{/pcf-scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf'
+r301 %r{/scheduler/1-0/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf'
+r301 %r{/scheduler/1-1/(.*)}, 'https://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf'
 
 
 # All other /platform to /pivotalcf redirects
