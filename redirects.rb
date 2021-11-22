@@ -745,7 +745,7 @@ r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "/addon-antivirus/2-3/$1"
 r301 %r{/cloud-service-broker/(.*)}, "/csb-azure/$1" # redirect from old URL
 r302 %r{/csb-azure/(?![\d-]+)(.*)}, "/csb-azure/1-2/$1" # redirect to current released version
 # csb-aws
-r302 %r{/csb-aws/(?![\d-]+)(.*)}, "/csb-aws/1-0/$1" # redirect to current released version
+r302 %r{/csb-aws/(?![\d-]+)(.*)}, "/csb-aws/1-1/$1" # redirect to current released version
 
 # Redirect for Compliance Scanner
 r301 %r{/addon-compliance-tools/(?![\d-]+)(.*)}, "/addon-compliance-tools/1-2/$1"
