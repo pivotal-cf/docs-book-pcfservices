@@ -730,7 +730,7 @@ r301  %r{/build-service/1-2/managing-stores.html}, "https://docs.vmware.com/en/T
 r301  %r{/build-service/1-2/managing-builders.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-managing-builders.html"
 r301  %r{/build-service/1-2/managing-custom-stacks.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-managing-custom-stacks.html"
 
-r301  %r{/build-service/1-1/index.html}, https://docs.vmware.com/en/Tanzu-Build-Service/1.1/vmware-tanzu-build-service-v11/GUID-docs-build-service-index.html
+r301  %r{/build-service/1-1/index.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.1/vmware-tanzu-build-service-v11/GUID-docs-build-service-index.html"
 r301  %r{/build-service/1-1/(.*)}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.1/vmware-tanzu-build-service-v11/GUID-$1"
 
 # Redirect Healthwatch
