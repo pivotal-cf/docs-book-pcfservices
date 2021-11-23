@@ -711,9 +711,8 @@ r301 %r{/tas-kubernetes/(0-n)/(.*)}, '/tas-kubernetes/0-7/$2'
 
 # Redirect to the most recent version of Build Service
 r301 %r{/build-service/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.3/vmware-tanzu-build-service-v13/GUID-docs-build-service-index.html"
-r301 %r{/build-service/1-0/(.*)}, "/build-service/1-2/$1"
-r301 %r{/build-service/(0-[0-9])/(.*)}, "/build-service/1-2/$2"
-r301 %r{/build-service/(0-[0-9]-[0-9])/(.*)}, "/build-service/1-2/$2"
+r301 %r{/build-service/(0-[0-9])/(.*)}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.3/vmware-tanzu-build-service-v13/GUID-docs-build-service-index.html"
+r301 %r{/build-service/(0-[0-9]-[0-9])/(.*)}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.3/vmware-tanzu-build-service-v13/GUID-docs-build-service-index.html"
 
 # Redirect Build Service on docs.pivotal.io to Build Service on docs.vmware.com
 r301  %r{/build-service/1-2/index.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-docs-build-service-index.html"
