@@ -713,24 +713,7 @@ r301 %r{/tas-kubernetes/(0-n)/(.*)}, '/tas-kubernetes/0-7/$2'
 r301 %r{/build-service/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.3/vmware-tanzu-build-service-v13/GUID-docs-build-service-index.html"
 r301 %r{/build-service/(0-[0-9])/(.*)}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.3/vmware-tanzu-build-service-v13/GUID-docs-build-service-index.html"
 r301 %r{/build-service/(0-[0-9]-[0-9])/(.*)}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.3/vmware-tanzu-build-service-v13/GUID-docs-build-service-index.html"
-
-# Redirect Build Service on docs.pivotal.io to Build Service on docs.vmware.com
-r301  %r{/build-service/1-2/index.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-docs-build-service-index.html"
-r301  %r{/build-service/1-2/installing.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-installing.html"
-r301  %r{/build-service/1-2/installing-windows-components.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-installing-windows-components.html"
-r301  %r{/build-service/1-2/getting-started.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-getting-started.html"
-r301  %r{/build-service/1-2/accessing-tbs.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-accessing-tbs.html"
-r301  %r{/build-service/1-2/updating-deps.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-updating-deps.html"
-r301  %r{/build-service/1-2/managing-secrets.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-managing-secrets.html"
-r301  %r{/build-service/1-2/synced-secrets.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-synced-secrets.html"
-r301  %r{/build-service/1-2/managing-images.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-managing-images.html"
-r301  %r{/build-service/1-2/managing-stacks.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-managing-stacks.html"
-r301  %r{/build-service/1-2/managing-stores.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-managing-stores.html"
-r301  %r{/build-service/1-2/managing-builders.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-managing-builders.html"
-r301  %r{/build-service/1-2/managing-custom-stacks.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.2/vmware-tanzu-build-service-v12/GUID-managing-custom-stacks.html"
-
-r301  %r{/build-service/1-1/index.html}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.1/vmware-tanzu-build-service-v11/GUID-docs-build-service-index.html"
-r301  %r{/build-service/1-1/(.*)}, "https://docs.vmware.com/en/Tanzu-Build-Service/1.1/vmware-tanzu-build-service-v11/GUID-$1"
+# Redirects for Build Service on docs.pivotal.io to Build Service on docs.vmware.com are in the docs-book-buildservice repo
 
 # Redirect Healthwatch
 r301 %r{/pcf-healthwatch/(.*)}, '/healthwatch/$1'
