@@ -695,6 +695,9 @@ r301 %r{/tkgi/1-5/(.*)}, "/pks/1-5/$1"
 r301 %r{/tkgi/1-6/(.*)}, "/pks/1-6/$1"
 r301 %r{/tkgi/1-7/(.*)}, "/pks/1-7/$1"
 
+# Redirect Autoscaler API documentation
+r301 %r{/pivotalcf/autoscaler-api/v2/(.*)}, "/application-service/appsman-services/autoscaler/using-autoscaler-api.html"
+r301 %r{/pivotalcf/autoscaler-api/v1/(.*)}, "/application-service/appsman-services/autoscaler/using-autoscaler-api.html"
 
 # Redirect PRA docs
 r301 %r{/pra/(?![\d-]+)(.*)}, "/pra/3-2/$1"
