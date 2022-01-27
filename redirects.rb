@@ -16,14 +16,14 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/index.html}, '/ops-manager/$1/install/index.
 # Versionless release notes default to latest GA version
 r301 %r{/platform/(?![\d-]+)/release-notes/opsmanager-rn.html}, '/ops-manager/2-10/release-notes.html'
 r301 %r{/platform/(?![\d-]+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/2-12/release-notes/$2'
-r301 %r{/platform/(?![\d-]+)/release-notes/windows-rn.html}, '/application-service-windows/2-12/release-notes.html'
+r301 %r{/platform/(?![\d-]+)/release-notes/windows-rn.html}, '/application-service/2-12/windows/release-notes.html'
 
 # General 2-7 to 2-xx release note and breaking change redirects
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html(.*)}, '/ops-manager/$1/release-notes.html$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/release-notes/$2'
 r301 %r{/application-service/(2-[7-9]|2-\d\d+)/overview/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/release-notes/$2'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
+r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service/$1/windows/release-notes.html'
 
 # cf CLI help topic redirects
 r301 %r{/application-service/(2-[7-9]|2-\d\d+)/cf-cli/cf-help.html}, 'https://cli.cloudfoundry.org/en-US/v6/'
@@ -36,7 +36,7 @@ r301 %r{/platform/(2-[3-6])/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-r
 
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/release-notes/$2'
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service-windows/$1/release-notes.html'
+r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service/$1/windows/release-notes.html'
 
 r301 %r{/pivotalcf/(2-[3-6])/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
 
@@ -51,14 +51,14 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://gi
 r301 %r{/pivotalcf/(2-[0-2])/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/pivotalcf/(1-\d+|1-\d\d+)/overview/release-notes/(.*)}, '/pivotalcf/$1/pcf-release-notes/$2'
 
-# Redirects for Windows to /application-service-windows
-r301 %r{/application-service-windows/latest/(.*)}, '/application-service-windows/2-12/$1'
-r301 %r{/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-12/$1'
-r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-service-windows/2-11/$1'
-r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, '/application-service-windows/2-12/$1'
-r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service-windows/$1/$2'
+# Redirects for Windows to /application-service/windows
+r301 %r{/application-service-windows/latest/(.*)}, '/application-service/2-12/windows/$1'
+r301 %r{/application-service-windows/(?![\d-]+)(.*)}, '/application-service/2-12/windows/$1'
+r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-service/2-11/windows/$1'
+r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, '/application-service/2-12/windows/$1'
+r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service/$1/windows/$2'
 r301 %r{/platform/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
-r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service-windows/$2/$3'
+r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service/$2/windows/$3'
 r301 %r{/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 
 # Add redirect for Azure Log Analysis Nozzle, now VMware-owned
