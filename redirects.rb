@@ -769,8 +769,7 @@ r302 %r{/developer-console/(?![\d-]+)(.*)}, "/developer-console/0-alpha/$1"
 r301 %r{/event-alerts/(?![\d-]+)(.*)}, "/event-alerts/1-2/$1"
 
 # Redirect for FIM
-r302 %r{/addon-fim/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/File-Integrity-Monitoring-for-VMware-Tanzu/2.1/fim/GUID-index.html"
-r301 %r{/addon-fim/2-1/(.*)}, "https://docs.vmware.com/en/File-Integrity-Monitoring-for-VMware-Tanzu/2.1/fim/GUID-index.html"
+r302 %r{/addon-fim/(?![\d-]+)(.*)}, "https://docs.pivotal.io/addon-fim/2-1"
 
 # Redirect for IPsec
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
