@@ -40,6 +40,8 @@ So, for example, the documentation for the Cloud Foundry command-line tool (cf C
 * [Pivotal Web Services](http://docs.run.pivotal.io)
 * [Open Source](http://docs.cloudfoundry.org)
 
+Run new builds through the [pipeline](https://runway-ci.eng.vmware.com/teams/mapbu-docs/pipelines/cf-current?group=pcfservices) in Runway.
+
 ## Contributing to the Documentation
 
 The documentation team prefers to receive documentation contributions as pull requests rather than having engineering teams push directly to the documentation repositories.
