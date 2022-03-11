@@ -743,14 +743,11 @@ r301 %r{/ops-manager/(?!\d-\d+)/opsman-api/(.*)}, '/ops-manager/2-10/api/$2'
 
 # Redirect for Antivirus
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.3/anti-virus/GUID-index.html"
-r302 %r{/addon-antivirus/2-3/(.)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.3/anti-virus/GUID-index.html"
-r302 %r{/addon-antivirus/2-2/(.)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.2/anti-virus/GUID-index.html"
-r302 %r{/addon-antivirus/2-1/(.)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.1/anti-virus/GUID-index.html"
-r302 %r{/addon-antivirus/2-0/(.)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.0/anti-virus/GUID-index.html"
-r302 %r{/addon-antivirus/1-4/(.)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/1-4/anti-virus/GUID-index.html"
-
-
-
+r302 %r{/addon-antivirus/2-3/(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.3/anti-virus/GUID-index.html"
+r302 %r{/addon-antivirus/2-2/(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.2/anti-virus/GUID-index.html"
+r302 %r{/addon-antivirus/2-1/(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.1/anti-virus/GUID-index.html"
+r302 %r{/addon-antivirus/2-0/(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.0/anti-virus/GUID-index.html"
+r302 %r{/addon-antivirus/1-4/(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/1-4/anti-virus/GUID-index.html"
 
 # Redirects for Cloud Service Broker
 # csb-azure
@@ -769,7 +766,8 @@ r302 %r{/developer-console/(?![\d-]+)(.*)}, "/developer-console/0-alpha/$1"
 r301 %r{/event-alerts/(?![\d-]+)(.*)}, "/event-alerts/1-2/$1"
 
 # Redirect for FIM
-r302 %r{/addon-fim/(?![\d-]+)(.*)}, "https://docs.pivotal.io/addon-fim/2-1"
+r302 %r{/addon-fim/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/File-Integrity-Monitoring-for-VMware-Tanzu/2.1/fim/GUID-index.html"
+r302 %r{/addon-fim/2-1/(.*)}, "https://docs.vmware.com/en/File-Integrity-Monitoring-for-VMware-Tanzu/2.1/fim/GUID-index.html"
 
 # Redirect for IPsec
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
