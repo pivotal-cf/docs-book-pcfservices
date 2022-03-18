@@ -772,20 +772,6 @@ r302 %r{/addon-fim/2-1/(.*)}, "https://docs.vmware.com/en/File-Integrity-Monitor
 # Redirect for IPsec
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 
-# Redirects for Metrics
-r301 %r{/app-metrics/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/2.1/app-metrics/GUID-index.html"
-r301 %r{/app-metrics/2-1/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/2.1/anti-virus/GUID-index.html"
-r301 %r{/app-metrics/2-0/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/2.0/anti-virus/GUID-index.html"
-r301 %r{/app-metrics/1-6/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/1.6/anti-virus/GUID-index.html"
-r301 %r{/app-metrics/1-5/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/1.5/anti-virus/GUID-index.html"
-r301 %r{/app-metrics/1-4/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/1.4/anti-virus/GUID-index.html"
-r301 %r{/pcf-metrics/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/2.1/anti-virus/GUID-index.html"
-r301 %r{/pcf-metrics/2-1/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/2.1/anti-virus/GUID-index.html"
-r301 %r{/pcf-metrics/2-0/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/2.0/anti-virus/GUID-index.html"
-r301 %r{/pcf-metrics/1-6/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/1.6/anti-virus/GUID-index.html"
-r301 %r{/pcf-metrics/1-5/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/1.5/anti-virus/GUID-index.html"
-r301 %r{/pcf-metrics/1-4/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/1.4/anti-virus/GUID-index.html"
-
 # Redirects for MySQL
 r302 %r{/tanzu-mysql-kubernetes/(?![\d-]|[p][a][r][t]+)(.*)}, "/tanzu-mysql-kubernetes/1-0/$1"
 r301 %r{/tanzu-mysql-kubernetes/(0-[1-2])/(.*)}, "/tanzu-mysql-kubernetes/1-0"
