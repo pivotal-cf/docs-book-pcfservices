@@ -862,3 +862,12 @@ r301 %r{/redis/1-4/(.*)}, 'http://docs.pivotal.io/pdfs/redis-1.4.pdf'
 # Redirect for VMware Tanzu Observability by Wavefront Nozzle
 
 r301 %r{/wavefront-nozzle/(?![\d-]+)(.*)}, '/wavefront-nozzle/3-x/$1'
+
+# Redirects for discontinued Partner documentation
+
+r301 %r{/partners/altoros-jenkins/(.*)}, 'https://docs.pivotal.io'
+r301 %r{/partners/altoros-logsearch/(.*)}, 'https://docs.pivotal.io'
+r301 %r{/partners/altoros-elasticsearch/(.*)}, 'https://docs.pivotal.io'
+r301 %r{/partners/altoros-cassandra/(.*)}, 'https://docs.pivotal.io'
+r301 %r{/partners/altoros-aws-s3/(.*)}, 'https://docs.pivotal.io'
+
