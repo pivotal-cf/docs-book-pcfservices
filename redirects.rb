@@ -871,3 +871,9 @@ r301 %r{/partners/altoros-elasticsearch/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/partners/altoros-cassandra/(.*)}, 'https://docs.pivotal.io'
 r301 %r{/partners/altoros-aws-s3/(.*)}, 'https://docs.pivotal.io'
 
+# Redirect for Credhub Service Broker
+
+r301  %r{/credhub-service-broker/index.html}, "https://docs.vmware.com/en/CredHub-Service-Broker/services/credhub/GUID-index.html"
+r301  %r{/credhub-service-broker/}, "https://docs.vmware.com/en/CredHub-Service-Broker/services/credhub/GUID-index.html"
+r301  %r{/credhub-service-broker}, "https://docs.vmware.com/en/CredHub-Service-Broker/services/credhub/GUID-index.html"
+r301  %r{/credhub-service-broker/(.*)}, "https://docs.vmware.com/en/CredHub-Service-Broker/services/credhub/GUID-index.html"
