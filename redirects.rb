@@ -694,6 +694,7 @@ r301 %r{/tkgi/1-4/(.*)}, "/pks/1-4/$1"
 r301 %r{/tkgi/1-5/(.*)}, "/pks/1-5/$1"
 r301 %r{/tkgi/1-6/(.*)}, "/pks/1-6/$1"
 r301 %r{/tkgi/1-7/(.*)}, "/pks/1-7/$1"
+r301 %r{/tkgi/1-14/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.14/tkgi/GUID-$1"
 
 # Redirect Autoscaler API documentation
 r301 %r{/pivotalcf/autoscaler-api/v2/(.*)}, "/application-service/appsman-services/autoscaler/using-autoscaler-api.html"
