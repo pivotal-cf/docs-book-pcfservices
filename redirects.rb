@@ -534,9 +534,6 @@ r301 %r{/10-14/(.*)}, "https://postgres.docs.pivotal.io/10-14/$1"
 r301 %r{/10-12/(.*)}, "https://postgres.docs.pivotal.io/10-12/$1"
 r301 %r{/10-11/(.*)}, "https://postgres.docs.pivotal.io/10-11/$1"
 r301 %r{/10-10/(.*)}, "https://postgres.docs.pivotal.io/10-10/$1"
-r301 %r{/1-0/(.*)}, "https://postgres-kubernetes.docs.pivotal.io/1-0/$1"
-r301 %r{/1-1/(.*)}, "https://postgres-kubernetes.docs.pivotal.io/1-1/$1"
-r301 %r{/1-2/(.*)}, "https://postgres-kubernetes.docs.pivotal.io/1-2/$1"
 
 r301 '/rabbitmq/index.html', 'http://rabbitmq.docs.pivotal.io/index.html'
 r301 '/rabbitmq/', 'http://rabbitmq.docs.pivotal.io/index.html'
