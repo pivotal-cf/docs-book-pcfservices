@@ -783,7 +783,7 @@ r302 %r{/p-MySQL/(?![\d-]|[p][a][r][t]+)(.*)}, "/p-mysql/2-10/$1"
 r301 %r{/rabbitmq-kubernetes/(.*)}, "https://www.rabbitmq.com/kubernetes/operator/operator-overview.html"
 
 # Redirect for RabbitMQ for VMs
-r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/2-0/$1"
+r302 %r{/rabbitmq-cf/(?![\d-]|[p][a][r][t]+)(.*)}, "/rabbitmq-cf/2-1/$1"
 
 # Redirect for Redis
 r302 %r{/redis/(?![\d-]|[p][a][r][t]+)(.*)}, "/redis/3-1/$1"
