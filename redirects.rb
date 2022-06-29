@@ -414,10 +414,14 @@ r301 '/gemfirexd/', 'http://gemfirexd.docs.pivotal.io/'
 r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
 
+# GemFire 9.10 redirects to docs.vmware.com
 
+r302 %r{/910/[^./]+/([^/]+\.html)}, 'https://docs.vmware.com/en/VMware-Tanzu-GemFire/9.10/tgf/GUID-$1'
+r302 %r{/910/[^./]+/([^./]+)/([^\/]+\.html)}, 'https://docs.vmware.com/en/VMware-Tanzu-GemFire/9.10/tgf/GUID-$1-$2'
+r302 %r{/910/[^./]+/([^./]+)/([^./]+)/([^\/]+\.html)}, 'https://docs.vmware.com/en/VMware-Tanzu-GemFire/9.10/tgf/GUID-$1-$2-$3'
+r302 %r{/910/[^./]+/([^./]+)/([^./]+)/([^./]+)/([^\/]+\.html)}, 'https://docs.vmware.com/en/VMware-Tanzu-GemFire/9.10/tgf/GUID-$1-$2-$3-$4'
 
-
-# For GemFire Nativehttps://resources.docs.pivotal.io/pdfs/
+# For GemFire Native
 r301 %r{/(.*)/gemfire-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client/$2"
 r301 %r{/(.*)/geode-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/geode-native-client/$2"
 r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client-ssp/$2"
