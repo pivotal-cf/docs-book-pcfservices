@@ -406,21 +406,18 @@ r301 %r{/pivotalhd/(.*)}, 'http://pivotalhd-210.docs.pivotal.io/doc/2100/$1'
 
 
 # For GemFire
-r301 '/gemfire/', 'http://gemfire.docs.pivotal.io/'
-r301 %r{/docs-gemfire/(.*)}, 'http://gemfire82.docs.pivotal.io/docs-gemfire/$1'
-r301 %r{/(.*)/gemfire/(.*)}, "http://gemfire.docs.pivotal.io/$1/gemfire/$2"
-r301 '/gemfirexd/index.html', 'http://gemfirexd.docs.pivotal.io/index.html'
-r301 '/gemfirexd/', 'http://gemfirexd.docs.pivotal.io/'
-r301 %r{/(.*)/geode/(.*)}, "http://gemfire.docs.pivotal.io/$1/geode/$2"
-r301 %r{/(.*)/ggc/(.*)}, "http://ggc.docs.pivotal.io/$1/ggc/$2"
-
-
-
+r301 '/gemfire/', 'https://gemfire.docs.pivotal.io/'
+r301 %r{/docs-gemfire/(.*)}, 'https://gemfire82.docs.pivotal.io/docs-gemfire/$1'
+r301 %r{/(.*)/gemfire/(.*)}, "https://gemfire.docs.pivotal.io/$1/gemfire/$2"
+r301 '/gemfirexd/index.html', 'https://gemfirexd.docs.pivotal.io/index.html'
+r301 '/gemfirexd/', 'https://gemfirexd.docs.pivotal.io/'
+r301 %r{/(.*)/geode/(.*)}, "https://gemfire.docs.pivotal.io/$1/geode/$2"
+r301 %r{/(.*)/ggc/(.*)}, "https://ggc.docs.pivotal.io/$1/ggc/$2"
 
 # For GemFire Nativehttps://resources.docs.pivotal.io/pdfs/
-r301 %r{/(.*)/gemfire-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client/$2"
-r301 %r{/(.*)/geode-native-client/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/geode-native-client/$2"
-r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "http://gemfire-native.docs.pivotal.io/$1/gemfire-native-client-ssp/$2"
+r301 %r{/(.*)/gemfire-native-client/(.*)}, "https://gemfire-native.docs.pivotal.io/$1/gemfire-native-client/$2"
+r301 %r{/(.*)/geode-native-client/(.*)}, "https://gemfire-native.docs.pivotal.io/$1/geode-native-client/$2"
+r301 %r{/(.*)/gemfire-native-client-ssp/(.*)}, "https://gemfire-native.docs.pivotal.io/$1/gemfire-native-client-ssp/$2"
 
 #For GemFire for PCF
 r301 %r{/gemfire-cf/(.*)}, 'https://resources.docs.pivotal.io/pdfs/gemfire-for-pcf-1.7.pdf'
@@ -429,8 +426,8 @@ r301 %r{/gemfire-cf/(.*)}, 'https://resources.docs.pivotal.io/pdfs/gemfire-for-p
 r301 %r{/ssc-gemfire/(.*)}, 'https://resources.docs.pivotal.io/pdfs/ssc-gemfire-1.2.pdf'
 
 #For GPDB
-r301 %r{/gpdb/(.*)}, 'http://gpdb.docs.pivotal.io/$1'
-r301 %r{/gptext/(.*)}, 'http://gpdb.docs.pivotal.io/gptext/$1'
+r301 %r{/gpdb/(.*)}, 'https://gpdb.docs.pivotal.io/$1'
+r301 %r{/gptext/(.*)}, 'https://gpdb.docs.pivotal.io/gptext/$1'
 
 # For Spark Connector
 
