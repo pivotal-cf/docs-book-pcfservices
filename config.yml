@@ -79,15 +79,6 @@ sections:
       - <a href="http://resources.docs.pivotal.io/pdfs/push-notifications-1.6.pdf">v1.6&nbsp;(PDF)</a>
 
 - repository:
-    name: gemfire/docs-gemfire-cf
-  directory: gemfire-cf
-  subnav_template: gemfire_pcf_subnav.erb
-- repository:
-    name: gemfire/docs-ssc-gemfire-cf
-  directory: ssc-gemfire
-  subnav_template: gemfire_cf_subnav.erb
-
-- repository:
     name: pivotal-cf/docs-pivotal-distribution-openjdk
     at_path: docs-content
   directory: pivotal-distribution-openjdk
