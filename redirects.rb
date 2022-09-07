@@ -693,8 +693,8 @@ r301 %r{/tkgi/([^/]*.html)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes
 
 
 # Redirect non-versioned HARBOR URL calls to the VMware.com address
-r301 %r{docs.pivotal.io/vmware-harbor/(.*)}, "https://docs.vmware.com/en/VMware-Harbor-Registry/services/vmware-harbor-registry/GUID-$1"
-r301 %r{docs.pivotal.io/vmware-harbor.?}, "https://docs.vmware.com/en/VMware-Harbor-Registry/services/vmware-harbor-registry/GUID-index.html"
+# r301 %r{docs.pivotal.io/vmware-harbor/(.*)}, "https://docs.vmware.com/en/VMware-Harbor-Registry/services/vmware-harbor-registry/GUID-$1"
+# r301 %r{docs.pivotal.io/vmware-harbor.?}, "https://docs.vmware.com/en/VMware-Harbor-Registry/services/vmware-harbor-registry/GUID-index.html"
 
 
 # Redirect Autoscaler API documentation
