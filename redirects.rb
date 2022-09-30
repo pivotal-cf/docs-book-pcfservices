@@ -689,7 +689,8 @@ r301 %r{/tkgi/1-5/(.*)}, "/pks/1-5/$1"
 r301 %r{/tkgi/1-6/(.*)}, "/pks/1-6/$1"
 r301 %r{/tkgi/1-7/(.*)}, "/pks/1-7/$1"
 r301 %r{/tkgi/1-14/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.14/tkgi/GUID-$1"
-r301 %r{/tkgi/([^/]*.html)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.14/tkgi/GUID-$1"
+r301 %r{/tkgi/1-15/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.15/tkgi/GUID-$1"
+r301 %r{/tkgi/([^/]*.html)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.15/tkgi/GUID-$1"
 
 
 # Redirect non-versioned HARBOR URL calls to the VMware.com address
