@@ -888,3 +888,10 @@ r301 %r{/platform/application-service-windows/2-14/installing.html}, '/applicati
 r301 %r{/platform/application-service/2-14/operating/installing-pcf-is.html.}, '/application-service/3-0/operating/installing-pcf-is.html'
 
 
+r301 %r{/application-service/2-14/operating/configure-pas.html}, '/application-service/3-0/operating/configure-pas.html'
+r301 %r{/application-service/2-14/operating/installing-pcf-is.html}, '/application-service/3-0/operating/installing-pcf-is.html'
+r301 %r{/application-service/2-14/windows/installing.html}, '/application-service/3-0/windows/installing.html'
+r301 %r{/application-service/2-14/operating/installing-pcf-is.html}, '/application-service/3-0/operating/installing-pcf-is.html'
+
+
+
