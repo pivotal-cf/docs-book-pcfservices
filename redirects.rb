@@ -882,9 +882,9 @@ r301  %r{/credhub-service-broker}, "https://docs.vmware.com/en/CredHub-Service-B
 
 # Redirect from PAS and TAS 2.14 to 3.0
 
-r301 %r{/pivotalcf/2-14/customizing/configure-pas.html}, '/pivotalcf/3-0/customizing/configure-pas.html'
-r301 %r{/pivotalcf/2-14/customizing/installing-pcf-is.html}, '/pivotalcf/3-0/customizing/installing-pcf-is.html'
-r301 %r{/platform/application-service-windows/2-14/installing.html}, '/platform/application-service-windows/3-0/installing.html'
-r301 %r{/platform/application-service/2-14/operating/installing-pcf-is.html.}, '/platform/application-service/3-0/operating/installing-pcf-is.html'
+r301 %r{/pivotalcf/2-14/customizing/configure-pas.html}, '/application-service/3-0/operating/configure-pas.html'
+r301 %r{/pivotalcf/2-14/customizing/installing-pcf-is.html}, '/application-service/3-0/operating/installing-pcf-is.html'
+r301 %r{/platform/application-service-windows/2-14/installing.html}, '/application-service/3-0/windows/installing.html'
+r301 %r{/platform/application-service/2-14/operating/installing-pcf-is.html.}, '/application-service/3-0/operating/installing-pcf-is.html'
 
 
