@@ -690,7 +690,8 @@ r301 %r{/tkgi/1-6/(.*)}, "/pks/1-6/$1"
 r301 %r{/tkgi/1-7/(.*)}, "/pks/1-7/$1"
 r301 %r{/tkgi/1-14/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.14/tkgi/GUID-$1"
 r301 %r{/tkgi/1-15/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.15/tkgi/GUID-$1"
-r301 %r{/tkgi/([^/]*.html)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.15/tkgi/GUID-$1"
+# "a 301 is a permanent redirect, a 302 is a temporary one and should be used when a page moves temporarily"
+r302 %r{/tkgi/([^/]*.html)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.15/tkgi/GUID-$1"
 
 
 # Redirect non-versioned HARBOR URL calls to the VMware.com address
@@ -893,5 +894,6 @@ r301 %r{/application-service/2-14/operating/installing-pcf-is.html}, '/applicati
 r301 %r{/application-service/2-14/windows/installing.html}, '/application-service/3-0/windows/installing.html'
 r301 %r{/application-service/2-14/operating/installing-pcf-is.html}, '/application-service/3-0/operating/installing-pcf-is.html'
 
-
-
+# Redirect App Metrics 
+# r302 redirection is temporary until we have a better solution which should be a r301 instead
+r302  %r{/pcf-metrics/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/index.html"
