@@ -14,7 +14,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/index.html}, '/ops-manager/$1/install/index.
 
 # Release Notes and Breaking Changes moved to product books
 # Versionless release notes default to latest GA version
-r301 %r{/platform/(?![\d-]+)/release-notes/opsmanager-rn.html}, '/ops-manager/2-10/release-notes.html'
+r301 %r{/platform/(?![\d-]+)/release-notes/opsmanager-rn.html}, '/ops-manager/3-0/release-notes.html'
 r301 %r{/platform/(?![\d-]+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/3-0/release-notes/$2'
 r301 %r{/platform/(?![\d-]+)/release-notes/windows-rn.html}, '/application-service/3-0/windows/release-notes.html'
 
@@ -270,7 +270,7 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/refarch/(.*)}, '/ops-manager/$1/refarch/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
 
 # Redirects for OM topics formerly in customizing
-r301 %r{/ops-manager/2-11/(.*)}, '/ops-manager/2-10/$1'
+r301 %r{/ops-manager/2-11/(.*)}, '/ops-manager/3-0/$1'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/pcf-interface.html}, '/ops-manager/$1/pcf-interface.html'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/trusted-certificates.html}, '/ops-manager/$1/trusted-certificates.html'
 r301 %r{/ops-manager/(2-[3-6])/pcf-interface.html}, '/pivotalcf/$1/customizing/pcf-interface.html'
@@ -294,13 +294,13 @@ r301 %r{/pivotalcf/(2-[3-6])/upgrade/checklist.html}, '/pivotalcf/$1/upgrading/c
 
 # All other /ops-manager redirects
 
-r301 %r{/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/2-10/$1'
+r301 %r{/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/3-0/$1'
 r301 %r{/platform/ops-manager/(.*)}, '/ops-manager/$1'
 r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/om/(.*)}, '/ops-manager/$1/$2'
-r301 %r{/platform/om/(.*)}, '/ops-manager/2-10/$1'
-r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/2-10/$1"
+r301 %r{/platform/om/(.*)}, '/ops-manager/3-0/$1'
+r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/3-0/$1"
 r301 %r{/pcf/om/(2-[7-9]|2-\d\d+)/(.*)}, "/ops-manager/$1/$2"
 r301 %r{/pcf/om/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 r301 %r{/ops-manager/(\d-\d+)/install/ops-man.html}, '/ops-manager/$1/index.html'
@@ -741,9 +741,9 @@ r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 
 
 # Reinstate ops manager API platform links
-r301 %r{/platform/opsman-api/(?![\d-]+)(.*)}, '/ops-manager/2-10/api/$1'
+r301 %r{/platform/opsman-api/(?![\d-]+)(.*)}, '/ops-manager/3-0/api/$1'
 r301 %r{/platform/opsman-api/(\d-\d+)(.*)}, '/ops-manager/$1/api/$2'
-r301 %r{/ops-manager/(?!\d-\d+)/opsman-api/(.*)}, '/ops-manager/2-10/api/$2'
+r301 %r{/ops-manager/(?!\d-\d+)/opsman-api/(.*)}, '/ops-manager/3-0/api/$2'
 
 # Services
 
