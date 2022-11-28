@@ -888,13 +888,10 @@ r301  %r{/credhub-service-broker}, "https://docs.vmware.com/en/CredHub-Service-B
 r301 %r{/pivotalcf/2-14/customizing/configure-pas.html}, '/application-service/3-0/operating/configure-pas.html'
 r301 %r{/pivotalcf/2-14/customizing/installing-pcf-is.html}, '/application-service/3-0/operating/installing-pcf-is.html'
 r301 %r{/platform/application-service-windows/2-14/installing.html}, '/application-service/3-0/windows/installing.html'
-r301 %r{/platform/application-service/2-14/operating/installing-pcf-is.html.}, '/application-service/3-0/operating/installing-pcf-is.html'
 
-
-r301 %r{/application-service/2-14/operating/configure-pas.html}, '/application-service/3-0/operating/configure-pas.html'
-r301 %r{/application-service/2-14/operating/installing-pcf-is.html}, '/application-service/3-0/operating/installing-pcf-is.html'
-r301 %r{/application-service/2-14/windows/installing.html}, '/application-service/3-0/windows/installing.html'
-r301 %r{/application-service/2-14/operating/installing-pcf-is.html}, '/application-service/3-0/operating/installing-pcf-is.html'
+r301 %r{/pivotalcf/application-service/2-14/(.*)}, '/application-service/3-0/$1'
+r301 %r{/platform/application-service/2-14/(.*)}, '/application-service/3-0/$1'
+r301 %r{/application-service/2-14/(.*)}, '/application-service/3-0/$1'
 
 # Redirect App Metrics 
 # r302 redirection is temporary until we have a better solution which should be a r301 instead
