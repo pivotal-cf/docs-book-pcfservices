@@ -76,6 +76,9 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, '/applica
 r301 %r{/application-service/(2-[3-6])/concepts/security.html}, '/pivotalcf/$1/concepts/security.html'
 r301 %r{/application-service/(2-[3-6])/security/concepts/security.html}, '/pivotalcf/$1/concepts/security.html'
 
+# 3-x redirects
+r301 %r{(/pivotalcf|/platform)/(3-\d|3-\d\d+)/(.*)}, '/application-service/$1/$2'
+
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/buildpacks/(.*)}, "/pivotalcf/$1/buildpacks/$2"
 r301 %r{/application-service/(2-[3-6])/adminguide/(.*)}, "/pivotalcf/$1/adminguide/$2"
@@ -113,6 +116,11 @@ r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/monitoring/(.*)}, '/application
 r301 %r{/application-service/(2-[7-9]|2-\d\d+)/overview/monitoring/(.*)}, '/application-service/$2/operating/monitoring/$3'
 
 # Install redirects
+
+# 3-x redirects
+r301 %r{(/pivotalcf|/platform)/(3-\d|3-\d\d+)/customizing/(.*)}, '/application-service/$1/operating/$2'
+r301 %r{(/pivotalcf|/platform)/(3-\d|3-\d\d+)/opsguide/(.*)}, '/application-service/$1/operating/$2'
+
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/operating/configure-pas.html}, '/pivotalcf/$1/customizing/configure-pas.html'
 r301 %r{/application-service/(2-[3-6])/operating/console-login.html}, '/pivotalcf/$1/customizing/console-login.html'
@@ -141,7 +149,7 @@ r301 %r{/application-service/(2-[3-6])/operating/user-types.html}, '/pivotalcf/$
 r301 %r{/application-service/(2-[3-6])/operating/vsphere-nsx-t.html}, '/pivotalcf/$1/customizing/vsphere-nsx-t.html'
 r301 %r{/application-service/(2-[3-6])/operating/configure-lb.html}, '/pivotalcf/$1/customizing/configure-lb.html'
 
-# 2-7 and later redirects
+# 2-7 - 2-9 redirects
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/customizing/configure-pas.html}, '/application-service/$2/operating/configure-pas.html'
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/customizing/console-login.html}, '/application-service/$2/operating/console-login.html'
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/customizing/create-pas-dbs.html}, '/application-service/$2/operating/create-pas-dbs.html'
@@ -210,7 +218,7 @@ r301 %r{/application-service/(2-[3-6])/operating/switching-domains.html}, '/pivo
 r301 %r{/application-service/(2-[3-6])/operating/external-user-management.html}, '/pivotalcf/$1/opsguide/external-user-management.html'
 r301 %r{/application-service/(2-[3-6])/operating/tcp-routing-ert-config.html}, '/pivotalcf/$1/opsguide/tcp-routing-ert-config.html'
 
-# 2-7 and later redirects
+# 2-7 - 2-9 redirects
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/opsguide/gdpr.html}, '/application-service/$2/operating/gdpr.html'
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/opsguide/id-jobs.html}, '/application-service/$2/operating/id-jobs.html'
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/opsguide/identify-metric-source.html}, '/application-service/$2/operating/identify-metric-source.html'
