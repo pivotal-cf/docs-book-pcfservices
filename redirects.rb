@@ -76,9 +76,6 @@ r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/security/concepts/security.html}, '/applica
 r301 %r{/application-service/(2-[3-6])/concepts/security.html}, '/pivotalcf/$1/concepts/security.html'
 r301 %r{/application-service/(2-[3-6])/security/concepts/security.html}, '/pivotalcf/$1/concepts/security.html'
 
-# 3-x redirects
-r301 %r{(/pivotalcf|/platform)/(3-\d|3-\d\d+)/(.*)}, '/application-service/$1/$2'
-
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/buildpacks/(.*)}, "/pivotalcf/$1/buildpacks/$2"
 r301 %r{/application-service/(2-[3-6])/adminguide/(.*)}, "/pivotalcf/$1/adminguide/$2"
