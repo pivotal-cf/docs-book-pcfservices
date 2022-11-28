@@ -257,8 +257,8 @@ r301 %r{/platform/(2-[7-9]|2-\d\d+)/upgrading/configuring.html}, '/application-s
 # All other /application-service redirects
 r301 %r{/platform/application-service/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service/$1/$2'
 r301 %r{/platform/application-service/(?![\d-]+)(.*)}, '/application-service/3-0/$1'
+r301 %r{/platform/application-service/3-0/(.*)}, '/application-service/3-0/$1'
 r301 %r{/application-service/(?![\d-]+)(.*)}, '/application-service/3-0/$1'
-
 
 # Ops Manager redirects
 
@@ -730,11 +730,11 @@ r301 %r{/pcf-healthwatch/(.*)}, '/healthwatch/$1'
 r301 %r{/platform/healthwatch/(.*)}, '/healthwatch/$1'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/healthwatch/(.*)}, '/healthwatch/$1'
 
-# Reinstate versionless pivotalcf link
-r301 %r{/pivotalcf/(?![\d-]+)(.*)}, '/platform/2-13/$1'
+# Reinstate versionless pivotalcf links
+r301 %r{/pivotalcf/(?![\d-]+)(.*)}, '/platform/3-0/$1'
 
 # Reinstate versionless platform links
-r301 %r{/platform/(?![\d-]+)(.*)}, '/platform/2-11/$1'
+r301 %r{/platform/(?![\d-]+)(.*)}, '/platform/3-0/$1'
 
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/(.*)}, '/platform/$1/$2'
 r301 %r{/platform/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
