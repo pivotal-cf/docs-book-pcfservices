@@ -115,8 +115,8 @@ r301 %r{/application-service/(2-[7-9]|2-\d\d+)/overview/monitoring/(.*)}, '/appl
 # Install redirects
 
 # 3-x redirects
-r301 %r{(/pivotalcf|/platform)/(3-\d|3-\d\d+)/customizing/(.*)}, '/application-service/$1/operating/$2'
-r301 %r{(/pivotalcf|/platform)/(3-\d|3-\d\d+)/opsguide/(.*)}, '/application-service/$1/operating/$2'
+r301 %r{(/pivotalcf|/platform)/(3-\d+)/customizing/(.*)}, '/application-service/$2/operating/$3'
+r301 %r{(/pivotalcf|/platform)/(3-\d+)/opsguide/(.*)}, '/application-service/$2/operating/$3'
 
 # 2-3 to 2-6 redirects
 r301 %r{/application-service/(2-[3-6])/operating/configure-pas.html}, '/pivotalcf/$1/customizing/configure-pas.html'
