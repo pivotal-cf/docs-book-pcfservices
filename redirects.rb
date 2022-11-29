@@ -56,6 +56,7 @@ r301 %r{/application-service-windows/latest/(.*)}, '/application-service/3-0/win
 r301 %r{/application-service-windows/(?![\d-]+)(.*)}, '/application-service/3-0/windows/$1'
 r301 %r{/platform/application-service-windows/latest/(.*)}, '/application-service/3-0/windows/$1'
 r301 %r{/platform/application-service-windows/(?![\d-]+)(.*)}, '/application-service/3-0/windows/$1'
+r301 %r{/platform/application-service-windows/(3-\d+)/(.*)}, '/application-service/$1/windows/$2'
 r301 %r{/platform/application-service-windows/(2-[7-9]|2-\d\d+)/(.*)}, '/application-service/$1/windows/$2'
 r301 %r{/platform/application-service-windows/(2-[3-6])/(.*)}, '/pivotalcf/$1/windows/$2'
 r301 %r{(/pivotalcf|/platform)/(2-[7-9]|2-\d\d+)/windows/(.*)}, '/application-service/$2/windows/$3'
