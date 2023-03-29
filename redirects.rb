@@ -6,21 +6,30 @@ r301 %r{.*}, 'https://docs.pivotal.io$&', :if => Proc.new { |rack_env|
 r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 # Remove old landing pages
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/pcf-docs.html}, '/ops-manager/$1/install/index.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/installing/index.html}, '/ops-manager/$1/install/index.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/index.html}, '/ops-manager/$1/install/index.html'
+r301 '/ops-manager/install/', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/install-install-index.html"
+r301 %r{/platform/(2-[7-9])/installing/pcf-docs.html}, '/ops-manager/$1/install/index.html'
+r301 '/platform/2-10/installing/pcf-docs.html', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/2.10/vmware-tanzu-ops-manager/install-install-index.html"
+r301 %r{/platform/([3-9])-0/installing/pcf-docs.html}, 'https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/$1.0/vmware-tanzu-ops-manager/install-install-index.html'
+r301 %r{/platform/(2-[7-9])/installing/index.html}, '/ops-manager/$1/install/index.html'
+r301 '/platform/2-10/installing/index.html', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/2.10/vmware-tanzu-ops-manager/install-install-index.html"
+r301 %r{/platform/([3-9])-0/installing/index.html}, 'https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/$1.0/vmware-tanzu-ops-manager/install-install-index.html'
+r301 %r{/platform/(2-[7-9])/index.html}, '/ops-manager/$1/install/index.html'
+r301 '/platform/2-10/index.html', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/2.10/vmware-tanzu-ops-manager/index.html"
+r301 %r{/platform/([3-9])-0/index.html}, 'https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/$1.0/vmware-tanzu-ops-manager/index.html'
 
 # CORE Book Redirects
 
 # Release Notes and Breaking Changes moved to product books
 # Versionless release notes default to latest GA version
-r301 %r{/platform/(?![\d-]+)/release-notes/opsmanager-rn.html}, '/ops-manager/3-0/release-notes.html'
+r301 %r{/platform/(?![\d-]+)/release-notes/opsmanager-rn.html}, "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/release-notes.html"
 r301 %r{/platform/(?![\d-]+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/3-0/release-notes/$2'
 r301 %r{/platform/(?![\d-]+)/release-notes/windows-rn.html}, '/application-service/3-0/windows/release-notes.html'
 
-# General 2-7 to 2-xx release note and breaking change redirects
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/breaking-changes.html(.*)}, '/ops-manager/$1/release-notes.html$2'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
+# General 2-7 to 2-10 release note and breaking change redirects
+r301 %r{/platform/(2-[7-9])/release-notes/breaking-changes.html(.*)}, '/ops-manager/$1/release-notes.html$2'
+r301 %r{/platform/2-10/release-notes/breaking-changes.html(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/2.10/vmware-tanzu-ops-manager/release-notes.html"
+r301 %r{/platform/(2-[7-9])/release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
+r301 '/platform/2-10/release-notes/opsmanager-rn.html', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/2.10/vmware-tanzu-ops-manager/release-notes.html"
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/release-notes/$2'
 r301 %r{/application-service/(2-[7-9]|2-\d\d+)/overview/release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/release-notes/$2'
 r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/windows-rn.html}, '/application-service/$1/windows/release-notes.html'
@@ -34,14 +43,15 @@ r301 %r{/platform/(2-[3-6])/release-notes/breaking-changes.html(.*)}, '/pivotalc
 r301 %r{/platform/(2-[3-6])/release-notes/(runtime-rn.html|segment-rn.html)}, '/pivotalcf/$1/pcf-release-notes/$2'
 r301 %r{/platform/(2-[3-6])/release-notes/windows-rn.html}, '/pivotalcf/$1/pcf-release-notes/windows-rn.html'
 
-r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
+r301 %r{/pivotalcf/(2-[7-9])/pcf-release-notes/opsmanager-rn.html}, '/ops-manager/$1/release-notes.html'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/(runtime-rn.html|segment-rn.html)}, '/application-service/$1/release-notes/$2'
 r301 %r{/pivotalcf/(2-[7-9]|2-\d\d+)/pcf-release-notes/windows-rn.html}, '/application-service/$1/windows/release-notes.html'
 
 r301 %r{/pivotalcf/(2-[3-6])/release-notes.html}, '/pivotalcf/$1/pcf-release-notes/opsmanager-rn.html'
 
 # Highlights redirect
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
+r301 %r{/platform/(2-[7-9])/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
+r301 %r{/platform/([3-9])-0)/release-notes/highlights.html}, 'https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/$1.0/vmware-tanzu-ops-manager/release-notes.html'
 
 # BBR release notes redirect to OSS
 r301 %r{/platform/(2-[0-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://github.com/cloudfoundry-incubator/bosh-backup-and-restore/releases'
@@ -269,20 +279,20 @@ r301 %r{/application-service/(?![\d-]+)(.*)}, '/application-service/3-0/$1'
 # Ops Manager redirects
 
 # Security redirects
-r301 %r{/platform/(2-[3-9]|2-\d\d+)/security/(.*)}, '/ops-manager/$1/security/$2'
+r301 %r{/platform/(2-[3-9])/security/(.*)}, '/ops-manager/$1/security/$2'
 
 # Reference architecture redirects
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/refarch/(.*)}, '/ops-manager/$1/refarch/$2'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/plan/(.*)}, '/ops-manager/$1/refarch/$2'
+r301 %r{/platform/(2-[7-9])/refarch/(.*)}, '/ops-manager/$1/refarch/$2'
+r301 %r{/platform/(2-[7-9])/plan/(.*)}, '/ops-manager/$1/refarch/$2'
 
 # Redirects for OM topics formerly in customizing
 r301 %r{/ops-manager/2-11/(.*)}, '/ops-manager/3-0/$1'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/pcf-interface.html}, '/ops-manager/$1/pcf-interface.html'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/trusted-certificates.html}, '/ops-manager/$1/trusted-certificates.html'
+r301 %r{/platform/(2-[7-9])/customizing/pcf-interface.html}, '/ops-manager/$1/pcf-interface.html'
+r301 %r{/platform/(2-[7-9])/trusted-certificates.html}, '/ops-manager/$1/trusted-certificates.html'
 r301 %r{/ops-manager/(2-[3-6])/pcf-interface.html}, '/pivotalcf/$1/customizing/pcf-interface.html'
 
 # Rest of docs-pcf-install redirects to Ops Manager
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/customizing/(.*)}, '/ops-manager/$1/install/$2'
+r301 %r{/platform/(2-[7-9])/customizing/(.*)}, '/ops-manager/$1/install/$2'
 r301 %r{/pivotalcf/(2-[3-6])/install/(.*)}, '/pivotalcf/$1/customizing/$2'
 
 # IaaS-specific install redirects
@@ -302,12 +312,12 @@ r301 %r{/pivotalcf/(2-[3-6])/upgrade/checklist.html}, '/pivotalcf/$1/upgrading/c
 
 r301 %r{/ops-manager/(?![\d-]+)(.*)}, '/ops-manager/3-0/$1'
 r301 %r{/platform/ops-manager/(.*)}, '/ops-manager/$1'
-r301 %r{/platform/ops-manager/(2-[7-9]|2-\d\d+)/(.*)}, '/ops-manager/$1/$2'
+r301 %r{/platform/ops-manager/(2-[7-9]/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/ops-manager/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
-r301 %r{/platform/(2-[7-9]|2-\d\d+)/om/(.*)}, '/ops-manager/$1/$2'
+r301 %r{/platform/(2-[7-9])/om/(.*)}, '/ops-manager/$1/$2'
 r301 %r{/platform/om/(.*)}, '/ops-manager/3-0/$1'
 r301 %r{/pcf/om/(?![\d-]+)/(.*)}, "/ops-manager/3-0/$1"
-r301 %r{/pcf/om/(2-[7-9]|2-\d\d+)/(.*)}, "/ops-manager/$1/$2"
+r301 %r{/pcf/om/(2-[7-9])/(.*)}, "/ops-manager/$1/$2"
 r301 %r{/pcf/om/(2-[3-6])/(.*)}, '/pivotalcf/$1/$2'
 r301 %r{/ops-manager/(\d-\d+)/install/ops-man.html}, '/ops-manager/$1/index.html'
 
@@ -899,6 +909,6 @@ r301 %r{/pivotalcf/application-service/2-14/(.*)}, '/application-service/3-0/$1'
 r301 %r{/platform/application-service/2-14/(.*)}, '/application-service/3-0/$1'
 r301 %r{/application-service/2-14/(.*)}, '/application-service/3-0/$1'
 
-# Redirect App Metrics 
+# Redirect App Metrics
 # r302 redirection is temporary until we have a better solution which should be a r301 instead
 r302  %r{/pcf-metrics/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/index.html"
