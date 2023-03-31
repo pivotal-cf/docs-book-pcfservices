@@ -687,18 +687,21 @@ r301 %r{/pks/1-2/(.*)}, 'https://resources.docs.pivotal.io/pdfs/pks-1-2.pdf'
 
 # Redirect non-versioned and 'latest' URL calls to the most recent version of PKS
 r301 %r{/runtimes/pks/(.*)}, "/tkgi/$1"
-r301 %r{/runtimes/pks/latest/(.*)}, "/tkgi/1-14/$1"
-r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/tkgi/1-14/$1"
-r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-14/$1"
-r301 %r{/tkgi/(?![\d-]+)(.*)}, "/tkgi/1-14/$1"
-r301 %r{/pks/latest/(.*)}, "/tkgi/1-14/$1"
-r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-14/$1"
+r301 %r{/runtimes/pks/latest/(.*)}, "/tkgi/1-16/$1"
+r301 %r{/runtimes/pks/(?![\d-]+)(.*)}, "/tkgi/1-16/$1"
+r301 %r{/tkgi/latest/(.*)}, "/tkgi/1-16/$1"
+r301 %r{/tkgi/(?![\d-]+)(.*)}, "/tkgi/1-16/$1"
+r301 %r{/pks/latest/(.*)}, "/tkgi/1-16/$1"
+r301 %r{/pks/(?![\d-]+)(.*)}, "/tkgi/1-16/$1"
 r301 %r{/pks/1-8/(.*)}, "/tkgi/1-8/$1"
 r301 %r{/pks/1-9/(.*)}, "/tkgi/1-9/$1"
 r301 %r{/pks/1-10/(.*)}, "/tkgi/1-10/$1"
 r301 %r{/pks/1-11/(.*)}, "/tkgi/1-11/$1"
 r301 %r{/pks/1-12/(.*)}, "/tkgi/1-12/$1"
 r301 %r{/pks/1-13/(.*)}, "/tkgi/1-13/$1"
+r301 %r{/pks/1-14/(.*)}, "/tkgi/1-14/$1"
+r301 %r{/pks/1-15/(.*)}, "/tkgi/1-15/$1"
+r301 %r{/pks/1-16/(.*)}, "/tkgi/1-16/$1"
 r301 %r{/tkgi/1-3/(.*)}, "/pks/1-3/$1"
 r301 %r{/tkgi/1-4/(.*)}, "/pks/1-4/$1"
 r301 %r{/tkgi/1-5/(.*)}, "/pks/1-5/$1"
@@ -708,8 +711,14 @@ r301 %r{/tkgi/1-12/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Gr
 r301 %r{/tkgi/1-13/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.13/tkgi/GUID-$1"
 r301 %r{/tkgi/1-14/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.14/tkgi/GUID-$1"
 r301 %r{/tkgi/1-15/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.15/tkgi/GUID-$1"
+r301 %r{/tkgi/1-16/(.*)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.16/tkgi/GUID-$1"
+# Note that this set of rules must function as a cascade
+# First reset the latest redirection within pivotal
+# Then redirect the redirected pivotal to docs.vmware.com
+#
+# I don't think TKGI LATEST redirection ever reaches these lines
 # "a 301 is a permanent redirect, a 302 is a temporary one and should be used when a page moves temporarily"
-r301 %r{/tkgi/([^/]*.html)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.15/tkgi/GUID-$1"
+r301 %r{/tkgi/([^/]*.html)}, "https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.16/tkgi/GUID-$1"
 
 
 # Redirect non-versioned HARBOR URL calls to the VMware.com address
