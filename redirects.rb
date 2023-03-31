@@ -51,7 +51,7 @@ r301 %r{/pivotalcf/(2-[3-6])/release-notes.html}, '/pivotalcf/$1/pcf-release-not
 
 # Highlights redirect
 r301 %r{/platform/(2-[7-9])/release-notes/highlights.html}, '/ops-manager/$1/release-notes.html'
-r301 %r{/platform/([3-9])-0)/release-notes/highlights.html}, 'https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/$1.0/vmware-tanzu-ops-manager/release-notes.html'
+r301 %r{/platform/([3-9])-0/release-notes/highlights.html}, 'https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/$1.0/vmware-tanzu-ops-manager/release-notes.html'
 
 # BBR release notes redirect to OSS
 r301 %r{/platform/(2-[0-9]|2-\d\d+)/release-notes/bbr-pcf-rn.html}, 'https://github.com/cloudfoundry-incubator/bosh-backup-and-restore/releases'
