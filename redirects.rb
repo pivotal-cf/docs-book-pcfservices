@@ -429,6 +429,8 @@ r301 '/gemfirexd/index.html', 'https://gemfirexd.docs.pivotal.io/index.html'
 r301 '/gemfirexd/', 'https://gemfirexd.docs.pivotal.io/'
 r301 %r{/(.*)/geode/(.*)}, "https://gemfire.docs.pivotal.io/$1/geode/$2"
 r301 %r{/(.*)/ggc/(.*)}, "https://ggc.docs.pivotal.io/$1/ggc/$2"
+r301 %r{/p-cloud-cache/1-13/(.*)}, "https://docs.vmware.com/en/VMware-GemFire-for-Tanzu-Application-Service/1.13/gf-tas/content-index.html"
+r301 %r{/p-cloud-cache/1-14/(.*)}, "https://docs.vmware.com/en/VMware-GemFire-for-Tanzu-Application-Service/1.14/gf-tas/content-index.html"
 
 # For GemFire Nativehttps://resources.docs.pivotal.io/pdfs/
 r301 %r{/(.*)/gemfire-native-client/(.*)}, "https://gemfire-native.docs.pivotal.io/$1/gemfire-native-client/$2"
