@@ -30,7 +30,7 @@ sections:
   product_info:
     use_local_header: true
     latest_stable_version: "1.5"
-    changelog_href: https://docs.pivotal.io/credhub-service-broker/release-notes.html
+    changelog_href: https://docs.vmware.com/en/CredHub-Service-Broker/services/credhub/GUID-release-notes.html
     local_header_img: /images/cloud_rings.png
     local_header_title: CredHub Service Broker
     search_placeholder: Search CredHub Service Broker
