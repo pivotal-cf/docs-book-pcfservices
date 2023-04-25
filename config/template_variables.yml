@@ -37,8 +37,8 @@ template_variables:
 
 # Book content variables
   admin: your Cloud Foundry administrator
-  api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Elastic Runtime Instance topic](http://docs.pivotal.io/pivotalcf/customizing/api-endpoint.html).
-  api_endpoint: <a href="http://docs.pivotal.io/pivotalcf/opsguide/api-endpoint.html">the URL of the Cloud Controller in your Elastic Runtime instance</a>
+  api_endpoint_book: For more information, see the [Identifying the API Endpoint for your Elastic Runtime Instance topic](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/4.0/tas-for-vms/api-endpoint.html).
+  api_endpoint: <a href="https://docs.vmware.com/en/VMware-Tanzu-Application-Service/4.0/tas-for-vms/api-endpoint.html">the URL of the Cloud Controller in your Elastic Runtime instance</a>
   api_v1_format: <a href="http://docs.pivotal.io/pivotalcf/services/api-v1.html">v1 format</a>
   api_v2_format: <a href="http://docs.pivotal.io/pivotalcf/services/api.html">v2 format</a>
   app_domain: shared-domain.com
