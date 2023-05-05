@@ -669,8 +669,7 @@ r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
 r301 %r{/tibco-businessworks/(.*)}, "/partners/tibco-businessworks/$1"
 
 
-r301 %r{/concourse-olm/(.*)}, "https://docs.vmware.com/en/Concourse-for-VMware-Tanzu/index.html"
-r301 %r{/p-concourse/(.*)}, "https://docs.vmware.com/en/Concourse-for-VMware-Tanzu/index.html"
+r301 %r{/concourse-olm/(.*)}, "/p-concourse/$1"
 
 r301 '/platform/2-7/getstarted/pcf-docs.html', '/platform/2-7/'
 
