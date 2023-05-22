@@ -25,6 +25,7 @@ sections:
 # repos in org pivotal-cf: alphabetical
 - repository:
     name: pivotal-cf/docs-credhub-service-broker
+    ref: "main"
   directory: credhub-service-broker
   subnav_template: credhub_service_broker.erb
   product_info:
