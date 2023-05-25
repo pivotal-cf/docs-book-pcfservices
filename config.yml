@@ -63,7 +63,7 @@ sections:
   directory: push/1-10
   subnav_template: push_subnav_1-10.erb
   product_info:
-    use_local_header: false
+    use_local_header: true
     latest_stable_version: "1.10"
     changelog_href: http://docs.pivotal.io/push/1-10/release-notes.html
     local_header_img: /images/cloud_rings.png
