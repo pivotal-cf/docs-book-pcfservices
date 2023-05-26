@@ -871,6 +871,9 @@ r301 %r{/push/1-6/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notificati
 r301 %r{/push/1-7/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.7.pdf'
 r301 %r{/push/1-8/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.8.pdf'
 r301 %r{/push/1-9/(.*)}, 'https://resources.docs.pivotal.io/pdfs/push-notifications-1.9.pdf'
+r301 %r{/push/1-10/(.*)}, 'https://docs.vmware.com/en/Push-Notification-Service/1.10/push-notification-service-1-10.pdf'
+r301 %r{/push/}, 'https://docs.vmware.com/en/Push-Notification-Service/1.10/push-notification-service-1-10.pdf'
+r301 %r{/push}, 'https://docs.vmware.com/en/Push-Notification-Service/1.10/push-notification-service-1-10.pdf'
 # Redirect old RabbitMQ versions to PDFs
 r301 %r{/rabbitmq-cf/1-12/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.12.pdf"
 r301 %r{/rabbitmq-cf/1-11/(.*)}, "https://docs.pivotal.io/pdfs/rabbitmq-pcf-1.11.pdf"
