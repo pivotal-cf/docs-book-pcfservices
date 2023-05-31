@@ -775,7 +775,7 @@ r301 %r{/ops-manager/(?!\d-\d+)/opsman-api/(.*)}, '/ops-manager/3-0/api/$2'
 # Services
 
 # Redirect for Antivirus
-r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/index.html"
+r302 %r{/addon-antivirus/index.html}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/index.html"
 
 # Redirects for Cloud Service Broker
 # csb-azure
