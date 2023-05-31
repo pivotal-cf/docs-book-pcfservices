@@ -774,10 +774,14 @@ r301 %r{/ops-manager/(?!\d-\d+)/opsman-api/(.*)}, '/ops-manager/3-0/api/$2'
 
 # Services
 
-# Redirect for Antivirus
-r302 %r{/addon-antivirus/}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/index.html"
+# Redirects for Antivirus
+r301  %r{/addon-antivirus/2-3/(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.3/anti-virus/GUID-$1"
+r301  %r{/addon-antivirus/2-3/}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.3/anti-virus/GUID-index.html"
+r301  %r{/addon-antivirus/2-3}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.3/anti-virus/GUID-index.html"
 r302 %r{/addon-antivirus/index.html}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/index.html"
 r302 %r{/addon-antivirus/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/2.3/anti-virus/GUID-$1"
+r302 %r{/addon-antivirus/}, "https://docs.vmware.com/en/Anti-Virus-for-VMware-Tanzu/index.html"
+
 
 # Redirects for Cloud Service Broker
 # csb-azure
