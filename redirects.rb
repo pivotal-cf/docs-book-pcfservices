@@ -806,24 +806,6 @@ r302 %r{/addon-fim/2-1/(.*)}, "https://docs.vmware.com/en/File-Integrity-Monitor
 # Redirect for IPsec
 r301 %r{/addon-ipsec/(?![\d-]+)(.*)}, "/addon-ipsec/1-9/$1"
 
-# Redirects for Metric Store
-r301 %r{/metric-store/(?![\d-]+)(.*)}, "https://docs.vmware.com/en/Metric-Store/index.html"
-# Redirect from docs.pivotal.io/metric-store/1-3 to docs.vmware.com Metric Store docs
-r301  %r{/metric-store/1-3/(.*)}, "https://docs.vmware.com/en/Metric-Store/1.3/metric-store/GUID-$1"
-r301  %r{/metric-store/1-3/}, "https://docs.vmware.com/en/Metric-Store/1.3/metric-store/GUID-index.html"
-r301  %r{/metric-store/1-3}, "https://docs.vmware.com/en/Metric-Store/1.3/metric-store/GUID-index.html"
-# Redirect from docs.pivotal.io/metric-store/1-4 to docs.vmware.com Metric Store docs
-r301  %r{/metric-store/1-4/(.*)}, "https://docs.vmware.com/en/Metric-Store/1.4/metric-store/GUID-$1"
-r301  %r{/metric-store/1-4/}, "https://docs.vmware.com/en/Metric-Store/1.4/metric-store/GUID-index.html"
-r301  %r{/metric-store/1-4}, "https://docs.vmware.com/en/Metric-Store/1.4/metric-store/GUID-index.html"
-# Redirect from docs.pivotal.io/metric-store/1-5 to docs.vmware.com Metric Store docs
-r301  %r{/metric-store/1-5/(.*)}, "https://docs.vmware.com/en/Metric-Store/1.5/metric-store/GUID-$1"
-r301  %r{/metric-store/1-5/}, "https://docs.vmware.com/en/Metric-Store/1.5/metric-store/GUID-index.html"
-r301  %r{/metric-store/1-5}, "https://docs.vmware.com/en/Metric-Store/1.5/metric-store/GUID-index.html"
-# Redirect from unsupported Metric Store docs to docs.vmware.com PDFs
-r301  %r{/metric-store/0-2}, "https://docs.vmware.com/en/Metric-Store/0.2/metric-store-0-2.pdf"
-r301  %r{/metric-store/0-3}, "https://docs.vmware.com/en/Metric-Store/0.3/metric-store-0-3.pdf"
-
 # Redirects for MySQL
 r302 %r{/tanzu-mysql-kubernetes/(?![\d-]|[p][a][r][t]+)(.*)}, "/tanzu-mysql-kubernetes/1-0/$1"
 r301 %r{/tanzu-mysql-kubernetes/(0-[1-2])/(.*)}, "/tanzu-mysql-kubernetes/1-0"
