@@ -926,8 +926,6 @@ r301 %r{/application-service/2-14/(.*)}, '/application-service/3-0/$1'
 r302  %r{/pcf-metrics/(.*)}, "https://docs.vmware.com/en/App-Metrics-for-VMware-Tanzu/index.html"
 
 # Redirects for Scheduler for VMware Tanzu
-r301 %r{/scheduler/}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/index.html'
-r301 %r{/scheduler}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/index.html'
 r301 %r{/scheduler/1-6/(.*)}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/1.6/scheduler-vmware-tanzu/GUID-index.html'
 r301 %r{/scheduler/1-5/(.*)}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/1.5/scheduler-vmware-tanzu/GUID-index.html'
 r301 %r{/scheduler/1-4/(.*)}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/1.4/scheduler-vmware-tanzu/GUID-index.html'
@@ -935,3 +933,5 @@ r301 %r{/scheduler/1-3/(.*)}, 'https://docs.vmware.com/en/Scheduler-for-VMware-T
 r301 %r{/scheduler/1-2/(.*)}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/1.2/scheduler-vmware-tanzu/GUID-index.html'
 r301 %r{/scheduler/1-1/(.*)}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/index.html'
 r301 %r{/scheduler/1-0/(.*)}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/1.0/scheduler-vmware-tanzu/GUID-index.html'
+r301 %r{/scheduler/}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/index.html'
+r301 %r{/scheduler}, 'https://docs.vmware.com/en/Scheduler-for-VMware-Tanzu/index.html'
