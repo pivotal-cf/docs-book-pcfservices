@@ -3751,22 +3751,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/partners/azure-sb/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/azure-sb/installing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/azure-sb/release-notes.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/azure-sb/using.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://docs.pivotal.io/partners/bitdefender-endpoint/index.html</loc>
     <priority>0.8</priority>
   </url>
