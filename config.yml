@@ -205,11 +205,6 @@ sections:
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf">v1.0</a>
 
 - repository:
-    name: pivotal-cf/docs-tracker-pcf
-  directory: tracker-pcf
-  subnav_template: pivotal_tracker_subnav.erb
-
-- repository:
     name: pivotal-cf/docs-vmware-harbor
     at_path: docs-content
   directory: vmware-harbor
