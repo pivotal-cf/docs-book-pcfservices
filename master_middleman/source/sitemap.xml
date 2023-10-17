@@ -3827,38 +3827,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/partners/boomi-data-services/configuration.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/boomi-data-services/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/boomi-data-services/installing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/boomi-data-services/release-notes.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/boomi-data-services-pks/configuration.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/boomi-data-services-pks/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/boomi-data-services-pks/installing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/boomi-data-services-pks/release-notes.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://docs.pivotal.io/partners/contrast-service-broker/index.html</loc>
     <priority>0.8</priority>
   </url>

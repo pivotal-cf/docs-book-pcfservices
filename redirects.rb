@@ -13,6 +13,11 @@ r301 %r{/pivotal-distribution-openjdk.*}, "https://docs.vmware.com/en/VMware-Dis
 
 r301 %r{/vmware-harbor.*}, "https://docs.vmware.com/en/VMware-Harbor-Registry/services/vmware-harbor-registry/GUID-index.html"
 
+# redirect boomi partner requests
+
+r301 %r{/partners/boomi-.*}, "https://docs.vmware.com/en/Boomi-Data-Services-for-VMware-Tanzu/services/boomi-data-services-vmware-tanzu/index.html"
+
+
 # Remove old landing pages
 r301 '/ops-manager/install/', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/install-install-index.html"
 r301 %r{/platform/(2-[7-9])/installing/pcf-docs.html}, '/ops-manager/$1/install/index.html'
