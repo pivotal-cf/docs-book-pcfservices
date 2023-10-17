@@ -9,6 +9,10 @@ r301 %r{/bosh/(.*)}, 'http://bosh.io/docs/$1'
 
 r301 %r{/pivotal-distribution-openjdk.*}, "https://docs.vmware.com/en/VMware-Distribution-of-OpenJDK/1/VMware-Distribution-of-OpenJDK/index.html"
 
+# redirect harbor to vmware.com
+
+r301 %r{/vmware-harbor.*}, "https://docs.vmware.com/en/VMware-Harbor-Registry/services/vmware-harbor-registry/GUID-index.html"
+
 # Remove old landing pages
 r301 '/ops-manager/install/', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/install-install-index.html"
 r301 %r{/platform/(2-[7-9])/installing/pcf-docs.html}, '/ops-manager/$1/install/index.html'

@@ -4519,30 +4519,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/partners/vmware-harbor/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/vmware-harbor/installing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/vmware-harbor/integrating-pks.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/vmware-harbor/release-notes.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/vmware-harbor/upgrading.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/vmware-harbor/using.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://docs.pivotal.io/partners/wavefront-nozzle/index.html</loc>
     <priority>0.8</priority>
   </url>
@@ -7996,9 +7972,5 @@
   </url>
   <url>
     <loc>https://docs.pivotal.io/tkgi/1-12/windows-workers.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/tracker-pcf/index.html</loc>
     <priority>0.8</priority>
   </url>

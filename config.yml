@@ -204,17 +204,3 @@ sections:
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.1.pdf">v1.1</a>
       - <a href="http://resources.docs.pivotal.io/pdfs/scheduler-1.0.pdf">v1.0</a>
 
-- repository:
-    name: pivotal-cf/docs-vmware-harbor
-    at_path: docs-content
-  directory: vmware-harbor
-  subnav_template: vmware-harbor_subnav.erb
-  product_info:
-    use_local_header: false
-    local_header_img: /images/cloud_rings.png
-    local_header_title: VMware Harbor Registry
-    search_placeholder: Search VMware Harbor Registry
-    url_prefix: vmware-harbor/
-    local_product_version:
-    local_header_links: []
-    local_header_version_list:
