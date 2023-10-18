@@ -41,10 +41,6 @@ sections:
     local_header_version_list:
 
 - repository:
-    name: pivotal-cf/docs-logsearch
-  directory: logsearch
-  subnav_template: pivotal_logsearch_subnav.erb
-- repository:
     name: pivotal-cf/docs-pcf-dev
   product_info:
     local_header_title: PCF Dev
