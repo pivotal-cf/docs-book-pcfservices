@@ -21,6 +21,9 @@ r301 %r{/partners/boomi-.*}, "https://docs.vmware.com/en/Boomi-Data-Services-for
 
 r301 %r{/partners/evolven-.*}, "https://docs.vmware.com/en/Evolven-Change-Analytics-for-VMware-Tanzu/services/evolven-change-analytics-vmware-tanzu/index.html"
 
+# redirect DX apm 
+
+r301 %r{/dx-apm.*}, "https://docs.vmware.com/en/DX-Application-Performance-Management-for-VMware-Tanzu/services/dx-application-performance-management/index.html"
 
 # Remove old landing pages
 r301 '/ops-manager/install/', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/install-install-index.html"

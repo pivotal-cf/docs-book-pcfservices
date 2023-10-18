@@ -3799,22 +3799,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/partners/dx-apm/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/dx-apm/installing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/dx-apm/release-notes.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/dx-apm/using.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://docs.pivotal.io/partners/dynatrace/faq.html</loc>
     <priority>0.8</priority>
   </url>
