@@ -17,6 +17,10 @@ r301 %r{/vmware-harbor.*}, "https://docs.vmware.com/en/VMware-Harbor-Registry/se
 
 r301 %r{/partners/boomi-.*}, "https://docs.vmware.com/en/Boomi-Data-Services-for-VMware-Tanzu/services/boomi-data-services-vmware-tanzu/index.html"
 
+# redirect evolven partner requests
+
+r301 %r{/partners/evolven-.*}, "https://docs.vmware.com/en/Evolven-Change-Analytics-for-VMware-Tanzu/services/evolven-change-analytics-vmware-tanzu/index.html"
+
 
 # Remove old landing pages
 r301 '/ops-manager/install/', "https://docs.vmware.com/en/VMware-Tanzu-Operations-Manager/3.0/vmware-tanzu-ops-manager/install-install-index.html"
