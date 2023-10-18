@@ -3715,26 +3715,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/partners/axway-apim-service-broker/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/axway-apim-service-broker/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/axway-apim-service-broker/installing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/axway-apim-service-broker/release-notes.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/axway-apim-service-broker/using.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://docs.pivotal.io/partners/azure-log-analytics-nozzle/index.html</loc>
     <priority>0.8</priority>
   </url>
