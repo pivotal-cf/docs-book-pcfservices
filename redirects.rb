@@ -572,8 +572,6 @@ r301 '/dca/index.html', 'http://data.docs.pivotal.io/dca/index.html'
 r301 '/dca/', 'http://data.docs.pivotal.io/dca/index.html'
 r301 '/tcserver/index.html', 'http://tcserver.docs.pivotal.io/index.html'
 r301 '/tcserver/', 'http://tcserver.docs.pivotal.io/index.html'
-r301 '/webserver/index.html', 'http://webserver.docs.pivotal.io/index.html'
-r301 '/webserver/', 'http://webserver.docs.pivotal.io/index.html'
 
 r301 '/mobile/datasync/introduction.html', '/mobile/datasync/index.html'
 r301 '/mobile/datasync/user-guide.html', '/mobile/datasync/dashboard-user-guide.html'
