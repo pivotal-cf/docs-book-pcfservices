@@ -4447,38 +4447,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://docs.pivotal.io/partners/wso2-api-manager/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/wso2-api-manager/installing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/wso2-api-manager/release-notes.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/wso2-api-manager/using.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/wso2-identity-server/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/wso2-identity-server/installing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/wso2-identity-server/release-notes.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://docs.pivotal.io/partners/wso2-identity-server/using.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://docs.pivotal.io/partners/yugabyte-db/index.html</loc>
     <priority>0.8</priority>
   </url>
